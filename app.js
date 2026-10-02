@@ -20,12 +20,13 @@ const axisX = (labels, every) => ({ grid: { display: false }, ticks: { maxRotati
 const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, stepSize: 20, callback: v => (v <= 100 ? v : '') }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
 
 async function load() {
-  const [trends, polls, news, social] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json'].map(u => fetch(u).then(r => r.json())));
+  const [trends, polls, news, social, mid] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json'].map(u => fetch(u).then(r => r.json())));
   status(trends, polls, news, social);
   scorecard(polls, trends);
   attention(trends);
   identification(polls);
   views(polls);
+  midterms(mid);
   integrity(polls, trends);
   newsSection(news);
   socialSection(social);
@@ -34,7 +35,7 @@ async function load() {
 
 function status(t, p, n, s) {
   const row = document.getElementById('status-row');
-  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['News sample', n.updated, false], ['Social listening', s.updated, true]].forEach(([k, d, pend]) => {
+  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['Social listening', s.updated, true]].forEach(([k, d, pend]) => {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
@@ -136,6 +137,26 @@ function views(p) {
   const dl = document.getElementById('delivery'); p.delivery.forEach(x => dl.appendChild(el('div', 'dl', `<div class="v">${x.value}%</div><p>${x.label}</p><a href="${x.url}" target="_blank" rel="noopener">${x.source}</a>`)));
 }
 
+function midterms(m) {
+  const days = Math.round((new Date(m.election_day + 'T00:00:00') - new Date()) / 86400000);
+  document.getElementById('days-out').textContent = days;
+  const rl = document.getElementById('ratings-link'); rl.textContent = m.ratings_source.label; rl.href = m.ratings_source.url;
+  const bloc = document.getElementById('bloc');
+  m.bloc.forEach((b, i) => { const a = el('a', 'tile'); a.href = b.url; a.target = '_blank'; a.rel = 'noopener'; a.style.setProperty('--accent', [C.red, C.red, C.teal, C.ink, C.gold, C.red, C.teal, C.grey][i % 8]); a.innerHTML = `<div class="value">${b.value}</div><p class="desc">${b.label}</p><div class="src">${b.source}</div>`; bloc.appendChild(a); });
+  const idx = Object.fromEntries(m.state_index_12m.map(s => [s[1], s[2]])); const idx90 = Object.fromEntries(m.state_index_90d.map(s => [s[1], s[2]]));
+  const rank = Object.fromEntries(m.state_index_12m.map((s, i) => [s[1], i + 1]));
+  const rc = r => /toss/i.test(r) ? 'toss' : /lean d|likely d/i.test(r) ? 'd' : /lean r|safe r/i.test(r) ? 'r' : '';
+  const tb = document.querySelector('#race-table tbody');
+  m.races.forEach(r => { const tr = el('tr'); tr.innerHTML = `<td class="st">${r.state}</td><td>${r.office}<div class="muted" style="font-size:.74rem">${r.incumbent}</div></td><td><span class="rating ${rc(r.rating)}">${r.rating}</span></td><td>${r.dem !== '—' ? `<span style="color:#2b4f8a">${r.dem}</span> (D)` : ''}${r.dem !== '—' && r.rep !== '—' ? '<br>' : ''}${r.rep !== '—' ? `<span style="color:${C.red}">${r.rep}</span> (R)` : ''}</td><td class="idx">${idx[r.code] ?? '—'} <span class="muted" style="font-size:.72rem">#${rank[r.code] ?? '—'} · 90d ${idx90[r.code] ?? '—'}</span></td><td><span class="dot ${r.maha_level}"></span>${r.maha}${r.sources.length ? `<div class="srcs">${r.sources.map(s => `<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join('')}</div>` : ''}</td>`; tb.appendChild(tr); });
+  const comp = new Set(m.races.filter(r => /toss|lean/i.test(r.rating)).map(r => r.code));
+  const st = m.state_index_12m.filter(s => s[1] !== 'US-DC');
+  new Chart(document.getElementById('c-states'), { type: 'bar', data: { labels: st.map(s => s[0]), datasets: [{ data: st.map(s => s[2]), backgroundColor: st.map(s => comp.has(s[1]) ? C.red : C.teal), borderRadius: 2, barThickness: 9 }] }, options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.x} (12-mo) · ${idx90[st[c.dataIndex][1]] ?? '—'} (90-day)` } } }, scales: { x: { min: 0, max: 45, grid: { color: '#ece7de' }, ticks: { font: { size: 10 } } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
+  const mo = document.getElementById('money'); m.money.forEach(x => mo.appendChild(el('div', 'm', `<div class="v">${x.value}</div><p>${x.label}</p><a href="${x.url}" target="_blank" rel="noopener">${x.source}</a>`)));
+  const tl = document.getElementById('timeline'); m.timeline.forEach((t, i) => tl.appendChild(el('li', i === m.timeline.length - 1 ? 'last' : '', `<span class="d">${t[0].length === 7 ? monthLabel(t[0] + '-01') : fmtDate(t[0])}</span>${t[1]}`)));
+  const w = document.getElementById('wants');
+  [['What MAHA voters say they want', m.wants.voters], ['What Republicans are offering', m.wants.gop], ['What Democrats are offering', m.wants.dems]].forEach(([h, items]) => { const d = el('div'); d.appendChild(el('h4', '', h)); const ul = el('ul'); items.forEach(it => ul.appendChild(el('li', '', `<b>${it[0]}</b><span>${it[1]}</span><small>${it[2]}</small>`))); d.appendChild(ul); w.appendChild(d); });
+}
+
 function integrity(p, t) {
   const avg = t.rfk_maga_maha_12m.averages; const rows = t.rfk_maga_maha_12m.rows; const mean = i => rows.reduce((a, r) => a + r[i], 0) / rows.length;
   const metrics = [
@@ -180,6 +201,16 @@ function sources(p, n, s) {
   add('Google Trends (explore; US / Worldwide; Topics /g/11x8sdrsf0, /g/11bw1_6lwn, /m/02l5km)', 'https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11x8sdrsf0,%2Fg%2F11bw1_6lwn');
   [...p.identification, ...p.favorability, ...p.rfk, ...p.delivery].forEach(x => add(`${x.pollster || x.source}${x.field ? ' — ' + fmtRange(x.field) : ''}`, x.url));
   s.studies.forEach(x => add(x.title, x.url));
+  add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');
+  add('Decision Desk HQ — 2026 governor forecast', 'https://votes.decisiondeskhq.com/forecast/2026/governor');
+  add('The Hill — GOP gambles on midterm dividends from MAHA (Aug 30, 2026)', 'https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/');
+  add('Politico — MAHA was supposed to save the GOP (Jun 6, 2026)', 'https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583');
+  add('Politico — RFK Jr. barnstorming for the GOP (Aug 21, 2026)', 'https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544');
+  add('Washington Examiner — Republicans embrace RFK Jr. (Sep 2, 2026)', 'https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/');
+  add('NBC News — El-Sayed woos MAHA voters (Oct 1, 2026)', 'https://www.nbcnews.com/politics/2026-election/abdul-el-sayed-woo-maha-voters-democrats-rfk-rcna600508');
+  add('Daily Signal — MAHA PAC $100M campaign (Mar 13, 2026)', 'https://www.dailysignal.com/2026/03/13/exclusive-super-pac-launches-100-million-strategy-bolster-maha-candidates-midterms/');
+  add('The Atlantic — MAHA Swing Voters Are an Illusion (Apr 22, 2026)', 'https://www.theatlantic.com/health/2026/04/maha-moms-midterm-election/686901/');
+  add('Dr. Mary Talley Bowden — Open letter to Kennedy and Trump (Sep 21, 2026)', 'https://drbowden.substack.com/p/open-letter-to-secretary-kennedy');
   add('HHS — RFK Jr. sworn in; MAHA Commission EO (Feb 13, 2025)', 'https://www.hhs.gov/press-room/eo-maha.html');
   add('HHS — MAHA Report (May 22, 2025)', 'https://www.hhs.gov/press-room/maha-commission-childhood-chronic-disease-root-causes.html');
   add('HHS — MAHA Strategy (Sep 9, 2025)', 'https://www.hhs.gov/press-room/maha-commission-report-childhood-disease-strategy.html');

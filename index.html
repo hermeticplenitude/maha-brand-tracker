@@ -27,6 +27,7 @@
       <a href="#attention">Attention</a>
       <a href="#identification">Identification</a>
       <a href="#views">Views</a>
+      <a href="#midterms">Midterms</a>
       <a href="#integrity">Integrity</a>
       <a href="#news">News</a>
       <a href="#social">Social</a>
@@ -115,6 +116,39 @@
         <figcaption><strong>Is it delivering? Readings from inside and outside the movement</strong></figcaption>
         <div class="delivery" id="delivery"></div>
       </figure>
+    </div>
+  </section>
+
+
+  <section id="midterms" class="wrap section">
+    <div class="section-head"><h2>Midterms <span class="muted">— MAHA as a voting bloc, <span id="days-out"></span> days out</span></h2><p>Where MAHA actually shows up in the 2026 map: which competitive races have MAHA money, endorsements or candidate outreach, how MAHA search interest is distributed across the states, and what MAHA voters say they want compared with what each party is offering. Race ratings follow <a id="ratings-link" href="#" target="_blank" rel="noopener"></a>; state scores are relative search interest within each state, not supporter counts.</p></div>
+    <div class="tiles bloc" id="bloc"></div>
+    <div class="grid-2">
+      <figure class="card span-2">
+        <figcaption><strong>Competitive races and MAHA's footprint</strong><span>Coloured dot = depth of sourced MAHA involvement (endorsement, spending, surrogate visits or candidate outreach). Click a row's sources to verify.</span></figcaption>
+        <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0">
+          <table id="race-table"><thead><tr><th>State</th><th>Race</th><th>Rating</th><th>Nominees</th><th>MAHA search idx</th><th>MAHA footprint</th></tr></thead><tbody></tbody></table>
+        </div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>MAHA search interest by state, past 12 months</strong><span>Google Topic, relative within state. District of Columbia (100) is omitted so the states are readable. Red = state with a competitive Senate or governor race in the table above.</span></figcaption>
+        <div class="chart-wrap" style="height:640px"><canvas id="c-states"></canvas></div>
+      </figure>
+      <div>
+        <figure class="card">
+          <figcaption><strong>Follow the money</strong><span>Pledges vs filings.</span></figcaption>
+          <div class="money" id="money"></div>
+        </figure>
+        <figure class="card">
+          <figcaption><strong>Cycle timeline</strong></figcaption>
+          <ol class="timeline" id="timeline"></ol>
+        </figure>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 4px">What MAHA voters want vs what each party is offering</h3>
+      <p class="muted" style="margin:0 0 14px;font-size:.86rem">Left column is survey evidence about the voters themselves; the other two summarise each party's sourced actions toward them.</p>
+      <div class="wants" id="wants"></div>
     </div>
   </section>
 
