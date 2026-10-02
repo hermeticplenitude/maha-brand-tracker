@@ -93,7 +93,7 @@ table{width:100%;border-collapse:collapse;font-size:.84rem}
 #poll-table th{position:sticky;top:0;background:var(--paper-2);text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);padding:10px 12px;border-bottom:1px solid var(--rule)}
 #poll-table td{padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
 #poll-table td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
-#poll-table td.result{font-family:var(--serif);font-size:1.25rem;color:var(--ink)}
+#poll-table td.result{font-family:var(--serif);font-size:1.25rem;color:var(--ink);white-space:nowrap}
 .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:4px;background:var(--paper-2);color:var(--ink-2)}
 .tag.identify{background:var(--gold-soft);color:#7a5e0c}.tag.support{background:var(--red-soft);color:var(--red)}.tag.member{background:var(--ink);color:#fff}.tag.favorable{background:var(--teal-soft);color:var(--teal)}
 

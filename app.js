@@ -17,7 +17,7 @@ const eventMarkers = { id: 'eventMarkers', afterDraw(chart, args, opts) { if (!o
 Chart.register(eventMarkers);
 
 const axisX = (labels, every) => ({ grid: { display: false }, ticks: { maxRotation: 0, autoSkip: false, callback: (v, i) => (i % every === 0 ? monthLabel(labels[i]) : ''), font: { size: 11 } } });
-const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 } }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
+const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, stepSize: 20, callback: v => (v <= 100 ? v : '') }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
 
 async function load() {
   const [trends, polls, news, social] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json'].map(u => fetch(u).then(r => r.json())));
@@ -45,14 +45,14 @@ function scorecard(p, t) {
   const kff = p.identification.find(x => x.pollster === 'KFF' && x.date === '2026-04-19' && x.population === 'U.S. adults');
   const dfp = p.identification.find(x => x.construct === 'member');
   const ech = p.favorability[p.favorability.length - 1];
-  const avg = t.rfk_maga_maha_12m.averages;
+  const avg = t.rfk_maga_maha_12m.averages; const rows = t.rfk_maga_maha_12m.rows; const mean = i => rows.reduce((a, r) => a + r[i], 0) / rows.length;
   const tiles = [
     { label: 'Identify with MAHA', value: ipsos.value + '%', small: 'adults', desc: `${ipsos.detail.split('.')[0]}. Registered voters: 38%.`, src: 'Reuters/Ipsos, Sep 11–14, 2026', href: '#identification', accent: C.gold },
     { label: 'Support the movement', value: kff.value + '%', small: 'adults · 43% RV', desc: 'Down from 43% in Sep 2025 — flat within the margin of error.', src: 'KFF, Apr 14–19, 2026', href: '#identification', accent: C.red },
     { label: 'Part of the movement', value: dfp.value + '%', small: 'likely voters', desc: 'Strict membership wording. 39% more support goals without identifying.', src: 'Data for Progress / 314 Action, Mar 2026', href: '#identification', accent: C.ink },
     { label: 'MAHA but not MAGA', value: '≈19%', small: 'adults / RV', desc: 'Derived: 41–43% support × 44–48% non-MAGA. Range 15–22%. Not published directly by any pollster.', src: 'Derived from KFF Sep 2025 & Apr 2026', href: '#derived', accent: C.red },
     { label: 'Favorable vs unfavorable', value: `${ech.favorable}–${ech.unfavorable}`, small: 'net +' + (ech.favorable - ech.unfavorable), desc: 'Net favorability has narrowed from +25 (Nov 2024) as awareness rose to ~90%.', src: 'Echelon Insights, Jul 9–13, 2026', href: '#views', accent: C.teal },
-    { label: 'Attention vs MAGA', value: Math.round(avg[0] / avg[2] * 100) + '%', small: 'of MAGA search interest', desc: `MAHA topic ${avg[0]} vs MAGA ${avg[2]} vs RFK Jr. ${avg[1]} on one scale. Ratio flat for 18 months.`, src: 'Google Trends, US, past 12 months', href: '#attention', accent: C.teal },
+    { label: 'Attention vs MAGA', value: Math.round(mean(1) / mean(3) * 100) + '%', small: 'of MAGA search interest', desc: `MAHA topic ${avg[0]} vs MAGA ${avg[2]} vs RFK Jr. ${avg[1]} on one scale. Ratio flat for 18 months.`, src: 'Google Trends, US, past 12 months', href: '#attention', accent: C.teal },
   ];
   const wrap = document.getElementById('tiles');
   tiles.forEach(x => { const a = el('a', 'tile'); a.href = x.href; a.style.setProperty('--accent', x.accent); a.innerHTML = `<div class="label">${x.label}</div><div class="value">${x.value}<small>${x.small}</small></div><p class="desc">${x.desc}</p><div class="src">${x.src}</div>`; wrap.appendChild(a); });
@@ -92,13 +92,13 @@ function attention(t) {
   new Chart(document.getElementById('c-geo'), { type: 'bar', data: { labels: g.map(x => x[0]), datasets: [{ data: g.map(x => x[1]), backgroundColor: g.map(x => x[0] === 'United States' ? C.red : C.teal), borderRadius: 3 }] }, options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => c.parsed.x + ' — share of compared searches' } } }, scales: { x: { min: 0, max: 12, grid: { color: '#ece7de' } }, y: { grid: { display: false }, ticks: { font: { size: 11 } } } } } });
 
   // related queries
-  const unrelated = /shivaratri|shivratri|mantra|al maha|movie|hockey|dakhil|kumbh|periyava|vajiralongkorn|festival|elevate|center|its feathers|krav|lakshmi|mtg/i;
+  const unrelated = /shivaratri|shivratri|mantra|al maha|movie|hockey|dakhil|kumbh|periyava|vajiralongkorn|festival|elevate|its feathers|krav|lakshmi|mtg/i;
   const definitional = /what is|meaning|stand for|what does|who is/i;
   const rel = t.related; const wrap = document.getElementById('related');
   [['Term: MAHA', 'Top (left) and Rising (right), US, past 12 months. Struck-through = unrelated meaning. Teal = definitional.', rel.MAHA_term_top, rel.MAHA_term_rising], ['Topic: Make America Healthy Again', 'The cleanest view of the political entity. Almost entirely definitional.', rel.topic_MAHA_top, rel.topic_MAHA_rising], ['Term: MAGA (comparison)', 'MAGA queries sort people (“is X maga”) and buy merchandise; MAHA queries ask what it is.', rel.MAGA_term_top, rel.MAGA_term_rising]].forEach(([h, p, top, rising]) => {
     const d = el('div', 'rq'); d.appendChild(el('h4', '', h)); d.appendChild(el('p', '', p));
-    const ul = el('ul'); top.slice(0, 10).forEach(([qq, v]) => { const li = el('li', unrelated.test(qq) ? 'unrelated' : (definitional.test(qq) ? 'def' : ''), `<span>${qq}</span><span>${v}</span>`); ul.appendChild(li); }); d.appendChild(ul);
-    const ul2 = el('ul'); ul2.style.marginTop = '10px'; ul2.appendChild(el('li', '', `<span><b>Rising</b></span><span></span>`)); rising.slice(0, 6).forEach(([qq, v]) => ul2.appendChild(el('li', unrelated.test(qq) ? 'unrelated' : (definitional.test(qq) ? 'def' : ''), `<span>${qq}</span><span>${v}</span>`))); d.appendChild(ul2);
+    const ul = el('ul'); top.slice(0, 10).forEach(([qq, v]) => { const isTerm = h.startsWith('Term'); const li = el('li', (isTerm && unrelated.test(qq)) ? 'unrelated' : (definitional.test(qq) ? 'def' : ''), `<span>${qq}</span><span>${v}</span>`); ul.appendChild(li); }); d.appendChild(ul);
+    const ul2 = el('ul'); ul2.style.marginTop = '10px'; ul2.appendChild(el('li', '', `<span><b>Rising</b></span><span></span>`)); rising.slice(0, 6).forEach(([qq, v]) => ul2.appendChild(el('li', (h.startsWith('Term') && unrelated.test(qq)) ? 'unrelated' : (definitional.test(qq) ? 'def' : ''), `<span>${qq}</span><span>${v}</span>`))); d.appendChild(ul2);
     wrap.appendChild(d);
   });
 }
@@ -129,18 +129,18 @@ function identification(p) {
 }
 
 function views(p) {
-  const f = p.favorability; const fl = f.map(x => `${x.pollster}\n${monthLabel(x.date)}`);
-  new Chart(document.getElementById('c-fav'), { type: 'bar', data: { labels: fl, datasets: [{ label: 'Favorable', data: f.map(x => x.favorable), backgroundColor: C.teal, borderRadius: 3 }, { label: 'Unfavorable', data: f.map(x => x.unfavorable), backgroundColor: C.red, borderRadius: 3 }, { label: 'Heard of MAHA', data: f.map(x => x.heard), type: 'line', borderColor: C.grey, borderDash: [4, 3], borderWidth: 1.5, pointRadius: 3, pointBackgroundColor: C.grey }] }, options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { title: i => f[i[0].dataIndex].pollster + ' — ' + fmtRange(f[i[0].dataIndex].field) + ` (${f[i[0].dataIndex].population}, n=${f[i[0].dataIndex].n})`, label: c => c.dataset.label + ': ' + c.parsed.y + '%' } } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 10.5 } } }, y: axisY(100) } } });
-  const r = p.rfk; const rl = r.map(x => `${x.pollster}\n${monthLabel(x.date)}`);
-  new Chart(document.getElementById('c-rfk'), { type: 'bar', data: { labels: rl, datasets: [{ label: 'Favorable / approve', data: r.map(x => x.positive), backgroundColor: C.teal, borderRadius: 3 }, { label: 'Unfavorable / disapprove', data: r.map(x => x.negative), backgroundColor: C.red, borderRadius: 3 }] }, options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { title: i => { const x = r[i[0].dataIndex]; return `${x.pollster} — ${fmtRange(x.field)} (${x.population}, n=${x.n.toLocaleString()}) — ${x.measure}`; }, label: c => c.dataset.label + ': ' + c.parsed.y + '%' } } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 10.5 } } }, y: axisY(100) } } });
+  const f = p.favorability; const fl = f.map(x => [x.pollster, monthLabel(x.date)]);
+  new Chart(document.getElementById('c-fav'), { type: 'bar', data: { labels: fl, datasets: [{ label: 'Favorable', data: f.map(x => x.favorable), backgroundColor: C.teal, borderRadius: 3 }, { label: 'Unfavorable', data: f.map(x => x.unfavorable), backgroundColor: C.red, borderRadius: 3 }, { label: 'Heard of MAHA', data: f.map(x => x.heard), type: 'line', borderColor: C.grey, borderDash: [4, 3], borderWidth: 1.5, pointRadius: 3, pointBackgroundColor: C.grey }] }, options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { title: i => f[i[0].dataIndex].pollster + ' — ' + fmtRange(f[i[0].dataIndex].field) + ` (${f[i[0].dataIndex].population}, n=${f[i[0].dataIndex].n})`, label: c => c.dataset.label + ': ' + c.parsed.y + '%' } } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 10.5 }, maxRotation: 0 } }, y: axisY(100) } } });
+  const r = p.rfk; const rl = r.map(x => [x.pollster.replace('Annenberg Public Policy Center', 'Annenberg PPC'), monthLabel(x.date)]);
+  new Chart(document.getElementById('c-rfk'), { type: 'bar', data: { labels: rl, datasets: [{ label: 'Favorable / approve', data: r.map(x => x.positive), backgroundColor: C.teal, borderRadius: 3 }, { label: 'Unfavorable / disapprove', data: r.map(x => x.negative), backgroundColor: C.red, borderRadius: 3 }] }, options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { title: i => { const x = r[i[0].dataIndex]; return `${x.pollster} — ${fmtRange(x.field)} (${x.population}, n=${x.n.toLocaleString()}) — ${x.measure}`; }, label: c => c.dataset.label + ': ' + c.parsed.y + '%' } } }, scales: { x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 0, autoSkip: false } }, y: axisY(100) } } });
   const dl = document.getElementById('delivery'); p.delivery.forEach(x => dl.appendChild(el('div', 'dl', `<div class="v">${x.value}%</div><p>${x.label}</p><a href="${x.url}" target="_blank" rel="noopener">${x.source}</a>`)));
 }
 
 function integrity(p, t) {
-  const avg = t.rfk_maga_maha_12m.averages;
+  const avg = t.rfk_maga_maha_12m.averages; const rows = t.rfk_maga_maha_12m.rows; const mean = i => rows.reduce((a, r) => a + r[i], 0) / rows.length;
   const metrics = [
     { score: '≈50%', sub: 'of top queries unrelated', title: 'Namespace collision', text: 'Of the 15 most common US searches containing “MAHA” in the past year, about half are Hindu observances, a mantra, a Dubai hotel brand, a Tamil film or Michigan hockey. The acronym’s two largest weekly spikes in five years were Maha Shivaratri (Feb 2025, Feb 2026), not MAHA. Any metric built on the bare acronym overstates attention.', read: 'risk' },
-    { score: Math.round(avg[0] / avg[1] * 100) + '%', sub: 'of RFK Jr. attention', title: 'Founder dependence', text: `On one scale the MAHA topic averages ${avg[0]} against ${avg[1]} for Robert F. Kennedy Jr. Every major MAHA spike is an official HHS or White House action. Worldwide the MAHA : RFK split is 3 : 49; the US, Canada and UK are all at 7 : 93.`, read: 'risk' },
+    { score: Math.round(mean(1) / mean(2) * 100) + '%', sub: 'of RFK Jr. attention', title: 'Founder dependence', text: `On one scale the MAHA topic averages ${mean(1).toFixed(1)} against ${mean(2).toFixed(1)} for Robert F. Kennedy Jr. Every major MAHA spike is an official HHS or White House action. Worldwide the MAHA : RFK split is 3 : 49; the US, Canada and UK are all at 7 : 93.`, read: 'risk' },
     { score: '#1', sub: 'related query: “what is maha”', title: 'Definitional load', text: 'Two years after launch, the top related query for both the term and the Topic is still “what is MAHA”; “maha meaning”, “what does maha stand for” are all Breakout risers. MAGA’s related queries carry no comparable load. Growth-phase signal and a vulnerability at once.', read: 'watch' },
     { score: '31%', sub: 'of self-identified MAHA cannot explain it', title: 'Awareness–comprehension gap', text: 'Two-thirds of Americans have heard of MAHA, but only a third can explain it; a third of those who call themselves part of the movement cannot (Politico/Public First, Mar 2026). Support measured by permissive wording is roughly three times support measured by strict membership (41–47% vs 14%).', read: 'watch' },
     { score: '68%', sub: 'rural supporters: no or negative impact', title: 'Delivery perception', text: '68% of rural MAHA supporters say the administration’s health policies had a negative effect or no impact on their community (KFF/AP, Aug 2026); 49% of likely voters say MAHA is not delivering vs 43% who say it is bringing necessary change (DFP, Mar 2026).', read: 'risk' },
