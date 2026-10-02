@@ -211,6 +211,8 @@ function sources(p, n, s) {
   add('Daily Signal — MAHA PAC $100M campaign (Mar 13, 2026)', 'https://www.dailysignal.com/2026/03/13/exclusive-super-pac-launches-100-million-strategy-bolster-maha-candidates-midterms/');
   add('The Atlantic — MAHA Swing Voters Are an Illusion (Apr 22, 2026)', 'https://www.theatlantic.com/health/2026/04/maha-moms-midterm-election/686901/');
   add('Dr. Mary Talley Bowden — Open letter to Kennedy and Trump (Sep 21, 2026)', 'https://drbowden.substack.com/p/open-letter-to-secretary-kennedy');
+  add('Legis1 — MAHA PAC FEC filings through Aug 31, 2026', 'https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million');
+  add('MAHA PAC — Midterm Strategy Memo (Fabrizio Lee, Oct 2025)', 'https://www.themahapac.com/research');
   add('HHS — RFK Jr. sworn in; MAHA Commission EO (Feb 13, 2025)', 'https://www.hhs.gov/press-room/eo-maha.html');
   add('HHS — MAHA Report (May 22, 2025)', 'https://www.hhs.gov/press-room/maha-commission-childhood-chronic-disease-root-causes.html');
   add('HHS — MAHA Strategy (Sep 9, 2025)', 'https://www.hhs.gov/press-room/maha-commission-report-childhood-disease-strategy.html');

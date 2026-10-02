@@ -1,85 +1,1083 @@
 {
-  "updated": "2026-10-02",
-  "election_day": "2026-11-03",
-  "ratings_source": {"label": "Political.org race ratings, Oct 2, 2026", "url": "https://political.org/2026-elections/"},
-  "ratings_source_2": {"label": "Decision Desk HQ governor forecast, Oct 2, 2026", "url": "https://votes.decisiondeskhq.com/forecast/2026/governor"},
-  "bloc": [
-    {"value": "43%", "label": "of registered voters support MAHA; 56% of them are MAGA Republicans", "source": "KFF, Apr 2026", "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"},
-    {"value": "≈19%", "label": "of registered voters support MAHA but are not MAGA (derived)", "source": "Derived from KFF", "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"},
-    {"value": "1 in 5", "label": "MAHA supporters voted for Harris in 2024; 70% of Trump voters support MAHA", "source": "Politico/Public First, Mar 2026", "url": "https://www.politico.com/news/2026/04/06/poll-maha-beliefs-rfk-trump-00856922"},
-    {"value": "13%", "label": "of swing-district likely voters consider themselves part of MAHA; 50% say it is not delivering", "source": "Data for Progress / 314 Action, Mar 2026", "url": "https://www.dataforprogress.org/blog/2026/4/14/maha-lacks-a-true-base-and-voters-reject-its-real-world-impact"},
-    {"value": "2 in 3", "label": "rural MAHA supporters say it is extremely/very important to vote for a MAHA-aligned candidate (4 in 10 of all rural voters)", "source": "KFF/AP, Aug 2026", "url": "https://apnews.com/article/rural-voters-trump-maha-healthcare-midterms-poll-ce2ab1af9491e2965fba3e76bafe1648"},
-    {"value": "68%", "label": "of rural MAHA supporters say administration health policy had no or negative impact on their community", "source": "KFF/AP, Aug 2026", "url": "https://apnews.com/article/rural-voters-trump-maha-healthcare-midterms-poll-ce2ab1af9491e2965fba3e76bafe1648"},
-    {"value": "56%", "label": "of MAHA voters say health-care costs will have a major impact on which party's candidate they back (food safety 45%, vaccine policy 40%)", "source": "KFF, Apr 2026", "url": "https://www.kff.org/public-opinion/maha-health-concerns-resonate-broadly-but-lag-behind-health-care-costs-even-for-maha-voters/"},
-    {"value": "39% / 68%", "label": "RFK Jr. favorability overall vs among self-identified MAHA supporters (spring 2026)", "source": "KFF via Washington Examiner, Sep 2026", "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"}
-  ],
-  "races": [
-    {"state": "Iowa", "code": "US-IA", "office": "Governor", "rating": "Lean D", "incumbent": "Kim Reynolds (R), retiring", "dem": "Rob Sand", "rep": "Zach Lahn", "maha": "The clearest MAHA race in the country. Lahn was endorsed by MAHA groups in Dec 2025, beat Trump-backed Rep. Randy Feenstra in the June primary campaigning against 'big agriculture' and pesticides, sold 'Make Iowa Healthy Again' shirts; MAHA PAC funded statewide ads and hundreds of thousands of texts; Kennedy rallied with him in August.", "maha_level": "high", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"], ["Politico, Aug 21", "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"]]},
-    {"state": "Iowa", "code": "US-IA", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "Joni Ernst (R), retiring", "dem": "Josh Turek", "rep": "Ashley Hinson", "maha": "Kennedy toured Iowa in August (Dubuque, Des Moines suburbs) with a vulnerable House Republican; as of June MAHA groups had provided neither money nor grassroots support in the Senate race.", "maha_level": "medium", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"], ["Politico, Aug 21", "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"]]},
-    {"state": "Michigan", "code": "US-MI", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "Gary Peters (D), retiring", "dem": "Abdul El-Sayed", "rep": "Mike Rogers", "maha": "First competitive Senate race where a Democrat is openly courting MAHA: El-Sayed released a 'Building a Healthier America' agenda on Sep 29 targeting food chemicals ('We need to own this lane'). Michigan is also home to Rep. Tom Barrett (MI-7), the only MAHA-endorsed Republican in a competitive congressional race; Kennedy campaigned in his district.", "maha_level": "high", "sources": [["NBC News, Oct 1", "https://www.nbcnews.com/politics/2026-election/abdul-el-sayed-woo-maha-voters-democrats-rfk-rcna600508"], ["Washington Examiner, Sep 29", "https://www.washingtonexaminer.com/news/campaigns/congressional/4746663/abdul-el-sayed-maha-campaign-pitch-targeting-food-chemicals/"], ["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "Michigan", "code": "US-MI", "office": "Governor", "rating": "Lean D", "incumbent": "Gretchen Whitmer (D), term-limited", "dem": "Jocelyn Benson", "rep": "John James", "maha": "No sourced MAHA organisational activity in the governor's race.", "maha_level": "low", "sources": []},
-    {"state": "Ohio", "code": "US-OH", "office": "U.S. Senate (special)", "rating": "Toss-Up", "incumbent": "Jon Husted (R), appointed", "dem": "Sherrod Brown", "rep": "Jon Husted", "maha": "Listed by Politico among Republican-held seats where MAHA groups had provided neither money nor grassroots support (as of June). MAHA-backed secretary of state candidate Marcell Strbich lost his Ohio primary by 40 points.", "maha_level": "low", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "Ohio", "code": "US-OH", "office": "Governor", "rating": "Toss-Up", "incumbent": "Mike DeWine (R), term-limited", "dem": "Amy Acton", "rep": "Vivek Ramaswamy", "maha": "Former state health director Acton vs Ramaswamy. The Hill reports kratom-industry MAHA PAC donor Botanic Tonics ($1M) amid Kennedy's reported effort to discourage an Ohio kratom crackdown. No sourced MAHA endorsement in the race.", "maha_level": "low", "sources": [["The Hill, Aug 30", "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"]]},
-    {"state": "Maine", "code": "US-ME", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "Susan Collins (R)", "dem": "Troy Jackson", "rep": "Susan Collins", "maha": "No MAHA money or grassroots support reported (Politico, June). Maine ranks 7th of 51 in MAHA search interest.", "maha_level": "low", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "New Hampshire", "code": "US-NH", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "Jeanne Shaheen (D), retiring", "dem": "Chris Pappas", "rep": "John E. Sununu", "maha": "No sourced MAHA activity. New Hampshire ranks in the top 10 states for MAHA search interest over both 12 months and 90 days.", "maha_level": "low", "sources": []},
-    {"state": "Alaska", "code": "US-AK", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "Dan Sullivan (R)", "dem": "Mary Peltola", "rep": "Dan Sullivan", "maha": "Listed among Republican-held seats with no MAHA money or grassroots support (Politico, June).", "maha_level": "low", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "Alaska", "code": "US-AK", "office": "Governor", "rating": "Toss-Up", "incumbent": "Mike Dunleavy (R), term-limited", "dem": "Jonathan Kreiss-Tomkins", "rep": "Wilson / Bronson / Taylor (ranked-choice)", "maha": "No sourced MAHA activity.", "maha_level": "low", "sources": []},
-    {"state": "North Carolina", "code": "US-NC", "office": "U.S. Senate", "rating": "Lean D", "incumbent": "Thom Tillis (R), retiring", "dem": "Roy Cooper", "rep": "Michael Whatley", "maha": "No MAHA money or grassroots support in the Senate race (Politico, June); MAHA-backed state House candidate Ralph Carter won his primary and could help secure a GOP supermajority.", "maha_level": "low", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "Texas", "code": "US-TX", "office": "U.S. Senate", "rating": "Toss-Up", "incumbent": "John Cornyn (R), lost runoff", "dem": "James Talarico", "rep": "Ken Paxton", "maha": "No MAHA Senate involvement reported; MAHA-backed Nate Sheets ousted a Trump-endorsed incumbent for agriculture commissioner in the March primary, and MAHA-endorsed Brandon Herrera won a safe-seat House nomination. Texas ranks 49th of 51 in MAHA search interest.", "maha_level": "medium", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"]]},
-    {"state": "Georgia", "code": "US-GA", "office": "Governor", "rating": "Toss-Up", "incumbent": "Brian Kemp (R), term-limited", "dem": "Keisha Lance Bottoms", "rep": "Rick Jackson", "maha": "No sourced MAHA activity.", "maha_level": "low", "sources": []},
-    {"state": "Nevada", "code": "US-NV", "office": "Governor", "rating": "Toss-Up", "incumbent": "Joe Lombardo (R)", "dem": "Aaron Ford", "rep": "Joe Lombardo", "maha": "No sourced MAHA activity.", "maha_level": "low", "sources": []},
-    {"state": "Wisconsin", "code": "US-WI", "office": "Governor", "rating": "Toss-Up", "incumbent": "Tony Evers (D), retiring", "dem": "David Crowley", "rep": "Tom Tiffany", "maha": "MAHA-endorsed Michael Alfonso (Sean Duffy's son-in-law) sought Tiffany's vacated safe House seat; Kennedy campaigned with endangered Rep. Derrick Van Orden (WI-3). No sourced MAHA role in the governor's race.", "maha_level": "medium", "sources": [["Politico, Jun 6", "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"], ["Washington Examiner, Sep 2", "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"]]},
-    {"state": "Arizona", "code": "US-AZ", "office": "Governor", "rating": "Lean D", "incumbent": "Katie Hobbs (D)", "dem": "Katie Hobbs", "rep": "Andy Biggs", "maha": "No sourced MAHA activity.", "maha_level": "low", "sources": []},
-    {"state": "Pennsylvania", "code": "US-PA", "office": "Governor", "rating": "Not competitive (Shapiro)", "incumbent": "Josh Shapiro (D)", "dem": "Josh Shapiro", "rep": "—", "maha": "Kennedy launched his 'Take Back Your Health' tour in Pennsylvania (Jan 2026) and in late August publicly questioned the state's reporting of two measles deaths, triggering a feud with Shapiro. MAHA-endorsed Rep. Scott Perry (PA-10) is a battleground House incumbent.", "maha_level": "medium", "sources": [["Washington Examiner, Sep 2", "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"], ["The Hill, Aug 30", "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"]]},
-    {"state": "Louisiana", "code": "US-LA", "office": "U.S. Senate (GOP primary)", "rating": "Safe R general", "incumbent": "Bill Cassidy (R), defeated", "dem": "—", "rep": "Julia Letlow", "maha": "MAHA's signature intervention of the cycle: MAHA PAC pledged $1M and spent about $700–740K to help Trump-endorsed Letlow unseat Cassidy, who had criticised Kennedy's vaccine-schedule changes. Nearly all of MAHA PAC's reported candidate spending went here.", "maha_level": "high", "sources": [["The Hill, Aug 30", "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"], ["The Atlantic, Apr 22", "https://www.theatlantic.com/health/2026/04/maha-moms-midterm-election/686901/"]]},
-    {"state": "Florida", "code": "US-FL", "office": "U.S. Senate (special) / Governor", "rating": "Lean R (Gov)", "incumbent": "Ashley Moody (R, appointed) / DeSantis term-limited", "dem": "David Jolly (Gov)", "rep": "Byron Donalds (Gov)", "maha": "Kennedy appeared with Sen. Moody in late August to launch a school-nutrition programme; MAHA-endorsed Austin Rogers is running for a safe House seat.", "maha_level": "medium", "sources": [["Washington Examiner, Sep 2", "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"]]},
-    {"state": "Colorado", "code": "US-CO", "office": "U.S. House (CO-8)", "rating": "Battleground", "incumbent": "Gabe Evans (R)", "dem": "—", "rep": "Gabe Evans", "maha": "One of three endangered House Republicans Kennedy campaigned with in person (with Barrett MI-7 and Van Orden WI-3).", "maha_level": "medium", "sources": [["Washington Examiner, Sep 2", "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"]]}
-  ],
-  "money": [
-    {"label": "Pledged by MAHA PAC in March 2026 to elect 'MAHA-aligned, Trump-endorsed' Republicans", "value": "$100M", "source": "Daily Signal, Mar 13, 2026", "url": "https://www.dailysignal.com/2026/03/13/exclusive-super-pac-launches-100-million-strategy-bolster-maha-candidates-midterms/"},
-    {"label": "Actually raised by MAHA PAC per latest filings (about $287K cash on hand)", "value": "$2.4M", "source": "The Hill, Aug 30, 2026", "url": "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"},
-    {"label": "Spent on Julia Letlow's Louisiana primary vs Sen. Cassidy — nearly all reported candidate spending", "value": "$700K", "source": "The Hill, Aug 30, 2026", "url": "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"},
-    {"label": "Candidates endorsed by MAHA Action / MAHA Institute; 4 for Congress; 1 in a competitive congressional race (Barrett, MI-7)", "value": "40", "source": "Politico, Jun 6, 2026", "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"},
-    {"label": "From a single kratom/kava beverage company (Botanic Tonics) — the PAC's largest 2026 donor", "value": "$1M", "source": "The Hill, Aug 30, 2026", "url": "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"},
-    {"label": "States Kennedy visited on the 'Take Back Your Health' tour since January 2026", "value": "19", "source": "Politico, Aug 21, 2026", "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"}
-  ],
-  "wants": {
-    "voters": [
-      ["Lower health-care costs", "42% of MAHA voters' top federal health priority; 56% say costs will have a major impact on their vote", "KFF, Apr 2026"],
-      ["Chemical additives out of food", "21% top priority; 45% say food safety is a major vote factor", "KFF, Apr 2026"],
-      ["Vaccine policy", "10% top priority; 40% major vote factor; 65% of MAHA supporters back reducing the number of vaccines", "KFF Apr 2026; Politico Mar 2026"],
-      ["Pesticides / glyphosate", "8% top priority — but the Feb 2026 glyphosate liability EO and Trump siding with Bayer at SCOTUS triggered the sharpest intra-movement backlash", "KFF; Hankyoreh; Washington Examiner"],
-      ["A candidate who is MAHA-aligned", "Two-thirds of rural MAHA supporters call it extremely/very important", "KFF/AP, Aug 2026"],
-      ["Visible results", "68% of rural MAHA supporters see no or negative impact; 49% of likely voters say MAHA is not delivering", "KFF/AP; DFP"]
-    ],
-    "gop": [
-      ["Kennedy as surrogate", "'Bobby Unleashed': 19-state Take Back Your Health tour, events with endangered House Republicans (Barrett, Evans, Van Orden), appearances with Moody in Florida", "Politico Aug 21; Washington Examiner Sep 2"],
-      ["Policy deliverables", "Dietary guidelines, food-dye and SNAP actions, Jun 25 regenerative-agriculture EO; HHS '18 months of action' release", "HHS Aug 21; White House Jun 25"],
-      ["Money", "$100M pledge, $2.4M raised; endorsements concentrated in safe seats", "Daily Signal; The Hill; Politico"],
-      ["Friction", "Glyphosate liability EO, Schwartz CDC nomination, mRNA inaction — 168-signatory letter (Sep 21) warns of a 'political price'", "Bowden letter; Yournews"],
-      ["Risk", "RFK Jr. 36% approve / 54% disapprove among RVs; Democratic groups ran ads tying vulnerable Republicans to FDA job cuts", "Quinnipiac Sep 2026; Washington Examiner"]
-    ],
-    "dems": [
-      ["Court the non-MAGA fifth", "El-Sayed's 'Building a Healthier America' agenda (MI-Sen) is the first explicit play; 1 in 5 MAHA supporters say they trust Democrats more to make America healthier", "NBC Oct 1; Politico Apr 6"],
-      ["Run against Kennedy", "Richard Pan (CA House) campaigns as the legislator who 'took on RFK Jr.'; 314 Action/DFP polling frames Kennedy as a GOP liability in swing districts", "Washington Examiner Sep 2; 314 Action Apr 15"],
-      ["Opening", "One-third of Harris voters support MAHA; health-cost focus of MAHA voters overlaps Democratic affordability messaging", "Politico Mar 30; KFF Apr 2026"],
-      ["Constraint", "The Atlantic found almost no CPAC-style MAHA supporters realistically inclined to vote Democratic; MAHA-curious independents (20% of electorate per Navigator) are the realistic target", "The Atlantic Apr 22; Navigator Sep 2025"]
-    ]
+ "updated": "2026-10-02",
+ "election_day": "2026-11-03",
+ "ratings_source": {
+  "label": "Political.org race ratings, Oct 2, 2026",
+  "url": "https://political.org/2026-elections/"
+ },
+ "ratings_source_2": {
+  "label": "Decision Desk HQ governor forecast, Oct 2, 2026",
+  "url": "https://votes.decisiondeskhq.com/forecast/2026/governor"
+ },
+ "bloc": [
+  {
+   "value": "43%",
+   "label": "of registered voters support MAHA; 56% of them are MAGA Republicans",
+   "source": "KFF, Apr 2026",
+   "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"
   },
-  "timeline": [
-    ["2026-01", "Kennedy launches 'Take Back Your Health' tour in Pennsylvania"],
-    ["2026-02", "Glyphosate liability executive order angers core MAHA supporters"],
-    ["2026-03-13", "MAHA PAC announces $100M midterm fundraising campaign"],
-    ["2026-04-17", "Backlash over Erica Schwartz CDC nomination"],
-    ["2026-04-27", "SCOTUS glyphosate argument; MAHA protests outside the Court"],
-    ["2026-05", "Letlow finishes first against Cassidy in Louisiana (MAHA PAC ~$700K)"],
-    ["2026-06", "Zach Lahn beats Trump-backed Feenstra for Iowa GOP governor nomination"],
-    ["2026-06-25", "Regenerative-agriculture EO 'as part of the MAHA agenda'"],
-    ["2026-08", "Kennedy's August blitz: Iowa, Nebraska, Minnesota; filings show $2.4M raised vs $100M pledge"],
-    ["2026-09-21", "168-signatory mRNA letter: 'you will pay a political price'"],
-    ["2026-09-29", "MAHA Summit (Vance, Kennedy); El-Sayed releases MAHA-targeted agenda"],
-    ["2026-11-03", "Election Day"]
+  {
+   "value": "\u224819%",
+   "label": "of registered voters support MAHA but are not MAGA (derived)",
+   "source": "Derived from KFF",
+   "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"
+  },
+  {
+   "value": "1 in 5",
+   "label": "MAHA supporters voted for Harris in 2024; 70% of Trump voters support MAHA",
+   "source": "Politico/Public First, Mar 2026",
+   "url": "https://www.politico.com/news/2026/04/06/poll-maha-beliefs-rfk-trump-00856922"
+  },
+  {
+   "value": "13%",
+   "label": "of swing-district likely voters consider themselves part of MAHA; 50% say it is not delivering",
+   "source": "Data for Progress / 314 Action, Mar 2026",
+   "url": "https://www.dataforprogress.org/blog/2026/4/14/maha-lacks-a-true-base-and-voters-reject-its-real-world-impact"
+  },
+  {
+   "value": "2 in 3",
+   "label": "rural MAHA supporters say it is extremely/very important to vote for a MAHA-aligned candidate (4 in 10 of all rural voters)",
+   "source": "KFF/AP, Aug 2026",
+   "url": "https://apnews.com/article/rural-voters-trump-maha-healthcare-midterms-poll-ce2ab1af9491e2965fba3e76bafe1648"
+  },
+  {
+   "value": "68%",
+   "label": "of rural MAHA supporters say administration health policy had no or negative impact on their community",
+   "source": "KFF/AP, Aug 2026",
+   "url": "https://apnews.com/article/rural-voters-trump-maha-healthcare-midterms-poll-ce2ab1af9491e2965fba3e76bafe1648"
+  },
+  {
+   "value": "56%",
+   "label": "of MAHA voters say health-care costs will have a major impact on which party's candidate they back (food safety 45%, vaccine policy 40%)",
+   "source": "KFF, Apr 2026",
+   "url": "https://www.kff.org/public-opinion/maha-health-concerns-resonate-broadly-but-lag-behind-health-care-costs-even-for-maha-voters/"
+  },
+  {
+   "value": "39% / 68%",
+   "label": "RFK Jr. favorability overall vs among self-identified MAHA supporters (spring 2026)",
+   "source": "KFF via Washington Examiner, Sep 2026",
+   "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+  }
+ ],
+ "races": [
+  {
+   "state": "Iowa",
+   "code": "US-IA",
+   "office": "Governor",
+   "rating": "Lean D",
+   "incumbent": "Kim Reynolds (R), retiring",
+   "dem": "Rob Sand",
+   "rep": "Zach Lahn",
+   "maha": "The clearest MAHA race in the country. Lahn was endorsed by MAHA groups in Dec 2025, beat Trump-backed Rep. Randy Feenstra in the June primary campaigning against 'big agriculture' and pesticides, sold 'Make Iowa Healthy Again' shirts; MAHA PAC funded statewide ads and hundreds of thousands of texts; Kennedy rallied with him in August.",
+   "maha_level": "high",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ],
+    [
+     "Politico, Aug 21",
+     "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    ]
+   ]
+  },
+  {
+   "state": "Iowa",
+   "code": "US-IA",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "Joni Ernst (R), retiring",
+   "dem": "Josh Turek",
+   "rep": "Ashley Hinson",
+   "maha": "Kennedy toured Iowa in August (Dubuque, Des Moines suburbs) with a vulnerable House Republican; as of June MAHA groups had provided neither money nor grassroots support in the Senate race.",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ],
+    [
+     "Politico, Aug 21",
+     "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    ]
+   ]
+  },
+  {
+   "state": "Michigan",
+   "code": "US-MI",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "Gary Peters (D), retiring",
+   "dem": "Abdul El-Sayed",
+   "rep": "Mike Rogers",
+   "maha": "First competitive Senate race where a Democrat is openly courting MAHA: El-Sayed released a 'Building a Healthier America' agenda on Sep 29 targeting food chemicals ('We need to own this lane'). Michigan is also home to Rep. Tom Barrett (MI-7), the only MAHA-endorsed Republican in a competitive congressional race; Kennedy campaigned in his district.",
+   "maha_level": "high",
+   "sources": [
+    [
+     "NBC News, Oct 1",
+     "https://www.nbcnews.com/politics/2026-election/abdul-el-sayed-woo-maha-voters-democrats-rfk-rcna600508"
+    ],
+    [
+     "Washington Examiner, Sep 29",
+     "https://www.washingtonexaminer.com/news/campaigns/congressional/4746663/abdul-el-sayed-maha-campaign-pitch-targeting-food-chemicals/"
+    ],
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "Michigan",
+   "code": "US-MI",
+   "office": "Governor",
+   "rating": "Lean D",
+   "incumbent": "Gretchen Whitmer (D), term-limited",
+   "dem": "Jocelyn Benson",
+   "rep": "John James",
+   "maha": "No sourced MAHA organisational activity in the governor's race.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "Ohio",
+   "code": "US-OH",
+   "office": "U.S. Senate (special)",
+   "rating": "Toss-Up",
+   "incumbent": "Jon Husted (R), appointed",
+   "dem": "Sherrod Brown",
+   "rep": "Jon Husted",
+   "maha": "Listed by Politico among Republican-held seats where MAHA groups had provided neither money nor grassroots support (as of June). MAHA-backed secretary of state candidate Marcell Strbich lost his Ohio primary by 40 points.",
+   "maha_level": "low",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "Ohio",
+   "code": "US-OH",
+   "office": "Governor",
+   "rating": "Toss-Up",
+   "incumbent": "Mike DeWine (R), term-limited",
+   "dem": "Amy Acton",
+   "rep": "Vivek Ramaswamy",
+   "maha": "Former state health director Acton vs Ramaswamy. The Hill reports kratom-industry MAHA PAC donor Botanic Tonics ($1M) amid Kennedy's reported effort to discourage an Ohio kratom crackdown. No sourced MAHA endorsement in the race.",
+   "maha_level": "low",
+   "sources": [
+    [
+     "The Hill, Aug 30",
+     "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
+    ]
+   ]
+  },
+  {
+   "state": "Maine",
+   "code": "US-ME",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "Susan Collins (R)",
+   "dem": "Troy Jackson",
+   "rep": "Susan Collins",
+   "maha": "No MAHA money or grassroots support reported (Politico, June). Maine ranks 7th of 51 in MAHA search interest.",
+   "maha_level": "low",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "New Hampshire",
+   "code": "US-NH",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "Jeanne Shaheen (D), retiring",
+   "dem": "Chris Pappas",
+   "rep": "John E. Sununu",
+   "maha": "No sourced MAHA activity. New Hampshire ranks in the top 10 states for MAHA search interest over both 12 months and 90 days.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "Alaska",
+   "code": "US-AK",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "Dan Sullivan (R)",
+   "dem": "Mary Peltola",
+   "rep": "Dan Sullivan",
+   "maha": "Listed among Republican-held seats with no MAHA money or grassroots support (Politico, June).",
+   "maha_level": "low",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "Alaska",
+   "code": "US-AK",
+   "office": "Governor",
+   "rating": "Toss-Up",
+   "incumbent": "Mike Dunleavy (R), term-limited",
+   "dem": "Jonathan Kreiss-Tomkins",
+   "rep": "Wilson / Bronson / Taylor (ranked-choice)",
+   "maha": "No sourced MAHA activity.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "North Carolina",
+   "code": "US-NC",
+   "office": "U.S. Senate",
+   "rating": "Lean D",
+   "incumbent": "Thom Tillis (R), retiring",
+   "dem": "Roy Cooper",
+   "rep": "Michael Whatley",
+   "maha": "No MAHA money or grassroots support in the Senate race (Politico, June); MAHA-backed state House candidate Ralph Carter won his primary and could help secure a GOP supermajority.",
+   "maha_level": "low",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "Texas",
+   "code": "US-TX",
+   "office": "U.S. Senate",
+   "rating": "Toss-Up",
+   "incumbent": "John Cornyn (R), lost runoff",
+   "dem": "James Talarico",
+   "rep": "Ken Paxton",
+   "maha": "No MAHA Senate involvement reported; MAHA-backed Nate Sheets ousted a Trump-endorsed incumbent for agriculture commissioner in the March primary, and MAHA-endorsed Brandon Herrera won a safe-seat House nomination. Texas ranks 49th of 51 in MAHA search interest.",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ]
+   ]
+  },
+  {
+   "state": "Georgia",
+   "code": "US-GA",
+   "office": "Governor",
+   "rating": "Toss-Up",
+   "incumbent": "Brian Kemp (R), term-limited",
+   "dem": "Keisha Lance Bottoms",
+   "rep": "Rick Jackson",
+   "maha": "No sourced MAHA activity.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "Nevada",
+   "code": "US-NV",
+   "office": "Governor",
+   "rating": "Toss-Up",
+   "incumbent": "Joe Lombardo (R)",
+   "dem": "Aaron Ford",
+   "rep": "Joe Lombardo",
+   "maha": "No sourced MAHA activity.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "Wisconsin",
+   "code": "US-WI",
+   "office": "Governor",
+   "rating": "Toss-Up",
+   "incumbent": "Tony Evers (D), retiring",
+   "dem": "David Crowley",
+   "rep": "Tom Tiffany",
+   "maha": "MAHA-endorsed Michael Alfonso (Sean Duffy's son-in-law) sought Tiffany's vacated safe House seat; Kennedy campaigned with endangered Rep. Derrick Van Orden (WI-3). No sourced MAHA role in the governor's race.",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Politico, Jun 6",
+     "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    ],
+    [
+     "Washington Examiner, Sep 2",
+     "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+    ]
+   ]
+  },
+  {
+   "state": "Arizona",
+   "code": "US-AZ",
+   "office": "Governor",
+   "rating": "Lean D",
+   "incumbent": "Katie Hobbs (D)",
+   "dem": "Katie Hobbs",
+   "rep": "Andy Biggs",
+   "maha": "No sourced MAHA activity.",
+   "maha_level": "low",
+   "sources": []
+  },
+  {
+   "state": "Pennsylvania",
+   "code": "US-PA",
+   "office": "Governor",
+   "rating": "Not competitive (Shapiro)",
+   "incumbent": "Josh Shapiro (D)",
+   "dem": "Josh Shapiro",
+   "rep": "\u2014",
+   "maha": "Kennedy launched his 'Take Back Your Health' tour in Pennsylvania (Jan 2026) and in late August publicly questioned the state's reporting of two measles deaths, triggering a feud with Shapiro. MAHA-endorsed Rep. Scott Perry (PA-10) is a battleground House incumbent.",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Washington Examiner, Sep 2",
+     "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+    ],
+    [
+     "The Hill, Aug 30",
+     "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
+    ]
+   ]
+  },
+  {
+   "state": "Louisiana",
+   "code": "US-LA",
+   "office": "U.S. Senate (GOP primary)",
+   "rating": "Safe R general",
+   "incumbent": "Bill Cassidy (R), defeated",
+   "dem": "\u2014",
+   "rep": "Julia Letlow",
+   "maha": "MAHA's signature intervention of the cycle: MAHA PAC pledged $1M and spent about $700\u2013740K to help Trump-endorsed Letlow unseat Cassidy, who had criticised Kennedy's vaccine-schedule changes. Nearly all of MAHA PAC's reported candidate spending went here.",
+   "maha_level": "high",
+   "sources": [
+    [
+     "The Hill, Aug 30",
+     "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
+    ],
+    [
+     "The Atlantic, Apr 22",
+     "https://www.theatlantic.com/health/2026/04/maha-moms-midterm-election/686901/"
+    ]
+   ]
+  },
+  {
+   "state": "Florida",
+   "code": "US-FL",
+   "office": "U.S. Senate (special) / Governor",
+   "rating": "Lean R (Gov)",
+   "incumbent": "Ashley Moody (R, appointed) / DeSantis term-limited",
+   "dem": "David Jolly (Gov)",
+   "rep": "Byron Donalds (Gov)",
+   "maha": "Kennedy appeared with Sen. Moody in late August to launch a school-nutrition programme; MAHA-endorsed Austin Rogers is running for a safe House seat.",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Washington Examiner, Sep 2",
+     "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+    ]
+   ]
+  },
+  {
+   "state": "Colorado",
+   "code": "US-CO",
+   "office": "U.S. House (CO-8)",
+   "rating": "Battleground",
+   "incumbent": "Gabe Evans (R)",
+   "dem": "\u2014",
+   "rep": "Gabe Evans",
+   "maha": "One of three endangered House Republicans Kennedy campaigned with in person (with Barrett MI-7 and Van Orden WI-3).",
+   "maha_level": "medium",
+   "sources": [
+    [
+     "Washington Examiner, Sep 2",
+     "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+    ]
+   ]
+  }
+ ],
+ "money": [
+  {
+   "label": "Pledged by MAHA PAC in March 2026 to elect 'MAHA-aligned, Trump-endorsed' Republicans",
+   "value": "$100M",
+   "source": "Daily Signal, Mar 13, 2026",
+   "url": "https://www.dailysignal.com/2026/03/13/exclusive-super-pac-launches-100-million-strategy-bolster-maha-candidates-midterms/"
+  },
+  {
+   "label": "Raised by MAHA PAC through Aug 31, 2026 per FEC reports ($1.03M cash on hand; $9.89M total disbursements; $712K independent expenditures). The Hill's Aug 30 story cited $2.4M from an earlier filing.",
+   "value": "$3.18M",
+   "source": "FEC via Legis1, Sep 25, 2026",
+   "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
+  },
+  {
+   "label": "Spent on Julia Letlow's Louisiana primary vs Sen. Cassidy \u2014 nearly all reported candidate spending",
+   "value": "$700K",
+   "source": "The Hill, Aug 30, 2026",
+   "url": "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
+  },
+  {
+   "label": "Candidates endorsed by MAHA Action / MAHA Institute; 4 for Congress; 1 in a competitive congressional race (Barrett, MI-7)",
+   "value": "40",
+   "source": "Politico, Jun 6, 2026",
+   "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+  },
+  {
+   "label": "From a single kratom/kava beverage company (Botanic Tonics) \u2014 about 31% of all reported receipts; next largest donors $100K each (Jack Green Group, OPS International, Venni Capital)",
+   "value": "$1M",
+   "source": "FEC via Legis1, Sep 25, 2026",
+   "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
+  },
+  {
+   "label": "States Kennedy visited on the 'Take Back Your Health' tour since January 2026",
+   "value": "19",
+   "source": "Politico, Aug 21, 2026",
+   "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+  },
+  {
+   "label": "Fabrizio, Lee & Associates national likely-voter survey (Oct 2025) commissioned by MAHA PAC: claims MAHA messaging flips the 'Winnable Middle' from D+24 to R+8. Sample size and field dates not published.",
+   "value": "+32 pts",
+   "source": "MAHA PAC research memo",
+   "url": "https://www.themahapac.com/research"
+  }
+ ],
+ "wants": {
+  "voters": [
+   [
+    "Lower health-care costs",
+    "42% of MAHA voters' top federal health priority; 56% say costs will have a major impact on their vote",
+    "KFF, Apr 2026"
+   ],
+   [
+    "Chemical additives out of food",
+    "21% top priority; 45% say food safety is a major vote factor",
+    "KFF, Apr 2026"
+   ],
+   [
+    "Vaccine policy",
+    "10% top priority; 40% major vote factor; 65% of MAHA supporters back reducing the number of vaccines",
+    "KFF Apr 2026; Politico Mar 2026"
+   ],
+   [
+    "Pesticides / glyphosate",
+    "8% top priority \u2014 but the Feb 2026 glyphosate liability EO and Trump siding with Bayer at SCOTUS triggered the sharpest intra-movement backlash",
+    "KFF; Hankyoreh; Washington Examiner"
+   ],
+   [
+    "A candidate who is MAHA-aligned",
+    "Two-thirds of rural MAHA supporters call it extremely/very important",
+    "KFF/AP, Aug 2026"
+   ],
+   [
+    "Visible results",
+    "68% of rural MAHA supporters see no or negative impact; 49% of likely voters say MAHA is not delivering",
+    "KFF/AP; DFP"
+   ]
   ],
-  "state_index_12m": [["District of Columbia","US-DC",100],["Montana","US-MT",39],["Iowa","US-IA",38],["Nebraska","US-NE",34],["Vermont","US-VT",32],["Wyoming","US-WY",31],["Maine","US-ME",29],["Massachusetts","US-MA",29],["Minnesota","US-MN",29],["New Hampshire","US-NH",29],["Oregon","US-OR",28],["Maryland","US-MD",28],["Michigan","US-MI",27],["Washington","US-WA",27],["Kentucky","US-KY",27],["Idaho","US-ID",26],["Wisconsin","US-WI",25],["Virginia","US-VA",25],["Colorado","US-CO",24],["Ohio","US-OH",23],["Connecticut","US-CT",23],["Arizona","US-AZ",22],["North Dakota","US-ND",22],["Delaware","US-DE",22],["Rhode Island","US-RI",21],["Alaska","US-AK",21],["Missouri","US-MO",21],["Kansas","US-KS",21],["North Carolina","US-NC",21],["Illinois","US-IL",21],["South Dakota","US-SD",20],["New Mexico","US-NM",20],["Indiana","US-IN",20],["Nevada","US-NV",20],["New York","US-NY",20],["Pennsylvania","US-PA",20],["Tennessee","US-TN",18],["Florida","US-FL",18],["Oklahoma","US-OK",18],["Hawaii","US-HI",18],["New Jersey","US-NJ",18],["Utah","US-UT",18],["West Virginia","US-WV",18],["Georgia","US-GA",17],["California","US-CA",17],["Alabama","US-AL",16],["South Carolina","US-SC",16],["Louisiana","US-LA",15],["Texas","US-TX",14],["Arkansas","US-AR",14],["Mississippi","US-MS",11]],
-  "state_index_90d": [["District of Columbia","US-DC",100],["Nebraska","US-NE",61],["Maine","US-ME",36],["New Hampshire","US-NH",35],["Idaho","US-ID",33],["Washington","US-WA",32],["Massachusetts","US-MA",32],["Maryland","US-MD",31],["Iowa","US-IA",30],["Virginia","US-VA",30],["Minnesota","US-MN",29],["Oregon","US-OR",29],["Colorado","US-CO",28],["Michigan","US-MI",28],["Missouri","US-MO",27],["Pennsylvania","US-PA",26],["Nevada","US-NV",25],["Illinois","US-IL",25],["Arizona","US-AZ",25],["New Mexico","US-NM",25],["Utah","US-UT",24],["Wisconsin","US-WI",24],["North Carolina","US-NC",23],["Kentucky","US-KY",22],["Ohio","US-OH",22],["Georgia","US-GA",22],["Alabama","US-AL",21],["Florida","US-FL",21],["Connecticut","US-CT",21],["South Carolina","US-SC",20],["Tennessee","US-TN",20],["California","US-CA",19],["Kansas","US-KS",19],["New York","US-NY",18],["Arkansas","US-AR",17],["New Jersey","US-NJ",16],["Indiana","US-IN",14],["Oklahoma","US-OK",13],["Texas","US-TX",13],["Louisiana","US-LA",11],["Vermont","US-VT",7],["Montana","US-MT",4],["South Dakota","US-SD",4],["Rhode Island","US-RI",3],["Delaware","US-DE",2],["Hawaii","US-HI",2],["North Dakota","US-ND",2],["West Virginia","US-WV",2],["Mississippi","US-MS",0]]
+  "gop": [
+   [
+    "Kennedy as surrogate",
+    "'Bobby Unleashed': 19-state Take Back Your Health tour, events with endangered House Republicans (Barrett, Evans, Van Orden), appearances with Moody in Florida",
+    "Politico Aug 21; Washington Examiner Sep 2"
+   ],
+   [
+    "Policy deliverables",
+    "Dietary guidelines, food-dye and SNAP actions, Jun 25 regenerative-agriculture EO; HHS '18 months of action' release",
+    "HHS Aug 21; White House Jun 25"
+   ],
+   [
+    "Money",
+    "$100M pledge, $2.4M raised; endorsements concentrated in safe seats",
+    "Daily Signal; The Hill; Politico"
+   ],
+   [
+    "Friction",
+    "Glyphosate liability EO, Schwartz CDC nomination, mRNA inaction \u2014 168-signatory letter (Sep 21) warns of a 'political price'",
+    "Bowden letter; Yournews"
+   ],
+   [
+    "Risk",
+    "RFK Jr. 36% approve / 54% disapprove among RVs; Democratic groups ran ads tying vulnerable Republicans to FDA job cuts",
+    "Quinnipiac Sep 2026; Washington Examiner"
+   ]
+  ],
+  "dems": [
+   [
+    "Court the non-MAGA fifth",
+    "El-Sayed's 'Building a Healthier America' agenda (MI-Sen) is the first explicit play; 1 in 5 MAHA supporters say they trust Democrats more to make America healthier",
+    "NBC Oct 1; Politico Apr 6"
+   ],
+   [
+    "Run against Kennedy",
+    "Richard Pan (CA House) campaigns as the legislator who 'took on RFK Jr.'; 314 Action/DFP polling frames Kennedy as a GOP liability in swing districts",
+    "Washington Examiner Sep 2; 314 Action Apr 15"
+   ],
+   [
+    "Opening",
+    "One-third of Harris voters support MAHA; health-cost focus of MAHA voters overlaps Democratic affordability messaging",
+    "Politico Mar 30; KFF Apr 2026"
+   ],
+   [
+    "Constraint",
+    "The Atlantic found almost no CPAC-style MAHA supporters realistically inclined to vote Democratic; MAHA-curious independents (20% of electorate per Navigator) are the realistic target",
+    "The Atlantic Apr 22; Navigator Sep 2025"
+   ]
+  ]
+ },
+ "timeline": [
+  [
+   "2026-01",
+   "Kennedy launches 'Take Back Your Health' tour in Pennsylvania"
+  ],
+  [
+   "2026-02",
+   "Glyphosate liability executive order angers core MAHA supporters"
+  ],
+  [
+   "2026-03-13",
+   "MAHA PAC announces $100M midterm fundraising campaign"
+  ],
+  [
+   "2026-04-17",
+   "Backlash over Erica Schwartz CDC nomination"
+  ],
+  [
+   "2026-04-27",
+   "SCOTUS glyphosate argument; MAHA protests outside the Court"
+  ],
+  [
+   "2026-05",
+   "Letlow finishes first against Cassidy in Louisiana (MAHA PAC ~$700K)"
+  ],
+  [
+   "2026-06",
+   "Zach Lahn beats Trump-backed Feenstra for Iowa GOP governor nomination"
+  ],
+  [
+   "2026-06-25",
+   "Regenerative-agriculture EO 'as part of the MAHA agenda'"
+  ],
+  [
+   "2026-08",
+   "Kennedy's August blitz: Iowa, Nebraska, Minnesota; FEC filings through Aug 31 show $3.18M raised vs $100M pledge"
+  ],
+  [
+   "2026-09-21",
+   "168-signatory mRNA letter: 'you will pay a political price'"
+  ],
+  [
+   "2026-09-29",
+   "MAHA Summit (Vance, Kennedy); El-Sayed releases MAHA-targeted agenda"
+  ],
+  [
+   "2026-11-03",
+   "Election Day"
+  ]
+ ],
+ "state_index_12m": [
+  [
+   "District of Columbia",
+   "US-DC",
+   100
+  ],
+  [
+   "Montana",
+   "US-MT",
+   39
+  ],
+  [
+   "Iowa",
+   "US-IA",
+   38
+  ],
+  [
+   "Nebraska",
+   "US-NE",
+   34
+  ],
+  [
+   "Vermont",
+   "US-VT",
+   32
+  ],
+  [
+   "Wyoming",
+   "US-WY",
+   31
+  ],
+  [
+   "Maine",
+   "US-ME",
+   29
+  ],
+  [
+   "Massachusetts",
+   "US-MA",
+   29
+  ],
+  [
+   "Minnesota",
+   "US-MN",
+   29
+  ],
+  [
+   "New Hampshire",
+   "US-NH",
+   29
+  ],
+  [
+   "Oregon",
+   "US-OR",
+   28
+  ],
+  [
+   "Maryland",
+   "US-MD",
+   28
+  ],
+  [
+   "Michigan",
+   "US-MI",
+   27
+  ],
+  [
+   "Washington",
+   "US-WA",
+   27
+  ],
+  [
+   "Kentucky",
+   "US-KY",
+   27
+  ],
+  [
+   "Idaho",
+   "US-ID",
+   26
+  ],
+  [
+   "Wisconsin",
+   "US-WI",
+   25
+  ],
+  [
+   "Virginia",
+   "US-VA",
+   25
+  ],
+  [
+   "Colorado",
+   "US-CO",
+   24
+  ],
+  [
+   "Ohio",
+   "US-OH",
+   23
+  ],
+  [
+   "Connecticut",
+   "US-CT",
+   23
+  ],
+  [
+   "Arizona",
+   "US-AZ",
+   22
+  ],
+  [
+   "North Dakota",
+   "US-ND",
+   22
+  ],
+  [
+   "Delaware",
+   "US-DE",
+   22
+  ],
+  [
+   "Rhode Island",
+   "US-RI",
+   21
+  ],
+  [
+   "Alaska",
+   "US-AK",
+   21
+  ],
+  [
+   "Missouri",
+   "US-MO",
+   21
+  ],
+  [
+   "Kansas",
+   "US-KS",
+   21
+  ],
+  [
+   "North Carolina",
+   "US-NC",
+   21
+  ],
+  [
+   "Illinois",
+   "US-IL",
+   21
+  ],
+  [
+   "South Dakota",
+   "US-SD",
+   20
+  ],
+  [
+   "New Mexico",
+   "US-NM",
+   20
+  ],
+  [
+   "Indiana",
+   "US-IN",
+   20
+  ],
+  [
+   "Nevada",
+   "US-NV",
+   20
+  ],
+  [
+   "New York",
+   "US-NY",
+   20
+  ],
+  [
+   "Pennsylvania",
+   "US-PA",
+   20
+  ],
+  [
+   "Tennessee",
+   "US-TN",
+   18
+  ],
+  [
+   "Florida",
+   "US-FL",
+   18
+  ],
+  [
+   "Oklahoma",
+   "US-OK",
+   18
+  ],
+  [
+   "Hawaii",
+   "US-HI",
+   18
+  ],
+  [
+   "New Jersey",
+   "US-NJ",
+   18
+  ],
+  [
+   "Utah",
+   "US-UT",
+   18
+  ],
+  [
+   "West Virginia",
+   "US-WV",
+   18
+  ],
+  [
+   "Georgia",
+   "US-GA",
+   17
+  ],
+  [
+   "California",
+   "US-CA",
+   17
+  ],
+  [
+   "Alabama",
+   "US-AL",
+   16
+  ],
+  [
+   "South Carolina",
+   "US-SC",
+   16
+  ],
+  [
+   "Louisiana",
+   "US-LA",
+   15
+  ],
+  [
+   "Texas",
+   "US-TX",
+   14
+  ],
+  [
+   "Arkansas",
+   "US-AR",
+   14
+  ],
+  [
+   "Mississippi",
+   "US-MS",
+   11
+  ]
+ ],
+ "state_index_90d": [
+  [
+   "District of Columbia",
+   "US-DC",
+   100
+  ],
+  [
+   "Nebraska",
+   "US-NE",
+   61
+  ],
+  [
+   "Maine",
+   "US-ME",
+   36
+  ],
+  [
+   "New Hampshire",
+   "US-NH",
+   35
+  ],
+  [
+   "Idaho",
+   "US-ID",
+   33
+  ],
+  [
+   "Washington",
+   "US-WA",
+   32
+  ],
+  [
+   "Massachusetts",
+   "US-MA",
+   32
+  ],
+  [
+   "Maryland",
+   "US-MD",
+   31
+  ],
+  [
+   "Iowa",
+   "US-IA",
+   30
+  ],
+  [
+   "Virginia",
+   "US-VA",
+   30
+  ],
+  [
+   "Minnesota",
+   "US-MN",
+   29
+  ],
+  [
+   "Oregon",
+   "US-OR",
+   29
+  ],
+  [
+   "Colorado",
+   "US-CO",
+   28
+  ],
+  [
+   "Michigan",
+   "US-MI",
+   28
+  ],
+  [
+   "Missouri",
+   "US-MO",
+   27
+  ],
+  [
+   "Pennsylvania",
+   "US-PA",
+   26
+  ],
+  [
+   "Nevada",
+   "US-NV",
+   25
+  ],
+  [
+   "Illinois",
+   "US-IL",
+   25
+  ],
+  [
+   "Arizona",
+   "US-AZ",
+   25
+  ],
+  [
+   "New Mexico",
+   "US-NM",
+   25
+  ],
+  [
+   "Utah",
+   "US-UT",
+   24
+  ],
+  [
+   "Wisconsin",
+   "US-WI",
+   24
+  ],
+  [
+   "North Carolina",
+   "US-NC",
+   23
+  ],
+  [
+   "Kentucky",
+   "US-KY",
+   22
+  ],
+  [
+   "Ohio",
+   "US-OH",
+   22
+  ],
+  [
+   "Georgia",
+   "US-GA",
+   22
+  ],
+  [
+   "Alabama",
+   "US-AL",
+   21
+  ],
+  [
+   "Florida",
+   "US-FL",
+   21
+  ],
+  [
+   "Connecticut",
+   "US-CT",
+   21
+  ],
+  [
+   "South Carolina",
+   "US-SC",
+   20
+  ],
+  [
+   "Tennessee",
+   "US-TN",
+   20
+  ],
+  [
+   "California",
+   "US-CA",
+   19
+  ],
+  [
+   "Kansas",
+   "US-KS",
+   19
+  ],
+  [
+   "New York",
+   "US-NY",
+   18
+  ],
+  [
+   "Arkansas",
+   "US-AR",
+   17
+  ],
+  [
+   "New Jersey",
+   "US-NJ",
+   16
+  ],
+  [
+   "Indiana",
+   "US-IN",
+   14
+  ],
+  [
+   "Oklahoma",
+   "US-OK",
+   13
+  ],
+  [
+   "Texas",
+   "US-TX",
+   13
+  ],
+  [
+   "Louisiana",
+   "US-LA",
+   11
+  ],
+  [
+   "Vermont",
+   "US-VT",
+   7
+  ],
+  [
+   "Montana",
+   "US-MT",
+   4
+  ],
+  [
+   "South Dakota",
+   "US-SD",
+   4
+  ],
+  [
+   "Rhode Island",
+   "US-RI",
+   3
+  ],
+  [
+   "Delaware",
+   "US-DE",
+   2
+  ],
+  [
+   "Hawaii",
+   "US-HI",
+   2
+  ],
+  [
+   "North Dakota",
+   "US-ND",
+   2
+  ],
+  [
+   "West Virginia",
+   "US-WV",
+   2
+  ],
+  [
+   "Mississippi",
+   "US-MS",
+   0
+  ]
+ ]
 }
