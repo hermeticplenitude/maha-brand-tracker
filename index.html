@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAHA Brand Tracker — attention, identification, integrity</title>
+<meta name="description" content="A tracking dashboard for the Make America Healthy Again (MAHA) brand: Google search attention, every major poll on identification and favorability, integrity metrics, news-coverage tone and social-discourse research.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2a41'/%3E%3Cpath d='M7 24V9l5 8 5-8v15' stroke='%23f6f3ee' stroke-width='2.6' fill='none' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='11' r='3' fill='%23b23a48'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=gambetta@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="#top" aria-label="MAHA Brand Tracker home">
+      <svg class="logo" viewBox="0 0 32 32" aria-label="MAHA Brand Tracker logo" role="img" fill="none">
+        <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.9"/>
+        <path d="M7 24V9l5 8 5-8v15" stroke="#f6f3ee" stroke-width="2.6" stroke-linejoin="round"/>
+        <circle cx="24" cy="11" r="3" fill="#b23a48"/>
+      </svg>
+      <span class="brand-text"><strong>MAHA Brand Tracker</strong><span class="brand-sub">Attention · Identification · Integrity</span></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#scorecard">Scorecard</a>
+      <a href="#attention">Attention</a>
+      <a href="#identification">Identification</a>
+      <a href="#views">Views</a>
+      <a href="#integrity">Integrity</a>
+      <a href="#news">News</a>
+      <a href="#social">Social</a>
+      <a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="kicker">Brand tracking project · Edition 1 · Data as of <span data-updated>Oct 2, 2026</span></p>
+    <h1>Two questions, kept apart: how much attention does <em>MAHA</em> attract, and how many people actually identify with it?</h1>
+    <p class="lede">Search data measures attention. Polls measure identification. News and social research measure how the brand is being talked about. This tracker holds all three side by side, with every number traced to its source and every ambiguity flagged.</p>
+    <div class="status-row" id="status-row"></div>
+  </section>
+
+  <section id="scorecard" class="wrap section">
+    <div class="section-head"><h2>Scorecard</h2><p>Headline readings, each from the single most defensible source. Click any tile for the underlying data.</p></div>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section id="attention" class="wrap section">
+    <div class="section-head"><h2>Attention <span class="muted">— Google search interest</span></h2><p>Relative search interest (0–100, United States). Values are normalised within each chart; they are never counts of people. The raw acronym “MAHA” is excluded from the clean series because most of its volume is unrelated Sanskrit/Hindi usage.</p></div>
+    <div class="grid-2">
+      <figure class="card span-2">
+        <figcaption><strong>Weekly interest, Jan 2024 – Oct 2026</strong><span>Exact phrase, Google Topic entity, and the definitional query “what is MAHA”. Numbered markers are news events.</span></figcaption>
+        <div class="chart-wrap tall"><canvas id="c-weekly"></canvas></div>
+        <ol class="event-key" id="event-key"></ol>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>MAHA vs MAGA, Topic entities, since Aug 2024</strong><span>Quarterly ratio of MAHA to MAGA search interest. Flat band of 7–12% since the MAHA entity began (Apr 2025).</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-ratio"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Brand vs founder vs parent slogan, past 12 months</strong><span>Topic averages on one scale: MAHA <b id="avg-maha"></b> · RFK Jr. <b id="avg-rfk"></b> · MAGA <b id="avg-maga"></b>.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-trio"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Baseline, 2016 – 2026 (monthly)</strong><span>The phrase had no sustained footprint before August 2024. Earlier blips: Sweetgreen's 2016 ad and a 2020 book of the same title.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-baseline"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>International reach</strong><span>Share of each country's compared searches going to the MAHA topic, past 5 years. Outside the Anglosphere, Korea and Japan the political brand has no search presence.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-geo"></canvas></div>
+      </figure>
+    </div>
+    <div class="related" id="related"></div>
+  </section>
+
+  <section id="identification" class="wrap section">
+    <div class="section-head"><h2>Identification <span class="muted">— every major poll</span></h2><p>The number depends on the question. “Favorable” and “support” run 36–47%. “Identify with” runs 33–38%. “Consider yourself part of the movement” runs 14%. All polls below are listed with wording, field dates, sample and margin of error.</p></div>
+    <div class="grid-2">
+      <figure class="card span-2">
+        <figcaption><strong>What share of Americans count as MAHA? It depends on the verb.</strong><span>Colour = question construct. Hover for sample, dates and wording.</span></figcaption>
+        <div class="chart-wrap tall"><canvas id="c-ident"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>The key number: MAHA but not MAGA</strong><span>Derived from KFF, the only pollster that cross-tabulates both. Not published directly; treat as a 15–22% range.</span></figcaption>
+        <div class="derived" id="derived"></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>Who they are (KFF, Apr 2026)</strong><span>Composition of MAHA supporters among registered voters.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-comp"></canvas></div>
+      </figure>
+    </div>
+    <div class="table-wrap card">
+      <table id="poll-table">
+        <thead><tr><th>Field dates</th><th>Pollster</th><th>Population</th><th>n</th><th>±</th><th>Construct</th><th>Result</th><th>Question / notes</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="views" class="wrap section">
+    <div class="section-head"><h2>Positive vs opposing views</h2><p>Favorability of the movement itself, favorability and job approval of its principal, and whether supporters think it is delivering.</p></div>
+    <div class="grid-2">
+      <figure class="card">
+        <figcaption><strong>MAHA movement: favorable vs unfavorable</strong><span>Every published favorability reading, chronological. Net favorable has narrowed from +25 (Nov 2024) to +6 (Jul 2026) as awareness rose.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-fav"></canvas></div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>RFK Jr.: favorable / approve vs unfavorable / disapprove</strong><span>Five national readings, Aug–Sep 2026. Only Harvard-Harris has him above water.</span></figcaption>
+        <div class="chart-wrap"><canvas id="c-rfk"></canvas></div>
+      </figure>
+      <figure class="card span-2">
+        <figcaption><strong>Is it delivering? Readings from inside and outside the movement</strong></figcaption>
+        <div class="delivery" id="delivery"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="integrity" class="wrap section">
+    <div class="section-head"><h2>Integrity metrics</h2><p>Structural measures of how robust the brand is: whether the name is findable, whether it stands apart from its founder and parent slogan, whether people know what it means, and whether its own base trusts it.</p></div>
+    <div class="metrics" id="metrics"></div>
+  </section>
+
+  <section id="news" class="wrap section">
+    <div class="section-head"><h2>News coverage analysis</h2><p id="news-method"></p></div>
+    <div class="grid-3">
+      <figure class="card"><figcaption><strong>Tone of coverage</strong><span>Hand-coded sample, <span id="news-window"></span>.</span></figcaption><div class="chart-wrap"><canvas id="c-tone"></canvas></div></figure>
+      <figure class="card span-2"><figcaption><strong>What the coverage is about</strong><span>Theme by tone.</span></figcaption><div class="chart-wrap"><canvas id="c-theme"></canvas></div></figure>
+    </div>
+    <div class="card">
+      <div class="chips" id="news-chips"></div>
+      <ul class="headlines" id="headlines"></ul>
+    </div>
+    <div class="card collisions">
+      <h3>Namespace collisions in the same news window</h3>
+      <p class="muted">The acronym is shared with unrelated organisations that generate their own coverage. Any automated media-monitoring on “MAHA” must filter these.</p>
+      <ul id="collisions"></ul>
+    </div>
+  </section>
+
+  <section id="social" class="wrap section">
+    <div class="section-head"><h2>Social discourse</h2><p id="social-status"></p></div>
+    <div class="studies" id="studies"></div>
+    <div class="card roadmap"><h3>Next data connections</h3><ul id="roadmap"></ul></div>
+  </section>
+
+  <section id="method" class="wrap section">
+    <div class="section-head"><h2>Method, refresh and sources</h2></div>
+    <div class="grid-2">
+      <div class="card prose">
+        <h3>How the data is collected</h3>
+        <p><strong>Attention.</strong> Google Trends has no public API. Series are pulled from Google Trends' own explore and widget endpoints inside a browser session and saved as JSON. Settings are held constant: United States (or Worldwide where stated), All categories, Web search. Google Topic entities (<code>/g/11x8sdrsf0</code> MAHA, <code>/g/11bw1_6lwn</code> MAGA, <code>/m/02l5km</code> RFK Jr.) are used wherever ambiguity matters; the MAHA entity only has data from late April 2025.</p>
+        <p><strong>Identification.</strong> Every national poll found that asks about MAHA directly is included with its construct (favorable / support / identify / part of movement), field dates, population, n and margin of error. Derived figures (such as MAHA-not-MAGA) are labelled as derived and never shown as a pollster's own number.</p>
+        <p><strong>News.</strong> Headlines are gathered by topical web search and hand-coded for tone and theme. This is a sample, not a census.</p>
+        <p><strong>Social.</strong> Secondary research only until a listening feed is connected.</p>
+        <h3>Refresh cadence</h3>
+        <p>Edition 1 is a point-in-time snapshot. Each data file carries its own <code>updated</code> date, shown in the status row at the top. A weekly refresh re-runs the Trends pulls, adds any new poll releases, and re-codes the news sample.</p>
+      </div>
+      <div class="card prose">
+        <h3>Sources</h3>
+        <ul class="sources" id="sources"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <p>MAHA Brand Tracker · Edition 1 · Built for a brand-integrity report. Google Trends values are relative indices, not counts. Poll figures are quoted from each organisation's release; derived figures are marked.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

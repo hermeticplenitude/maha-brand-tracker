@@ -1,0 +1,66 @@
+{
+  "updated": "2026-10-02",
+  "status": "Secondary sources only. No live social-listening feed is connected yet; the studies below are the largest published quantitative analyses of MAHA discourse.",
+  "studies": [
+    {
+      "title": "The Structure and Dynamics of the Online MAHA-sphere",
+      "authors": "Ahmed, Nepal, Kautz (arXiv 2605.20457, May 2026)",
+      "platform": "Reddit",
+      "window": "Jan 2020 – Dec 2025",
+      "volume": "234M submissions and 1.3B comments screened; 45,599 users active every year analysed; 36,803 unique MAHA-stance users",
+      "method": "Keyword search → Sentence-BERT relevance classifier → few-shot LLM stance labelling (pro / anti / neutral) across 12 themes; user stance score from −1 to +1",
+      "findings": [
+        "70% of MAHA-stance users were captured by r/politics alone; 82% by r/politics + r/AskReddit; 95% by the top 30 subreddits — the discourse lives in mainstream political spaces, not niche communities.",
+        "MAHA stances on Vaccine, Mask, Fluoride, Climate and Science co-occur 2–2.5× more than chance; mainstream themes (Food, Exercise, Screen, Environment) barely predict each other. Anti-MAHA users show no comparable bundling.",
+        "Pharma, Vaccine and Science form the network hub; Food and Exercise sit at the periphery — the opposite of the movement's public food-first framing.",
+        "Vaccine skepticism acts as an entry point: 6.8% (2021–22) and 11.1% (2023–24) of vaccine-theme users migrated to broader anti-science discourse the following year.",
+        "MAHA-stance users scored lower on cognitive-processing language in 8 of 12 themes and higher on money-related language in Vaccine, GMO, Pharma and Science."
+      ],
+      "url": "https://arxiv.org/html/2605.20457"
+    },
+    {
+      "title": "Hiding in Plain Sight: Finding MAHA on Reddit",
+      "authors": "Companion dataset paper (arXiv 2605.20435, May 2026)",
+      "platform": "Reddit",
+      "window": "Jan 2020 – Dec 2025",
+      "volume": "601,726 submissions; 18.8M comments; 4.06M users; 19,651 subreddits",
+      "method": "Two-stage regex search over ~20B posts; relevance classifier F1 0.978; LLM stance labels (4-class F1 0.56 on a 325-item hand-coded test set)",
+      "findings": [
+        "Roughly 30% of active users held MAHA stances on the most contested themes (Science, Fluoride, EMF, Pharma).",
+        "MAHA-distinctive vocabulary: 'monsanto, bayer, big ag' (GMO); 'propaganda, censorship, media' (Science). Anti-MAHA: 'misinformation, evidence, spreading'.",
+        "Stance labelling is noisy (F1 0.52–0.56 vs 0.25–0.33 chance), so platform-wide pro/anti shares are not reported by the authors."
+      ],
+      "url": "https://arxiv.org/pdf/2605.20435"
+    },
+    {
+      "title": "#MakeBeefGreatAgain: A Cross-Platform Analysis of Early #MAHA Discourse",
+      "authors": "Xue, Li, Lyons, King (arXiv 2604.23914, Apr 2026)",
+      "platform": "TikTok, X, Facebook, Instagram, Reddit, YouTube, web articles (NewsWhip Spike, high-engagement sample)",
+      "window": "Sep 5, 2024 – Jan 10, 2025",
+      "volume": "41,819 relevant posts (TikTok 55.1%, web articles 28.3%, X 9.1%)",
+      "method": "Structural topic modelling; interrupted time series around Election Day; LLM-assisted agenda coding",
+      "findings": [
+        "39.0% of posts were 'patriotic partisan support' using #MAHA as a slogan; 23.2% electoral campaign; 21.6% healthy lifestyle; 16.2% health policy.",
+        "81.3% of posts did not engage with any of the campaign's five stated priorities; of those that did, 61.5% concerned chronic disease and 0.1% habitat preservation.",
+        "Election Day produced a +647 posts/day spike, followed by a significant decline of −21.7 posts/day — attention was event-driven, mirroring the Google Trends pattern.",
+        "TikTok functioned as the grassroots partisan-support space; X, Facebook, YouTube and web articles leaned policy/campaign; Instagram and Reddit leaned healthy-lifestyle."
+      ],
+      "url": "https://arxiv.org/html/2604.23914v1"
+    },
+    {
+      "title": "Sentiments and discourse surrounding the #MAHA movement on social media",
+      "authors": "Alba, J Epidemiol Popul Health 74(1), Jan 2026 (letter; no abstract available)",
+      "platform": "Social media (unspecified in index)",
+      "window": "—",
+      "volume": "—",
+      "method": "Sentiment analysis and topic modelling (per index keywords)",
+      "findings": ["Indexed but full text not retrieved; listed for completeness."],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41610741/"
+    }
+  ],
+  "roadmap": [
+    "Connect a social-listening feed (X API, TikTok Research API, or a vendor such as Storyful/Brandwatch) for weekly pro/anti/neutral volume on #MAHA.",
+    "Add Reddit live sampling of r/politics, r/MAHA-adjacent subreddits using the Ahmed et al. theme taxonomy.",
+    "Track engagement on official @HHSgov / @SecKennedy MAHA posts vs independent MAHA accounts to measure founder dependence on social."
+  ]
+}
