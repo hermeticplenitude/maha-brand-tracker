@@ -155,6 +155,7 @@ table{width:100%;border-collapse:collapse;font-size:.84rem}
   .delivery{grid-template-columns:1fr 1fr}
 }
 @media (max-width:680px){
+  html{scroll-padding-top:150px}
   .masthead-inner{height:auto;padding:10px 0;flex-direction:column;align-items:flex-start}
   .nav a{padding:5px 8px;font-size:.8rem}
   .hero{padding-top:36px}
