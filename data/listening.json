@@ -1,0 +1,906 @@
+{
+ "updated": "2026-10-02",
+ "bluesky": {
+  "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
+  "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
+  "queries": [
+   "\"Make America Healthy Again\"",
+   "#MAHA",
+   "MAHA Kennedy",
+   "MAHA RFK",
+   "MAHA movement",
+   "MAHA moms"
+  ],
+  "window_days": 90,
+  "since": "2026-07-04",
+  "note": "Every public Bluesky post in the window matching the phrase set, deduplicated across queries. Bare-acronym posts are kept only if the text also carries a political cue (RFK, Kennedy, HHS, vaccine, MAGA, Trump, food dye, seed oil, mRNA, etc.). Engagement = likes + reposts + replies + quotes at collection time. Bluesky skews left of the US electorate; treat it as the critical-outside channel, not a census.",
+  "total_posts": 4808,
+  "weekly": [
+   {
+    "week": "2026-06-29",
+    "posts": 48,
+    "engagement": 610
+   },
+   {
+    "week": "2026-07-06",
+    "posts": 236,
+    "engagement": 8866
+   },
+   {
+    "week": "2026-07-13",
+    "posts": 266,
+    "engagement": 20409
+   },
+   {
+    "week": "2026-07-20",
+    "posts": 341,
+    "engagement": 27078
+   },
+   {
+    "week": "2026-07-27",
+    "posts": 320,
+    "engagement": 7735
+   },
+   {
+    "week": "2026-08-03",
+    "posts": 386,
+    "engagement": 26422
+   },
+   {
+    "week": "2026-08-10",
+    "posts": 275,
+    "engagement": 35081
+   },
+   {
+    "week": "2026-08-17",
+    "posts": 418,
+    "engagement": 10115
+   },
+   {
+    "week": "2026-08-24",
+    "posts": 440,
+    "engagement": 27923
+   },
+   {
+    "week": "2026-08-31",
+    "posts": 453,
+    "engagement": 16735
+   },
+   {
+    "week": "2026-09-07",
+    "posts": 498,
+    "engagement": 13252
+   },
+   {
+    "week": "2026-09-14",
+    "posts": 262,
+    "engagement": 11979
+   },
+   {
+    "week": "2026-09-21",
+    "posts": 376,
+    "engagement": 10437
+   },
+   {
+    "week": "2026-09-28",
+    "posts": 489,
+    "engagement": 6260
+   }
+  ],
+  "summary": {
+   "last4w_avg_posts": 397.2,
+   "prev4w_avg_posts": 379.8,
+   "change_pct": 4.6,
+   "unique_authors": 3317
+  },
+  "top_posts": [
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mt5rmyleir2e",
+    "date": "2026-08-15",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "The cyclospora outbreak has reached 13,895 cases across 47 states.\n\nThe FDA has recalled 1.6 million eggs due to salmonella contamination.\n\nScrewworm cases continue to rise.\n\nAnd we\u2019ve just surpassed 2,500 measles cases \u2014 breaking 2025\u2019s record.\n\n\u201cMake America Healthy Again.\u201d",
+    "likes": 21032,
+    "reposts": 7938,
+    "replies": 862,
+    "quotes": 473,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mt5rmyleir2e"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mu5ug24bty2v",
+    "date": "2026-08-28",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "The cyclospora outbreak has reached 17,180 cases across 48 states.\n\nThe FDA has recalled 1.6 million eggs due to salmonella contamination.\n\nScrewworm cases continue to rise.\n\nAnd we\u2019ve just surpassed 2,700 measles cases (including 2 recent deaths) \u2014 a 35 year high.\n\n\u201cMake America Healthy Again.\u201d",
+    "likes": 13593,
+    "reposts": 5300,
+    "replies": 663,
+    "quotes": 301,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mu5ug24bty2v"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mrgaoebdu22m",
+    "date": "2026-07-24",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "The cyclospora outbreak has reached 7,400 cases across 9 states.\n\nThe FDA just recalled 1.6 million eggs due to salmonella contamination.\n\nScrewworm cases continue to rise.\n\nAnd we\u2019ve just surpassed 2,300 measles cases \u2014 breaking 2025\u2019s record.\n\n\u201cMake America Healthy Again.\u201d",
+    "likes": 11663,
+    "reposts": 4694,
+    "replies": 596,
+    "quotes": 303,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mrgaoebdu22m"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3msc2tbcptm2b",
+    "date": "2026-08-04",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "RFK Jr's CDC reportedly scaled back foodborne disease tracking last year, removing cyclospora from mandatory reporting.\n\nThe CDC also lost roughly 3,000 employees since 2025.\n\nNow a cyclosporiasis outbreak has killed 2 and sickened thousands across 45 states.\n\n\"Make America Healthy Again.\"",
+    "likes": 8686,
+    "reposts": 3381,
+    "replies": 365,
+    "quotes": 131,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3msc2tbcptm2b"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mqmvr6mtgr2v",
+    "date": "2026-07-14",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "RFK Jr's CDC reportedly scaled back foodborne disease tracking last year, removing cyclospora from mandatory reporting.\n\nThe CDC also lost roughly 3,000 employees since 2025.\n\nNow? A cyclosporiasis outbreak has sickened thousands across 34 states.\n\n\"Make America Healthy Again.\"",
+    "likes": 7459,
+    "reposts": 2957,
+    "replies": 392,
+    "quotes": 142,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mqmvr6mtgr2v"
+   },
+   {
+    "uri": "at://did:plc:cuowqu3bimpxo4plxd4pg3eh/app.bsky.feed.post/3msdwrahln22i",
+    "date": "2026-08-05",
+    "handle": "ryanmarino.bsky.social",
+    "name": "Ryan Marino, MD",
+    "text": "Taking my time to really listen and learn from the very valid concerns of the MAHA movement:",
+    "likes": 5040,
+    "reposts": 997,
+    "replies": 98,
+    "quotes": 59,
+    "url": "https://bsky.app/profile/ryanmarino.bsky.social/post/3msdwrahln22i"
+   },
+   {
+    "uri": "at://did:plc:kbnwfl55hnamojwgonsescfc/app.bsky.feed.post/3mqmqisswms2c",
+    "date": "2026-07-14",
+    "handle": "chilidishgambino.bsky.social",
+    "name": "ChiliDishGambino",
+    "text": "Calling the RFK Jr diarrhea strain \u201cMAHA Blast\u201d since it has now evidently infiltrated Taco Bell",
+    "likes": 4699,
+    "reposts": 1173,
+    "replies": 43,
+    "quotes": 62,
+    "url": "https://bsky.app/profile/chilidishgambino.bsky.social/post/3mqmqisswms2c"
+   },
+   {
+    "uri": "at://did:plc:nuqrjelqx4a2ewqzvwekhuro/app.bsky.feed.post/3mwemqebryc2y",
+    "date": "2026-09-25",
+    "handle": "gavinyamey.bsky.social",
+    "name": "Prof Gavin Yamey MD MPH",
+    "text": "MAHA is a project built on vanity, grifting, racism & survival of the fittest \n\nA colleague of mine has a friend in Los Angeles who went to the gym, &, um, RFK Jr was there, working out, surrounded by a HUGE ENTOURAGE of security dudes & snipers\n\nBlack infants *MUST* suffer so RFK can get big pecs!",
+    "likes": 3941,
+    "reposts": 1693,
+    "replies": 242,
+    "quotes": 69,
+    "url": "https://bsky.app/profile/gavinyamey.bsky.social/post/3mwemqebryc2y"
+   },
+   {
+    "uri": "at://did:plc:dcpvyzm4ou74j6zcz67il5fk/app.bsky.feed.post/3mufgtc7sik2m",
+    "date": "2026-08-31",
+    "handle": "luckytran.com",
+    "name": "Dr. Lucky Tran",
+    "text": "The US government is canceling several cyclospora research studies in the midst of the biggest cyclospora outbreak ever which has made tens of thousands sick and killed two people. Make America Healthy Again.",
+    "likes": 3900,
+    "reposts": 1510,
+    "replies": 158,
+    "quotes": 88,
+    "url": "https://bsky.app/profile/luckytran.com/post/3mufgtc7sik2m"
+   },
+   {
+    "uri": "at://did:plc:ornpixmpy5ts36lh7hmi7wkp/app.bsky.feed.post/3mvsfhaugb224",
+    "date": "2026-09-18",
+    "handle": "warren.senate.gov",
+    "name": "Elizabeth Warren",
+    "text": "While RFK Jr.'s been shouting \"Make America Healthy Again\" from the rooftops, over 160 foods have been recalled so far this year.\n \nThere\u2019s nothing healthy about food-borne illness.",
+    "likes": 3592,
+    "reposts": 1273,
+    "replies": 112,
+    "quotes": 41,
+    "url": "https://bsky.app/profile/warren.senate.gov/post/3mvsfhaugb224"
+   },
+   {
+    "uri": "at://did:plc:qp7anqcqescucfwi4wari2z4/app.bsky.feed.post/3mtjmvr6s4s2v",
+    "date": "2026-08-20",
+    "handle": "walkerbragman.bsky.social",
+    "name": "Walker Bragman",
+    "text": "\u201cRemember that summer we couldn\u2019t have produce because we decided to make America healthy again?\u201d",
+    "likes": 3062,
+    "reposts": 568,
+    "replies": 58,
+    "quotes": 19,
+    "url": "https://bsky.app/profile/walkerbragman.bsky.social/post/3mtjmvr6s4s2v"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mrxyxjy27i2t",
+    "date": "2026-07-31",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "Under Trump:\n\n-There are 18,000 cyclospora cases across 45 states\n-Millions have lost ACA & Medicaid coverage\n-Measles cases are at a 35-year high\n-New \"forever chemical\" pesticides are in our food supply\n-Crucial public health agencies like the CDC & NIH are gutted\n\n\"Make America Healthy Again.\"",
+    "likes": 2343,
+    "reposts": 982,
+    "replies": 115,
+    "quotes": 51,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mrxyxjy27i2t"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mq2wez3mvk2o",
+    "date": "2026-07-07",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "\"Make America Healthy Again.\"\n\n@moreperfectunion.bsky.social",
+    "likes": 1626,
+    "reposts": 807,
+    "replies": 109,
+    "quotes": 70,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mq2wez3mvk2o"
+   },
+   {
+    "uri": "at://did:plc:frrf5y2km356sztrl3aln2rq/app.bsky.feed.post/3muuwg7vsak2z",
+    "date": "2026-09-06",
+    "handle": "saganomics.bsky.social",
+    "name": "Saganomics",
+    "text": "When my wife\u2019s Meta algorithms sniffed out that she\u2019s pregnant a bunch of medical crankery started aggressively filing into her Facebook and Instagram feeds. \u201cMAHA moms\u201d happen because there is a lot of money being spent strategically preying on women going through a stressful experience.",
+    "likes": 1651,
+    "reposts": 277,
+    "replies": 27,
+    "quotes": 37,
+    "url": "https://bsky.app/profile/saganomics.bsky.social/post/3muuwg7vsak2z"
+   },
+   {
+    "uri": "at://did:plc:4u3hwe3p7oy3hoy3amlw7rp2/app.bsky.feed.post/3mvlq5bm7gt2a",
+    "date": "2026-09-15",
+    "handle": "rbreich.bsky.social",
+    "name": "Robert Reich",
+    "text": "As if they weren't bad enough, AI data centers \u2014 which Trump strongly supports \u2014 could drive a surge in \"forever chemical\" production.\n\nAnd that's after Trump's EPA already approved new forever chemical pesticides and rolled back limits on them in our drinking water.\n\n\"Make America Healthy Again.\"",
+    "likes": 1207,
+    "reposts": 602,
+    "replies": 57,
+    "quotes": 19,
+    "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mvlq5bm7gt2a"
+   }
+  ],
+  "top_accounts": [
+   {
+    "handle": "gavinyamey.bsky.social",
+    "posts": 164,
+    "engagement": 15507
+   },
+   {
+    "handle": "joho.bsky.social",
+    "posts": 31,
+    "engagement": 964
+   },
+   {
+    "handle": "benecal.bsky.social",
+    "posts": 26,
+    "engagement": 477
+   },
+   {
+    "handle": "ghostofmarktwain.bsky.social",
+    "posts": 24,
+    "engagement": 82
+   },
+   {
+    "handle": "joffirphd.bsky.social",
+    "posts": 23,
+    "engagement": 191
+   },
+   {
+    "handle": "mcbridetd.bsky.social",
+    "posts": 19,
+    "engagement": 69
+   },
+   {
+    "handle": "bigearthdata.ai",
+    "posts": 17,
+    "engagement": 3
+   },
+   {
+    "handle": "banmarnj.bsky.social",
+    "posts": 17,
+    "engagement": 21
+   },
+   {
+    "handle": "motherjones.com",
+    "posts": 15,
+    "engagement": 2184
+   },
+   {
+    "handle": "nurse-chapel.bsky.social",
+    "posts": 12,
+    "engagement": 51
+   },
+   {
+    "handle": "realtuckfrumper.bsky.social",
+    "posts": 12,
+    "engagement": 123
+   },
+   {
+    "handle": "bsfavourite.bsky.social",
+    "posts": 11,
+    "engagement": 4
+   },
+   {
+    "handle": "newsmax.com",
+    "posts": 11,
+    "engagement": 6
+   },
+   {
+    "handle": "rbreich.bsky.social",
+    "posts": 11,
+    "engagement": 103197
+   },
+   {
+    "handle": "whitehousewatchdog.bsky.social",
+    "posts": 11,
+    "engagement": 5
+   }
+  ]
+ },
+ "gdelt": {
+  "source": "GDELT DOC 2.0 API",
+  "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+  "docs": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+  "query": "\"Make America Healthy Again\" sourcecountry:US",
+  "comparison_query": "\"Make America Great Again\" sourcecountry:US",
+  "start": "2024-08-01",
+  "note": "Volume is GDELT's 'timelinevol': the share (percent) of all monitored US-source articles that match the query, by day, averaged to weeks. Tone is GDELT's document tone score (negative = more negative language; typical news runs -2 to -4). Both are machine measures over a global multilingual news crawl, not hand-coded.",
+  "weekly_volume": [
+   {
+    "week": "2024-07-29",
+    "value": 0.0
+   },
+   {
+    "week": "2024-08-05",
+    "value": 0.0
+   },
+   {
+    "week": "2024-08-12",
+    "value": 0.0
+   },
+   {
+    "week": "2024-08-19",
+    "value": 0.0034
+   },
+   {
+    "week": "2024-08-26",
+    "value": 0.0028
+   },
+   {
+    "week": "2024-09-02",
+    "value": 0.0014
+   },
+   {
+    "week": "2024-09-09",
+    "value": 0.0011
+   },
+   {
+    "week": "2024-09-16",
+    "value": 0.0023
+   },
+   {
+    "week": "2024-09-23",
+    "value": 0.0009
+   },
+   {
+    "week": "2024-09-30",
+    "value": 0.0004
+   },
+   {
+    "week": "2024-10-07",
+    "value": 0.002
+   },
+   {
+    "week": "2024-10-14",
+    "value": 0.0016
+   },
+   {
+    "week": "2024-10-21",
+    "value": 0.0031
+   },
+   {
+    "week": "2024-10-28",
+    "value": 0.0175
+   },
+   {
+    "week": "2024-11-04",
+    "value": 0.0234
+   },
+   {
+    "week": "2024-11-11",
+    "value": 0.0378
+   },
+   {
+    "week": "2024-11-18",
+    "value": 0.0277
+   },
+   {
+    "week": "2024-11-25",
+    "value": 0.0193
+   },
+   {
+    "week": "2024-12-02",
+    "value": 0.0078
+   },
+   {
+    "week": "2024-12-09",
+    "value": 0.0051
+   },
+   {
+    "week": "2024-12-16",
+    "value": 0.0074
+   },
+   {
+    "week": "2024-12-23",
+    "value": 0.0049
+   },
+   {
+    "week": "2024-12-30",
+    "value": 0.0055
+   },
+   {
+    "week": "2025-01-06",
+    "value": 0.002
+   },
+   {
+    "week": "2025-01-13",
+    "value": 0.0058
+   },
+   {
+    "week": "2025-01-20",
+    "value": 0.0234
+   },
+   {
+    "week": "2025-01-27",
+    "value": 0.0374
+   },
+   {
+    "week": "2025-02-03",
+    "value": 0.0174
+   },
+   {
+    "week": "2025-02-10",
+    "value": 0.0231
+   },
+   {
+    "week": "2025-02-17",
+    "value": 0.0223
+   },
+   {
+    "week": "2025-02-24",
+    "value": 0.0091
+   },
+   {
+    "week": "2025-03-03",
+    "value": 0.0172
+   },
+   {
+    "week": "2025-03-10",
+    "value": 0.0272
+   },
+   {
+    "week": "2025-03-17",
+    "value": 0.0082
+   },
+   {
+    "week": "2025-03-24",
+    "value": 0.0325
+   },
+   {
+    "week": "2025-03-31",
+    "value": 0.0478
+   },
+   {
+    "week": "2025-04-07",
+    "value": 0.0209
+   },
+   {
+    "week": "2025-04-14",
+    "value": 0.0184
+   },
+   {
+    "week": "2025-04-21",
+    "value": 0.0351
+   },
+   {
+    "week": "2025-04-28",
+    "value": 0.0355
+   },
+   {
+    "week": "2025-05-05",
+    "value": 0.0422
+   },
+   {
+    "week": "2025-05-12",
+    "value": 0.0253
+   },
+   {
+    "week": "2025-05-19",
+    "value": 0.051
+   },
+   {
+    "week": "2025-05-26",
+    "value": 0.046
+   },
+   {
+    "week": "2025-06-02",
+    "value": 0.025
+   },
+   {
+    "week": "2025-06-09",
+    "value": 0.0177
+   },
+   {
+    "week": "2025-06-30",
+    "value": 0.0047
+   },
+   {
+    "week": "2025-07-07",
+    "value": 0.0242
+   },
+   {
+    "week": "2025-07-14",
+    "value": 0.0264
+   },
+   {
+    "week": "2025-07-21",
+    "value": 0.0405
+   },
+   {
+    "week": "2025-07-28",
+    "value": 0.0309
+   },
+   {
+    "week": "2025-08-04",
+    "value": 0.0283
+   },
+   {
+    "week": "2025-08-11",
+    "value": 0.0246
+   },
+   {
+    "week": "2025-08-18",
+    "value": 0.021
+   },
+   {
+    "week": "2025-08-25",
+    "value": 0.0333
+   },
+   {
+    "week": "2025-09-01",
+    "value": 0.0599
+   },
+   {
+    "week": "2025-09-08",
+    "value": 0.0345
+   },
+   {
+    "week": "2025-09-15",
+    "value": 0.014
+   },
+   {
+    "week": "2025-09-22",
+    "value": 0.0333
+   },
+   {
+    "week": "2025-09-29",
+    "value": 0.0101
+   },
+   {
+    "week": "2025-10-06",
+    "value": 0.0163
+   },
+   {
+    "week": "2025-10-13",
+    "value": 0.0126
+   },
+   {
+    "week": "2025-10-20",
+    "value": 0.0124
+   },
+   {
+    "week": "2025-10-27",
+    "value": 0.0289
+   },
+   {
+    "week": "2025-11-03",
+    "value": 0.0174
+   },
+   {
+    "week": "2025-11-10",
+    "value": 0.0262
+   },
+   {
+    "week": "2025-11-17",
+    "value": 0.0056
+   },
+   {
+    "week": "2025-11-24",
+    "value": 0.0146
+   },
+   {
+    "week": "2025-12-01",
+    "value": 0.0138
+   },
+   {
+    "week": "2025-12-08",
+    "value": 0.0107
+   },
+   {
+    "week": "2025-12-15",
+    "value": 0.0118
+   },
+   {
+    "week": "2025-12-22",
+    "value": 0.0066
+   },
+   {
+    "week": "2025-12-29",
+    "value": 0.0312
+   },
+   {
+    "week": "2026-01-05",
+    "value": 0.0396
+   },
+   {
+    "week": "2026-01-12",
+    "value": 0.0232
+   },
+   {
+    "week": "2026-01-19",
+    "value": 0.0088
+   },
+   {
+    "week": "2026-01-26",
+    "value": 0.0089
+   },
+   {
+    "week": "2026-02-02",
+    "value": 0.0119
+   },
+   {
+    "week": "2026-02-09",
+    "value": 0.0095
+   },
+   {
+    "week": "2026-02-16",
+    "value": 0.0133
+   },
+   {
+    "week": "2026-02-23",
+    "value": 0.0392
+   },
+   {
+    "week": "2026-03-02",
+    "value": 0.0118
+   },
+   {
+    "week": "2026-03-09",
+    "value": 0.0066
+   },
+   {
+    "week": "2026-03-16",
+    "value": 0.0156
+   },
+   {
+    "week": "2026-03-23",
+    "value": 0.0107
+   },
+   {
+    "week": "2026-03-30",
+    "value": 0.0203
+   },
+   {
+    "week": "2026-04-06",
+    "value": 0.0068
+   },
+   {
+    "week": "2026-04-13",
+    "value": 0.0225
+   },
+   {
+    "week": "2026-04-20",
+    "value": 0.0209
+   },
+   {
+    "week": "2026-04-27",
+    "value": 0.0474
+   },
+   {
+    "week": "2026-05-04",
+    "value": 0.0194
+   },
+   {
+    "week": "2026-05-11",
+    "value": 0.0233
+   },
+   {
+    "week": "2026-05-18",
+    "value": 0.013
+   },
+   {
+    "week": "2026-05-25",
+    "value": 0.007
+   },
+   {
+    "week": "2026-06-01",
+    "value": 0.0157
+   },
+   {
+    "week": "2026-06-08",
+    "value": 0.0097
+   },
+   {
+    "week": "2026-06-15",
+    "value": 0.0077
+   },
+   {
+    "week": "2026-06-22",
+    "value": 0.041
+   },
+   {
+    "week": "2026-06-29",
+    "value": 0.0101
+   },
+   {
+    "week": "2026-07-06",
+    "value": 0.0102
+   },
+   {
+    "week": "2026-07-13",
+    "value": 0.0115
+   },
+   {
+    "week": "2026-07-20",
+    "value": 0.014
+   },
+   {
+    "week": "2026-07-27",
+    "value": 0.008
+   },
+   {
+    "week": "2026-08-03",
+    "value": 0.0136
+   },
+   {
+    "week": "2026-08-10",
+    "value": 0.0107
+   },
+   {
+    "week": "2026-08-17",
+    "value": 0.0212
+   },
+   {
+    "week": "2026-08-24",
+    "value": 0.0156
+   },
+   {
+    "week": "2026-08-31",
+    "value": 0.0088
+   },
+   {
+    "week": "2026-09-07",
+    "value": 0.0053
+   },
+   {
+    "week": "2026-09-14",
+    "value": 0.0009
+   },
+   {
+    "week": "2026-09-21",
+    "value": 0.0032
+   },
+   {
+    "week": "2026-09-28",
+    "value": 0.0067
+   }
+  ],
+  "weekly_tone": [],
+  "weekly_volume_maga": [],
+  "weekly_ratio_maha_to_maga": [],
+  "summary": {
+   "last4w_volume": 0.0046,
+   "prev4w_volume": 0.0153,
+   "change_pct": -70.2,
+   "last4w_tone": null,
+   "peak_week": {
+    "week": "2025-09-01",
+    "value": 0.0599
+   }
+  },
+  "top_articles_7d": [
+   {
+    "date": "2026-09-29",
+    "outlet": "baltimoresun.com",
+    "title": "MAHA summit to place prevention at center of push to reshape American health",
+    "url": "https://www.baltimoresun.com/2026/09/28/maha-summit-to-place-prevention-at-center-of-push-to-reshape-american-health/"
+   },
+   {
+    "date": "2026-09-29",
+    "outlet": "ksl.com",
+    "title": "AI is changing how Americans choose snacks , says Conagra",
+    "url": "https://www.ksl.com:443/article/51627547/ai-is-changing-how-americans-choose-snacks-says-conagra"
+   },
+   {
+    "date": "2026-09-30",
+    "outlet": "wtaq.com",
+    "title": "USDA Increases Investment in Regenerative Pilot Program to Lower Farmer Production Costs and Advance MAHA Agenda",
+    "url": "https://wtaq.com/2026/09/30/usda-increases-investment-in-regenerative-pilot-program-to-lower-farmer-production-costs-and-advance-maha-agenda/"
+   },
+   {
+    "date": "2026-09-27",
+    "outlet": "rawstory.com",
+    "title": "Trump White House diet spurs blunt warning by ex - GOP White House doc :  Will raise BP",
+    "url": "https://www.rawstory.com/maha-2677948062/"
+   },
+   {
+    "date": "2026-09-30",
+    "outlet": "cbsnews.com",
+    "title": "Senate committee advances Nicole Saphier nomination for surgeon general",
+    "url": "https://www.cbsnews.com/news/nicole-saphier-surgeon-general-nomination-advances-senate/"
+   },
+   {
+    "date": "2026-09-27",
+    "outlet": "zerohedge.com",
+    "title": "FDA Commissioner Nominee Says Every Vaccine On US Market Is Safe , Effective",
+    "url": "https://www.zerohedge.com/medical/fda-commissioner-nominee-says-every-vaccine-us-market-safe-effective"
+   },
+   {
+    "date": "2026-09-30",
+    "outlet": "dailykos.com",
+    "title": "Trump team sure loves hobnobbing with toxic celebrities",
+    "url": "https://www.dailykos.com/stories/2026/9/30/800105654/culture/russell-brand-dr-oz-maha-summit/"
+   },
+   {
+    "date": "2026-10-01",
+    "outlet": "fox6now.com",
+    "title": "US Secretary of Agriculture visits Racine County , tours Case plant",
+    "url": "https://www.fox6now.com/news/us-secretary-agriculture-visits-racine-county-tours-case-plant"
+   },
+   {
+    "date": "2026-09-30",
+    "outlet": "jezebel.com",
+    "title": "Dr . Oz Really Seemed to Enjoy a Joke About Consent From an Alleged Rapist !",
+    "url": "https://www.jezebel.com/dr-oz-really-seemed-to-enjoy-a-joke-about-consent-from-an-alleged-rapist"
+   },
+   {
+    "date": "2026-10-02",
+    "outlet": "wsvn.com",
+    "title": "New fitness program uses videos to help children combat inactivity - WSVN 7News | Miami News , Weather , Sports",
+    "url": "https://wsvn.com/news/7spotlight/phit-kids-virtual-fitness/"
+   },
+   {
+    "date": "2026-09-29",
+    "outlet": "fooddive.com",
+    "title": "RFK Jr food policy priorities need more resources to implement , FDA nominee says",
+    "url": "https://www.fooddive.com/news/gras-fda-nominee-food-policy-ingredient-reform/831612/"
+   },
+   {
+    "date": "2026-09-30",
+    "outlet": "thedailybeast.com",
+    "title": "Rural MAHA Voters Turn on Trump and Give Grim Diagnosis",
+    "url": "https://www.thedailybeast.com/rural-maha-voters-turn-on-trump-and-give-grim-diagnosis/"
+   }
+  ],
+  "pending": [
+   "weekly_tone",
+   "weekly_volume_maga"
+  ]
+ }
+}

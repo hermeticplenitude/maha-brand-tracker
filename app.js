@@ -20,8 +20,8 @@ const axisX = (labels, every) => ({ grid: { display: false }, ticks: { maxRotati
 const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, stepSize: 20, callback: v => (v <= 100 ? v : '') }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
 
 async function load() {
-  const [trends, polls, news, social, mid] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json'].map(u => fetch(u).then(r => r.json())));
-  status(trends, polls, news, social);
+  const [trends, polls, news, social, mid, listen] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json', 'data/listening.json'].map(u => fetch(u).then(r => r.json())));
+  status(trends, polls, news, social, listen);
   scorecard(polls, trends);
   attention(trends);
   identification(polls);
@@ -30,12 +30,13 @@ async function load() {
   integrity(polls, trends);
   newsSection(news);
   socialSection(social);
+  listeningSection(listen);
   sources(polls, news, social);
 }
 
-function status(t, p, n, s) {
+function status(t, p, n, s, L) {
   const row = document.getElementById('status-row');
-  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['Social listening', s.updated, true]].forEach(([k, d, pend]) => {
+  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['Bluesky + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
@@ -195,12 +196,48 @@ function socialSection(s) {
   const rm = document.getElementById('roadmap'); s.roadmap.forEach(r => rm.appendChild(el('li', '', r)));
 }
 
+function listeningSection(L) {
+  const b = L.bluesky, g = L.gdelt; if (!b || !g) return;
+  const esc = t => t.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
+  const pct = v => (v === null || v === undefined) ? '—' : (v > 0 ? '+' : '') + v.toFixed(0) + '%';
+  const per100k = v => (v * 1000).toFixed(1); // GDELT timelinevol is a percent of all articles; ×1000 gives per-100k
+  const gWeeks = g.weekly_volume; const gLast = gWeeks.slice(-5, -1), gPrev = gWeeks.slice(-9, -5);
+  const tiles = [
+    { label: 'Bluesky posts, 90 days', value: b.total_posts.toLocaleString(), small: 'posts', desc: `${b.summary.unique_authors.toLocaleString()} unique accounts since ${fmtDate(b.since)}. Last 4 full weeks vs prior 4: ${pct(b.summary.change_pct)}.`, accent: C.teal },
+    { label: 'Bluesky weekly average', value: Math.round(b.summary.last4w_avg_posts).toLocaleString(), small: 'posts / week', desc: `Prior four weeks averaged ${Math.round(b.summary.prev4w_avg_posts).toLocaleString()}. Volume is steady; the conversation is dominated by critics (see top posts).`, accent: C.teal },
+    { label: 'US news volume, last 4 weeks', value: per100k(g.summary.last4w_volume), small: 'per 100k articles', desc: `Mentions of the full phrase per 100,000 monitored US news articles, vs ${per100k(g.summary.prev4w_volume)} in the prior four weeks (${pct(g.summary.change_pct)}).`, accent: C.red },
+    { label: 'Peak news week', value: new Date(g.summary.peak_week.week + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' }), small: 'week of ' + fmtDate(g.summary.peak_week.week).replace(/, \d{4}/, ''), desc: `Peak of ${per100k(g.summary.peak_week.value)} per 100k US articles; the last four weeks ran at ${Math.round(g.summary.last4w_volume / g.summary.peak_week.value * 100)}% of that peak.`, accent: C.ink },
+  ];
+  const wrap = document.getElementById('listen-tiles');
+  tiles.forEach(x => { const d = el('div', 'tile'); d.style.setProperty('--accent', x.accent); d.innerHTML = `<div class="label">${x.label}</div><div class="value">${x.value}<small>${x.small}</small></div><p class="desc">${x.desc}</p>`; wrap.appendChild(d); });
+  document.getElementById('social-status').textContent = `Live feeds: Bluesky public search and GDELT news volume, collected ${fmtDate(L.updated)}. ${g.pending && g.pending.length ? 'GDELT tone and MAGA-comparison series pending (rate-limited at collection time).' : ''}`;
+  // Bluesky weekly bars
+  const bw = b.weekly; document.getElementById('bsky-cap').textContent = `Public posts matching the phrase set, by week (Monday start). Final bar is the partial current week. Bars = posts; line = likes + reposts + replies + quotes.`;
+  new Chart(document.getElementById('c-bsky'), { type: 'bar', data: { labels: bw.map(w => w.week), datasets: [
+    { label: 'Posts', data: bw.map(w => w.posts), backgroundColor: bw.map((w, i) => i === bw.length - 1 ? 'rgba(42,127,127,.35)' : C.teal), yAxisID: 'y', borderRadius: 2 },
+    { label: 'Engagement', data: bw.map(w => w.engagement), type: 'line', borderColor: C.red, backgroundColor: C.red, pointRadius: 2, borderWidth: 1.5, yAxisID: 'y2', tension: .3 } ] },
+    options: { maintainAspectRatio: false, scales: { x: { grid: { display: false }, ticks: { font: { size: 11 }, callback: (v, i) => fmtDate(bw[i].week).replace(/, \d{4}/, '') } }, y: { min: 0, grid: { color: '#ece7de' }, title: { display: true, text: 'posts', font: { size: 11 } } }, y2: { min: 0, position: 'right', grid: { display: false }, title: { display: true, text: 'engagement', font: { size: 11 } }, ticks: { callback: v => (v / 1000) + 'k' } } }, plugins: { legend: { position: 'bottom' } } } });
+  // GDELT weekly line since Aug 2024
+  document.getElementById('gdelt-cap').textContent = `GDELT DOC 2.0 “timelinevol”, rescaled to mentions per 100,000 monitored US-source articles, daily values averaged by week. Numbered: 1 RFK endorses Trump · 2 HHS confirmation · 3 MAHA Report · 4 MAHA Strategy · 5 KFF midterms poll · 6 MAHA Summit.`;
+  const gl = gWeeks.map(w => w.week);
+  new Chart(document.getElementById('c-gdelt'), { type: 'line', data: { labels: gl, datasets: [{ label: 'per 100k US articles', data: gWeeks.map(w => +(w.value * 1000).toFixed(1)), borderColor: C.red, backgroundColor: 'rgba(178,58,72,.12)', fill: true, pointRadius: 0, borderWidth: 1.6, tension: .25 }] },
+    options: { maintainAspectRatio: false, scales: { x: axisX(gl, window.innerWidth < 700 ? 17 : 9), y: { min: 0, grid: { color: '#ece7de' }, ticks: { font: { size: 11 } }, title: { display: true, text: 'per 100k articles', font: { size: 11 } } } }, plugins: { legend: { display: false }, eventMarkers: { events: [['2024-08-19'], ['2025-02-10'], ['2025-05-19'], ['2025-09-08'], ['2026-04-27'], ['2026-09-28']] }, tooltip: { callbacks: { title: i => 'Week of ' + fmtDate(i[0].label), label: i => i.parsed.y.toFixed(1) + ' per 100k US articles' } } } } });
+  const tp = document.getElementById('bsky-top');
+  b.top_posts.slice(0, 8).forEach(p => tp.appendChild(el('li', '', `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.text.length > 180 ? p.text.slice(0, 177) + '…' : p.text)}</a><div class="m">@${p.handle} · ${fmtDate(p.date)} · ${p.likes.toLocaleString()} likes · ${p.reposts.toLocaleString()} reposts</div>`)));
+  const ga = document.getElementById('gdelt-top');
+  g.top_articles_7d.slice(0, 8).forEach(x => ga.appendChild(el('li', '', `<a href="${x.url}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="m">${x.outlet} · ${fmtDate(x.date)}</div>`)));
+  const ac = document.getElementById('bsky-accts');
+  b.top_accounts.slice(0, 10).forEach(x => ac.appendChild(el('li', '', `<span>@${x.handle}</span><span class="m">${x.posts} posts · ${x.engagement.toLocaleString()} eng.</span>`)));
+}
+
 function sources(p, n, s) {
   const ul = document.getElementById('sources'); const seen = new Set();
   const add = (label, url) => { if (seen.has(url)) return; seen.add(url); ul.appendChild(el('li', '', `<a href="${url}" target="_blank" rel="noopener">${label}</a>`)); };
   add('Google Trends (explore; US / Worldwide; Topics /g/11x8sdrsf0, /g/11bw1_6lwn, /m/02l5km)', 'https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11x8sdrsf0,%2Fg%2F11bw1_6lwn');
   [...p.identification, ...p.favorability, ...p.rfk, ...p.delivery].forEach(x => add(`${x.pollster || x.source}${x.field ? ' — ' + fmtRange(x.field) : ''}`, x.url));
   s.studies.forEach(x => add(x.title, x.url));
+  add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
+  add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
   add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');
   add('Decision Desk HQ — 2026 governor forecast', 'https://votes.decisiondeskhq.com/forecast/2026/governor');
   add('The Hill — GOP gambles on midterm dividends from MAHA (Aug 30, 2026)', 'https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/');
