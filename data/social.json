@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-02",
- "status": "Two live feeds now run alongside the published research: Bluesky public search (every matching post, 90-day window) and GDELT US news volume (since Aug 2024). Reddit, YouTube and X are not yet connected.",
+ "status": "Three live feeds now run alongside the published research: X API counts (a complete census of original posts since Aug 2024, plus a capped weekly sample), Bluesky public search (every matching post, 90-day window) and GDELT US news volume. Reddit and YouTube are not yet connected.",
  "studies": [
   {
    "title": "The Structure and Dynamics of the Online MAHA-sphere",
@@ -63,7 +63,6 @@
  "roadmap": [
   "Reddit (OAuth app pending): post and comment volume by subreddit, the venue where intra-movement disputes surface first.",
   "YouTube Data API: video counts, views and comment volume for MAHA content.",
-  "X: requires a paid API tier; the saved token currently returns Unauthorized.",
   "GDELT tone series and MAGA comparison series: collected on the next run (rate-limited on first pull).",
   "Weekly tone classification of a Bluesky sample with a fixed rubric: supportive / critical-from-inside / critical-from-outside / neutral.",
   "Track engagement on official @HHSgov / @SecKennedy MAHA posts vs independent MAHA accounts to measure founder dependence on social."

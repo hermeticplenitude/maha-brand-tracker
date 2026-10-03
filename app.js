@@ -36,7 +36,7 @@ async function load() {
 
 function status(t, p, n, s, L) {
   const row = document.getElementById('status-row');
-  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['Bluesky + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
+  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['X + Bluesky + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
@@ -196,8 +196,32 @@ function socialSection(s) {
   const rm = document.getElementById('roadmap'); s.roadmap.forEach(r => rm.appendChild(el('li', '', r)));
 }
 
+function xPanel(x) {
+  const esc = t => t.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
+  const pct = v => (v === null || v === undefined) ? '—' : (v > 0 ? '+' : '') + v.toFixed(0) + '%';
+  const s = x.summary, wk = x.weekly_counts;
+  const tiles = [
+    { label: 'Original posts since Aug 2024', value: (s.total_posts_since_start / 1e6).toFixed(2) + 'M', small: 'posts', desc: `X's own count of original posts (no retweets) matching the phrase set since ${fmtDate(x.start)}. Peak week ${fmtDate(s.peak_week.week).replace(/, \d{4}/, '')}, ${s.peak_week.week.slice(0, 4)}: ${s.peak_week.count.toLocaleString()}.`, accent: C.ink },
+    { label: 'Posts per week, last 4 weeks', value: s.last4w_avg_weekly.toLocaleString(), small: 'per week', desc: `vs ${s.prev4w_avg_weekly.toLocaleString()} in the prior four weeks (${pct(s.change_pct)}). Current volume is ${(s.last4w_avg_weekly / s.peak_week.count * 100).toFixed(1)}% of the election-week peak.`, accent: C.red },
+    { label: 'MAHA as a share of MAGA', value: (s.last4w_ratio_to_maga * 100).toFixed(1) + '%', small: 'of MAGA posts', desc: 'Weekly MAHA posts divided by weekly MAGA posts on X, last 4 full weeks. Matches the ~9% ratio Google Trends shows for search attention.', accent: C.teal },
+    { label: 'Sampled window', value: x.sample.n.toLocaleString(), small: 'posts read', desc: `${x.sample.unique_authors.toLocaleString()} accounts, ${fmtDate(x.sample.since)} onward. Sample is capped for cost ($0.005 per post read); counts above are complete.`, accent: C.gold },
+  ];
+  const wrap = document.getElementById('x-tiles');
+  tiles.forEach(t => { const d = el('div', 'tile'); d.style.setProperty('--accent', t.accent); d.innerHTML = `<div class="label">${t.label}</div><div class="value">${t.value}<small>${t.small}</small></div><p class="desc">${t.desc}</p>`; wrap.appendChild(d); });
+  document.getElementById('x-cap').textContent = `X API counts/all, weekly sums of daily counts (Monday start; final bar partial). Numbered: 1 RFK endorses Trump · 2 Election · 3 HHS confirmation · 4 MAHA Report · 5 MAHA Strategy · 6 KFF midterms poll · 7 MAHA Summit. Log scale so the post-election floor stays readable.`;
+  const labels = wk.map(w => w.week);
+  new Chart(document.getElementById('c-x'), { type: 'bar', data: { labels, datasets: [{ label: 'Original posts', data: wk.map(w => w.count), backgroundColor: wk.map((w, i) => i === wk.length - 1 ? 'rgba(27,42,65,.35)' : C.ink), borderRadius: 1, barPercentage: 1, categoryPercentage: .9 }] },
+    options: { maintainAspectRatio: false, scales: { x: axisX(labels, window.innerWidth < 700 ? 17 : 9), y: { type: 'logarithmic', min: 100, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, callback: v => [100, 1000, 10000, 100000].includes(v) ? v.toLocaleString() : '' }, title: { display: true, text: 'posts / week (log)', font: { size: 11 } } } },
+      plugins: { legend: { display: false }, eventMarkers: { events: [['2024-08-19'], ['2024-11-04'], ['2025-02-10'], ['2025-05-19'], ['2025-09-08'], ['2026-04-27'], ['2026-09-28']] }, tooltip: { callbacks: { title: i => 'Week of ' + fmtDate(i[0].label), label: i => i.parsed.y.toLocaleString() + ' original posts' } } } } });
+  const tp = document.getElementById('x-top');
+  x.sample.top_posts.slice(0, 8).forEach(p => tp.appendChild(el('li', '', `<a href="${p.url}" target="_blank" rel="noopener">${esc(p.text.length > 170 ? p.text.slice(0, 167) + '…' : p.text)}</a><div class="m">@${p.handle} · ${fmtDate(p.date)} · ${p.likes.toLocaleString()} likes · ${p.reposts.toLocaleString()} reposts${p.views ? ' · ' + (p.views / 1000).toFixed(0) + 'k views' : ''}</div>`)));
+  const ac = document.getElementById('x-accts');
+  x.sample.top_accounts.slice(0, 8).forEach(a => ac.appendChild(el('li', '', `<span>@${a.handle}</span><span class="m">${a.posts} posts · ${a.engagement.toLocaleString()} eng.</span>`)));
+}
+
 function listeningSection(L) {
-  const b = L.bluesky, g = L.gdelt; if (!b || !g) return;
+  const b = L.bluesky, g = L.gdelt, x = L.x; if (!b || !g) return;
+  if (x) xPanel(x);
   const esc = t => t.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
   const pct = v => (v === null || v === undefined) ? '—' : (v > 0 ? '+' : '') + v.toFixed(0) + '%';
   const per100k = v => (v * 1000).toFixed(1); // GDELT timelinevol is a percent of all articles; ×1000 gives per-100k
@@ -210,7 +234,7 @@ function listeningSection(L) {
   ];
   const wrap = document.getElementById('listen-tiles');
   tiles.forEach(x => { const d = el('div', 'tile'); d.style.setProperty('--accent', x.accent); d.innerHTML = `<div class="label">${x.label}</div><div class="value">${x.value}<small>${x.small}</small></div><p class="desc">${x.desc}</p>`; wrap.appendChild(d); });
-  document.getElementById('social-status').textContent = `Live feeds: Bluesky public search and GDELT news volume, collected ${fmtDate(L.updated)}. ${g.pending && g.pending.length ? 'GDELT tone and MAGA-comparison series pending (rate-limited at collection time).' : ''}`;
+  document.getElementById('social-status').textContent = `Live feeds: X API counts (complete census of original posts), Bluesky public search and GDELT news volume, collected ${fmtDate(L.updated)}. ${g.pending && g.pending.length ? 'GDELT tone and MAGA-comparison series pending (rate-limited at collection time).' : ''}`;
   // Bluesky weekly bars
   const bw = b.weekly; document.getElementById('bsky-cap').textContent = `Public posts matching the phrase set, by week (Monday start). Final bar is the partial current week. Bars = posts; line = likes + reposts + replies + quotes.`;
   new Chart(document.getElementById('c-bsky'), { type: 'bar', data: { labels: bw.map(w => w.week), datasets: [
@@ -236,6 +260,7 @@ function sources(p, n, s) {
   add('Google Trends (explore; US / Worldwide; Topics /g/11x8sdrsf0, /g/11bw1_6lwn, /m/02l5km)', 'https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11x8sdrsf0,%2Fg%2F11bw1_6lwn');
   [...p.identification, ...p.favorability, ...p.rfk, ...p.delivery].forEach(x => add(`${x.pollster || x.source}${x.field ? ' — ' + fmtRange(x.field) : ''}`, x.url));
   s.studies.forEach(x => add(x.title, x.url));
+  add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');
   add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
   add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
   add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');

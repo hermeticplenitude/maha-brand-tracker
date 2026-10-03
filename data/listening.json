@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "bluesky": {
   "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
   "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
@@ -902,5 +902,1693 @@
    "weekly_tone",
    "weekly_volume_maga"
   ]
+ },
+ "x": {
+  "source": "X API v2 (pay-per-use): GET /2/tweets/counts/all and /2/tweets/search/recent",
+  "docs": "https://docs.x.com/x-api/posts/counts/introduction",
+  "query": "(\"Make America Healthy Again\" OR #MAHA OR (MAHA (RFK OR Kennedy OR movement OR moms OR HHS OR report OR PAC OR summit))) -is:retweet",
+  "comparison_query": "(\"Make America Great Again\" OR #MAGA) -is:retweet",
+  "sample_query": "(\"Make America Healthy Again\" OR #MAHA OR (MAHA (RFK OR Kennedy OR movement OR moms OR HHS OR report OR PAC OR summit))) -is:retweet -is:reply lang:en",
+  "start": "2024-08-01",
+  "note": "Counts are X's own daily totals of original posts (retweets excluded) matching the query, so they are a census, not a sample. The phrase set is the full phrase, #MAHA, or the acronym alongside a political cue; it misses bare 'MAHA' with no cue and catches a little unrelated noise. The 7-day post sample is capped to control cost and is drawn most-recent-first, so 'top posts' means top within the sampled window.",
+  "weekly_counts": [
+   {
+    "week": "2024-07-29",
+    "count": 343
+   },
+   {
+    "week": "2024-08-05",
+    "count": 933
+   },
+   {
+    "week": "2024-08-12",
+    "count": 636
+   },
+   {
+    "week": "2024-08-19",
+    "count": 27264
+   },
+   {
+    "week": "2024-08-26",
+    "count": 38804
+   },
+   {
+    "week": "2024-09-02",
+    "count": 27668
+   },
+   {
+    "week": "2024-09-09",
+    "count": 26244
+   },
+   {
+    "week": "2024-09-16",
+    "count": 22734
+   },
+   {
+    "week": "2024-09-23",
+    "count": 24930
+   },
+   {
+    "week": "2024-09-30",
+    "count": 20308
+   },
+   {
+    "week": "2024-10-07",
+    "count": 19196
+   },
+   {
+    "week": "2024-10-14",
+    "count": 25719
+   },
+   {
+    "week": "2024-10-21",
+    "count": 33109
+   },
+   {
+    "week": "2024-10-28",
+    "count": 38722
+   },
+   {
+    "week": "2024-11-04",
+    "count": 62753
+   },
+   {
+    "week": "2024-11-11",
+    "count": 52436
+   },
+   {
+    "week": "2024-11-18",
+    "count": 20941
+   },
+   {
+    "week": "2024-11-25",
+    "count": 17948
+   },
+   {
+    "week": "2024-12-02",
+    "count": 17756
+   },
+   {
+    "week": "2024-12-09",
+    "count": 14906
+   },
+   {
+    "week": "2024-12-16",
+    "count": 14339
+   },
+   {
+    "week": "2024-12-23",
+    "count": 9257
+   },
+   {
+    "week": "2024-12-30",
+    "count": 9425
+   },
+   {
+    "week": "2025-01-06",
+    "count": 9918
+   },
+   {
+    "week": "2025-01-13",
+    "count": 16542
+   },
+   {
+    "week": "2025-01-20",
+    "count": 17703
+   },
+   {
+    "week": "2025-01-27",
+    "count": 42628
+   },
+   {
+    "week": "2025-02-03",
+    "count": 21350
+   },
+   {
+    "week": "2025-02-10",
+    "count": 43398
+   },
+   {
+    "week": "2025-02-17",
+    "count": 16449
+   },
+   {
+    "week": "2025-02-24",
+    "count": 12183
+   },
+   {
+    "week": "2025-03-03",
+    "count": 12657
+   },
+   {
+    "week": "2025-03-10",
+    "count": 15573
+   },
+   {
+    "week": "2025-03-17",
+    "count": 11466
+   },
+   {
+    "week": "2025-03-24",
+    "count": 15183
+   },
+   {
+    "week": "2025-03-31",
+    "count": 9286
+   },
+   {
+    "week": "2025-04-07",
+    "count": 8300
+   },
+   {
+    "week": "2025-04-14",
+    "count": 6076
+   },
+   {
+    "week": "2025-04-21",
+    "count": 7365
+   },
+   {
+    "week": "2025-04-28",
+    "count": 5587
+   },
+   {
+    "week": "2025-05-05",
+    "count": 9060
+   },
+   {
+    "week": "2025-05-12",
+    "count": 7015
+   },
+   {
+    "week": "2025-05-19",
+    "count": 10501
+   },
+   {
+    "week": "2025-05-26",
+    "count": 11653
+   },
+   {
+    "week": "2025-06-02",
+    "count": 6293
+   },
+   {
+    "week": "2025-06-09",
+    "count": 5630
+   },
+   {
+    "week": "2025-06-16",
+    "count": 5937
+   },
+   {
+    "week": "2025-06-23",
+    "count": 5792
+   },
+   {
+    "week": "2025-06-30",
+    "count": 4593
+   },
+   {
+    "week": "2025-07-07",
+    "count": 4647
+   },
+   {
+    "week": "2025-07-14",
+    "count": 6015
+   },
+   {
+    "week": "2025-07-21",
+    "count": 4601
+   },
+   {
+    "week": "2025-07-28",
+    "count": 4695
+   },
+   {
+    "week": "2025-08-04",
+    "count": 6393
+   },
+   {
+    "week": "2025-08-11",
+    "count": 4671
+   },
+   {
+    "week": "2025-08-18",
+    "count": 5182
+   },
+   {
+    "week": "2025-08-25",
+    "count": 7322
+   },
+   {
+    "week": "2025-09-01",
+    "count": 15678
+   },
+   {
+    "week": "2025-09-08",
+    "count": 7836
+   },
+   {
+    "week": "2025-09-15",
+    "count": 5009
+   },
+   {
+    "week": "2025-09-22",
+    "count": 6149
+   },
+   {
+    "week": "2025-09-29",
+    "count": 4791
+   },
+   {
+    "week": "2025-10-06",
+    "count": 3796
+   },
+   {
+    "week": "2025-10-13",
+    "count": 3468
+   },
+   {
+    "week": "2025-10-20",
+    "count": 3122
+   },
+   {
+    "week": "2025-10-27",
+    "count": 3144
+   },
+   {
+    "week": "2025-11-03",
+    "count": 3869
+   },
+   {
+    "week": "2025-11-10",
+    "count": 4220
+   },
+   {
+    "week": "2025-11-17",
+    "count": 3117
+   },
+   {
+    "week": "2025-11-24",
+    "count": 3089
+   },
+   {
+    "week": "2025-12-01",
+    "count": 2576
+   },
+   {
+    "week": "2025-12-08",
+    "count": 3392
+   },
+   {
+    "week": "2025-12-15",
+    "count": 2676
+   },
+   {
+    "week": "2025-12-22",
+    "count": 2125
+   },
+   {
+    "week": "2025-12-29",
+    "count": 2443
+   },
+   {
+    "week": "2026-01-05",
+    "count": 5285
+   },
+   {
+    "week": "2026-01-12",
+    "count": 4125
+   },
+   {
+    "week": "2026-01-19",
+    "count": 3239
+   },
+   {
+    "week": "2026-01-26",
+    "count": 2747
+   },
+   {
+    "week": "2026-02-02",
+    "count": 3455
+   },
+   {
+    "week": "2026-02-09",
+    "count": 4108
+   },
+   {
+    "week": "2026-02-16",
+    "count": 6022
+   },
+   {
+    "week": "2026-02-23",
+    "count": 5291
+   },
+   {
+    "week": "2026-03-02",
+    "count": 3174
+   },
+   {
+    "week": "2026-03-09",
+    "count": 2926
+   },
+   {
+    "week": "2026-03-16",
+    "count": 2348
+   },
+   {
+    "week": "2026-03-23",
+    "count": 2173
+   },
+   {
+    "week": "2026-03-30",
+    "count": 2560
+   },
+   {
+    "week": "2026-04-06",
+    "count": 2150
+   },
+   {
+    "week": "2026-04-13",
+    "count": 2779
+   },
+   {
+    "week": "2026-04-20",
+    "count": 2711
+   },
+   {
+    "week": "2026-04-27",
+    "count": 3316
+   },
+   {
+    "week": "2026-05-04",
+    "count": 3084
+   },
+   {
+    "week": "2026-05-11",
+    "count": 2883
+   },
+   {
+    "week": "2026-05-18",
+    "count": 3295
+   },
+   {
+    "week": "2026-05-25",
+    "count": 1999
+   },
+   {
+    "week": "2026-06-01",
+    "count": 2238
+   },
+   {
+    "week": "2026-06-08",
+    "count": 2308
+   },
+   {
+    "week": "2026-06-15",
+    "count": 2265
+   },
+   {
+    "week": "2026-06-22",
+    "count": 2715
+   },
+   {
+    "week": "2026-06-29",
+    "count": 2262
+   },
+   {
+    "week": "2026-07-06",
+    "count": 1716
+   },
+   {
+    "week": "2026-07-13",
+    "count": 2004
+   },
+   {
+    "week": "2026-07-20",
+    "count": 1950
+   },
+   {
+    "week": "2026-07-27",
+    "count": 2245
+   },
+   {
+    "week": "2026-08-03",
+    "count": 2383
+   },
+   {
+    "week": "2026-08-10",
+    "count": 3170
+   },
+   {
+    "week": "2026-08-17",
+    "count": 3103
+   },
+   {
+    "week": "2026-08-24",
+    "count": 3067
+   },
+   {
+    "week": "2026-08-31",
+    "count": 2014
+   },
+   {
+    "week": "2026-09-07",
+    "count": 2161
+   },
+   {
+    "week": "2026-09-14",
+    "count": 1734
+   },
+   {
+    "week": "2026-09-21",
+    "count": 2349
+   },
+   {
+    "week": "2026-09-28",
+    "count": 2297
+   }
+  ],
+  "weekly_counts_maga": [
+   {
+    "week": "2024-07-29",
+    "count": 43937
+   },
+   {
+    "week": "2024-08-05",
+    "count": 85019
+   },
+   {
+    "week": "2024-08-12",
+    "count": 102426
+   },
+   {
+    "week": "2024-08-19",
+    "count": 110594
+   },
+   {
+    "week": "2024-08-26",
+    "count": 101218
+   },
+   {
+    "week": "2024-09-02",
+    "count": 90658
+   },
+   {
+    "week": "2024-09-09",
+    "count": 112252
+   },
+   {
+    "week": "2024-09-16",
+    "count": 95306
+   },
+   {
+    "week": "2024-09-23",
+    "count": 98190
+   },
+   {
+    "week": "2024-09-30",
+    "count": 119497
+   },
+   {
+    "week": "2024-10-07",
+    "count": 114829
+   },
+   {
+    "week": "2024-10-14",
+    "count": 112366
+   },
+   {
+    "week": "2024-10-21",
+    "count": 153226
+   },
+   {
+    "week": "2024-10-28",
+    "count": 191570
+   },
+   {
+    "week": "2024-11-04",
+    "count": 329745
+   },
+   {
+    "week": "2024-11-11",
+    "count": 153974
+   },
+   {
+    "week": "2024-11-18",
+    "count": 67675
+   },
+   {
+    "week": "2024-11-25",
+    "count": 73249
+   },
+   {
+    "week": "2024-12-02",
+    "count": 72007
+   },
+   {
+    "week": "2024-12-09",
+    "count": 215744
+   },
+   {
+    "week": "2024-12-16",
+    "count": 62311
+   },
+   {
+    "week": "2024-12-23",
+    "count": 64858
+   },
+   {
+    "week": "2024-12-30",
+    "count": 66589
+   },
+   {
+    "week": "2025-01-06",
+    "count": 83786
+   },
+   {
+    "week": "2025-01-13",
+    "count": 116626
+   },
+   {
+    "week": "2025-01-20",
+    "count": 157061
+   },
+   {
+    "week": "2025-01-27",
+    "count": 96314
+   },
+   {
+    "week": "2025-02-03",
+    "count": 109871
+   },
+   {
+    "week": "2025-02-10",
+    "count": 91999
+   },
+   {
+    "week": "2025-02-17",
+    "count": 92639
+   },
+   {
+    "week": "2025-02-24",
+    "count": 87813
+   },
+   {
+    "week": "2025-03-03",
+    "count": 96062
+   },
+   {
+    "week": "2025-03-10",
+    "count": 75367
+   },
+   {
+    "week": "2025-03-17",
+    "count": 68869
+   },
+   {
+    "week": "2025-03-24",
+    "count": 65382
+   },
+   {
+    "week": "2025-03-31",
+    "count": 76011
+   },
+   {
+    "week": "2025-04-07",
+    "count": 68902
+   },
+   {
+    "week": "2025-04-14",
+    "count": 52279
+   },
+   {
+    "week": "2025-04-21",
+    "count": 51383
+   },
+   {
+    "week": "2025-04-28",
+    "count": 59278
+   },
+   {
+    "week": "2025-05-05",
+    "count": 50019
+   },
+   {
+    "week": "2025-05-12",
+    "count": 54279
+   },
+   {
+    "week": "2025-05-19",
+    "count": 43775
+   },
+   {
+    "week": "2025-05-26",
+    "count": 41568
+   },
+   {
+    "week": "2025-06-02",
+    "count": 52697
+   },
+   {
+    "week": "2025-06-09",
+    "count": 66767
+   },
+   {
+    "week": "2025-06-16",
+    "count": 75901
+   },
+   {
+    "week": "2025-06-23",
+    "count": 61472
+   },
+   {
+    "week": "2025-06-30",
+    "count": 63034
+   },
+   {
+    "week": "2025-07-07",
+    "count": 63829
+   },
+   {
+    "week": "2025-07-14",
+    "count": 67800
+   },
+   {
+    "week": "2025-07-21",
+    "count": 56893
+   },
+   {
+    "week": "2025-07-28",
+    "count": 54802
+   },
+   {
+    "week": "2025-08-04",
+    "count": 49979
+   },
+   {
+    "week": "2025-08-11",
+    "count": 48644
+   },
+   {
+    "week": "2025-08-18",
+    "count": 47804
+   },
+   {
+    "week": "2025-08-25",
+    "count": 46036
+   },
+   {
+    "week": "2025-09-01",
+    "count": 44272
+   },
+   {
+    "week": "2025-09-08",
+    "count": 71507
+   },
+   {
+    "week": "2025-09-15",
+    "count": 73553
+   },
+   {
+    "week": "2025-09-22",
+    "count": 60870
+   },
+   {
+    "week": "2025-09-29",
+    "count": 62302
+   },
+   {
+    "week": "2025-10-06",
+    "count": 54250
+   },
+   {
+    "week": "2025-10-13",
+    "count": 53760
+   },
+   {
+    "week": "2025-10-20",
+    "count": 48705
+   },
+   {
+    "week": "2025-10-27",
+    "count": 45362
+   },
+   {
+    "week": "2025-11-03",
+    "count": 49304
+   },
+   {
+    "week": "2025-11-10",
+    "count": 49978
+   },
+   {
+    "week": "2025-11-17",
+    "count": 52646
+   },
+   {
+    "week": "2025-11-24",
+    "count": 38710
+   },
+   {
+    "week": "2025-12-01",
+    "count": 36502
+   },
+   {
+    "week": "2025-12-08",
+    "count": 35299
+   },
+   {
+    "week": "2025-12-15",
+    "count": 34906
+   },
+   {
+    "week": "2025-12-22",
+    "count": 32884
+   },
+   {
+    "week": "2025-12-29",
+    "count": 40789
+   },
+   {
+    "week": "2026-01-05",
+    "count": 57535
+   },
+   {
+    "week": "2026-01-12",
+    "count": 52560
+   },
+   {
+    "week": "2026-01-19",
+    "count": 54853
+   },
+   {
+    "week": "2026-01-26",
+    "count": 51680
+   },
+   {
+    "week": "2026-02-02",
+    "count": 54762
+   },
+   {
+    "week": "2026-02-09",
+    "count": 50151
+   },
+   {
+    "week": "2026-02-16",
+    "count": 45587
+   },
+   {
+    "week": "2026-02-23",
+    "count": 59933
+   },
+   {
+    "week": "2026-03-02",
+    "count": 62087
+   },
+   {
+    "week": "2026-03-09",
+    "count": 49628
+   },
+   {
+    "week": "2026-03-16",
+    "count": 48062
+   },
+   {
+    "week": "2026-03-23",
+    "count": 45299
+   },
+   {
+    "week": "2026-03-30",
+    "count": 41144
+   },
+   {
+    "week": "2026-04-06",
+    "count": 39770
+   },
+   {
+    "week": "2026-04-13",
+    "count": 36556
+   },
+   {
+    "week": "2026-04-20",
+    "count": 32312
+   },
+   {
+    "week": "2026-04-27",
+    "count": 31643
+   },
+   {
+    "week": "2026-05-04",
+    "count": 28266
+   },
+   {
+    "week": "2026-05-11",
+    "count": 31074
+   },
+   {
+    "week": "2026-05-18",
+    "count": 33726
+   },
+   {
+    "week": "2026-05-25",
+    "count": 33771
+   },
+   {
+    "week": "2026-06-01",
+    "count": 35250
+   },
+   {
+    "week": "2026-06-08",
+    "count": 32342
+   },
+   {
+    "week": "2026-06-15",
+    "count": 31344
+   },
+   {
+    "week": "2026-06-22",
+    "count": 23490
+   },
+   {
+    "week": "2026-06-29",
+    "count": 25950
+   },
+   {
+    "week": "2026-07-06",
+    "count": 22671
+   },
+   {
+    "week": "2026-07-13",
+    "count": 23597
+   },
+   {
+    "week": "2026-07-20",
+    "count": 22471
+   },
+   {
+    "week": "2026-07-27",
+    "count": 19954
+   },
+   {
+    "week": "2026-08-03",
+    "count": 19656
+   },
+   {
+    "week": "2026-08-10",
+    "count": 19328
+   },
+   {
+    "week": "2026-08-17",
+    "count": 21306
+   },
+   {
+    "week": "2026-08-24",
+    "count": 22178
+   },
+   {
+    "week": "2026-08-31",
+    "count": 18545
+   },
+   {
+    "week": "2026-09-07",
+    "count": 24968
+   },
+   {
+    "week": "2026-09-14",
+    "count": 23837
+   },
+   {
+    "week": "2026-09-21",
+    "count": 23285
+   },
+   {
+    "week": "2026-09-28",
+    "count": 16135
+   }
+  ],
+  "weekly_ratio_maha_to_maga": [
+   {
+    "week": "2024-07-29",
+    "value": 0.0078
+   },
+   {
+    "week": "2024-08-05",
+    "value": 0.011
+   },
+   {
+    "week": "2024-08-12",
+    "value": 0.0062
+   },
+   {
+    "week": "2024-08-19",
+    "value": 0.2465
+   },
+   {
+    "week": "2024-08-26",
+    "value": 0.3834
+   },
+   {
+    "week": "2024-09-02",
+    "value": 0.3052
+   },
+   {
+    "week": "2024-09-09",
+    "value": 0.2338
+   },
+   {
+    "week": "2024-09-16",
+    "value": 0.2385
+   },
+   {
+    "week": "2024-09-23",
+    "value": 0.2539
+   },
+   {
+    "week": "2024-09-30",
+    "value": 0.1699
+   },
+   {
+    "week": "2024-10-07",
+    "value": 0.1672
+   },
+   {
+    "week": "2024-10-14",
+    "value": 0.2289
+   },
+   {
+    "week": "2024-10-21",
+    "value": 0.2161
+   },
+   {
+    "week": "2024-10-28",
+    "value": 0.2021
+   },
+   {
+    "week": "2024-11-04",
+    "value": 0.1903
+   },
+   {
+    "week": "2024-11-11",
+    "value": 0.3406
+   },
+   {
+    "week": "2024-11-18",
+    "value": 0.3094
+   },
+   {
+    "week": "2024-11-25",
+    "value": 0.245
+   },
+   {
+    "week": "2024-12-02",
+    "value": 0.2466
+   },
+   {
+    "week": "2024-12-09",
+    "value": 0.0691
+   },
+   {
+    "week": "2024-12-16",
+    "value": 0.2301
+   },
+   {
+    "week": "2024-12-23",
+    "value": 0.1427
+   },
+   {
+    "week": "2024-12-30",
+    "value": 0.1415
+   },
+   {
+    "week": "2025-01-06",
+    "value": 0.1184
+   },
+   {
+    "week": "2025-01-13",
+    "value": 0.1418
+   },
+   {
+    "week": "2025-01-20",
+    "value": 0.1127
+   },
+   {
+    "week": "2025-01-27",
+    "value": 0.4426
+   },
+   {
+    "week": "2025-02-03",
+    "value": 0.1943
+   },
+   {
+    "week": "2025-02-10",
+    "value": 0.4717
+   },
+   {
+    "week": "2025-02-17",
+    "value": 0.1776
+   },
+   {
+    "week": "2025-02-24",
+    "value": 0.1387
+   },
+   {
+    "week": "2025-03-03",
+    "value": 0.1318
+   },
+   {
+    "week": "2025-03-10",
+    "value": 0.2066
+   },
+   {
+    "week": "2025-03-17",
+    "value": 0.1665
+   },
+   {
+    "week": "2025-03-24",
+    "value": 0.2322
+   },
+   {
+    "week": "2025-03-31",
+    "value": 0.1222
+   },
+   {
+    "week": "2025-04-07",
+    "value": 0.1205
+   },
+   {
+    "week": "2025-04-14",
+    "value": 0.1162
+   },
+   {
+    "week": "2025-04-21",
+    "value": 0.1433
+   },
+   {
+    "week": "2025-04-28",
+    "value": 0.0943
+   },
+   {
+    "week": "2025-05-05",
+    "value": 0.1811
+   },
+   {
+    "week": "2025-05-12",
+    "value": 0.1292
+   },
+   {
+    "week": "2025-05-19",
+    "value": 0.2399
+   },
+   {
+    "week": "2025-05-26",
+    "value": 0.2803
+   },
+   {
+    "week": "2025-06-02",
+    "value": 0.1194
+   },
+   {
+    "week": "2025-06-09",
+    "value": 0.0843
+   },
+   {
+    "week": "2025-06-16",
+    "value": 0.0782
+   },
+   {
+    "week": "2025-06-23",
+    "value": 0.0942
+   },
+   {
+    "week": "2025-06-30",
+    "value": 0.0729
+   },
+   {
+    "week": "2025-07-07",
+    "value": 0.0728
+   },
+   {
+    "week": "2025-07-14",
+    "value": 0.0887
+   },
+   {
+    "week": "2025-07-21",
+    "value": 0.0809
+   },
+   {
+    "week": "2025-07-28",
+    "value": 0.0857
+   },
+   {
+    "week": "2025-08-04",
+    "value": 0.1279
+   },
+   {
+    "week": "2025-08-11",
+    "value": 0.096
+   },
+   {
+    "week": "2025-08-18",
+    "value": 0.1084
+   },
+   {
+    "week": "2025-08-25",
+    "value": 0.159
+   },
+   {
+    "week": "2025-09-01",
+    "value": 0.3541
+   },
+   {
+    "week": "2025-09-08",
+    "value": 0.1096
+   },
+   {
+    "week": "2025-09-15",
+    "value": 0.0681
+   },
+   {
+    "week": "2025-09-22",
+    "value": 0.101
+   },
+   {
+    "week": "2025-09-29",
+    "value": 0.0769
+   },
+   {
+    "week": "2025-10-06",
+    "value": 0.07
+   },
+   {
+    "week": "2025-10-13",
+    "value": 0.0645
+   },
+   {
+    "week": "2025-10-20",
+    "value": 0.0641
+   },
+   {
+    "week": "2025-10-27",
+    "value": 0.0693
+   },
+   {
+    "week": "2025-11-03",
+    "value": 0.0785
+   },
+   {
+    "week": "2025-11-10",
+    "value": 0.0844
+   },
+   {
+    "week": "2025-11-17",
+    "value": 0.0592
+   },
+   {
+    "week": "2025-11-24",
+    "value": 0.0798
+   },
+   {
+    "week": "2025-12-01",
+    "value": 0.0706
+   },
+   {
+    "week": "2025-12-08",
+    "value": 0.0961
+   },
+   {
+    "week": "2025-12-15",
+    "value": 0.0767
+   },
+   {
+    "week": "2025-12-22",
+    "value": 0.0646
+   },
+   {
+    "week": "2025-12-29",
+    "value": 0.0599
+   },
+   {
+    "week": "2026-01-05",
+    "value": 0.0919
+   },
+   {
+    "week": "2026-01-12",
+    "value": 0.0785
+   },
+   {
+    "week": "2026-01-19",
+    "value": 0.059
+   },
+   {
+    "week": "2026-01-26",
+    "value": 0.0532
+   },
+   {
+    "week": "2026-02-02",
+    "value": 0.0631
+   },
+   {
+    "week": "2026-02-09",
+    "value": 0.0819
+   },
+   {
+    "week": "2026-02-16",
+    "value": 0.1321
+   },
+   {
+    "week": "2026-02-23",
+    "value": 0.0883
+   },
+   {
+    "week": "2026-03-02",
+    "value": 0.0511
+   },
+   {
+    "week": "2026-03-09",
+    "value": 0.059
+   },
+   {
+    "week": "2026-03-16",
+    "value": 0.0489
+   },
+   {
+    "week": "2026-03-23",
+    "value": 0.048
+   },
+   {
+    "week": "2026-03-30",
+    "value": 0.0622
+   },
+   {
+    "week": "2026-04-06",
+    "value": 0.0541
+   },
+   {
+    "week": "2026-04-13",
+    "value": 0.076
+   },
+   {
+    "week": "2026-04-20",
+    "value": 0.0839
+   },
+   {
+    "week": "2026-04-27",
+    "value": 0.1048
+   },
+   {
+    "week": "2026-05-04",
+    "value": 0.1091
+   },
+   {
+    "week": "2026-05-11",
+    "value": 0.0928
+   },
+   {
+    "week": "2026-05-18",
+    "value": 0.0977
+   },
+   {
+    "week": "2026-05-25",
+    "value": 0.0592
+   },
+   {
+    "week": "2026-06-01",
+    "value": 0.0635
+   },
+   {
+    "week": "2026-06-08",
+    "value": 0.0714
+   },
+   {
+    "week": "2026-06-15",
+    "value": 0.0723
+   },
+   {
+    "week": "2026-06-22",
+    "value": 0.1156
+   },
+   {
+    "week": "2026-06-29",
+    "value": 0.0872
+   },
+   {
+    "week": "2026-07-06",
+    "value": 0.0757
+   },
+   {
+    "week": "2026-07-13",
+    "value": 0.0849
+   },
+   {
+    "week": "2026-07-20",
+    "value": 0.0868
+   },
+   {
+    "week": "2026-07-27",
+    "value": 0.1125
+   },
+   {
+    "week": "2026-08-03",
+    "value": 0.1212
+   },
+   {
+    "week": "2026-08-10",
+    "value": 0.164
+   },
+   {
+    "week": "2026-08-17",
+    "value": 0.1456
+   },
+   {
+    "week": "2026-08-24",
+    "value": 0.1383
+   },
+   {
+    "week": "2026-08-31",
+    "value": 0.1086
+   },
+   {
+    "week": "2026-09-07",
+    "value": 0.0866
+   },
+   {
+    "week": "2026-09-14",
+    "value": 0.0727
+   },
+   {
+    "week": "2026-09-21",
+    "value": 0.1009
+   },
+   {
+    "week": "2026-09-28",
+    "value": 0.1424
+   }
+  ],
+  "summary": {
+   "total_posts_since_start": 1100186,
+   "last4w_avg_weekly": 2064,
+   "prev4w_avg_weekly": 2931,
+   "change_pct": -29.6,
+   "peak_week": {
+    "week": "2024-11-04",
+    "count": 62753
+   },
+   "last4w_ratio_to_maga": 0.0922
+  },
+  "sample": {
+   "n": 1091,
+   "since": "2026-09-28",
+   "unique_authors": 808,
+   "top_posts": [
+    {
+     "id": "2105659103632556146",
+     "date": "2026-10-01",
+     "handle": "SecKennedy",
+     "name": "Secretary Kennedy",
+     "followers": 1230521,
+     "text": "Thank you, @VP, for joining me onstage at the MAHA Summit. What a tremendous success! https://t.co/7CvfWxVLgp",
+     "likes": 7332,
+     "reposts": 749,
+     "replies": 257,
+     "quotes": 18,
+     "views": 68521,
+     "url": "https://x.com/SecKennedy/status/2105659103632556146"
+    },
+    {
+     "id": "2104677971248157182",
+     "date": "2026-09-28",
+     "handle": "JDVance",
+     "name": "JD Vance",
+     "followers": 5553080,
+     "text": "One of President Trump\u2019s main focuses for this administration was to Make America Healthy Again. \n\nSince January 2025, thanks to the work of @SecKennedy and the team over at @HHSGov, we have been fulfilling that promise to the American people, and the great MAHA movement.\n\nTune https://t.co/CjnX4U4UmY",
+     "likes": 6718,
+     "reposts": 967,
+     "replies": 1382,
+     "quotes": 78,
+     "views": 380974,
+     "url": "https://x.com/JDVance/status/2104677971248157182"
+    },
+    {
+     "id": "2105053334302495202",
+     "date": "2026-09-29",
+     "handle": "SecKennedy",
+     "name": "Secretary Kennedy",
+     "followers": 1230521,
+     "text": "Backstage at the MAHA Summit with @VP. https://t.co/0atrOUnxqP",
+     "likes": 6586,
+     "reposts": 707,
+     "replies": 297,
+     "quotes": 19,
+     "views": 96363,
+     "url": "https://x.com/SecKennedy/status/2105053334302495202"
+    },
+    {
+     "id": "2104672593689149637",
+     "date": "2026-09-28",
+     "handle": "ddiamond",
+     "name": "Dan Diamond",
+     "followers": 139573,
+     "text": "Russell Brand, who's awaiting trial in London next month on rape and sexual assault charges, will moderate a panel at DC's MAHA summit tomorrow on reforming a U.S. health agency https://t.co/vqWJdOpby6",
+     "likes": 2829,
+     "reposts": 1570,
+     "replies": 255,
+     "quotes": 259,
+     "views": 287868,
+     "url": "https://x.com/ddiamond/status/2104672593689149637"
+    },
+    {
+     "id": "2104654554826420718",
+     "date": "2026-09-28",
+     "handle": "SecKennedy",
+     "name": "Secretary Kennedy",
+     "followers": 1230521,
+     "text": "We\u2019re getting America\u2019s kids moving again.\n\nAt Gaither High School in Tampa, I joined @RepLaurelLee, @ADM_Christine, and @TitusONeilWWE as students trained for the Presidential Fitness Test \u2014 building their strength, endurance, speed, and agility.\n\nStrong kids build a strong https://t.co/8QbT4aeIKc",
+     "likes": 2652,
+     "reposts": 391,
+     "replies": 84,
+     "quotes": 14,
+     "views": 41964,
+     "url": "https://x.com/SecKennedy/status/2104654554826420718"
+    },
+    {
+     "id": "2105030140639998333",
+     "date": "2026-09-29",
+     "handle": "DrNeilStone",
+     "name": "Neil Stone",
+     "followers": 163581,
+     "text": "Russell Brand is charing a session at the MAHA Summit\n\nRussell \n\nBrand \n\nTells you everything you need to know about how unserious it all is \n\nhttps://t.co/c8WnEX1uzF",
+     "likes": 2521,
+     "reposts": 384,
+     "replies": 79,
+     "quotes": 8,
+     "views": 18926,
+     "url": "https://x.com/DrNeilStone/status/2105030140639998333"
+    },
+    {
+     "id": "2105683496102486520",
+     "date": "2026-10-01",
+     "handle": "EricLDaugh",
+     "name": "Eric Daugherty",
+     "followers": 1200853,
+     "text": "\ud83d\udea8 BOMBSHELL: HHS Sec. Bobby Kennedy reveals that Medicare taxpayer expenses on \u201cwound care patches\u201d INCREASED 6,900% \u2014 from $200M to $14B \n\n\u201cIT\u2019S ALL STOLEN.\u201d\n\nIt\u2019s a MAJOR kickback scheme where doctors get a share of the bill for elderly patients who never needed it \n\nEvery",
+     "likes": 1502,
+     "reposts": 634,
+     "replies": 51,
+     "quotes": 16,
+     "views": 36943,
+     "url": "https://x.com/EricLDaugh/status/2105683496102486520"
+    },
+    {
+     "id": "2105147587183645062",
+     "date": "2026-09-30",
+     "handle": "Cernovich",
+     "name": "Cernovich",
+     "followers": 1457380,
+     "text": "Where are the events for MAHA? The Trump administration has black listed MAHA moms who we personally know. I flagged this up the chain. They are still banned from the White House. That is the kind of bullshit happening. Don\u2019t bitch at me about the midterms.",
+     "likes": 1782,
+     "reposts": 201,
+     "replies": 79,
+     "quotes": 5,
+     "views": 45488,
+     "url": "https://x.com/Cernovich/status/2105147587183645062"
+    },
+    {
+     "id": "2104593294969786407",
+     "date": "2026-09-28",
+     "handle": "MakisMedicine",
+     "name": "William Makis",
+     "followers": 687602,
+     "text": "MAHA Summit has:\n\n- no Ivermectin, Mebendazole or Fenbendazole\n- no repurposed drugs\n- no bioactive compounds, nutraceuticals in Cancer\n- no talks on cancer at all\n\nThis is NOT a health summit, which is sad considering the substandard cancer care President Trump's Chief of Staff https://t.co/ovkdx8RGGO",
+     "likes": 1523,
+     "reposts": 347,
+     "replies": 39,
+     "quotes": 21,
+     "views": 55348,
+     "url": "https://x.com/MakisMedicine/status/2104593294969786407"
+    },
+    {
+     "id": "2105070917546070204",
+     "date": "2026-09-29",
+     "handle": "RWMaloneMD",
+     "name": "Robert W Malone, MD",
+     "followers": 1324255,
+     "text": "VP Vance and Secretary Kennedy speaking at the MAHA Summit today.\nI can\u2019t wait for Vice President Vance to become President Vance.\nVance spoke out early about his own mRNA vaccine injury and, as a senator, was willing to question what was happening at a time when doing so came https://t.co/YCm2XrhtmW",
+     "likes": 1584,
+     "reposts": 241,
+     "replies": 118,
+     "quotes": 14,
+     "views": 49583,
+     "url": "https://x.com/RWMaloneMD/status/2105070917546070204"
+    },
+    {
+     "id": "2105090758319481250",
+     "date": "2026-09-30",
+     "handle": "epaleezeldin",
+     "name": "Lee Zeldin",
+     "followers": 299916,
+     "text": "The Make America Healthy Again (MAHA) movement would not be possible without the exceptional leadership and partnership we are witnessing from President Trump and @SecKennedy. Every day, they are advancing consequential policies to make our families stronger, healthier, and more https://t.co/cVD5wvpKpY",
+     "likes": 1472,
+     "reposts": 237,
+     "replies": 91,
+     "quotes": 6,
+     "views": 95206,
+     "url": "https://x.com/epaleezeldin/status/2105090758319481250"
+    },
+    {
+     "id": "2105281387418763766",
+     "date": "2026-09-30",
+     "handle": "Milbank",
+     "name": "Dana Milbank",
+     "followers": 108859,
+     "text": "Russell Brand goes on  trial in London in two weeks for rape. But first he was invited to the MAHA Summit to vouch for the high character of RFK Jr.  And the sleaziness was just beginning. My latest @washingtonsun column. https://t.co/zPMYc0vtJq",
+     "likes": 1138,
+     "reposts": 535,
+     "replies": 14,
+     "quotes": 15,
+     "views": 19381,
+     "url": "https://x.com/Milbank/status/2105281387418763766"
+    },
+    {
+     "id": "2105054148324688347",
+     "date": "2026-09-29",
+     "handle": "MAHA_Action",
+     "name": "MAHA Action",
+     "followers": 101688,
+     "text": "RFK Jr. says AI will make \u201ctrust the experts\u201d a thing of the past and help free Americans from \u201cmedical tyranny.\u201d\n\n\u201cWe\u2019re never ever again going to be able to be dominated by public officials who tell us \u2018trust the experts.\u2019\u201d\n\n\u201cEvery American will be able to check their own https://t.co/F158rrh28F",
+     "likes": 1227,
+     "reposts": 281,
+     "replies": 166,
+     "quotes": 51,
+     "views": 146158,
+     "url": "https://x.com/MAHA_Action/status/2105054148324688347"
+    },
+    {
+     "id": "2105421883042922670",
+     "date": "2026-09-30",
+     "handle": "DonHuffines",
+     "name": "Comptroller Don Huffines",
+     "followers": 107523,
+     "text": "REMOVE fluoride from our water!\n\nSTOP poisoning and forcibly medicating Americans!\n\nMAKE AMERICA HEALTHY AGAIN! #MAHA\ud83c\uddfa\ud83c\uddf8 https://t.co/D9SARjqlLl",
+     "likes": 1117,
+     "reposts": 316,
+     "replies": 116,
+     "quotes": 17,
+     "views": 29452,
+     "url": "https://x.com/DonHuffines/status/2105421883042922670"
+    },
+    {
+     "id": "2105704534655811753",
+     "date": "2026-10-01",
+     "handle": "GuntherEagleman",
+     "name": "Gunther Eagleman\u2122",
+     "followers": 1771280,
+     "text": "MAHA MOMS!! THEY COULD DECIDE THE MIDTERMS, AND REPUBLICANS HAD BETTER NOT TAKE THEM FOR GRANTED.\n\nThese are moms who read labels and want food dyes, junk chemicals, and garbage out of their kids' food and water.\n\nThey aren't loyal to a party, they're loyal to their families. https://t.co/YD1SdexEjF",
+     "likes": 954,
+     "reposts": 363,
+     "replies": 36,
+     "quotes": 6,
+     "views": 24743,
+     "url": "https://x.com/GuntherEagleman/status/2105704534655811753"
+    }
+   ],
+   "top_accounts": [
+    {
+     "handle": "HHSResponse",
+     "posts": 10,
+     "engagement": 1832
+    },
+    {
+     "handle": "DrNeilStone",
+     "posts": 10,
+     "engagement": 4565
+    },
+    {
+     "handle": "JohnSgt",
+     "posts": 10,
+     "engagement": 21
+    },
+    {
+     "handle": "MAHA_Action",
+     "posts": 8,
+     "engagement": 3978
+    },
+    {
+     "handle": "realTuckFrumper",
+     "posts": 8,
+     "engagement": 142
+    },
+    {
+     "handle": "RblSports",
+     "posts": 7,
+     "engagement": 1
+    },
+    {
+     "handle": "AZMAHAMAMA",
+     "posts": 6,
+     "engagement": 13
+    },
+    {
+     "handle": "statnews",
+     "posts": 6,
+     "engagement": 4
+    },
+    {
+     "handle": "DutchDane59",
+     "posts": 6,
+     "engagement": 2
+    },
+    {
+     "handle": "MedicalQuack",
+     "posts": 6,
+     "engagement": 3
+    },
+    {
+     "handle": "UnvarnishedGME",
+     "posts": 6,
+     "engagement": 20
+    },
+    {
+     "handle": "FairTaxBill",
+     "posts": 5,
+     "engagement": 1
+    },
+    {
+     "handle": "MAHA_Institute",
+     "posts": 5,
+     "engagement": 98
+    },
+    {
+     "handle": "iamgregk",
+     "posts": 5,
+     "engagement": 30
+    },
+    {
+     "handle": "virginiagmck",
+     "posts": 5,
+     "engagement": 69
+    }
+   ]
+  }
  }
 }
