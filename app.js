@@ -155,6 +155,25 @@ function midterms(m) {
   new Chart(document.getElementById('c-states'), { type: 'bar', data: { labels: st.map(s => s[0]), datasets: [{ data: st.map(s => s[2]), backgroundColor: st.map(s => comp.has(s[1]) ? C.red : C.teal), borderRadius: 2, barThickness: 9 }] }, options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.x} (12-mo) · ${idx90[st[c.dataIndex][1]] ?? '—'} (90-day)` } } }, scales: { x: { min: 0, max: 45, grid: { color: '#ece7de' }, ticks: { font: { size: 10 } } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
   const mo = document.getElementById('money'); m.money.forEach(x => mo.appendChild(el('div', 'm', `<div class="v">${x.value}</div><p>${x.label}</p><a href="${x.url}" target="_blank" rel="noopener">${x.source}</a>`)));
   const tl = document.getElementById('timeline'); m.timeline.forEach((t, i) => tl.appendChild(el('li', i === m.timeline.length - 1 ? 'last' : '', `<span class="d">${t[0].length === 7 ? monthLabel(t[0] + '-01') : fmtDate(t[0])}</span>${t[1]}`)));
+  if (m.capture) {
+    const c = m.capture, cap = document.getElementById('capture');
+    cap.innerHTML = `<h3 style="margin:0 0 4px">${c.title}</h3>
+      <p class="muted" style="margin:0 0 14px;font-size:.86rem">Primary document: <a href="${c.url}" target="_blank" rel="noopener">${c.doc}</a>. Quotations are verbatim from the memo.</p>
+      <div class="cap-grid">
+        <div>
+          <dl class="facts">${c.facts.map(f => `<dt>${f[0]}</dt><dd>${f[1]}</dd>`).join('')}</dl>
+          <h4>What it says</h4>
+          ${c.quotes.map(q => `<blockquote>“${q}”</blockquote>`).join('')}
+          <h4>The strategy</h4><p>${c.strategy}</p>
+        </div>
+        <div>
+          <h4>Bills the memo attaches to “Reclaiming MAHA”</h4>
+          <div class="bills-wrap"><table class="bills"><thead><tr><th>When</th><th>Bill</th><th>Sponsor</th><th>MAHA overlap</th></tr></thead><tbody>${c.bills.map(b => `<tr><td>${b[0]}</td><td>${b[1]}</td><td>${b[2]}</td><td>${b[3]}</td></tr>`).join('')}</tbody></table></div>
+          <h4>Assessment</h4><ul class="assess">${c.assessment.map(x => `<li>${x}</li>`).join('')}</ul>
+          <p class="muted" style="font-size:.78rem;margin:10px 0 0">Coverage: ${c.coverage.map(x => `<a href="${x[1]}" target="_blank" rel="noopener">${x[0]}</a>`).join(' · ')}</p>
+        </div>
+      </div>`;
+  }
   const w = document.getElementById('wants');
   [['What MAHA voters say they want', m.wants.voters], ['What Republicans are offering', m.wants.gop], ['What Democrats are offering', m.wants.dems]].forEach(([h, items]) => { const d = el('div'); d.appendChild(el('h4', '', h)); const ul = el('ul'); items.forEach(it => ul.appendChild(el('li', '', `<b>${it[0]}</b><span>${it[1]}</span><small>${it[2]}</small>`))); d.appendChild(ul); w.appendChild(d); });
 }
@@ -290,6 +309,8 @@ function sources(p, n, s) {
   add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');
   add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
   add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
+  add('House Democrats Cost-of-Living Healthcare Working Group — memo to Leader Jeffries (Sep 1, 2026; via Politico)', 'https://www.politico.com/f/?id=000001a0-da3a-d276-aff6-fb7f2c380000');
+  add('Politico — House Dems to Jeffries: Woo RFK Jr.’s followers (Sep 25, 2026)', 'https://www.politico.com/news/2026/09/25/house-dems-to-jeffries-woo-rfk-jr-s-followers-00584230');
   add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');
   add('Decision Desk HQ — 2026 governor forecast', 'https://votes.decisiondeskhq.com/forecast/2026/governor');
   add('The Hill — GOP gambles on midterm dividends from MAHA (Aug 30, 2026)', 'https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/');

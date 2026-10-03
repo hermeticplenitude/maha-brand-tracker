@@ -489,8 +489,8 @@
    ],
    [
     "Money",
-    "$100M pledge, $2.4M raised; endorsements concentrated in safe seats",
-    "Daily Signal; The Hill; Politico"
+    "$100M pledge, $3.18M raised and $1.03M cash through Aug 31 (FEC); endorsements concentrated in safe seats",
+    "Daily Signal; FEC via Legis1; Politico"
    ],
    [
     "Friction",
@@ -504,6 +504,11 @@
    ]
   ],
   "dems": [
+   [
+    "'Reclaiming MAHA' is now written policy",
+    "The House Democrats' Cost-of-Living Healthcare Working Group memo to Leader Jeffries (Sep 1; released Sep 17) carries a section titled 'Reclaiming MAHA': it calls MAHA's food-and-chemical concerns 'legitimate', says Kennedy used them 'to spread misinformation about vaccines', and lists 20+ bills (GRAS repeal, baby-food metals, glyphosate immunity, pesticide bans, dye-free school meals). Recommendations only; not yet caucus policy.",
+    "Politico, Sep 25, 2026; memo text"
+   ],
    [
     "Court the non-MAGA fifth",
     "El-Sayed's 'Building a Healthier America' agenda (MI-Sen) is the first explicit play; 1 in 5 MAHA supporters say they trust Democrats more to make America healthier",
@@ -566,6 +571,10 @@
   [
    "2026-09-21",
    "168-signatory mRNA letter: 'you will pay a political price'"
+  ],
+  [
+   "2026-09-17",
+   "House Democrats' working-group memo to Jeffries includes a 'Reclaiming MAHA' section and bill list (Politico publishes Sep 25)"
   ],
   [
    "2026-09-29",
@@ -1079,5 +1088,133 @@
    "US-MS",
    0
   ]
- ]
+ ],
+ "capture": {
+  "title": "Brand capture: the Democratic claim on MAHA",
+  "doc": "Cost-of-Living Healthcare Working Group memo to Leader Jeffries, 'Democratic Healthcare Action for the First 100 Hours, First 100 Days, and First Year of the 120th Congress'",
+  "url": "https://www.politico.com/f/?id=000001a0-da3a-d276-aff6-fb7f2c380000",
+  "coverage": [
+   [
+    "Politico \u2014 House Dems to Jeffries: Woo RFK Jr.'s followers (Sep 25, 2026)",
+    "https://www.politico.com/news/2026/09/25/house-dems-to-jeffries-woo-rfk-jr-s-followers-00584230"
+   ],
+   [
+    "Alston & Bird \u2014 release noted Sep 17, 2026",
+    "https://www.alston.com/en/insights/publications/2026/09/health-care-week-in-review-september-18-2026"
+   ],
+   [
+    "Holland & Knight \u2014 co-leads, status as recommendations",
+    "https://www.hklaw.com/en/insights/publications/2026/09/holland-knight-health-dose-september-22-2026"
+   ]
+  ],
+  "facts": [
+   [
+    "Dated",
+    "Sep 1, 2026; transmitted Sep 17; published by Politico Sep 25"
+   ],
+   [
+    "Co-leads",
+    "Reps. Alexandria Ocasio-Cortez (D-N.Y.) and Terri Sewell (D-Ala.)"
+   ],
+   [
+    "Process",
+    "93 meetings, 139 Democratic members, 145 stakeholder groups"
+   ],
+   [
+    "Status",
+    "Working-group recommendations to the Leader; not an adopted caucus agenda"
+   ],
+   [
+    "Section",
+    "VII of VIII: 'Reclaiming MAHA and Protecting American Families'"
+   ]
+  ],
+  "quotes": [
+   "Americans' concerns about chronic disease and food safety ... are legitimate and long overdue for a serious legislative response.",
+   "The Make America Healthy Again (MAHA) movement has galvanized a significant segment of the Republican Party and attracted many previously apolitical and non-traditional voters, yet many of the concerns raised by the movement are bipartisan in nature.",
+   "HHS Secretary RFK, Jr. and the Trump Administration have used the legitimate concerns of American consumers about food safety to spread misinformation about vaccines, public health, and science.",
+   "The Trump Administration's deregulatory policies clash with the goals of those who supported RFK, Jr. and the MAHA movement."
+  ],
+  "strategy": "Validate the grievance, separate the movement from Kennedy over vaccines and deregulation, then claim the food-and-chemical agenda inside a cost-of-living health package. Target: the roughly one in five registered voters who support MAHA but are not MAGA, whose top vote factor is health-care costs. Paired elsewhere in the memo with an explicitly anti-MAHA vaccine plank (protect ACIP recommendations from 'political interference'; guarantee free vaccine coverage regardless of federal recommendation changes).",
+  "bills": [
+   [
+    "First 100 hours",
+    "H.R. 7601 No Immunity for Glyphosate Act",
+    "Massie (R) & Pingree (D)",
+    "Direct answer to the Feb 2026 glyphosate liability EO that split the movement"
+   ],
+   [
+    "First 100 hours",
+    "H.R. 7867 Infant Formula Safety Modernization Act",
+    "DeLauro (D)",
+    "Formula safety"
+   ],
+   [
+    "First 100 hours",
+    "H.R. 8429 Baby Food Safety Act",
+    "Krishnamoorthi (D)",
+    "Heavy-metal limits in baby food"
+   ],
+   [
+    "First 100 days",
+    "H.R. 4958 GRAS Act",
+    "Pallone (D)",
+    "Ends the 'generally recognized as safe' self-certification loophole, a core MAHA Report demand"
+   ],
+   [
+    "First 100 days",
+    "H.R. 7906 FOOD for Health Act",
+    "Kelly (D) & Kiggans (R)",
+    "Food is Medicine"
+   ],
+   [
+    "First 100 days",
+    "H.R. 8390 National Food as Medicine Program Act",
+    "Ruiz (D)",
+    "Produce prescriptions, nutrition interventions"
+   ],
+   [
+    "First 100 days",
+    "H.R. 9474 Local Foods for Healthy Schools; H.R. 8928 Scratch Cooked Meals for Students",
+    "McDonald-Rivet (D); Hayes (D)",
+    "School meals"
+   ],
+   [
+    "First 100 days",
+    "H.R. 8370 Dietary Supplement Listing Act",
+    "Dexter (D)",
+    "Supplement registration with FDA (a point of friction with parts of the movement)"
+   ],
+   [
+    "First 100 days",
+    "H.R. 2339 Children's Health Protection Act",
+    "Nadler (D)",
+    "Permanent EPA Office of Children's Health Protection"
+   ],
+   [
+    "First year",
+    "H.R. 5085 Protect America's Children from Toxic Pesticides Act",
+    "McGovern (D)",
+    "Pesticide bans"
+   ],
+   [
+    "First year",
+    "H.R. 9231 No Toxic Chemicals in Food Packaging Act",
+    "Schakowsky (D)",
+    "Packaging chemicals"
+   ],
+   [
+    "First year",
+    "Policy idea: ban harmful additives in school meals; front-of-package warnings",
+    "\u2014",
+    "National dye-free school-meal standard"
+   ]
+  ],
+  "assessment": [
+   "Coherent and precisely aimed: it wraps the MAHA food agenda inside the cost-of-living frame that MAHA voters rank first (56% say health costs are a major vote factor vs 45% food safety, 40% vaccines).",
+   "Its central bet, that the food agenda can be separated from Kennedy, is the unmeasured question. One in five MAHA supporters voted Harris and two-thirds of rural supporters see no local impact (seam exists); The Atlantic found almost no supporters willing to vote Democratic (seam may not matter). No voter-file study has tested it.",
+   "Weaknesses in its own text: Section VII arrives after full H.R. 1 repeal and a federal abortion right in the first 100 hours; the ACIP plank writes off the vaccine-skeptic wing; the 75%/64% polling figures are unsourced; it is not leadership policy and is already being attacked as 'trillions in entitlements'.",
+   "For MAHA leadership the operative list is the bipartisan bills (glyphosate immunity, GRAS, baby food, formula, school meals): each one left unaddressed before Nov 3 is an item Democrats can run on as the MAHA agenda Kennedy did not deliver."
+  ]
+ }
 }
