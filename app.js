@@ -20,23 +20,27 @@ const axisX = (labels, every) => ({ grid: { display: false }, ticks: { maxRotati
 const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, stepSize: 20, callback: v => (v <= 100 ? v : '') }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
 
 async function load() {
-  const [trends, polls, news, social, mid, listen, action, brief] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json', 'data/listening.json', 'data/action.json', 'data/brief.json'].map(u => fetch(u).then(r => r.json())));
-  status(trends, polls, news, social, listen);
-  briefCard(brief);
-  scorecard(polls, trends);
-  actionModule(action);
-  if (listen.fec) fecCard(listen.fec);
-  if (listen.googleads) googleAdsChart(listen.googleads, mid);
-  attention(trends);
-  identification(polls);
-  views(polls);
-  midterms(mid);
-  integrity(polls, trends);
-  newsSection(news);
-  if (listen.googlenews) googleNewsPanel(listen.googlenews);
-  socialSection(social);
-  listeningSection(listen);
-  sources(polls, news, social);
+  const B = window.DATA_BASE || 'data/';
+  const [trends, polls, news, social, mid, listen, action, brief, results] = await Promise.all(['trends.json', 'polls.json', 'news.json', 'social.json', 'midterms.json', 'listening.json', 'action.json', 'brief.json', 'results.json'].map(u => fetch(B + u).then(r => r.json())));
+  const has = id => !!document.getElementById(id);
+  const run = (fn, ...args) => { try { fn(...args); } catch (e) { console.error(fn.name, e); } };
+  run(status, trends, polls, news, social, listen);
+  if (has('brief')) run(briefCard, brief);
+  if (has('tiles')) run(scorecard, polls, trends);
+  if (has('calendar')) run(actionModule, action);
+  if (listen.fec && has('fec-card')) run(fecCard, listen.fec);
+  if (listen.googleads && has('c-gads')) run(googleAdsChart, listen.googleads, mid);
+  if (has('c-weekly') || has('attention')) run(attention, trends);
+  if (has('identification')) run(identification, polls);
+  if (has('views')) run(views, polls);
+  if (has('midterms')) run(midterms, mid);
+  if (has('integrity')) run(integrity, polls, trends);
+  if (has('news')) run(newsSection, news);
+  if (listen.googlenews && has('gn-tiles')) run(googleNewsPanel, listen.googlenews);
+  if (has('results')) run(resultsOverlay, results);
+  if (has('studies')) run(socialSection, social);
+  if (has('listen-tiles')) run(listeningSection, listen);
+  if (has('sources')) run(sources, polls, news, social);
 }
 
 function status(t, p, n, s, L) {
@@ -44,7 +48,7 @@ function status(t, p, n, s, L) {
   [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['X + Bluesky + Google News + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
-  document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
+  const du = document.querySelector('[data-updated]'); if (du) du.textContent = fmtDate((L && L.updated) || p.updated);
 }
 
 function fecCard(F) {
@@ -77,6 +81,37 @@ function googleAdsChart(G, m) {
     options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${money(c.parsed.x)}` } } }, scales: { x: { grid: { color: '#ece7de' }, ticks: { font: { size: 10 }, callback: v => '$' + (v / 1e6).toFixed(v >= 1e6 ? 0 : 1) + 'M' } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
   const top4 = [...G.watchlist].sort((a, b) => b.last4w - a.last4w).slice(0, 6);
   document.getElementById('gads-foot').innerHTML = `<p style="font-size:.82rem;margin:10px 0 4px"><b>Last four weeks, biggest Google buyers:</b> ${top4.map(w => `${w.name} ${money(w.last4w)}`).join(' · ')}.</p><p class="muted" style="font-size:.76rem;margin:0">MAHA Action Inc has spent ${money(G.maha_orgs_cycle_total)} on Google this cycle (one ad); MAHA PAC, MAHA Alliance and MAHA Moms PAC do not appear as verified Google advertisers. ${G.new_maha_named_advertisers.length ? 'New MAHA-named advertisers: ' + G.new_maha_named_advertisers.map(n => n.name).join(', ') + '.' : ''} ${G.note}</p>`;
+}
+
+function resultsOverlay(R) {
+  const sgn = m => (m === null || m === undefined) ? '—' : (m > 0 ? 'R +' : m < 0 ? 'D +' : 'even ') + Math.abs(m).toFixed(1);
+  document.getElementById('res-method').textContent = R.method;
+  const pr = document.getElementById('prereg'); R.pre_registered.forEach(t => pr.appendChild(el('li', '', t)));
+  const races = R.races; const done = races.filter(r => r.result.status !== 'pending');
+  const backed = races.filter(r => r.maha_backing === 'yes'), unbacked = races.filter(r => r.maha_backing === 'no');
+  const swing = r => (r.result.margin === null || r.baseline_pres_2024 === null) ? null : r.result.margin - r.baseline_pres_2024;
+  const mean = xs => xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null;
+  const sb = mean(backed.map(swing).filter(x => x !== null)), su = mean(unbacked.map(swing).filter(x => x !== null));
+  const days = Math.max(0, Math.round((new Date(R.election_day + 'T00:00:00') - new Date()) / 86400000));
+  const tiles = [
+    { label: 'Races in the overlay', value: races.length, small: `${backed.length} MAHA-backed`, desc: `${races.filter(r => /Senate/.test(r.office)).length} Senate, ${races.filter(r => /Governor/.test(r.office)).length} governor, ${races.filter(r => /House/.test(r.office)).length} House. Baselines locked ${fmtDate(R.updated)}.`, accent: C.ink },
+    { label: 'Results in', value: done.length, small: `of ${races.length}`, desc: done.length ? `As of ${R.results_as_of || '—'}.` : `Election Day is ${fmtDate(R.election_day)}, ${days} days away. Results populate here as races are called.`, accent: C.grey },
+    { label: 'MAHA-backed swing', value: sb === null ? 'TBD' : (sb > 0 ? '+' : '') + sb.toFixed(1), small: sb === null ? 'Nov 3' : 'pts vs 2024', desc: sb === null ? 'Mean swing of MAHA-backed races against the 2024 presidential baseline, once results are in.' : 'Mean swing of MAHA-backed races against the 2024 presidential baseline.', accent: C.teal },
+    { label: 'Non-backed swing', value: su === null ? 'TBD' : (su > 0 ? '+' : '') + su.toFixed(1), small: su === null ? 'Nov 3' : 'pts vs 2024', desc: su === null ? 'The comparison group: Republican nominees without sourced MAHA backing.' : `Gap: ${(sb - su) > 0 ? '+' : ''}${(sb - su).toFixed(1)} pts in favor of MAHA-backed races${R.national_env.house_popular_vote_margin !== null ? `; national swing ${sgn(R.national_env.house_popular_vote_margin)}` : ''}.`, accent: C.red },
+  ];
+  const wrap = document.getElementById('res-tiles');
+  tiles.forEach(t => { const d = el('div', 'tile'); d.style.setProperty('--accent', t.accent); d.innerHTML = `<div class="label">${t.label}</div><div class="value">${t.value}<small>${t.small}</small></div><p class="desc">${t.desc}</p>`; wrap.appendChild(d); });
+  // chart: baseline (grey) and result (color) per race; before results, baseline only
+  const order = [...races].sort((a, b) => (a.maha_backing === 'yes' ? 0 : 1) - (b.maha_backing === 'yes' ? 0 : 1) || (b.baseline_pres_2024 || 0) - (a.baseline_pres_2024 || 0));
+  const lab = order.map(r => `${r.office.replace('U.S. ', '').replace(' (special)', '*').replace(' (new lines)', '')} · ${r.code.replace('US-', '')}${r.maha_backing === 'yes' ? ' ●' : ''}`);
+  document.getElementById('res-cap').textContent = done.length ? 'Grey = 2024 presidential margin (R minus D); colored = 2026 result. ● = sourced MAHA backing.' : 'Grey bars are the 2024 presidential margin (R minus D) each race will be measured against; result bars appear on election night. ● = sourced MAHA backing.';
+  new Chart(document.getElementById('c-swing'), { type: 'bar', data: { labels: lab, datasets: [
+    { label: '2024 presidential margin', data: order.map(r => r.baseline_pres_2024), backgroundColor: 'rgba(27,42,65,.25)', borderRadius: 2 },
+    { label: '2026 result margin', data: order.map(r => r.result.margin), backgroundColor: order.map(r => r.maha_backing === 'yes' ? C.teal : C.red), borderRadius: 2 } ] },
+    options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${sgn(c.parsed.x)}` } } }, scales: { x: { grid: { color: '#ece7de' }, ticks: { font: { size: 10 }, callback: v => sgn(v) }, min: -20, max: 25 }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
+  const tb = document.querySelector('#res-table tbody');
+  order.forEach(r => { const s = swing(r); tb.appendChild(el('tr', '', `<td><b>${r.state}</b> · ${r.office}<div class="muted" style="font-size:.74rem">${r.dem !== '—' ? r.dem + ' (D) vs ' : ''}${r.rep} (R)</div></td><td>${r.rating}</td><td>${r.maha_backing === 'yes' ? `<span class="so S">backed</span> <span class="muted" style="font-size:.74rem">${r.maha_note}</span>` : r.maha_backing === 'partial' ? `<span class="so" style="background:#c9a227">partial</span> <span class="muted" style="font-size:.74rem">${r.maha_note}</span>` : '<span class="muted">none sourced</span>'}</td><td>${sgn(r.baseline_pres_2024)}</td><td>${sgn(r.baseline_2022)}<div class="muted" style="font-size:.72rem">${r.baseline_2022_label || ''}</div></td><td>${r.result.margin === null ? '<span class="muted">—</span>' : `<b>${sgn(r.result.margin)}</b>${r.result.reporting_pct !== null ? `<div class="muted" style="font-size:.72rem">${r.result.reporting_pct}% reporting</div>` : ''}`}</td><td>${s === null ? '—' : `<b style="color:${s > 0 ? C.red : '#2b4f8a'}">${s > 0 ? '+' : ''}${s.toFixed(1)}</b>`}</td><td>${r.result.status === 'pending' ? '<span class="muted">pending</span>' : r.result.status}${r.result.source ? ` <a href="${r.result.source}" target="_blank" rel="noopener">src</a>` : ''}</td>`)); });
+  document.getElementById('res-note').innerHTML = `Swing = 2026 result margin minus 2024 presidential margin, both R minus D. * special election. Baselines from ${R.sources.map(s => `<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join(' and ')}. Results will be entered from the AP / state canvass on election night with the source linked per race.`;
 }
 
 function briefCard(b) {

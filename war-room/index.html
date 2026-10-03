@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAHA War Room — midterm intelligence from the MAHA Brand Tracker</title>
+<meta name="description" content="Daily brief, decision calendar, race-level MAHA voter estimates, delivery checklist, FEC and ad-spend feeds, and the election-night overlay, drawn from the MAHA Brand Tracker.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2a41'/%3E%3Cpath d='M7 24V9l5 8 5-8v15' stroke='%23f6f3ee' stroke-width='2.6' fill='none' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='11' r='3' fill='%23b23a48'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=gambetta@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="../" aria-label="MAHA Brand Tracker home">
+      <svg class="logo" viewBox="0 0 32 32" aria-label="MAHA Brand Tracker logo" role="img" fill="none">
+        <rect width="32" height="32" rx="6" fill="currentColor" opacity="0.9"/>
+        <path d="M7 24V9l5 8 5-8v15" stroke="#f6f3ee" stroke-width="2.6" stroke-linejoin="round"/>
+        <circle cx="24" cy="11" r="3" fill="#b23a48"/>
+      </svg>
+      <span class="brand-text"><strong>MAHA War Room</strong><span class="brand-sub">Midterm intelligence · MAHA Brand Tracker</span></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#brief">Brief</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#rl-table">Voters</a>
+      <a href="#race-table">Races</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#fec-card">Money</a>
+      <a href="#results">Nov 3</a>
+      <a href="../">Research →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="kicker">War room · updated daily at 7am ET · data as of <span data-updated>Oct 3, 2026</span></p>
+    <h1>What the MAHA vote can and cannot do on November 3, and what to do about it before then.</h1>
+    <p class="lede">The actionable layer of the MAHA Brand Tracker: this morning's numbers, the deadlines that still matter, how many MAHA voters each race actually contains, what the movement's own agenda list looks like against federal action, where the money and the ads are, and the pre-registered test that election night will settle. Every figure links to its source; the <a href="../">research site</a> holds the evidence behind it.</p>
+    <div class="status-row" id="status-row"></div>
+  </section>
+  <section id="scorecard" class="wrap section" style="padding-top:0">
+    <div class="card brief" id="brief"></div>
+  </section>
+<section id="midterms" class="wrap section">
+    <div class="section-head"><h2>Midterms <span class="muted">— MAHA as a voting bloc, <span id="days-out"></span> days out</span></h2><p>Where MAHA actually shows up in the 2026 map: which competitive races have MAHA money, endorsements or candidate outreach, how MAHA search interest is distributed across the states, and what MAHA voters say they want compared with what each party is offering. Race ratings follow <a id="ratings-link" href="#" target="_blank" rel="noopener"></a>; state scores are relative search interest within each state, not supporter counts.</p></div>
+    <div class="tiles bloc" id="bloc"></div>
+    <div class="card calendar" id="calendar"></div>
+    <div class="card">
+      <h3 style="margin:0 0 4px">MAHA voters by the numbers, race by race</h3>
+      <p class="muted" id="rl-method" style="margin:0 0 12px;font-size:.86rem"></p>
+      <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0"><table id="rl-table"><thead><tr><th>State</th><th>Races</th><th>Registered voters</th><th>MAHA supporters (est.)</th><th>MAHA, not MAGA (est.)</th><th>2024 margin</th><th>2022 margin</th><th>Midterm drop-off</th><th>Non-MAGA MAHA needed to cover 2024 margin</th></tr></thead><tbody></tbody></table></div>
+      <p class="muted" id="rl-note" style="margin:10px 0 0;font-size:.78rem"></p>
+    </div>
+    <div class="card" id="checklist"></div>
+    <div class="grid-2">
+      <div class="card" id="fec-card"></div>
+      <figure class="card"><figcaption><strong>Google and YouTube political ad spend by race, 2025–26 cycle</strong><span id="gads-cap"></span></figcaption><div class="chart-wrap tall"><canvas id="c-gads"></canvas></div><div id="gads-foot"></div></figure>
+    </div>
+    <div class="grid-2">
+      <figure class="card span-2">
+        <figcaption><strong>Competitive races and MAHA's footprint</strong><span>Coloured dot = depth of sourced MAHA involvement (endorsement, spending, surrogate visits or candidate outreach). Backing column: public endorsements by MAHA PAC, MAHA Action and Stand for Health Freedom, plus Kennedy campaign appearances, each linked; “none listed” is a statement about public materials on the check date. Click a row's sources to verify.</span></figcaption>
+        <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0">
+          <table id="race-table"><thead><tr><th>State</th><th>Race</th><th>Rating</th><th>Nominees</th><th>MAHA search idx</th><th>MAHA footprint</th><th>Endorsements and backing</th></tr></thead><tbody></tbody></table>
+        </div>
+      </figure>
+      <figure class="card">
+        <figcaption><strong>MAHA search interest by state, past 12 months</strong><span>Google Topic, relative within state. District of Columbia (100) is omitted so the states are readable. Red = state with a competitive Senate or governor race in the table above.</span></figcaption>
+        <div class="chart-wrap" style="height:640px"><canvas id="c-states"></canvas></div>
+      </figure>
+      <div>
+        <figure class="card">
+          <figcaption><strong>Follow the money</strong><span>Pledges vs filings.</span></figcaption>
+          <div class="money" id="money"></div>
+        </figure>
+        <figure class="card">
+          <figcaption><strong>Cycle timeline</strong></figcaption>
+          <ol class="timeline" id="timeline"></ol>
+        </figure>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 4px">What MAHA voters want vs what each party is offering</h3>
+      <p class="muted" style="margin:0 0 14px;font-size:.86rem">Left column is survey evidence about the voters themselves; the other two summarise each party's sourced actions toward them.</p>
+      <div class="wants" id="wants"></div>
+    </div>
+    <div class="card capture" id="capture"></div>
+  </section>
+  <section id="results" class="wrap section">
+    <div class="section-head"><h2>Election-night overlay <span class="muted">— the test, pre-registered</span></h2><p id="res-method"></p></div>
+    <div class="tiles listen-tiles" id="res-tiles"></div>
+    <div class="grid-2">
+      <div class="card"><h3 style="margin:0 0 8px">What would count as evidence</h3><ol class="prereg" id="prereg"></ol></div>
+      <figure class="card"><figcaption><strong>Swing vs 2024 presidential baseline</strong><span id="res-cap"></span></figcaption><div class="chart-wrap tall"><canvas id="c-swing"></canvas></div></figure>
+    </div>
+    <div class="card">
+      <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0"><table id="res-table"><thead><tr><th>Race</th><th>Rating</th><th>MAHA backing</th><th>2024 pres. margin</th><th>Last comparable</th><th>Result</th><th>Swing vs 2024</th><th>Status</th></tr></thead><tbody></tbody></table></div>
+      <p class="muted" id="res-note" style="font-size:.78rem;margin:10px 0 0"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>MAHA War Room · part of the MAHA Brand Tracker · refreshed daily. Google Trends values are relative indices, not counts. Poll figures are quoted from each organisation's release; derived figures are marked.</p>
+</footer>
+
+<script>window.DATA_BASE = "../data/"; window.PAGE = "warroom";</script>
+<script src="../app.js"></script>
+</body>
+</html>

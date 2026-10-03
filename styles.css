@@ -281,3 +281,10 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 .ielist{list-style:none;margin:0;padding:0;font-size:.8rem}.ielist li{padding:4px 0;border-bottom:1px solid var(--rule);line-height:1.4}.ielist .d{color:var(--muted);font-variant-numeric:tabular-nums}
 .so{display:inline-block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 6px;border-radius:999px;color:#fff;background:var(--grey)}.so.S{background:var(--teal)}.so.O{background:var(--red)}
 @media (max-width:640px){.fec{min-width:640px}}
+
+.prereg{margin:0;padding-left:20px;font-size:.86rem}.prereg li{margin:7px 0;line-height:1.5}
+#res-table td,#res-table th{font-size:.8rem}
+.warroom-link{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;border-radius:999px;padding:8px 16px;font-size:.86rem;font-weight:700;margin-top:14px}
+.warroom-link:hover{text-decoration:none;background:var(--red)}
+@media (max-width:640px){#res-table{min-width:860px}}
+#res-table td:nth-child(2),#res-table td:nth-child(4){white-space:nowrap}

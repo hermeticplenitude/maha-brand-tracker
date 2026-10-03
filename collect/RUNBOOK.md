@@ -11,3 +11,7 @@
 9. Scan for new MAHA polls and FEC filings (web search; FEC API for committee C00889351 "MAHA PAC" if available). Do NOT edit polls.json or midterms.json automatically; list anything new in the run summary for hand-coding.
 10. `git add -A && git commit -m "Daily refresh <date>" && git push origin main` (GitHub credentials). GitHub Pages rebuilds in ~1 minute.
 11. Verify https://hermeticplenitude.github.io/maha-brand-tracker/data/brief.json shows today's date.
+
+## Election night (Nov 3–4)
+
+Results live in `data/results.json`, one object per race under `races[]`. For each called race set `result.status` ("called" / "too close" / "runoff"), `reporting_pct`, `dem_pct`, `rep_pct`, `margin` (R minus D, points), `winner`, `source` (AP or state canvass URL) and `as_of`. Set top-level `results_as_of` and, once known, `national_env.house_popular_vote_margin`. The War Room page (`/war-room/`) computes the swing, the backed-vs-non-backed means and the chart from these fields; nothing else needs editing. Baselines (2024 presidential margin; last comparable race) are locked and must not change.
