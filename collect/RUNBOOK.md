@@ -5,7 +5,9 @@
 3. `python collect/bluesky.py` (no auth).
 4. `python collect/googlenews.py` (no auth for feed; labels via pplx_sdk).
 5. `python collect/gdelt.py` (no auth; tolerate rate limits — optional series are skipped automatically).
-6. `python collect/brief.py` — regenerates data/brief.json and BRIEF.md.
-7. Scan for new MAHA polls and FEC filings (web search; FEC API for committee C00889351 "MAHA PAC" if available). Do NOT edit polls.json or midterms.json automatically; list anything new in the run summary for hand-coding.
-8. `git add -A && git commit -m "Daily refresh <date>" && git push origin main` (GitHub credentials). GitHub Pages rebuilds in ~1 minute.
-9. Verify https://hermeticplenitude.github.io/maha-brand-tracker/data/brief.json shows today's date.
+6. `python collect/fec.py` — OpenFEC totals + Schedule E for the five MAHA-branded committees. Uses FEC_API_KEY if set (pass the api.open.fec.gov credential handle so the proxy injects it; the script reads DEMO_KEY otherwise, which is shared and often rate-limited; unavailable committees are marked `unavailable` and the panel says "fetch pending").
+7. `python collect/googleads.py` — downloads Google's political-ads bundle (~300 MB, cached for 20 h in /tmp) and recomputes race-by-race spend. Weekly is enough; Google updates nightly.
+8. `python collect/brief.py` — regenerates data/brief.json and BRIEF.md.
+9. Scan for new MAHA polls and FEC filings (web search; FEC API for committee C00889351 "MAHA PAC" if available). Do NOT edit polls.json or midterms.json automatically; list anything new in the run summary for hand-coding.
+10. `git add -A && git commit -m "Daily refresh <date>" && git push origin main` (GitHub credentials). GitHub Pages rebuilds in ~1 minute.
+11. Verify https://hermeticplenitude.github.io/maha-brand-tracker/data/brief.json shows today's date.
