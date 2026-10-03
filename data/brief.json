@@ -43,12 +43,20 @@
    "href": "#identification"
   },
   {
-   "k": "MAHA PAC",
+   "k": "MAHA PAC (FEC)",
    "v": "$3.18M",
    "u": "raised vs $100M pledge",
    "d": "Q3 due Oct 15",
-   "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 15 quarterly is the next test.",
-   "href": "#midterms"
+   "read": "Through 2026-08-31: $712K in independent expenditures, $1.03M cash. MAHA Action PAC (registered Sep 3) files its first report Oct 15.",
+   "href": "#fec-card"
+  },
+  {
+   "k": "Google ad spend",
+   "v": "$63.9M",
+   "u": "by the 20 races' nominees this cycle",
+   "d": "$20.7M last 4 wks",
+   "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
+   "href": "#c-gads"
   }
  ],
  "deadlines": [

@@ -43,8 +43,17 @@ def main():
     if polls:
         p = polls[0]
         items.append({"k": "Newest poll", "v": f"{p['value']}%", "u": f"{p['construct']} with MAHA ({p['population'].split(' (')[0]})", "d": p["pollster"], "read": (p.get("detail") or "")[:170], "href": "#identification"})
-    # money
-    items.append({"k": "MAHA PAC", "v": "$3.18M", "u": "raised vs $100M pledge", "d": "Q3 due Oct 15", "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 15 quarterly is the next test.", "href": "#midterms"})
+    # money (live from FEC when available)
+    fec = L.get("fec", {}).get("committees", {}).get("C00821439")
+    if fec and fec.get("totals_2026", {}).get("receipts") is not None:
+        t = fec["totals_2026"]
+        items.append({"k": "MAHA PAC (FEC)", "v": f"${t['receipts'] / 1e6:.2f}M", "u": "raised vs $100M pledge", "d": "Q3 due Oct 15", "read": f"Through {t['coverage_end'][:10]}: ${t['independent_expenditures'] / 1e3:.0f}K in independent expenditures, ${t['cash_on_hand'] / 1e6:.2f}M cash. MAHA Action PAC (registered Sep 3) files its first report Oct 15.", "href": "#fec-card"})
+    else:
+        items.append({"k": "MAHA PAC", "v": "$3.18M", "u": "raised vs $100M pledge", "d": "Q3 due Oct 15", "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 15 quarterly is the next test.", "href": "#midterms"})
+    ga = L.get("googleads")
+    if ga:
+        tot = sum(v["D"] + v["R"] for v in ga["races"].values()); l4 = sum(v["last4_D"] + v["last4_R"] for v in ga["races"].values())
+        items.append({"k": "Google ad spend", "v": f"${tot / 1e6:.1f}M", "u": "by the 20 races' nominees this cycle", "d": f"${l4 / 1e6:.1f}M last 4 wks", "read": f"MAHA organizations: ${ga['maha_orgs_cycle_total']:,.0f} on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.", "href": "#c-gads"})
     # next deadlines
     upcoming = []
     for c in A["calendar"]:

@@ -25,6 +25,8 @@ async function load() {
   briefCard(brief);
   scorecard(polls, trends);
   actionModule(action);
+  if (listen.fec) fecCard(listen.fec);
+  if (listen.googleads) googleAdsChart(listen.googleads, mid);
   attention(trends);
   identification(polls);
   views(polls);
@@ -43,6 +45,37 @@ function status(t, p, n, s, L) {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
+}
+
+function fecCard(F) {
+  const card = document.getElementById('fec-card'); if (!card) return;
+  const money = v => (v === null || v === undefined) ? '—' : '$' + Math.round(v).toLocaleString();
+  const cs = Object.entries(F.committees);
+  const rows = cs.map(([id, c]) => `<tr><td><b>${c.name}</b><div class="muted" style="font-size:.72rem">${c.type} · <a href="https://www.fec.gov/data/committee/${id}/" target="_blank" rel="noopener">${id}</a></div></td><td>${c.treasurer || '—'}<div class="muted" style="font-size:.72rem">${c.first_file_date ? 'since ' + fmtDate(c.first_file_date) : ''}${c.last_file_date ? ' · last filing ' + fmtDate(c.last_file_date) : ''}</div></td><td>${c.unavailable ? '<span class="muted">fetch pending</span>' : money(c.totals_2026.receipts)}</td><td>${c.unavailable ? '' : money(c.totals_2026.independent_expenditures)}</td><td>${c.unavailable ? '' : money(c.totals_2026.cash_on_hand)}</td><td class="muted" style="font-size:.74rem">${c.totals_2026.coverage_end ? 'through ' + fmtDate(c.totals_2026.coverage_end.slice(0, 10)) : (c.unavailable ? '' : 'no periodic report yet')}</td></tr>`).join('');
+  const main = F.committees['C00821439'];
+  const byc = main ? main.ie_by_candidate.slice(0, 8).map(x => `<li><span class="so ${x.support_oppose}">${x.support_oppose === 'O' ? 'oppose' : 'support'}</span> ${x.candidate.replace(/,\s*/, ', ').toLowerCase().replace(/\b\w/g, m => m.toUpperCase())}${x.state ? ` (${x.state})` : ''} <b>${money(x.amount)}</b></li>`).join('') : '';
+  const recent = F.recent_ie.filter(r => r.counted).slice(0, 6).map(r => `<li><span class="d">${fmtDate(r.date)}</span> <span class="so ${r.support_oppose}">${r.support_oppose === 'O' ? 'oppose' : 'support'}</span> ${(r.candidate || '?').toLowerCase().replace(/\b\w/g, m => m.toUpperCase())}${r.state ? ` (${r.state})` : ''} <b>${money(r.amount)}</b> <span class="muted">${r.purpose ? '· ' + r.purpose.toLowerCase() : ''}${r.is_notice ? ' · 24/48-hr notice' : ''}</span></li>`).join('');
+  card.innerHTML = `<h3 style="margin:0 0 4px">FEC: every MAHA-branded committee</h3><p class="muted" style="margin:0 0 10px;font-size:.84rem">OpenFEC, collected ${fmtDate(F.collected)}. Next deadline: ${F.next_deadline.label}, ${fmtDate(F.next_deadline.date)}.</p>
+    <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0 0 12px"><table class="fec"><thead><tr><th>Committee</th><th>Treasurer</th><th>Receipts 2025–26</th><th>Indep. expenditures</th><th>Cash on hand</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="grid-2" style="gap:14px"><div><h4>MAHA PAC spending by candidate</h4><ul class="ielist">${byc}</ul></div><div><h4>Latest itemized expenditures</h4><ul class="ielist">${recent || '<li class="muted">none fetched</li>'}</ul></div></div>
+    <p class="muted" style="font-size:.76rem;margin:10px 0 0">${F.note}</p>`;
+}
+
+function googleAdsChart(G, m) {
+  const cap = document.getElementById('gads-cap'); if (!cap) return;
+  const money = v => '$' + Math.round(v).toLocaleString();
+  cap.textContent = `Google's political-ads transparency data, verified election advertisers only, report updated ${G.report_updated_pt.slice(0, 10)}. Cycle spend since ${fmtDate(G.cycle_start)}; MAHA organizations and the opposition groups shown at the bottom for scale.`;
+  const order = Object.entries(G.races).sort((a, b) => (b[1].D + b[1].R) - (a[1].D + a[1].R)).filter(([k]) => k !== 'MAHA orgs' && k !== 'Opposition groups');
+  const labels = order.map(([k]) => k.replace('US-', '').replace(' ', ' · ')).concat(['MAHA orgs (all)', 'Opposition groups']);
+  const dD = order.map(([, v]) => v.D).concat([0, 0]), dR = order.map(([, v]) => v.R).concat([0, 0]);
+  const dO = order.map(() => 0).concat([G.maha_orgs_cycle_total, G.opposition_groups_cycle_total]);
+  new Chart(document.getElementById('c-gads'), { type: 'bar', data: { labels, datasets: [
+    { label: 'Democratic nominee', data: dD, backgroundColor: '#2b4f8a', borderRadius: 2 },
+    { label: 'Republican nominee', data: dR, backgroundColor: C.red, borderRadius: 2 },
+    { label: 'Groups', data: dO, backgroundColor: C.gold, borderRadius: 2 } ] },
+    options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${money(c.parsed.x)}` } } }, scales: { x: { grid: { color: '#ece7de' }, ticks: { font: { size: 10 }, callback: v => '$' + (v / 1e6).toFixed(v >= 1e6 ? 0 : 1) + 'M' } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
+  const top4 = [...G.watchlist].sort((a, b) => b.last4w - a.last4w).slice(0, 6);
+  document.getElementById('gads-foot').innerHTML = `<p style="font-size:.82rem;margin:10px 0 4px"><b>Last four weeks, biggest Google buyers:</b> ${top4.map(w => `${w.name} ${money(w.last4w)}`).join(' · ')}.</p><p class="muted" style="font-size:.76rem;margin:0">MAHA Action Inc has spent ${money(G.maha_orgs_cycle_total)} on Google this cycle (one ad); MAHA PAC, MAHA Alliance and MAHA Moms PAC do not appear as verified Google advertisers. ${G.new_maha_named_advertisers.length ? 'New MAHA-named advertisers: ' + G.new_maha_named_advertisers.map(n => n.name).join(', ') + '.' : ''} ${G.note}</p>`;
 }
 
 function briefCard(b) {
@@ -361,6 +394,8 @@ function sources(p, n, s) {
   add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');
   add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
   add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
+  add('OpenFEC API — committee totals and Schedule E independent expenditures', 'https://api.open.fec.gov/developers/');
+  add('Google Political Advertising transparency data (advertiser weekly spend)', 'https://adstransparency.google.com/political?topic=political&region=US');
   add('Iowa Secretary of State — voter registration totals, Sep 1, 2026', 'https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CoSep26.pdf');
   add('North Carolina State Board of Elections — voter dates and deadlines', 'https://www.ncsbe.gov/event-terms/voter-dates-deadlines');
   add('FDA — GRAS proposed rule (Aug 10, 2026)', 'https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras');

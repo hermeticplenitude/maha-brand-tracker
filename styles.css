@@ -275,3 +275,9 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 .bk-row b{white-space:nowrap;font-weight:700}.bk-row span{color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .bk{flex:none;width:8px;height:8px;border-radius:50%;background:var(--grey);position:relative;top:-1px}
 .bk.yes{background:var(--teal)}.bk.partial{background:#c9a227}.bk.none{background:var(--light)}.bk.unknown{background:transparent;border:1.5px solid var(--grey);width:7px;height:7px}
+
+.fec{width:100%;border-collapse:collapse;font-size:.8rem}.fec th{text-align:left;font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:6px;border-bottom:2px solid var(--ink)}.fec td{padding:7px 6px;border-bottom:1px solid var(--rule);vertical-align:top}
+#fec-card h4{font-family:var(--serif);font-weight:600;font-size:1rem;margin:4px 0 6px}
+.ielist{list-style:none;margin:0;padding:0;font-size:.8rem}.ielist li{padding:4px 0;border-bottom:1px solid var(--rule);line-height:1.4}.ielist .d{color:var(--muted);font-variant-numeric:tabular-nums}
+.so{display:inline-block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:1px 6px;border-radius:999px;color:#fff;background:var(--grey)}.so.S{background:var(--teal)}.so.O{background:var(--red)}
+@media (max-width:640px){.fec{min-width:640px}}
