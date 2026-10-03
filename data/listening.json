@@ -11623,68 +11623,66 @@
      "contributions": 8598.47
     },
     "ie_count": 658,
-    "ie_total": 1339441.94,
-    "ie_rows_fetched": 100,
+    "ie_total": 834450.01,
+    "ie_total_2024_reported_late": 14098606.29,
+    "ie_rows_fetched": 658,
     "ie_by_candidate": [
      {
       "candidate": "CASSIDY, BILL SEN.",
       "support_oppose": "O",
-      "state": "LA",
       "amount": 543043.02
-     },
-     {
-      "candidate": "TRUMP, DONALD J",
-      "support_oppose": "S",
-      "state": "US",
-      "amount": 296003.22
      },
      {
       "candidate": "LETLOW, JULIA REP.",
       "support_oppose": "S",
-      "state": "LA",
       "amount": 209083.34
-     },
-     {
-      "candidate": "KENNEDY, ROBERT F JR",
-      "support_oppose": "S",
-      "state": "US",
-      "amount": 208988.71
      },
      {
       "candidate": "ROGERS, AUSTIN",
       "support_oppose": "S",
-      "state": "FL",
       "amount": 29279.12
      },
      {
       "candidate": "HONEYCUTT, JENNY COSTA",
       "support_oppose": "S",
-      "state": "SC",
       "amount": 25900.0
      },
      {
       "candidate": "ALFONSO, MICHAEL",
       "support_oppose": "S",
-      "state": "WI",
       "amount": 20089.16
      },
      {
       "candidate": "SCOTT, AUSTIN REP.",
       "support_oppose": "O",
-      "state": "GA",
       "amount": 3496.21
      },
      {
       "candidate": "THOMPSON, GLENN REP. JR.",
       "support_oppose": "O",
-      "state": "PA",
       "amount": 1788.42
      },
      {
       "candidate": "MILLER, MARY REP.",
       "support_oppose": "O",
-      "state": "IL",
       "amount": 1770.74
+     }
+    ],
+    "ie_by_candidate_2024": [
+     {
+      "candidate": "KENNEDY, ROBERT F JR",
+      "support_oppose": "S",
+      "amount": 13726599.07
+     },
+     {
+      "candidate": "TRUMP, DONALD J",
+      "support_oppose": "S",
+      "amount": 300703.22
+     },
+     {
+      "candidate": "KENNEDY, ROBERT F JR",
+      "support_oppose": "?",
+      "amount": 71304.0
      }
     ]
    },
@@ -11711,8 +11709,10 @@
     },
     "ie_count": 0,
     "ie_total": 0,
+    "ie_total_2024_reported_late": 0,
     "ie_rows_fetched": 0,
-    "ie_by_candidate": []
+    "ie_by_candidate": [],
+    "ie_by_candidate_2024": []
    },
    "C00960799": {
     "name": "MAHA Action PAC",
@@ -11737,15 +11737,17 @@
     },
     "ie_count": 0,
     "ie_total": 0,
+    "ie_total_2024_reported_late": 0,
     "ie_rows_fetched": 0,
-    "ie_by_candidate": []
+    "ie_by_candidate": [],
+    "ie_by_candidate_2024": []
    },
    "C00888172": {
     "name": "MAHA Alliance",
     "type": "Super PAC",
     "note": "Treasurer Del Bigtree; registered Sep 2024, last filing Nov 2025",
     "since": "2024-09-05",
-    "unavailable": true,
+    "unavailable": false,
     "treasurer": "BIGTREE, DEL",
     "city": "VIENNA",
     "state": "VA",
@@ -11753,44 +11755,74 @@
     "first_file_date": "2024-09-05",
     "last_file_date": "2025-11-20",
     "totals_2026": {
-     "receipts": null,
-     "disbursements": null,
-     "independent_expenditures": null,
-     "cash_on_hand": null,
-     "coverage_end": null,
-     "individual_contributions": null,
-     "contributions": null
+     "receipts": 73211.15,
+     "disbursements": 839390.33,
+     "independent_expenditures": 0.0,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2025-09-25T00:00:00",
+     "individual_contributions": -32648.35,
+     "contributions": 67351.65
     },
-    "ie_count": null,
+    "ie_count": 102,
     "ie_total": 0,
-    "ie_rows_fetched": 0,
-    "ie_by_candidate": []
+    "ie_total_2024_reported_late": 4643945.1,
+    "ie_rows_fetched": 102,
+    "ie_by_candidate": [],
+    "ie_by_candidate_2024": [
+     {
+      "candidate": "TRUMP, DONALD J.",
+      "support_oppose": "S",
+      "amount": 2520277.6
+     },
+     {
+      "candidate": "HARRIS, KAMALA",
+      "support_oppose": "O",
+      "amount": 2085167.5
+     },
+     {
+      "candidate": "KUCINICH, DENNIS",
+      "support_oppose": "S",
+      "amount": 19250.0
+     },
+     {
+      "candidate": "MILLER, MAX",
+      "support_oppose": "O",
+      "amount": 17500.0
+     },
+     {
+      "candidate": "MILLER, MAX J.",
+      "support_oppose": "O",
+      "amount": 1750.0
+     }
+    ]
    },
    "C00896936": {
     "name": "MAHA Moms PAC",
     "type": "Super PAC",
     "note": "Registered Jan 30, 2025",
     "since": "2025-01-30",
-    "unavailable": true,
-    "treasurer": null,
-    "city": null,
-    "state": null,
-    "filing_frequency": null,
-    "first_file_date": null,
-    "last_file_date": null,
+    "unavailable": false,
+    "treasurer": "SIEKMAN, PAMELA RENEE",
+    "city": "PATASKALA",
+    "state": "OH",
+    "filing_frequency": "T",
+    "first_file_date": "2025-01-30",
+    "last_file_date": "2025-07-21",
     "totals_2026": {
-     "receipts": null,
-     "disbursements": null,
-     "independent_expenditures": null,
-     "cash_on_hand": null,
-     "coverage_end": null,
-     "individual_contributions": null,
-     "contributions": null
+     "receipts": 0.0,
+     "disbursements": 0.0,
+     "independent_expenditures": 0.0,
+     "cash_on_hand": 0.0,
+     "coverage_end": "2025-07-16T00:00:00",
+     "individual_contributions": 0.0,
+     "contributions": 0.0
     },
-    "ie_count": null,
+    "ie_count": 0,
     "ie_total": 0,
+    "ie_total_2024_reported_late": 0,
     "ie_rows_fetched": 0,
-    "ie_by_candidate": []
+    "ie_by_candidate": [],
+    "ie_by_candidate_2024": []
    }
   },
   "recent_ie": [

@@ -3,7 +3,8 @@
 Pulls, for each MAHA-branded committee on file, the current-cycle financial totals and every
 Schedule E independent expenditure (24/48-hour reports included) from the OpenFEC API, and writes
 the "fec" block of data/listening.json. Uses DEMO_KEY (40 calls/hour) unless FEC_API_KEY is set;
-the whole run is ~12 calls, spaced 2 s apart.
+the whole run is ~15–25 calls, spaced 2 s apart. Run as `FEC_API_KEY=proxy python collect/fec.py` with the
+api.open.fec.gov credential handle in api_credentials and the proxy supplies a personal key.
 """
 import json, os, time, datetime as dt, pathlib, subprocess, urllib.parse, collections
 from zoneinfo import ZoneInfo
@@ -37,7 +38,8 @@ def get(path, **params):
     f = CACHE / f"{cache_key(path, params)}_{_today().isoformat()}.json"
     if f.exists():
         return json.loads(f.read_text())
-    params["api_key"] = KEY
+    if KEY != "proxy":  # with FEC_API_KEY=proxy the credential proxy injects api_key itself
+        params["api_key"] = KEY
     url = f"{API}{path}?" + urllib.parse.urlencode(params, doseq=True)
     for i in range(2):
         out = subprocess.run(["curl", "-s", "-m", "60", url], capture_output=True, text=True).stdout
@@ -61,6 +63,12 @@ def main():
         tot = get(f"/committee/{cid}/totals/", cycle=2026)
         t = (tot.get("results") or [{}])[0]
         ie = get("/schedules/schedule_e/", committee_id=cid, two_year_transaction_period=2026, per_page=100, sort="-expenditure_date")
+        if KEY != "DEMO_KEY":
+            li = ie.get("pagination", {}).get("last_indexes") or {}
+            while li and li.get("last_index") and len(ie.get("results", [])) < 2000:
+                nxt = get("/schedules/schedule_e/", committee_id=cid, two_year_transaction_period=2026, per_page=100, sort="-expenditure_date", last_index=li["last_index"], last_expenditure_date=li["last_expenditure_date"])
+                if not nxt.get("results"): break
+                ie["results"] += nxt["results"]; li = nxt.get("pagination", {}).get("last_indexes") or {}
         rows = []; seen_keys = set()
         cov = ((t.get("coverage_end_date") or "")[:10])
         for r in ie.get("results", []):
@@ -71,20 +79,22 @@ def main():
             counted = key not in seen_keys; seen_keys.add(key)
             rows.append({"counted": counted, "is_notice": bool(r.get("is_notice")), "date": (r.get("expenditure_date") or r.get("dissemination_date") or "")[:10], "amount": r.get("expenditure_amount"), "support_oppose": r.get("support_oppose_indicator"), "candidate": r.get("candidate_name"), "office": r.get("candidate_office"), "state": r.get("candidate_office_state"), "district": r.get("candidate_office_district"), "party": r.get("candidate_party"), "payee": r.get("payee_name"), "purpose": (r.get("expenditure_description") or "")[:120], "filing": r.get("pdf_url"), "committee": meta["name"]})
         all_ie += rows
-        by_cand = collections.defaultdict(float)
+        by_cand = collections.defaultdict(float); by_cand_2024 = collections.defaultdict(float)
         for r in rows:
-            if r["amount"] and r["counted"]: by_cand[(r["candidate"] or "?", r["support_oppose"] or "?", r["state"] or "")] += r["amount"]
+            if r["amount"] and r["counted"]:
+                (by_cand if r["date"] >= "2025-01-01" else by_cand_2024)[(r["candidate"] or "?", r["support_oppose"] or "?")] += r["amount"]
         unavailable = any(x.get("unavailable") for x in (info, tot, ie))
         out[cid] = {**meta, "unavailable": unavailable, "treasurer": res.get("treasurer_name"), "city": res.get("city"), "state": res.get("state"), "filing_frequency": res.get("filing_frequency"), "first_file_date": res.get("first_file_date"), "last_file_date": res.get("last_file_date"),
                     "totals_2026": {"receipts": t.get("receipts"), "disbursements": t.get("disbursements"), "independent_expenditures": t.get("independent_expenditures"), "cash_on_hand": t.get("last_cash_on_hand_end_period"), "coverage_end": t.get("coverage_end_date"), "individual_contributions": t.get("individual_contributions"), "contributions": t.get("contributions")},
-                    "ie_count": ie.get("pagination", {}).get("count", len(rows)), "ie_total": round(sum(r["amount"] or 0 for r in rows if r["counted"]), 2), "ie_rows_fetched": len(rows), "ie_by_candidate": [{"candidate": k[0], "support_oppose": k[1], "state": k[2], "amount": round(v, 2)} for k, v in sorted(by_cand.items(), key=lambda kv: -kv[1])]}
+                    "ie_count": ie.get("pagination", {}).get("count", len(rows)), "ie_total": round(sum(r["amount"] or 0 for r in rows if r["counted"] and r["date"] >= "2025-01-01"), 2), "ie_total_2024_reported_late": round(sum(r["amount"] or 0 for r in rows if r["counted"] and r["date"] < "2025-01-01"), 2), "ie_rows_fetched": len(rows), "ie_by_candidate": [{"candidate": k[0], "support_oppose": k[1], "amount": round(v, 2)} for k, v in sorted(by_cand.items(), key=lambda kv: -kv[1])],
+                    "ie_by_candidate_2024": [{"candidate": k[0], "support_oppose": k[1], "amount": round(v, 2)} for k, v in sorted(by_cand_2024.items(), key=lambda kv: -kv[1])][:5]}
         print(cid, meta["name"], "| receipts", t.get("receipts"), "| IE", t.get("independent_expenditures"), "| rows", len(rows), "| coverage", t.get("coverage_end_date"))
     all_ie.sort(key=lambda r: r["date"], reverse=True)
     existing = json.loads(OUT.read_text()) if OUT.exists() else {}
     existing["updated"] = _today().isoformat()
     existing["fec"] = {"source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)", "url": "https://api.open.fec.gov/developers/", "collected": _today().isoformat(),
                        "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025–26 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24–48 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
-                       "committees": out, "recent_ie": all_ie[:40], "next_deadline": {"date": "2026-10-15", "label": "Q3 (Jul 1 – Sep 30) reports due"}}
+                       "committees": out, "recent_ie": [r for r in all_ie if r["date"] >= "2025-01-01"][:40], "next_deadline": {"date": "2026-10-15", "label": "Q3 (Jul 1 – Sep 30) reports due"}}
     OUT.write_text(json.dumps(existing, indent=1))
     print("wrote fec")
 
