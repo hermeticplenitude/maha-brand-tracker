@@ -46,6 +46,7 @@
 
   <section id="scorecard" class="wrap section">
     <div class="section-head"><h2>Scorecard</h2><p>Headline readings, each from the single most defensible source. Click any tile for the underlying data.</p></div>
+    <div class="card brief" id="brief"></div>
     <div class="tiles" id="tiles"></div>
   </section>
 
@@ -123,6 +124,14 @@
   <section id="midterms" class="wrap section">
     <div class="section-head"><h2>Midterms <span class="muted">— MAHA as a voting bloc, <span id="days-out"></span> days out</span></h2><p>Where MAHA actually shows up in the 2026 map: which competitive races have MAHA money, endorsements or candidate outreach, how MAHA search interest is distributed across the states, and what MAHA voters say they want compared with what each party is offering. Race ratings follow <a id="ratings-link" href="#" target="_blank" rel="noopener"></a>; state scores are relative search interest within each state, not supporter counts.</p></div>
     <div class="tiles bloc" id="bloc"></div>
+    <div class="card calendar" id="calendar"></div>
+    <div class="card">
+      <h3 style="margin:0 0 4px">MAHA voters by the numbers, race by race</h3>
+      <p class="muted" id="rl-method" style="margin:0 0 12px;font-size:.86rem"></p>
+      <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0"><table id="rl-table"><thead><tr><th>State</th><th>Races</th><th>Registered voters</th><th>MAHA supporters (est.)</th><th>MAHA, not MAGA (est.)</th><th>2024 margin</th><th>2022 margin</th><th>Midterm drop-off</th><th>Non-MAGA MAHA needed to cover 2024 margin</th></tr></thead><tbody></tbody></table></div>
+      <p class="muted" id="rl-note" style="margin:10px 0 0;font-size:.78rem"></p>
+    </div>
+    <div class="card" id="checklist"></div>
     <div class="grid-2">
       <figure class="card span-2">
         <figcaption><strong>Competitive races and MAHA's footprint</strong><span>Coloured dot = depth of sourced MAHA involvement (endorsement, spending, surrogate visits or candidate outreach). Click a row's sources to verify.</span></figcaption>

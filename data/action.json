@@ -1,0 +1,409 @@
+{
+ "updated": "2026-10-03",
+ "method": "Race-level estimates apply national survey rates to each state's registered-voter count: 43% of registered voters support MAHA and 56% of those are MAGA Republicans (KFF, Apr 14\u201319, 2026), so about 18.9% of registered voters support MAHA without being MAGA. National rates will overstate the bloc in blue states and understate it in rural red states; treat the counts as order-of-magnitude, not forecasts. Margins are the 2024 presidential result and the most recent comparable statewide race in 2022; the midterm drop-off is votes cast in 2024 minus votes cast in 2022, the pool of occasional voters whose turnout decides a midterm.",
+ "rates": {
+  "support": 0.43,
+  "maga_share_of_supporters": 0.56,
+  "source": "KFF Health Tracking Poll, Apr 2026",
+  "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"
+ },
+ "states": [
+  {
+   "code": "US-IA",
+   "state": "Iowa",
+   "rv": 1819109,
+   "rv_note": "Active registered voters, Sep 1, 2026",
+   "rv_url": "https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CoSep26.pdf",
+   "v2024": 1663506,
+   "m2024": 13.21,
+   "v2022": 1216646,
+   "m2022": 12.17,
+   "w2022": "Grassley (R), Senate",
+   "races": "Senate (toss-up), Governor (lean D)"
+  },
+  {
+   "code": "US-MI",
+   "state": "Michigan",
+   "rv": 7385080,
+   "rv_note": "Registered voters, Sep 30, 2026",
+   "rv_url": "https://www.cbsnews.com/detroit/news/michigan-voters-beginning-to-return-absentee-ballots-voter-database-shows/",
+   "v2024": 5664186,
+   "m2024": 1.42,
+   "v2022": 4461972,
+   "m2022": -10.53,
+   "w2022": "Whitmer (D), Governor",
+   "races": "Senate (toss-up), Governor (lean D)"
+  },
+  {
+   "code": "US-OH",
+   "state": "Ohio",
+   "rv": 7896681,
+   "rv_note": "Registered voters certified with May 2026 primary",
+   "rv_url": "https://www.ohiosos.gov/elections/voters/office/media-center/categories/press-releases/2026-06-03",
+   "v2024": 5767788,
+   "m2024": 11.21,
+   "v2022": 4133342,
+   "m2022": 6.11,
+   "w2022": "Vance (R), Senate",
+   "races": "Senate special (toss-up), Governor (toss-up)"
+  },
+  {
+   "code": "US-ME",
+   "state": "Maine",
+   "rv": 1038603,
+   "rv_note": "Active registered voters, Jan 1, 2026",
+   "rv_url": "https://legislature.maine.gov/doc/11936",
+   "v2024": 831375,
+   "m2024": -6.94,
+   "v2022": 676819,
+   "m2022": -13.24,
+   "w2022": "Mills (D), Governor",
+   "races": "Senate (toss-up)"
+  },
+  {
+   "code": "US-NH",
+   "state": "New Hampshire",
+   "rv": 888475,
+   "rv_note": "Registered voters, Aug 10, 2026",
+   "rv_url": "https://www.nhpr.org/politics/2026-09-08/pappas-sununu-win-senate-primaries-nh-newhampshire-elections-2026",
+   "v2024": 826189,
+   "m2024": -2.78,
+   "v2022": 620975,
+   "m2022": -9.15,
+   "w2022": "Hassan (D), Senate",
+   "races": "Senate (toss-up)"
+  },
+  {
+   "code": "US-NC",
+   "state": "North Carolina",
+   "rv": 7853117,
+   "rv_note": "Registered voters, Sep 27, 2026 (NC Elections Transparency Project from NCSBE data)",
+   "rv_url": "https://ncelectionstransparency.com/trends",
+   "v2024": 5699141,
+   "m2024": 3.21,
+   "v2022": 3773924,
+   "m2022": 3.23,
+   "w2022": "Budd (R), Senate",
+   "races": "Senate (lean D)"
+  },
+  {
+   "code": "US-GA",
+   "state": "Georgia",
+   "rv": 7500000,
+   "rv_note": "\u22487.5M active registered voters, Sep 2026 (Secretary of State via CBS)",
+   "rv_url": "https://www.cbsnews.com/atlanta/news/national-voter-registration-day-events-planned-across-metro-atlanta/",
+   "v2024": 5250905,
+   "m2024": 2.2,
+   "v2022": 3953408,
+   "m2022": 7.53,
+   "w2022": "Kemp (R), Governor",
+   "races": "Governor (toss-up)"
+  },
+  {
+   "code": "US-WI",
+   "state": "Wisconsin",
+   "rv": 3618602,
+   "rv_note": "Active registered voters, Sep 1, 2026 (Wisconsin Elections Commission)",
+   "rv_url": "https://elections.wi.gov/statistics-data/voter-registration-statistics",
+   "v2024": 3422918,
+   "m2024": 0.86,
+   "v2022": 2656490,
+   "m2022": -3.4,
+   "w2022": "Evers (D), Governor",
+   "races": "Governor (toss-up)"
+  },
+  {
+   "code": "US-NV",
+   "state": "Nevada",
+   "rv": 2062136,
+   "rv_note": "Active registered voters, Aug 2026 (Secretary of State)",
+   "rv_url": "https://www.fox5vegas.com/2026/09/03/nevada-active-voter-registration-drops-by-more-than-50000-august/",
+   "v2024": 1484840,
+   "m2024": 3.1,
+   "v2022": 1019071,
+   "m2022": 1.51,
+   "w2022": "Lombardo (R), Governor",
+   "races": "Governor (toss-up)"
+  },
+  {
+   "code": "US-AZ",
+   "state": "Arizona",
+   "rv": 4428440,
+   "rv_note": "\u22484.4M registered voters, 2026 (L2 estimate via Independent Voter Project; Secretary of State reports 'nearly 4.5 million')",
+   "rv_url": "https://azsos.gov/elections/election-information",
+   "v2024": 3390161,
+   "m2024": 5.53,
+   "v2022": 2559485,
+   "m2022": -0.67,
+   "w2022": "Hobbs (D), Governor",
+   "races": "Governor (lean D)"
+  },
+  {
+   "code": "US-TX",
+   "state": "Texas",
+   "rv": 18657918,
+   "rv_note": "Registered voters, Mar 2026 (Secretary of State)",
+   "rv_url": "https://www.sos.state.tx.us/elections/historical/mar2026.shtml",
+   "v2024": 11388674,
+   "m2024": 13.68,
+   "v2022": 8101994,
+   "m2022": 10.88,
+   "w2022": "Abbott (R), Governor",
+   "races": "Senate (toss-up)"
+  },
+  {
+   "code": "US-AK",
+   "state": "Alaska",
+   "rv": 601906,
+   "rv_note": "Registered voters at Aug 18, 2026 primary (Division of Elections)",
+   "rv_url": "https://www.elections.alaska.gov/",
+   "v2024": 338177,
+   "m2024": 13.1,
+   "v2022": 261705,
+   "m2022": 7.4,
+   "w2022": "Murkowski (R), Senate",
+   "races": "Senate (toss-up), Governor (toss-up)"
+  }
+ ],
+ "results_sources": [
+  [
+   "2024 presidential results by state",
+   "https://en.wikipedia.org/wiki/2024_United_States_presidential_election"
+  ],
+  [
+   "2022 statewide results",
+   "https://en.wikipedia.org/wiki/2022_United_States_elections"
+  ]
+ ],
+ "calendar": [
+  {
+   "code": "US-IA",
+   "state": "Iowa",
+   "reg": "2026-10-19",
+   "reg_note": "pre-registration; same-day registration available",
+   "early": "2026-10-14",
+   "early_note": "in-person absentee and mailed ballots begin",
+   "mail_req": "2026-10-19",
+   "url": "https://sos.iowa.gov/"
+  },
+  {
+   "code": "US-MI",
+   "state": "Michigan",
+   "reg": "2026-10-19",
+   "reg_note": "online / mail; in person through Nov 3",
+   "early": "2026-10-24",
+   "early_note": "mandatory early voting Oct 24 \u2013 Nov 1; absentee ballots available since Sep 24",
+   "mail_req": "2026-10-30",
+   "url": "https://www.michigan.gov/sos/elections"
+  },
+  {
+   "code": "US-OH",
+   "state": "Ohio",
+   "reg": "2026-10-05",
+   "reg_note": "",
+   "early": "2026-10-06",
+   "early_note": "early in-person and mail voting begin",
+   "mail_req": "2026-10-27",
+   "url": "https://www.ohiosos.gov/elections/voters/"
+  },
+  {
+   "code": "US-ME",
+   "state": "Maine",
+   "reg": "2026-11-03",
+   "reg_note": "same-day registration; mail registration closes 21 days out",
+   "early": "2026-10-05",
+   "early_note": "in-person absentee voting from 30 days out",
+   "mail_req": "2026-10-29",
+   "url": "https://www.maine.gov/sos/elections-voting"
+  },
+  {
+   "code": "US-NH",
+   "state": "New Hampshire",
+   "reg": "2026-11-03",
+   "reg_note": "same-day registration; no early voting",
+   "early": null,
+   "early_note": "no in-person early voting; absentee by excuse only",
+   "mail_req": "2026-11-02",
+   "url": "https://www.sos.nh.gov/elections"
+  },
+  {
+   "code": "US-NC",
+   "state": "North Carolina",
+   "reg": "2026-10-09",
+   "reg_note": "same-day registration during early voting",
+   "early": "2026-10-15",
+   "early_note": "early voting Oct 15\u201331; absentee ballots mailed since Sep 4",
+   "mail_req": "2026-10-20",
+   "url": "https://www.ncsbe.gov/event-terms/voter-dates-deadlines"
+  },
+  {
+   "code": "US-GA",
+   "state": "Georgia",
+   "reg": "2026-10-05",
+   "reg_note": "",
+   "early": "2026-10-13",
+   "early_note": "early voting Oct 13\u201330",
+   "mail_req": "2026-10-23",
+   "url": "https://georgia.gov/georgia-election-guide"
+  },
+  {
+   "code": "US-WI",
+   "state": "Wisconsin",
+   "reg": "2026-10-14",
+   "reg_note": "mail / online; in person Oct 30; same-day at polls",
+   "early": "2026-10-20",
+   "early_note": "in-person absentee from 14 days out",
+   "mail_req": "2026-10-29",
+   "url": "https://elections.wi.gov/"
+  },
+  {
+   "code": "US-NV",
+   "state": "Nevada",
+   "reg": "2026-10-06",
+   "reg_note": "mail / in person; online and same-day through Nov 3",
+   "early": "2026-10-17",
+   "early_note": "early voting Oct 17\u201330; all active voters mailed a ballot",
+   "mail_req": "2026-10-20",
+   "url": "https://www.nvsos.gov/sos/elections"
+  },
+  {
+   "code": "US-AZ",
+   "state": "Arizona",
+   "reg": "2026-10-05",
+   "reg_note": "",
+   "early": "2026-10-07",
+   "early_note": "early voting and ballot mailing begin; last in-person early Oct 30",
+   "mail_req": "2026-10-23",
+   "url": "https://www.azcleanelections.gov/state-general"
+  },
+  {
+   "code": "US-TX",
+   "state": "Texas",
+   "reg": "2026-10-05",
+   "reg_note": "",
+   "early": "2026-10-19",
+   "early_note": "early voting Oct 19\u201330",
+   "mail_req": "2026-10-23",
+   "url": "https://www.votetexas.gov/faq/early-voting.html"
+  },
+  {
+   "code": "US-AK",
+   "state": "Alaska",
+   "reg": "2026-10-04",
+   "reg_note": "",
+   "early": "2026-10-19",
+   "early_note": "early and absentee in-person voting begin",
+   "mail_req": "2026-10-24",
+   "url": "https://www.elections.alaska.gov/"
+  }
+ ],
+ "national_dates": [
+  [
+   "2026-10-15",
+   "FEC Q3 reports due (MAHA PAC receipts through Sep 30)"
+  ],
+  [
+   "2026-10-05",
+   "Registration closes in OH, GA, AZ, TX"
+  ],
+  [
+   "2026-11-03",
+   "Election Day"
+  ]
+ ],
+ "checklist": {
+  "intro": "The House Democrats' 'Reclaiming MAHA' memo attaches these items to a Democratic first year. For each: has the administration or a Republican delivered something concrete, and has a Democrat campaigned on it? Rows with no concrete delivery before Nov 3 are the openings being handed to the other side.",
+  "legend": {
+   "delivered": "Final action in force",
+   "partial": "Proposed, voluntary or in progress",
+   "none": "No federal action",
+   "reversed": "Federal action in the opposite direction"
+  },
+  "rows": [
+   {
+    "item": "Glyphosate liability (No Immunity for Glyphosate Act, Massie\u2013Pingree)",
+    "status": "reversed",
+    "admin": "Feb 18, 2026 executive order declares glyphosate critical to national defense and orders prioritized domestic production; June 2026 Supreme Court ruling (7\u20132, administration siding with Bayer) blocks most state failure-to-warn suits.",
+    "admin_url": "https://usrtk.org/pesticides/tracking-trump-administration-favors-to-the-pesticide-industry/",
+    "dem": "Memo's first 100-hours item; Pingree co-lead. Sharpest intra-movement backlash of the cycle."
+   },
+   {
+    "item": "GRAS loophole (GRAS Act, Pallone)",
+    "status": "partial",
+    "admin": "FDA proposed rule Aug 10, 2026 to require GRAS notices for all new substances (docket FDA-2025-N-3262). Proposed, not final; no comment deadline posted.",
+    "admin_url": "https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras",
+    "dem": "100-days item. Finalizing before Nov 3 would remove it from the Democratic list."
+   },
+   {
+    "item": "Baby-food heavy metals (Baby Food Safety Act, Krishnamoorthi)",
+    "status": "partial",
+    "admin": "FDA 'Closer to Zero' action levels for lead in processed baby food (Jan 2025 guidance, 10\u201320 ppb); Apr 29, 2026 formula contaminant testing results. Guidance, not enforceable limits.",
+    "admin_url": "https://www.fda.gov/food/environmental-contaminants-food/testing-results-arsenic-lead-cadmium-and-mercury",
+    "dem": "100-hours item: enforceable federal limits and recall authority."
+   },
+   {
+    "item": "Infant formula safety (Infant Formula Safety Modernization Act, DeLauro)",
+    "status": "partial",
+    "admin": "Operation Stork Speed (Mar 18, 2025): first nutrient-requirement review in decades, increased contaminant testing, Jul 13, 2026 letter to manufacturers. Administrative, not statutory.",
+    "admin_url": "https://www.fda.gov/food/infant-formula-homepage/operation-stork-speed",
+    "dem": "100-hours item: mandatory contamination detection and reporting."
+   },
+   {
+    "item": "Synthetic dyes out of school meals (national standard)",
+    "status": "partial",
+    "admin": "Red No. 3 revoked Jan 15, 2025 (compliance Jan 15, 2027); Orange B revoked effective Sep 8, 2026; six remaining dyes targeted for end-2027 by voluntary industry pledges (General Mills K-12 by summer 2026). No federal school-meal standard; states acting individually.",
+    "admin_url": "https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes",
+    "dem": "First-year item: national dye-free school-meal standard so every child is covered, 'not just those in states that have acted'."
+   },
+   {
+    "item": "Front-of-package warnings",
+    "status": "partial",
+    "admin": "FDA proposed rule Jan 2025; final rule listed for Dec 2026 on FDA's regulatory agenda. Not final.",
+    "admin_url": "https://www.fda.gov/food/food-labeling-nutrition/front-package-nutrition-labeling",
+    "dem": "First-year item."
+   },
+   {
+    "item": "Pesticide bans (Protect America's Children from Toxic Pesticides Act, McGovern)",
+    "status": "reversed",
+    "admin": "Sep 9, 2025 MAHA Strategy 'leaves pesticides alone'; EPA approved five PFAS-class pesticide active ingredients Nov 2025 \u2013 Jul 2026; USDA rescinded pesticide recordkeeping rules Jun 2025. EPA finalized paraquat safety measures Feb 2026.",
+    "admin_url": "https://www.politico.com/news/2025/09/09/trump-kennedy-releases-maha-roadmap-pesticides-food-vaccine-00552849",
+    "dem": "First-year item. Second-largest intra-movement grievance after glyphosate."
+   },
+   {
+    "item": "Food-packaging chemicals (No Toxic Chemicals in Food Packaging Act, Schakowsky)",
+    "status": "partial",
+    "admin": "PFAS grease-proofing agents off the market since Feb 2024 (pre-dates MAHA); Jan 2025 Federal Register notice. No new action on other packaging chemicals.",
+    "admin_url": "https://www.fda.gov/food/chemical-contaminants-food/and-polyfluoroalkyl-substances-pfas",
+    "dem": "First-year item."
+   },
+   {
+    "item": "Food is Medicine / produce prescriptions (FOOD for Health Act, Kelly\u2013Kiggans; Ruiz)",
+    "status": "partial",
+    "admin": "Indian Health Service $3.5M Produce Prescription Pilot awards (Sep 22, 2026); no department-wide program or appropriation request.",
+    "admin_url": "https://www.hhs.gov/press-room/trump-kennedy-18-months-make-america-healthy-again-reforms.html",
+    "dem": "100-days item. Bipartisan sponsors (Kiggans R-VA)."
+   },
+   {
+    "item": "Healthier school meals (Local Foods for Healthy Schools; Scratch Cooked Meals)",
+    "status": "partial",
+    "admin": "Dietary Guidelines 2025\u20132030 (Jan 2026) 'Eat Real Food'; USDA encourages state standards; federal ultra-processed-food definition still pending after Jul 2025 RFI (5,000+ comments).",
+    "admin_url": "https://cen.acs.org/policy/US-ultraprocessed-food-policy-accelerates/104/web/2026/01",
+    "dem": "100-days item."
+   },
+   {
+    "item": "Supplement registration (Dietary Supplement Listing Act, Dexter / Durbin)",
+    "status": "none",
+    "admin": "No administration position; the movement's supplement wing opposes mandatory listing.",
+    "admin_url": "https://www.congress.gov/bill/119th-congress/house-bill/8370",
+    "dem": "100-days item. A point where the Democratic list diverges from part of the MAHA base."
+   },
+   {
+    "item": "Permanent EPA Office of Children's Health Protection (Nadler)",
+    "status": "partial",
+    "admin": "Office reorganized in 2025 into a 'Children's Health Protection Division' inside a new Office of Applied Science; EPA told advocates Dec 3, 2025 programs continue subject to appropriations. Not statutory.",
+    "admin_url": "https://healthyschools.org/2025/12/11/epa-vows-to-continue-key-programs-for-childrens-health-and-schools/",
+    "dem": "100-days item: make the office permanent in law."
+   }
+  ]
+ }
+}

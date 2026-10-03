@@ -230,3 +230,41 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 .bills-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media (max-width:640px){.bills td:first-child{white-space:normal}.bills{min-width:520px}}
 .card:has(> table),.card:has(> .table-scroll),figure.card:has(table){overflow-x:auto}
+
+/* brief */
+.brief{border-left:4px solid var(--red)}
+.brief-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:12px}
+.brief-head .label{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--red);font-weight:700}
+.brief-head h3{margin:2px 0 0;font-family:var(--serif);font-weight:600;font-size:1.35rem}
+.brief-head .days{font-size:.86rem;color:var(--muted);white-space:nowrap}.brief-head .days b{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-right:4px}
+.brief-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 18px}
+.bi{display:block;padding:10px 0;border-top:1px solid var(--rule);color:inherit}
+.bi:hover{text-decoration:none;background:var(--paper)}
+.bi .k{display:block;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.bi .v{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1.1;margin:3px 0}.bi .v small{font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+.bi .dl{display:inline-block;font-size:.74rem;font-weight:700;color:var(--ink-2);background:var(--paper-2);border-radius:999px;padding:1px 8px;margin:2px 0 4px}
+.bi .r{display:block;font-size:.82rem;color:var(--ink-2);line-height:1.4}
+.brief-foot{display:grid;grid-template-columns:1fr 1fr;gap:18px;border-top:1px solid var(--rule);padding-top:12px;font-size:.84rem;line-height:1.5}
+.brief-foot .dd{display:inline-block;margin:2px 10px 2px 0;white-space:nowrap}.brief-foot .dd em{font-style:normal;font-weight:700;color:var(--red)}
+/* calendar */
+.cal-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.cal-head h3{margin:0;font-family:var(--serif);font-weight:600;font-size:1.1rem}
+.cal-head .nd{display:inline-block;margin-left:12px;font-size:.8rem}.cal-head .nd em{font-style:normal;font-weight:700;color:var(--red)}
+.cal-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.cs{display:block;border:1px solid var(--rule);border-radius:8px;padding:8px 10px;font-size:.78rem;color:inherit;background:#fff;line-height:1.45}
+.cs:hover{text-decoration:none;border-color:var(--ink-2)}
+.cs b{display:block;font-size:.9rem;margin-bottom:3px}.cs span{display:block}.cs span em{font-style:normal;color:var(--muted);display:inline-block;width:58px}
+.cs .gone{color:var(--muted);text-decoration:line-through}
+.cs small{display:block;color:var(--muted);font-size:.72rem;margin-top:4px;line-height:1.35}
+/* race-level */
+#rl-table td,#rl-table th{font-size:.8rem}
+#rl-table td b.hot{color:var(--red)}#rl-table td b.warm{color:#7a5e0c}
+/* checklist */
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;margin-bottom:10px}.legend b{margin-left:2px}
+.st{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.st.delivered,.st-tag.delivered{background:var(--teal)}.st.partial,.st-tag.partial{background:#c9a227}.st.none,.st-tag.none{background:var(--grey)}.st.reversed,.st-tag.reversed{background:var(--red)}
+.st-tag{display:inline-block;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.ck{width:100%;border-collapse:collapse;font-size:.82rem}.ck th{text-align:left;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:6px;border-bottom:2px solid var(--ink)}
+.ck td{padding:8px 6px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.45}
+@media (max-width:1000px){.brief-grid{grid-template-columns:1fr 1fr}.cal-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.brief-grid,.brief-foot{grid-template-columns:1fr}.cal-grid{grid-template-columns:1fr 1fr}.brief-head{flex-direction:column;align-items:flex-start}.ck{min-width:640px}#rl-table{min-width:900px}}

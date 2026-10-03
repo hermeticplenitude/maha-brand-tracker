@@ -1,0 +1,95 @@
+{
+ "date": "2026-10-03",
+ "days_to_election": 31,
+ "items": [
+  {
+   "k": "X volume",
+   "v": "2,064",
+   "u": "original posts / week",
+   "d": "-30%",
+   "read": "Falling month over month; 3.3% of the election-week peak. MAHA runs at 9.2% of MAGA's X volume.",
+   "href": "#social"
+  },
+  {
+   "k": "News tone",
+   "v": "42%",
+   "u": "of 125 headlines critical",
+   "d": "21% from inside",
+   "read": "Lead theme personnel / leadership. Inside criticism above one in five critical headlines: watch the base.",
+   "href": "#news"
+  },
+  {
+   "k": "News volume",
+   "v": "4.6",
+   "u": "per 100k US articles",
+   "d": "-70%",
+   "read": "Down vs the prior four weeks; 8% of the Sep 2025 peak.",
+   "href": "#social"
+  },
+  {
+   "k": "Bluesky",
+   "v": "397",
+   "u": "posts / week",
+   "d": "+5%",
+   "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
+   "href": "#social"
+  },
+  {
+   "k": "Newest poll",
+   "v": "35%",
+   "u": "identify with MAHA (U.S. adults)",
+   "d": "Reuters/Ipsos",
+   "read": "12% strongly + 23% somewhat; 42% not at all; 21% don't know. Registered voters: 38% identify (14 strongly, 24 somewhat), 45% not at all.",
+   "href": "#identification"
+  },
+  {
+   "k": "MAHA PAC",
+   "v": "$3.18M",
+   "u": "raised vs $100M pledge",
+   "d": "Q3 due Oct 15",
+   "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 15 quarterly is the next test.",
+   "href": "#midterms"
+  }
+ ],
+ "deadlines": [
+  [
+   "2026-10-04",
+   "Alaska: registration closes"
+  ],
+  [
+   "2026-10-05",
+   "Arizona: registration closes"
+  ],
+  [
+   "2026-10-05",
+   "Georgia: registration closes"
+  ],
+  [
+   "2026-10-05",
+   "Maine: early voting opens"
+  ],
+  [
+   "2026-10-05",
+   "Ohio: registration closes"
+  ],
+  [
+   "2026-10-05",
+   "Texas: registration closes"
+  ],
+  [
+   "2026-10-06",
+   "Nevada: registration closes"
+  ],
+  [
+   "2026-10-06",
+   "Ohio: early voting opens"
+  ]
+ ],
+ "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
+ "checklist_counts": {
+  "delivered": 0,
+  "partial": 9,
+  "none": 1,
+  "reversed": 2
+ }
+}

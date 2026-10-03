@@ -20,9 +20,11 @@ const axisX = (labels, every) => ({ grid: { display: false }, ticks: { maxRotati
 const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks: { font: { size: 11 }, stepSize: 20, callback: v => (v <= 100 ? v : '') }, title: title ? { display: true, text: title, font: { size: 11 } } : undefined });
 
 async function load() {
-  const [trends, polls, news, social, mid, listen] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json', 'data/listening.json'].map(u => fetch(u).then(r => r.json())));
+  const [trends, polls, news, social, mid, listen, action, brief] = await Promise.all(['data/trends.json', 'data/polls.json', 'data/news.json', 'data/social.json', 'data/midterms.json', 'data/listening.json', 'data/action.json', 'data/brief.json'].map(u => fetch(u).then(r => r.json())));
   status(trends, polls, news, social, listen);
+  briefCard(brief);
   scorecard(polls, trends);
+  actionModule(action);
   attention(trends);
   identification(polls);
   views(polls);
@@ -41,6 +43,49 @@ function status(t, p, n, s, L) {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
+}
+
+function briefCard(b) {
+  const el2 = document.getElementById('brief'); if (!b || !el2) return;
+  const d = new Date(b.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  el2.innerHTML = `<div class="brief-head"><div><span class="label">This week's brief</span><h3>MAHA by the numbers, ${d}</h3></div><div class="days"><b>${b.days_to_election}</b> days to Election Day</div></div>
+    <div class="brief-grid">${b.items.map(i => `<a class="bi" href="${i.href}"><span class="k">${i.k}</span><span class="v">${i.v} <small>${i.u}</small></span><span class="dl">${i.d}</span><span class="r">${i.read}</span></a>`).join('')}</div>
+    <div class="brief-foot"><div><b>Deadlines, next ten days:</b> ${b.deadlines.length ? b.deadlines.map(x => `<span class="dd"><em>${new Date(x[0] + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</em> ${x[1]}</span>`).join('') : 'none'}</div><div><b>One thing to act on:</b> ${b.action} <a href="#checklist">Checklist →</a></div></div>
+    <p class="muted" style="margin:10px 0 0;font-size:.76rem">Generated from the tracker's data files by <a href="https://github.com/hermeticplenitude/maha-brand-tracker/blob/main/collect/brief.py" target="_blank" rel="noopener">collect/brief.py</a>; text version in <a href="https://github.com/hermeticplenitude/maha-brand-tracker/blob/main/BRIEF.md" target="_blank" rel="noopener">BRIEF.md</a>.</p>`;
+}
+
+function actionModule(A) {
+  if (!A) return;
+  const fmtN = n => n.toLocaleString('en-US', { maximumFractionDigits: 0 });
+  const sup = A.rates.support, nm = A.rates.support * (1 - A.rates.maga_share_of_supporters);
+  // calendar strip
+  const cal = document.getElementById('calendar');
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const dstr = s => s ? new Date(s + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '—';
+  const past = s => s && new Date(s + 'T00:00:00') < today;
+  cal.innerHTML = `<div class="cal-head"><h3>Decision calendar</h3><span class="muted">Target states, Nov 3 general. Grey = passed. ${A.national_dates.map(n => `<span class="nd"><em>${dstr(n[0])}</em> ${n[1]}</span>`).join('')}</span></div>
+    <div class="cal-grid">${A.calendar.map(c => `<a class="cs" href="${c.url}" target="_blank" rel="noopener"><b>${c.state}</b>
+      <span class="${past(c.reg) ? 'gone' : ''}"><em>Reg</em> ${c.reg === '2026-11-03' ? 'same-day' : dstr(c.reg)}</span>
+      <span class="${past(c.early) ? 'gone' : ''}"><em>Early</em> ${c.early ? dstr(c.early) : 'none'}</span>
+      <span class="${past(c.mail_req) ? 'gone' : ''}"><em>Mail req</em> ${dstr(c.mail_req)}</span>
+      <small>${c.early_note || c.reg_note || ''}</small></a>`).join('')}</div>`;
+  // race-level table
+  document.getElementById('rl-method').textContent = A.method;
+  const tb = document.querySelector('#rl-table tbody');
+  const sgn = m => (m > 0 ? 'R +' : 'D +') + Math.abs(m).toFixed(1);
+  A.states.forEach(s => {
+    const supporters = s.rv * sup, nonmaga = s.rv * nm, marginVotes = Math.abs(s.m2024) / 100 * s.v2024, drop = s.v2024 - s.v2022;
+    const need = marginVotes / nonmaga * 100;
+    const tr = el('tr', '', `<td><b>${s.state}</b><br><a class="muted" style="font-size:.74rem" href="${s.rv_url}" target="_blank" rel="noopener">${s.rv_note}</a></td><td>${s.races}</td><td>${fmtN(s.rv)}</td><td>${fmtN(supporters)}</td><td><b>${fmtN(nonmaga)}</b></td><td>${sgn(s.m2024)}<br><span class="muted" style="font-size:.74rem">${fmtN(marginVotes)} votes</span></td><td>${sgn(s.m2022)}<br><span class="muted" style="font-size:.74rem">${s.w2022}</span></td><td>${fmtN(drop)}<br><span class="muted" style="font-size:.74rem">${(drop / s.v2024 * 100).toFixed(0)}% of 2024 voters</span></td><td><b class="${need < 10 ? 'hot' : need < 25 ? 'warm' : ''}">${need.toFixed(0)}%</b></td>`);
+    tb.appendChild(tr);
+  });
+  document.getElementById('rl-note').innerHTML = `Reading the last column: in Wisconsin, Michigan and Georgia a shift in turnout or choice among well under a tenth of the estimated non-MAGA MAHA voters exceeds the entire 2024 presidential margin; in Iowa, Ohio, Texas and Alaska it would take a quarter or more of them. The 2022 column shows what the same states did in the last midterm, when a different, smaller electorate voted. Registered-voter sources are linked in the first column; results from ${A.results_sources.map(r => `<a href="${r[1]}" target="_blank" rel="noopener">${r[0]}</a>`).join(' and ')}.`;
+  // checklist
+  const C2 = A.checklist, ck = document.getElementById('checklist');
+  const cnt = {}; C2.rows.forEach(r => cnt[r.status] = (cnt[r.status] || 0) + 1);
+  ck.innerHTML = `<h3 style="margin:0 0 4px">Delivery checklist: the “Reclaiming MAHA” list vs federal action</h3><p class="muted" style="margin:0 0 10px;font-size:.86rem">${C2.intro}</p>
+    <div class="legend">${Object.entries(C2.legend).map(([k, v]) => `<span><i class="st ${k}"></i>${v} <b>${cnt[k] || 0}</b></span>`).join('')}</div>
+    <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0"><table class="ck"><thead><tr><th>Status</th><th>Item (Democratic bill)</th><th>Federal action to date</th><th>Democratic position</th></tr></thead><tbody>${C2.rows.map(r => `<tr><td><span class="st-tag ${r.status}">${r.status}</span></td><td><b>${r.item}</b></td><td>${r.admin} <a href="${r.admin_url}" target="_blank" rel="noopener">source</a></td><td>${r.dem}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
 function scorecard(p, t) {
@@ -309,6 +354,10 @@ function sources(p, n, s) {
   add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');
   add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
   add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
+  add('Iowa Secretary of State — voter registration totals, Sep 1, 2026', 'https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CoSep26.pdf');
+  add('North Carolina State Board of Elections — voter dates and deadlines', 'https://www.ncsbe.gov/event-terms/voter-dates-deadlines');
+  add('FDA — GRAS proposed rule (Aug 10, 2026)', 'https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras');
+  add('FDA — tracking industry pledges to remove petroleum-based dyes', 'https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes');
   add('House Democrats Cost-of-Living Healthcare Working Group — memo to Leader Jeffries (Sep 1, 2026; via Politico)', 'https://www.politico.com/f/?id=000001a0-da3a-d276-aff6-fb7f2c380000');
   add('Politico — House Dems to Jeffries: Woo RFK Jr.’s followers (Sep 25, 2026)', 'https://www.politico.com/news/2026/09/25/house-dems-to-jeffries-woo-rfk-jr-s-followers-00584230');
   add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');
