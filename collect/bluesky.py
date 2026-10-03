@@ -6,6 +6,13 @@ engagement, top posts and top accounts into data/listening.json under "bluesky".
 """
 import json, time, datetime as dt, urllib.parse, subprocess, pathlib, collections, re
 
+from zoneinfo import ZoneInfo
+
+
+def _today():
+    return dt.datetime.now(ZoneInfo("America/New_York")).date()
+
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "listening.json"
 API = "https://api.bsky.app/xrpc/app.bsky.feed.searchPosts"
@@ -87,7 +94,7 @@ def main():
     last4 = avg([w["posts"] for w in full[-4:]]); prev4 = avg([w["posts"] for w in full[-8:-4]])
 
     existing = json.loads(OUT.read_text()) if OUT.exists() else {}
-    existing["updated"] = dt.date.today().isoformat()
+    existing["updated"] = _today().isoformat()
     existing["bluesky"] = {
         "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)", "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
         "queries": QUERIES, "window_days": DAYS, "since": SINCE[:10],

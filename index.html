@@ -159,6 +159,17 @@
 
   <section id="news" class="wrap section">
     <div class="section-head"><h2>News coverage analysis</h2><p id="news-method"></p></div>
+    <h3 class="sub">Live: Google News, last 7 days</h3>
+    <div class="tiles listen-tiles" id="gn-tiles"></div>
+    <div class="grid-3">
+      <figure class="card"><figcaption><strong>Tone of this week's headlines</strong><span id="gn-cap"></span></figcaption><div class="chart-wrap"><canvas id="c-gn-tone"></canvas></div></figure>
+      <figure class="card span-2"><figcaption><strong>What this week's headlines are about</strong><span>Theme by tone, headline-level labels.</span></figcaption><div class="chart-wrap"><canvas id="c-gn-theme"></canvas></div></figure>
+    </div>
+    <div class="card">
+      <div class="chips" id="gn-chips"></div>
+      <ul class="headlines" id="gn-headlines"></ul>
+    </div>
+    <h3 class="sub">Edition 1 hand-coded sample</h3>
     <div class="grid-3">
       <figure class="card"><figcaption><strong>Tone of coverage</strong><span>Hand-coded sample, <span id="news-window"></span></span></figcaption><div class="chart-wrap"><canvas id="c-tone"></canvas></div></figure>
       <figure class="card span-2"><figcaption><strong>What the coverage is about</strong><span>Theme by tone.</span></figcaption><div class="chart-wrap"><canvas id="c-theme"></canvas></div></figure>
@@ -204,7 +215,7 @@
         <h3>How the data is collected</h3>
         <p><strong>Attention.</strong> Google Trends has no public API. Series are pulled from Google Trends' own explore and widget endpoints inside a browser session and saved as JSON. Settings are held constant: United States (or Worldwide where stated), All categories, Web search. Google Topic entities (<code>/g/11x8sdrsf0</code> MAHA, <code>/g/11bw1_6lwn</code> MAGA, <code>/m/02l5km</code> RFK Jr.) are used wherever ambiguity matters; the MAHA entity only has data from late April 2025.</p>
         <p><strong>Identification.</strong> Every national poll found that asks about MAHA directly is included with its construct (favorable / support / identify / part of movement), field dates, population, n and margin of error. Derived figures (such as MAHA-not-MAGA) are labelled as derived and never shown as a pollster's own number.</p>
-        <p><strong>News.</strong> Headlines are gathered by topical web search and hand-coded for tone and theme. This is a sample, not a census.</p>
+        <p><strong>News.</strong> Two layers. The live layer reads Google News RSS search feeds (US edition) for eight MAHA queries over the trailing 7 days, merges and deduplicates them, and labels each headline for tone, origin of criticism and theme with a language model under a fixed rubric; only the headline and outlet are read, never the article. The Edition 1 layer is a hand-coded sample of 31 headlines kept as a benchmark. Neither is a census of coverage; GDELT volume on the Social panel is the closest thing to one.</p>
         <p><strong>Social and news volume.</strong> X counts come from the X API's counts endpoint: the platform's own daily total of original posts (retweets excluded) matching the phrase set, so they are a census rather than a sample; a capped 7-day sample of posts supplies the top-post and top-account lists. Bluesky posts are gathered from the network's public search endpoint for the phrase set (“Make America Healthy Again”, MAHA + Kennedy/RFK/movement/moms), deduplicated, and filtered so bare-acronym posts need a political cue. News volume is GDELT's share of all monitored US-source articles mentioning the full phrase, by day, averaged to weeks since August 2024. Both are machine counts, not hand-coded; Bluesky skews left of the electorate and is read as the critical-outside channel. Collectors are in the <a href="https://github.com/hermeticplenitude/maha-brand-tracker/tree/main/collect">repository</a>.</p>
         <h3>Refresh cadence</h3>
         <p>Edition 1 is a point-in-time snapshot. Each data file carries its own <code>updated</code> date, shown in the status row at the top. A weekly refresh re-runs the Trends pulls, adds any new poll releases, and re-codes the news sample.</p>

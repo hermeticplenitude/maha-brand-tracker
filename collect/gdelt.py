@@ -7,6 +7,13 @@ request every 5 seconds, so this script sleeps between calls.
 """
 import json, time, datetime as dt, urllib.parse, urllib.request, pathlib, sys
 
+from zoneinfo import ZoneInfo
+
+
+def _today():
+    return dt.datetime.now(ZoneInfo("America/New_York")).date()
+
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "listening.json"
 BASE = "https://api.gdeltproject.org/api/v2/doc/doc"
@@ -72,7 +79,7 @@ CACHE = ROOT / "collect" / ".cache"
 def cached(name, fn, optional=False):
     """GDELT throttles hard; keep each finished series on disk so a rerun only fetches what failed."""
     CACHE.mkdir(exist_ok=True)
-    f = CACHE / f"gdelt_{name}_{dt.date.today().isoformat()}.json"
+    f = CACHE / f"gdelt_{name}_{_today().isoformat()}.json"
     if f.exists():
         return json.loads(f.read_text())
     print(name)
@@ -100,7 +107,7 @@ def main():
     ratio = [{"week": a["week"], "value": round(a["value"] / b["value"], 3) if b["value"] else None} for a, b in zip(wk_maha, wk_maga) if a["week"] == b["week"]]
 
     existing = json.loads(OUT.read_text()) if OUT.exists() else {}
-    existing["updated"] = dt.date.today().isoformat()
+    existing["updated"] = _today().isoformat()
     existing["gdelt"] = {
         "source": "GDELT DOC 2.0 API", "url": "https://api.gdeltproject.org/api/v2/doc/doc", "docs": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
         "query": Q_MAHA, "comparison_query": Q_MAGA, "start": "2024-08-01",

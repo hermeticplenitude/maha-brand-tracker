@@ -10,6 +10,13 @@ credential proxy (run with api_credentials for api.x.com); nothing secret is sto
 """
 import json, time, datetime as dt, urllib.parse, subprocess, pathlib, collections, sys
 
+from zoneinfo import ZoneInfo
+
+
+def _today():
+    return dt.datetime.now(ZoneInfo("America/New_York")).date()
+
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "listening.json"
 CACHE = ROOT / "collect" / ".cache"
@@ -37,7 +44,7 @@ def get(path, params):
 
 def counts(query, name):
     CACHE.mkdir(exist_ok=True)
-    f = CACHE / f"x_counts_{name}_{dt.date.today().isoformat()}.json"
+    f = CACHE / f"x_counts_{name}_{_today().isoformat()}.json"
     if f.exists():
         return json.loads(f.read_text())
     out, token, end = [], None, dt.datetime.now(dt.UTC).replace(microsecond=0) - dt.timedelta(minutes=5)
@@ -102,7 +109,7 @@ def main():
     since = min((p["date"] for p in smp), default=None)
 
     existing = json.loads(OUT.read_text()) if OUT.exists() else {}
-    existing["updated"] = dt.date.today().isoformat()
+    existing["updated"] = _today().isoformat()
     existing["x"] = {
         "source": "X API v2 (pay-per-use): GET /2/tweets/counts/all and /2/tweets/search/recent", "docs": "https://docs.x.com/x-api/posts/counts/introduction",
         "query": Q_MAHA, "comparison_query": Q_MAGA, "sample_query": Q_SAMPLE, "start": START[:10],

@@ -212,3 +212,4 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 @media (max-width:640px){.acctlist{grid-template-columns:1fr}}
 @media (max-width:1000px){.listen-tiles{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.listen-tiles{grid-template-columns:1fr}}
+.headlines .o{overflow-wrap:anywhere}

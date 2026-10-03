@@ -29,6 +29,7 @@ async function load() {
   midterms(mid);
   integrity(polls, trends);
   newsSection(news);
+  if (listen.googlenews) googleNewsPanel(listen.googlenews);
   socialSection(social);
   listeningSection(listen);
   sources(polls, news, social);
@@ -36,7 +37,7 @@ async function load() {
 
 function status(t, p, n, s, L) {
   const row = document.getElementById('status-row');
-  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['X + Bluesky + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
+  [['Google Trends', t.retrieved, false], ['Polls', p.updated, false], ['Midterms', p.updated, false], ['News sample', n.updated, false], ['X + Bluesky + Google News + GDELT feeds', (L && L.updated) || s.updated, false]].forEach(([k, d, pend]) => {
     row.appendChild(el('span', 'status' + (pend ? ' pending' : ''), `<i></i>${k}: ${pend ? 'secondary sources' : 'updated'} ${fmtDate(d)}`));
   });
   document.querySelector('[data-updated]').textContent = fmtDate(p.updated);
@@ -174,6 +175,31 @@ function integrity(p, t) {
   metrics.forEach(m => wrap.appendChild(el('div', 'metric', `<div class="score">${m.score}<small>${m.sub}</small></div><div><h4>${m.title}</h4><p>${m.text}</p><span class="read ${m.read}">${m.read === 'risk' ? 'Integrity risk' : m.read === 'watch' ? 'Watch' : 'Strength'}</span></div>`)));
 }
 
+function googleNewsPanel(g) {
+  const esc = t => t.replace(/[&<>]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[ch]));
+  const n = g.n, crit = g.tone.critical || 0, pos = g.tone.positive || 0, neu = g.tone.neutral || 0, inside = g.critical_origin.inside || 0, outside = g.critical_origin.outside || 0;
+  const top = Object.entries(g.outlets).slice(0, 6).map(([o, c]) => `${o} (${c})`).join(', ');
+  const tiles = [
+    { label: 'Headlines, last 7 days', value: n, small: 'unique', desc: `Google News RSS, eight queries merged. Busiest day ${Object.entries(g.by_day).sort((a, b) => b[1] - a[1])[0][1]} headlines. Most frequent outlets: ${top}.`, accent: C.ink },
+    { label: 'Critical share', value: Math.round(crit / n * 100) + '%', small: `${crit} of ${n}`, desc: `${Math.round(pos / n * 100)}% positive, ${Math.round(neu / n * 100)}% neutral. Headline framing only, labeled under a fixed rubric.`, accent: C.red },
+    { label: 'Criticism from inside', value: Math.round(inside / Math.max(crit, 1) * 100) + '%', small: `${inside} of ${crit} critical`, desc: `Critical headlines where the criticism comes from the movement or its allies, vs ${outside} from opponents, scientists or the press. The integrity metric to watch week to week.`, accent: C.gold },
+    { label: 'Lead theme', value: Object.keys(g.theme)[0].replace('-', ' / ').replace('personnel / leadership', 'leadership'), small: `${Object.values(g.theme)[0]} headlines`, desc: `Then ${Object.entries(g.theme).slice(1, 3).map(([t, c]) => `${t.replace('-', ' / ')} (${c})`).join(', ')}.`, accent: C.teal },
+  ];
+  const wrap = document.getElementById('gn-tiles');
+  tiles.forEach(t => { const d = el('div', 'tile'); d.style.setProperty('--accent', t.accent); d.innerHTML = `<div class="label">${t.label}</div><div class="value" style="font-size:${String(t.value).length > 8 ? '1.5rem' : '2.2rem'}">${t.value}<small>${t.small}</small></div><p class="desc">${t.desc}</p>`; wrap.appendChild(d); });
+  document.getElementById('gn-cap').textContent = `Collected ${fmtDate(g.collected)}. Critical headlines split by where the criticism originates.`;
+  const tl = ['Positive', 'Neutral', 'Critical (outside)', 'Critical (inside)'], tv = [pos, neu, outside + (g.critical_origin.na || 0), inside], tcol = [C.teal, C.grey, C.red, C.gold];
+  new Chart(document.getElementById('c-gn-tone'), { type: 'doughnut', data: { labels: tl, datasets: [{ data: tv, backgroundColor: tcol, borderColor: '#fff', borderWidth: 2 }] }, options: { maintainAspectRatio: false, cutout: '58%', plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } }, tooltip: { callbacks: { label: i => `${i.label}: ${i.parsed} (${Math.round(i.parsed / n * 100)}%)` } } } } });
+  const themes = Object.keys(g.theme); const items = g.items;
+  const tone3 = [['positive', C.teal], ['neutral', C.grey], ['critical', C.red]];
+  new Chart(document.getElementById('c-gn-theme'), { type: 'bar', data: { labels: themes.map(t => t.replace('-', ' / ')), datasets: tone3.map(([t, col]) => ({ label: t[0].toUpperCase() + t.slice(1), data: themes.map(th => items.filter(i => i.theme === th && i.tone === t).length), backgroundColor: col, stack: 's', borderRadius: 2 })) }, options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } }, scales: { x: { stacked: true, grid: { color: '#ece7de' }, ticks: { font: { size: 11 } } }, y: { stacked: true, grid: { display: false }, ticks: { font: { size: 11 } } } } } });
+  const chips = document.getElementById('gn-chips'); const list = document.getElementById('gn-headlines');
+  const filters = [['all', 'All', () => true], ['positive', 'Positive', i => i.tone === 'positive'], ['neutral', 'Neutral', i => i.tone === 'neutral'], ['critical', 'Critical', i => i.tone === 'critical'], ['inside', 'Critical from inside', i => i.origin === 'inside']];
+  const render = f => { list.innerHTML = ''; items.filter(f).forEach(i => list.appendChild(el('li', '', `<span class="d">${fmtDate(i.date)}</span><span class="o">${esc(i.outlet)}</span><span class="t"><a href="${i.url}" target="_blank" rel="noopener">${esc(i.title)}</a><span class="tag ${i.tone === 'positive' ? 'supportive' : i.tone}">${i.tone}${i.origin === 'inside' ? ' · inside' : ''}</span> <span class="muted" style="font-size:.76rem">${i.theme.replace('-', ' / ')}</span></span>`))); };
+  filters.forEach(([k, label, f], idx) => { const b = el('button', 'chip' + (idx === 0 ? ' active' : ''), `${label} (${items.filter(f).length})`); b.onclick = () => { chips.querySelectorAll('.chip').forEach(c => c.classList.remove('active')); b.classList.add('active'); render(f); }; chips.appendChild(b); });
+  render(() => true);
+}
+
 function newsSection(n) {
   document.getElementById('news-method').textContent = n.method;
   document.getElementById('news-window').textContent = fmtDate(n.window.split(' to ')[0]) + ' – ' + fmtDate(n.window.split(' to ')[1]);
@@ -260,6 +286,7 @@ function sources(p, n, s) {
   add('Google Trends (explore; US / Worldwide; Topics /g/11x8sdrsf0, /g/11bw1_6lwn, /m/02l5km)', 'https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11x8sdrsf0,%2Fg%2F11bw1_6lwn');
   [...p.identification, ...p.favorability, ...p.rfk, ...p.delivery].forEach(x => add(`${x.pollster || x.source}${x.field ? ' — ' + fmtRange(x.field) : ''}`, x.url));
   s.studies.forEach(x => add(x.title, x.url));
+  add('Google News RSS search (US edition) — eight MAHA queries, 7-day window', 'https://news.google.com/rss/search?q=%22Make+America+Healthy+Again%22&hl=en-US&gl=US&ceid=US:en');
   add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');
   add('Bluesky AppView public search (app.bsky.feed.searchPosts)', 'https://docs.bsky.app/docs/api/app-bsky-feed-search-posts');
   add('GDELT DOC 2.0 API (timelinevol, US sources)', 'https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/');
