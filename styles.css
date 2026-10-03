@@ -261,10 +261,17 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 #rl-table td b.hot{color:var(--red)}#rl-table td b.warm{color:#7a5e0c}
 /* checklist */
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;margin-bottom:10px}.legend b{margin-left:2px}
-.st{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
-.st.delivered,.st-tag.delivered{background:var(--teal)}.st.partial,.st-tag.partial{background:#c9a227}.st.none,.st-tag.none{background:var(--grey)}.st.reversed,.st-tag.reversed{background:var(--red)}
+.stdot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.stdot.delivered,.st-tag.delivered{background:var(--teal)}.stdot.partial,.st-tag.partial{background:#c9a227}.stdot.none,.st-tag.none{background:var(--grey)}.stdot.reversed,.st-tag.reversed{background:var(--red)}
 .st-tag{display:inline-block;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;white-space:nowrap}
 .ck{width:100%;border-collapse:collapse;font-size:.82rem}.ck th{text-align:left;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding:6px;border-bottom:2px solid var(--ink)}
 .ck td{padding:8px 6px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.45}
 @media (max-width:1000px){.brief-grid{grid-template-columns:1fr 1fr}.cal-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:640px){.brief-grid,.brief-foot{grid-template-columns:1fr}.cal-grid{grid-template-columns:1fr 1fr}.brief-head{flex-direction:column;align-items:flex-start}.ck{min-width:640px}#rl-table{min-width:900px}}
+
+.backing{min-width:200px;font-size:.76rem}
+.bk-row{display:flex;gap:6px;align-items:baseline;color:inherit;padding:2px 0;line-height:1.3}
+.bk-row:hover{text-decoration:none}.bk-row:hover span{text-decoration:underline}
+.bk-row b{white-space:nowrap;font-weight:700}.bk-row span{color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bk{flex:none;width:8px;height:8px;border-radius:50%;background:var(--grey);position:relative;top:-1px}
+.bk.yes{background:var(--teal)}.bk.partial{background:#c9a227}.bk.none{background:var(--light)}.bk.unknown{background:transparent;border:1.5px solid var(--grey);width:7px;height:7px}

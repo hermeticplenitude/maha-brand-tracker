@@ -84,7 +84,7 @@ function actionModule(A) {
   const C2 = A.checklist, ck = document.getElementById('checklist');
   const cnt = {}; C2.rows.forEach(r => cnt[r.status] = (cnt[r.status] || 0) + 1);
   ck.innerHTML = `<h3 style="margin:0 0 4px">Delivery checklist: the “Reclaiming MAHA” list vs federal action</h3><p class="muted" style="margin:0 0 10px;font-size:.86rem">${C2.intro}</p>
-    <div class="legend">${Object.entries(C2.legend).map(([k, v]) => `<span><i class="st ${k}"></i>${v} <b>${cnt[k] || 0}</b></span>`).join('')}</div>
+    <div class="legend">${Object.entries(C2.legend).map(([k, v]) => `<span><i class="stdot ${k}"></i>${v} <b>${cnt[k] || 0}</b></span>`).join('')}</div>
     <div class="table-wrap" style="border:0;box-shadow:none;padding:0;margin:0"><table class="ck"><thead><tr><th>Status</th><th>Item (Democratic bill)</th><th>Federal action to date</th><th>Democratic position</th></tr></thead><tbody>${C2.rows.map(r => `<tr><td><span class="st-tag ${r.status}">${r.status}</span></td><td><b>${r.item}</b></td><td>${r.admin} <a href="${r.admin_url}" target="_blank" rel="noopener">source</a></td><td>${r.dem}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
@@ -184,6 +184,12 @@ function views(p) {
   const dl = document.getElementById('delivery'); p.delivery.forEach(x => dl.appendChild(el('div', 'dl', `<div class="v">${x.value}%</div><p>${x.label}</p><a href="${x.url}" target="_blank" rel="noopener">${x.source}</a>`)));
 }
 
+function backingCell(b) {
+  if (!b) return '';
+  const names = { maha_pac: 'MAHA PAC', maha_action: 'MAHA Action', shf: 'SHF', kennedy: 'Kennedy' };
+  return Object.entries(names).map(([k, n]) => { const x = b[k]; if (!x) return ''; const inner = `<i class="bk ${x.status}"></i><b>${n}</b> <span>${x.label}</span>`; return x.url ? `<a class="bk-row" href="${x.url}" target="_blank" rel="noopener" title="${x.label}">${inner}</a>` : `<div class="bk-row">${inner}</div>`; }).join('');
+}
+
 function midterms(m) {
   const days = Math.round((new Date(m.election_day + 'T00:00:00') - new Date()) / 86400000);
   document.getElementById('days-out').textContent = days;
@@ -194,7 +200,8 @@ function midterms(m) {
   const rank = Object.fromEntries(m.state_index_12m.map((s, i) => [s[1], i + 1]));
   const rc = r => /toss/i.test(r) ? 'toss' : /lean d|likely d/i.test(r) ? 'd' : /lean r|safe r/i.test(r) ? 'r' : '';
   const tb = document.querySelector('#race-table tbody');
-  m.races.forEach(r => { const tr = el('tr'); tr.innerHTML = `<td class="st">${r.state}</td><td>${r.office}<div class="muted" style="font-size:.74rem">${r.incumbent}</div></td><td><span class="rating ${rc(r.rating)}">${r.rating}</span></td><td>${r.dem !== '—' ? `<span style="color:#2b4f8a">${r.dem}</span> (D)` : ''}${r.dem !== '—' && r.rep !== '—' ? '<br>' : ''}${r.rep !== '—' ? `<span style="color:${C.red}">${r.rep}</span> (R)` : ''}</td><td class="idx">${idx[r.code] ?? '—'} <span class="muted" style="font-size:.72rem">#${rank[r.code] ?? '—'} · 90d ${idx90[r.code] ?? '—'}</span></td><td><span class="dot ${r.maha_level}"></span>${r.maha}${r.sources.length ? `<div class="srcs">${r.sources.map(s => `<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join('')}</div>` : ''}</td>`; tb.appendChild(tr); });
+  m.races.forEach(r => { const tr = el('tr'); tr.innerHTML = `<td class="st">${r.state}</td><td>${r.office}<div class="muted" style="font-size:.74rem">${r.incumbent}</div></td><td><span class="rating ${rc(r.rating)}">${r.rating}</span></td><td>${r.dem !== '—' ? `<span style="color:#2b4f8a">${r.dem}</span> (D)` : ''}${r.dem !== '—' && r.rep !== '—' ? '<br>' : ''}${r.rep !== '—' ? `<span style="color:${C.red}">${r.rep}</span> (R)` : ''}</td><td class="idx">${idx[r.code] ?? '—'} <span class="muted" style="font-size:.72rem">#${rank[r.code] ?? '—'} · 90d ${idx90[r.code] ?? '—'}</span></td><td><span class="dot ${r.maha_level}"></span>${r.maha}${r.sources.length ? `<div class="srcs">${r.sources.map(s => `<a href="${s[1]}" target="_blank" rel="noopener">${s[0]}</a>`).join('')}</div>` : ''}</td><td class="backing">${backingCell(r.backing)}</td>`; tb.appendChild(tr); });
+  if (m.backing_meta) { const tw = document.querySelector('#race-table').closest('.table-wrap'); const p = el('p', 'muted', `${m.backing_meta.note} Checked ${fmtDate(m.backing_meta.checked)}. Organizations: ${m.backing_meta.orgs.map(o => o[2] ? `<a href="${o[2]}" target="_blank" rel="noopener">${o[0]}</a> (${o[1]})` : `${o[0]} (${o[1]})`).join('; ')}.`); p.style.cssText = 'font-size:.78rem;margin:10px 0 0'; tw.parentNode.insertBefore(p, tw.nextSibling); }
   const comp = new Set(m.races.filter(r => /toss|lean/i.test(r.rating)).map(r => r.code));
   const st = m.state_index_12m.filter(s => s[1] !== 'US-DC');
   new Chart(document.getElementById('c-states'), { type: 'bar', data: { labels: st.map(s => s[0]), datasets: [{ data: st.map(s => s[2]), backgroundColor: st.map(s => comp.has(s[1]) ? C.red : C.teal), borderRadius: 2, barThickness: 9 }] }, options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => `${c.parsed.x} (12-mo) · ${idx90[st[c.dataIndex][1]] ?? '—'} (90-day)` } } }, scales: { x: { min: 0, max: 45, grid: { color: '#ece7de' }, ticks: { font: { size: 10 } } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
@@ -360,6 +367,8 @@ function sources(p, n, s) {
   add('FDA — tracking industry pledges to remove petroleum-based dyes', 'https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes');
   add('House Democrats Cost-of-Living Healthcare Working Group — memo to Leader Jeffries (Sep 1, 2026; via Politico)', 'https://www.politico.com/f/?id=000001a0-da3a-d276-aff6-fb7f2c380000');
   add('Politico — House Dems to Jeffries: Woo RFK Jr.’s followers (Sep 25, 2026)', 'https://www.politico.com/news/2026/09/25/house-dems-to-jeffries-woo-rfk-jr-s-followers-00584230');
+  add('Stand for Health Freedom — Vote for Health Freedom state guides', 'https://standforhealthfreedom.com/vote/');
+  add('MAHA Action — legislative tracker', 'https://www.mahaaction.org');
   add('Political.org — 2026 race ratings (Oct 2, 2026)', 'https://political.org/2026-elections/');
   add('Decision Desk HQ — 2026 governor forecast', 'https://votes.decisiondeskhq.com/forecast/2026/governor');
   add('The Hill — GOP gambles on midterm dividends from MAHA (Aug 30, 2026)', 'https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/');

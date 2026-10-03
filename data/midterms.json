@@ -79,7 +79,29 @@
      "Politico, Aug 21",
      "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "yes",
+     "label": "Lahn endorsed by MAHA groups Dec 2025; MAHA PAC spending in the June primary",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/iowa/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Iowa",
@@ -100,7 +122,29 @@
      "Politico, Aug 21",
      "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/iowa/"
+    },
+    "kennedy": {
+     "status": "partial",
+     "label": "Kennedy toured Iowa in Aug 2026 with a House Republican; no event with Hinson sourced",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Michigan",
@@ -125,7 +169,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list; El-Sayed (D) courting MAHA voters",
+     "url": "https://www.nbcnews.com/politics/2026-election/abdul-el-sayed-woo-maha-voters-democrats-rfk-rcna600508"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/michigan/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Michigan",
@@ -137,7 +203,29 @@
    "rep": "John James",
    "maha": "No sourced MAHA organisational activity in the governor's race.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/michigan/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Ohio",
@@ -154,7 +242,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/ohio/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Ohio",
@@ -171,7 +281,29 @@
      "The Hill, Aug 30",
      "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/ohio/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Maine",
@@ -188,7 +320,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "unknown",
+     "label": "State page unreachable Oct 3",
+     "url": "https://standforhealthfreedom.com/stand/maine/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "New Hampshire",
@@ -200,7 +354,29 @@
    "rep": "John E. Sununu",
    "maha": "No sourced MAHA activity. New Hampshire ranks in the top 10 states for MAHA search interest over both 12 months and 90 days.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "unknown",
+     "label": "State page unreachable Oct 3",
+     "url": "https://standforhealthfreedom.com/stand/new-hampshire/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Alaska",
@@ -217,7 +393,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/alaska/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Alaska",
@@ -229,7 +427,29 @@
    "rep": "Wilson / Bronson / Taylor (ranked-choice)",
    "maha": "No sourced MAHA activity.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/alaska/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "North Carolina",
@@ -246,7 +466,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/north-carolina/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Texas",
@@ -263,7 +505,29 @@
      "Politico, Jun 6",
      "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "unknown",
+     "label": "State page unreachable Oct 3",
+     "url": "https://standforhealthfreedom.com/stand/texas/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Georgia",
@@ -275,7 +539,29 @@
    "rep": "Rick Jackson",
    "maha": "No sourced MAHA activity.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/georgia/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Nevada",
@@ -287,7 +573,29 @@
    "rep": "Joe Lombardo",
    "maha": "No sourced MAHA activity.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/nevada/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Wisconsin",
@@ -308,7 +616,29 @@
      "Washington Examiner, Sep 2",
      "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/wisconsin/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Arizona",
@@ -320,7 +650,29 @@
    "rep": "Andy Biggs",
    "maha": "No sourced MAHA activity.",
    "maha_level": "low",
-   "sources": []
+   "sources": [],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/arizona/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Pennsylvania",
@@ -341,7 +693,29 @@
      "The Hill, Aug 30",
      "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/pennsylvania/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None; Kennedy\u2013Shapiro measles feud, Aug 2026",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Louisiana",
@@ -362,7 +736,29 @@
      "The Atlantic, Apr 22",
      "https://www.theatlantic.com/health/2026/04/maha-moms-midterm-election/686901/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "yes",
+     "label": "Letlow: $1M pledged, \u2248$700\u2013740K spent against Cassidy",
+     "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "unknown",
+     "label": "State page unreachable Oct 3",
+     "url": "https://standforhealthfreedom.com/stand/louisiana/"
+    },
+    "kennedy": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   },
   {
    "state": "Florida",
@@ -379,7 +775,29 @@
      "Washington Examiner, Sep 2",
      "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/florida/"
+    },
+    "kennedy": {
+     "status": "yes",
+     "label": "Kennedy appeared with Sen. Moody, late Aug 2026 (school nutrition launch)",
+     "url": "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
+    }
+   }
   },
   {
    "state": "Colorado",
@@ -396,7 +814,29 @@
      "Washington Examiner, Sep 2",
      "https://www.washingtonexaminer.com/news/campaigns/congressional/4708688/republicans-ignore-rfk-jr-backlash-2026-maha-turnout/"
     ]
-   ]
+   ],
+   "backing": {
+    "maha_pac": {
+     "status": "none",
+     "label": "None found",
+     "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+    },
+    "maha_action": {
+     "status": "unknown",
+     "label": "No public list",
+     "url": "https://www.mahaaction.org"
+    },
+    "shf": {
+     "status": "none",
+     "label": "None listed",
+     "url": "https://standforhealthfreedom.com/stand/colorado/"
+    },
+    "kennedy": {
+     "status": "yes",
+     "label": "Kennedy campaigned in person with Rep. Evans",
+     "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
+    }
+   }
   }
  ],
  "money": [
@@ -1215,6 +1655,32 @@
    "Its central bet, that the food agenda can be separated from Kennedy, is the unmeasured question. One in five MAHA supporters voted Harris and two-thirds of rural supporters see no local impact (seam exists); The Atlantic found almost no supporters willing to vote Democratic (seam may not matter). No voter-file study has tested it.",
    "Weaknesses in its own text: Section VII arrives after full H.R. 1 repeal and a federal abortion right in the first 100 hours; the ACIP plank writes off the vaccine-skeptic wing; the 75%/64% polling figures are unsourced; it is not leadership policy and is already being attacked as 'trillions in entitlements'.",
    "For MAHA leadership the operative list is the bipartisan bills (glyphosate immunity, GRAS, baby food, formula, school meals): each one left unaddressed before Nov 3 is an item Democrats can run on as the MAHA agenda Kennedy did not deliver."
+  ]
+ },
+ "backing_meta": {
+  "note": "Organizational backing for the nominees in each race, from public sources only. 'None found' means the organization's public materials list no endorsement of either nominee as of the check date; it is not a statement that none exists privately. Stand for Health Freedom's state pages list names without offices and are overwhelmingly state-legislative; MAHA Action publishes no endorsement list.",
+  "checked": "2026-10-03",
+  "orgs": [
+   [
+    "MAHA PAC",
+    "Super PAC (Tony Lyons); endorsements and FEC independent expenditures",
+    "https://www.themahapac.com/"
+   ],
+   [
+    "MAHA Action",
+    "501(c)(4); publishes a legislative tracker, no public endorsement list",
+    "https://www.mahaaction.org"
+   ],
+   [
+    "Stand for Health Freedom",
+    "Vote for Health Freedom state guides",
+    "https://standforhealthfreedom.com/vote/"
+   ],
+   [
+    "Kennedy",
+    "Secretary Kennedy campaign appearance with the nominee",
+    ""
+   ]
   ]
  }
 }
