@@ -1,6 +1,6 @@
 {
- "date": "2026-10-03",
- "days_to_election": 31,
+ "date": "2026-10-04",
+ "days_to_election": 30,
  "items": [
   {
    "k": "X volume",
@@ -13,9 +13,9 @@
   {
    "k": "News tone",
    "v": "42%",
-   "u": "of 125 headlines critical",
-   "d": "21% from inside",
-   "read": "Lead theme personnel / leadership. Inside criticism above one in five critical headlines: watch the base.",
+   "u": "of 120 headlines critical",
+   "d": "22% from inside",
+   "read": "Lead theme culture / media. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {

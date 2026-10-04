@@ -1,8 +1,8 @@
-# MAHA by the numbers — week of October 3, 2026
-31 days to Election Day. Source and method for every figure: https://hermeticplenitude.github.io/maha-brand-tracker/
+# MAHA by the numbers — week of October 4, 2026
+30 days to Election Day. Source and method for every figure: https://hermeticplenitude.github.io/maha-brand-tracker/
 
 - **X volume: 2,064 original posts / week** (-30%). Falling month over month; 3.3% of the election-week peak. MAHA runs at 9.2% of MAGA's X volume.
-- **News tone: 42% of 125 headlines critical** (21% from inside). Lead theme personnel / leadership. Inside criticism above one in five critical headlines: watch the base.
+- **News tone: 42% of 120 headlines critical** (22% from inside). Lead theme culture / media. Inside criticism above one in five critical headlines: watch the base.
 - **News volume: 4.6 per 100k US articles** (-70%). Down vs the prior four weeks; 8% of the Sep 2025 peak.
 - **Bluesky: 397 posts / week** (+5%). Critical-outside channel; steady volume means sustained opposition attention, not growth.
 - **Newest poll: 35% identify with MAHA (U.S. adults)** (Reuters/Ipsos). 12% strongly + 23% somewhat; 42% not at all; 21% don't know. Registered voters: 38% identify (14 strongly, 24 somewhat), 45% not at all.

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "bluesky": {
   "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
   "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
@@ -12,19 +12,14 @@
    "MAHA moms"
   ],
   "window_days": 90,
-  "since": "2026-07-04",
+  "since": "2026-07-06",
   "note": "Every public Bluesky post in the window matching the phrase set, deduplicated across queries. Bare-acronym posts are kept only if the text also carries a political cue (RFK, Kennedy, HHS, vaccine, MAGA, Trump, food dye, seed oil, mRNA, etc.). Engagement = likes + reposts + replies + quotes at collection time. Bluesky skews left of the US electorate; treat it as the critical-outside channel, not a census.",
-  "total_posts": 4808,
+  "total_posts": 4803,
   "weekly": [
    {
-    "week": "2026-06-29",
-    "posts": 48,
-    "engagement": 610
-   },
-   {
     "week": "2026-07-06",
-    "posts": 236,
-    "engagement": 8866
+    "posts": 235,
+    "engagement": 8867
    },
    {
     "week": "2026-07-13",
@@ -44,54 +39,54 @@
    {
     "week": "2026-08-03",
     "posts": 386,
-    "engagement": 26422
+    "engagement": 26421
    },
    {
     "week": "2026-08-10",
     "posts": 275,
-    "engagement": 35081
+    "engagement": 35079
    },
    {
     "week": "2026-08-17",
     "posts": 418,
-    "engagement": 10115
+    "engagement": 10116
    },
    {
     "week": "2026-08-24",
-    "posts": 440,
-    "engagement": 27923
+    "posts": 437,
+    "engagement": 27887
    },
    {
     "week": "2026-08-31",
-    "posts": 453,
-    "engagement": 16735
+    "posts": 454,
+    "engagement": 16742
    },
    {
     "week": "2026-09-07",
-    "posts": 498,
-    "engagement": 13252
+    "posts": 497,
+    "engagement": 13246
    },
    {
     "week": "2026-09-14",
     "posts": 262,
-    "engagement": 11979
+    "engagement": 11982
    },
    {
     "week": "2026-09-21",
     "posts": 376,
-    "engagement": 10437
+    "engagement": 10444
    },
    {
     "week": "2026-09-28",
-    "posts": 489,
-    "engagement": 6260
+    "posts": 536,
+    "engagement": 7558
    }
   ],
   "summary": {
    "last4w_avg_posts": 397.2,
-   "prev4w_avg_posts": 379.8,
-   "change_pct": 4.6,
-   "unique_authors": 3317
+   "prev4w_avg_posts": 379.0,
+   "change_pct": 4.8,
+   "unique_authors": 3319
   },
   "top_posts": [
    {
@@ -100,9 +95,9 @@
     "handle": "rbreich.bsky.social",
     "name": "Robert Reich",
     "text": "The cyclospora outbreak has reached 13,895 cases across 47 states.\n\nThe FDA has recalled 1.6 million eggs due to salmonella contamination.\n\nScrewworm cases continue to rise.\n\nAnd we\u2019ve just surpassed 2,500 measles cases \u2014 breaking 2025\u2019s record.\n\n\u201cMake America Healthy Again.\u201d",
-    "likes": 21032,
+    "likes": 21031,
     "reposts": 7938,
-    "replies": 862,
+    "replies": 861,
     "quotes": 473,
     "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mt5rmyleir2e"
    },
@@ -160,7 +155,7 @@
     "handle": "ryanmarino.bsky.social",
     "name": "Ryan Marino, MD",
     "text": "Taking my time to really listen and learn from the very valid concerns of the MAHA movement:",
-    "likes": 5040,
+    "likes": 5039,
     "reposts": 997,
     "replies": 98,
     "quotes": 59,
@@ -196,9 +191,9 @@
     "handle": "luckytran.com",
     "name": "Dr. Lucky Tran",
     "text": "The US government is canceling several cyclospora research studies in the midst of the biggest cyclospora outbreak ever which has made tens of thousands sick and killed two people. Make America Healthy Again.",
-    "likes": 3900,
+    "likes": 3901,
     "reposts": 1510,
-    "replies": 158,
+    "replies": 159,
     "quotes": 88,
     "url": "https://bsky.app/profile/luckytran.com/post/3mufgtc7sik2m"
    },
@@ -278,18 +273,13 @@
   "top_accounts": [
    {
     "handle": "gavinyamey.bsky.social",
-    "posts": 164,
-    "engagement": 15507
+    "posts": 166,
+    "engagement": 16173
    },
    {
     "handle": "joho.bsky.social",
-    "posts": 31,
-    "engagement": 964
-   },
-   {
-    "handle": "benecal.bsky.social",
-    "posts": 26,
-    "engagement": 477
+    "posts": 32,
+    "engagement": 1197
    },
    {
     "handle": "ghostofmarktwain.bsky.social",
@@ -299,12 +289,17 @@
    {
     "handle": "joffirphd.bsky.social",
     "posts": 23,
-    "engagement": 191
+    "engagement": 192
    },
    {
     "handle": "mcbridetd.bsky.social",
-    "posts": 19,
-    "engagement": 69
+    "posts": 22,
+    "engagement": 73
+   },
+   {
+    "handle": "benecal.bsky.social",
+    "posts": 20,
+    "engagement": 286
    },
    {
     "handle": "bigearthdata.ai",
@@ -344,7 +339,7 @@
    {
     "handle": "rbreich.bsky.social",
     "posts": 11,
-    "engagement": 103197
+    "engagement": 103195
    },
    {
     "handle": "whitehousewatchdog.bsky.social",
@@ -1366,7 +1361,7 @@
    },
    {
     "week": "2026-09-28",
-    "count": 2297
+    "count": 2703
    }
   ],
   "weekly_counts_maga": [
@@ -1824,7 +1819,7 @@
    },
    {
     "week": "2026-09-28",
-    "count": 16135
+    "count": 20285
    }
   ],
   "weekly_ratio_maha_to_maga": [
@@ -2282,11 +2277,11 @@
    },
    {
     "week": "2026-09-28",
-    "value": 0.1424
+    "value": 0.1333
    }
   ],
   "summary": {
-   "total_posts_since_start": 1100186,
+   "total_posts_since_start": 1100592,
    "last4w_avg_weekly": 2064,
    "prev4w_avg_weekly": 2931,
    "change_pct": -29.6,
@@ -2297,204 +2292,78 @@
    "last4w_ratio_to_maga": 0.0922
   },
   "sample": {
-   "n": 1091,
-   "since": "2026-09-28",
-   "unique_authors": 808,
+   "n": 595,
+   "since": "2026-09-30",
+   "unique_authors": 498,
    "top_posts": [
     {
      "id": "2105659103632556146",
      "date": "2026-10-01",
      "handle": "SecKennedy",
      "name": "Secretary Kennedy",
-     "followers": 1230521,
+     "followers": 1230415,
      "text": "Thank you, @VP, for joining me onstage at the MAHA Summit. What a tremendous success! https://t.co/7CvfWxVLgp",
-     "likes": 7332,
-     "reposts": 749,
-     "replies": 257,
+     "likes": 7397,
+     "reposts": 755,
+     "replies": 261,
      "quotes": 18,
-     "views": 68521,
+     "views": 70184,
      "url": "https://x.com/SecKennedy/status/2105659103632556146"
-    },
-    {
-     "id": "2104677971248157182",
-     "date": "2026-09-28",
-     "handle": "JDVance",
-     "name": "JD Vance",
-     "followers": 5553080,
-     "text": "One of President Trump\u2019s main focuses for this administration was to Make America Healthy Again. \n\nSince January 2025, thanks to the work of @SecKennedy and the team over at @HHSGov, we have been fulfilling that promise to the American people, and the great MAHA movement.\n\nTune https://t.co/CjnX4U4UmY",
-     "likes": 6718,
-     "reposts": 967,
-     "replies": 1382,
-     "quotes": 78,
-     "views": 380974,
-     "url": "https://x.com/JDVance/status/2104677971248157182"
-    },
-    {
-     "id": "2105053334302495202",
-     "date": "2026-09-29",
-     "handle": "SecKennedy",
-     "name": "Secretary Kennedy",
-     "followers": 1230521,
-     "text": "Backstage at the MAHA Summit with @VP. https://t.co/0atrOUnxqP",
-     "likes": 6586,
-     "reposts": 707,
-     "replies": 297,
-     "quotes": 19,
-     "views": 96363,
-     "url": "https://x.com/SecKennedy/status/2105053334302495202"
-    },
-    {
-     "id": "2104672593689149637",
-     "date": "2026-09-28",
-     "handle": "ddiamond",
-     "name": "Dan Diamond",
-     "followers": 139573,
-     "text": "Russell Brand, who's awaiting trial in London next month on rape and sexual assault charges, will moderate a panel at DC's MAHA summit tomorrow on reforming a U.S. health agency https://t.co/vqWJdOpby6",
-     "likes": 2829,
-     "reposts": 1570,
-     "replies": 255,
-     "quotes": 259,
-     "views": 287868,
-     "url": "https://x.com/ddiamond/status/2104672593689149637"
-    },
-    {
-     "id": "2104654554826420718",
-     "date": "2026-09-28",
-     "handle": "SecKennedy",
-     "name": "Secretary Kennedy",
-     "followers": 1230521,
-     "text": "We\u2019re getting America\u2019s kids moving again.\n\nAt Gaither High School in Tampa, I joined @RepLaurelLee, @ADM_Christine, and @TitusONeilWWE as students trained for the Presidential Fitness Test \u2014 building their strength, endurance, speed, and agility.\n\nStrong kids build a strong https://t.co/8QbT4aeIKc",
-     "likes": 2652,
-     "reposts": 391,
-     "replies": 84,
-     "quotes": 14,
-     "views": 41964,
-     "url": "https://x.com/SecKennedy/status/2104654554826420718"
-    },
-    {
-     "id": "2105030140639998333",
-     "date": "2026-09-29",
-     "handle": "DrNeilStone",
-     "name": "Neil Stone",
-     "followers": 163581,
-     "text": "Russell Brand is charing a session at the MAHA Summit\n\nRussell \n\nBrand \n\nTells you everything you need to know about how unserious it all is \n\nhttps://t.co/c8WnEX1uzF",
-     "likes": 2521,
-     "reposts": 384,
-     "replies": 79,
-     "quotes": 8,
-     "views": 18926,
-     "url": "https://x.com/DrNeilStone/status/2105030140639998333"
     },
     {
      "id": "2105683496102486520",
      "date": "2026-10-01",
      "handle": "EricLDaugh",
      "name": "Eric Daugherty",
-     "followers": 1200853,
+     "followers": 1201346,
      "text": "\ud83d\udea8 BOMBSHELL: HHS Sec. Bobby Kennedy reveals that Medicare taxpayer expenses on \u201cwound care patches\u201d INCREASED 6,900% \u2014 from $200M to $14B \n\n\u201cIT\u2019S ALL STOLEN.\u201d\n\nIt\u2019s a MAJOR kickback scheme where doctors get a share of the bill for elderly patients who never needed it \n\nEvery",
-     "likes": 1502,
+     "likes": 1508,
      "reposts": 634,
      "replies": 51,
      "quotes": 16,
-     "views": 36943,
+     "views": 37551,
      "url": "https://x.com/EricLDaugh/status/2105683496102486520"
     },
     {
-     "id": "2105147587183645062",
-     "date": "2026-09-30",
-     "handle": "Cernovich",
-     "name": "Cernovich",
-     "followers": 1457380,
-     "text": "Where are the events for MAHA? The Trump administration has black listed MAHA moms who we personally know. I flagged this up the chain. They are still banned from the White House. That is the kind of bullshit happening. Don\u2019t bitch at me about the midterms.",
-     "likes": 1782,
-     "reposts": 201,
-     "replies": 79,
-     "quotes": 5,
-     "views": 45488,
-     "url": "https://x.com/Cernovich/status/2105147587183645062"
-    },
-    {
-     "id": "2104593294969786407",
-     "date": "2026-09-28",
-     "handle": "MakisMedicine",
-     "name": "William Makis",
-     "followers": 687602,
-     "text": "MAHA Summit has:\n\n- no Ivermectin, Mebendazole or Fenbendazole\n- no repurposed drugs\n- no bioactive compounds, nutraceuticals in Cancer\n- no talks on cancer at all\n\nThis is NOT a health summit, which is sad considering the substandard cancer care President Trump's Chief of Staff https://t.co/ovkdx8RGGO",
-     "likes": 1523,
-     "reposts": 347,
+     "id": "2105985391295692989",
+     "date": "2026-10-02",
+     "handle": "Tironianae",
+     "name": "Tironianae \ud83c\udf4a\ud83c\udf4a Z. - Ultra Verbum Vincet",
+     "followers": 56314,
+     "text": "\ud83d\udea8BREAKING: HHS Secretary RFK Jr just announced the FDA is ELIMINATING the exemption that allows harmful chemicals to be in our food.\n\nMAKE AMERICA HEALTHY AGAIN! https://t.co/uudrPrlGUi",
+     "likes": 1515,
+     "reposts": 596,
      "replies": 39,
-     "quotes": 21,
-     "views": 55348,
-     "url": "https://x.com/MakisMedicine/status/2104593294969786407"
-    },
-    {
-     "id": "2105070917546070204",
-     "date": "2026-09-29",
-     "handle": "RWMaloneMD",
-     "name": "Robert W Malone, MD",
-     "followers": 1324255,
-     "text": "VP Vance and Secretary Kennedy speaking at the MAHA Summit today.\nI can\u2019t wait for Vice President Vance to become President Vance.\nVance spoke out early about his own mRNA vaccine injury and, as a senator, was willing to question what was happening at a time when doing so came https://t.co/YCm2XrhtmW",
-     "likes": 1584,
-     "reposts": 241,
-     "replies": 118,
-     "quotes": 14,
-     "views": 49583,
-     "url": "https://x.com/RWMaloneMD/status/2105070917546070204"
-    },
-    {
-     "id": "2105090758319481250",
-     "date": "2026-09-30",
-     "handle": "epaleezeldin",
-     "name": "Lee Zeldin",
-     "followers": 299916,
-     "text": "The Make America Healthy Again (MAHA) movement would not be possible without the exceptional leadership and partnership we are witnessing from President Trump and @SecKennedy. Every day, they are advancing consequential policies to make our families stronger, healthier, and more https://t.co/cVD5wvpKpY",
-     "likes": 1472,
-     "reposts": 237,
-     "replies": 91,
-     "quotes": 6,
-     "views": 95206,
-     "url": "https://x.com/epaleezeldin/status/2105090758319481250"
+     "quotes": 23,
+     "views": 13359,
+     "url": "https://x.com/Tironianae/status/2105985391295692989"
     },
     {
      "id": "2105281387418763766",
      "date": "2026-09-30",
      "handle": "Milbank",
      "name": "Dana Milbank",
-     "followers": 108859,
+     "followers": 108853,
      "text": "Russell Brand goes on  trial in London in two weeks for rape. But first he was invited to the MAHA Summit to vouch for the high character of RFK Jr.  And the sleaziness was just beginning. My latest @washingtonsun column. https://t.co/zPMYc0vtJq",
      "likes": 1138,
      "reposts": 535,
      "replies": 14,
      "quotes": 15,
-     "views": 19381,
+     "views": 19461,
      "url": "https://x.com/Milbank/status/2105281387418763766"
-    },
-    {
-     "id": "2105054148324688347",
-     "date": "2026-09-29",
-     "handle": "MAHA_Action",
-     "name": "MAHA Action",
-     "followers": 101688,
-     "text": "RFK Jr. says AI will make \u201ctrust the experts\u201d a thing of the past and help free Americans from \u201cmedical tyranny.\u201d\n\n\u201cWe\u2019re never ever again going to be able to be dominated by public officials who tell us \u2018trust the experts.\u2019\u201d\n\n\u201cEvery American will be able to check their own https://t.co/F158rrh28F",
-     "likes": 1227,
-     "reposts": 281,
-     "replies": 166,
-     "quotes": 51,
-     "views": 146158,
-     "url": "https://x.com/MAHA_Action/status/2105054148324688347"
     },
     {
      "id": "2105421883042922670",
      "date": "2026-09-30",
      "handle": "DonHuffines",
      "name": "Comptroller Don Huffines",
-     "followers": 107523,
+     "followers": 107531,
      "text": "REMOVE fluoride from our water!\n\nSTOP poisoning and forcibly medicating Americans!\n\nMAKE AMERICA HEALTHY AGAIN! #MAHA\ud83c\uddfa\ud83c\uddf8 https://t.co/D9SARjqlLl",
-     "likes": 1117,
+     "likes": 1116,
      "reposts": 316,
-     "replies": 116,
+     "replies": 117,
      "quotes": 17,
-     "views": 29452,
+     "views": 29627,
      "url": "https://x.com/DonHuffines/status/2105421883042922670"
     },
     {
@@ -2502,91 +2371,217 @@
      "date": "2026-10-01",
      "handle": "GuntherEagleman",
      "name": "Gunther Eagleman\u2122",
-     "followers": 1771280,
+     "followers": 1771621,
      "text": "MAHA MOMS!! THEY COULD DECIDE THE MIDTERMS, AND REPUBLICANS HAD BETTER NOT TAKE THEM FOR GRANTED.\n\nThese are moms who read labels and want food dyes, junk chemicals, and garbage out of their kids' food and water.\n\nThey aren't loyal to a party, they're loyal to their families. https://t.co/YD1SdexEjF",
-     "likes": 954,
-     "reposts": 363,
+     "likes": 966,
+     "reposts": 366,
      "replies": 36,
      "quotes": 6,
-     "views": 24743,
+     "views": 25121,
      "url": "https://x.com/GuntherEagleman/status/2105704534655811753"
+    },
+    {
+     "id": "2105355353030332590",
+     "date": "2026-09-30",
+     "handle": "ChildrensHD",
+     "name": "Children\u2019s Health Defense",
+     "followers": 329027,
+     "text": "MAHA leaders have issued an ultimatum to Secretary Kennedy and President Trump: take mRNA off the market or lose the support of the health freedom movement.\n\nWe agree that much more needs to be done on mRNA vaccines. But we will not turn our backs on the man who has spent decades https://t.co/6EwEmSTokN",
+     "likes": 909,
+     "reposts": 294,
+     "replies": 145,
+     "quotes": 43,
+     "views": 47365,
+     "url": "https://x.com/ChildrensHD/status/2105355353030332590"
+    },
+    {
+     "id": "2105289594543522076",
+     "date": "2026-09-30",
+     "handle": "VP",
+     "name": "Vice President JD Vance",
+     "followers": 1306688,
+     "text": "\ud83d\udcf8Vice President Vance and Secretary @RobertKennedyJr participate in a fireside chat at this year\u2019s MAHA summit https://t.co/67SpbR5C8D",
+     "likes": 993,
+     "reposts": 184,
+     "replies": 74,
+     "quotes": 4,
+     "views": 46514,
+     "url": "https://x.com/VP/status/2105289594543522076"
+    },
+    {
+     "id": "2106119354253455521",
+     "date": "2026-10-02",
+     "handle": "BuzzPatterson",
+     "name": "Buzz Patterson",
+     "followers": 596348,
+     "text": "I\u2019m exhausted managing my family\u2019s healthcare and bills. I\u2019m sick of it. \n\nDr Oz and @realDonaldTrump want to make America Healthy Again. I\u2019m onboard. You? https://t.co/zft95fKCUl",
+     "likes": 1022,
+     "reposts": 102,
+     "replies": 57,
+     "quotes": 1,
+     "views": 17985,
+     "url": "https://x.com/BuzzPatterson/status/2106119354253455521"
+    },
+    {
+     "id": "2105705180025020781",
+     "date": "2026-10-01",
+     "handle": "GuntherEagleman",
+     "name": "Gunther Eagleman\u2122",
+     "followers": 1771621,
+     "text": "AOC IS SUDDENLY TRYING TO COZY UP TO MAHA MOMS, AND NOBODY SHOULD BUY IT.\n\nShe attacks RFK Jr. every single day on vaccines, but now she wants credit for caring about what goes into your kids' bodies.\n\nWhen she was asked what she'd actually do for these moms, her answer came https://t.co/7iKqip0oDI",
+     "likes": 739,
+     "reposts": 287,
+     "replies": 55,
+     "quotes": 15,
+     "views": 38977,
+     "url": "https://x.com/GuntherEagleman/status/2105705180025020781"
+    },
+    {
+     "id": "2105684249747558623",
+     "date": "2026-10-01",
+     "handle": "RyanAFournier",
+     "name": "Ryan Fournier",
+     "followers": 1276073,
+     "text": "\ud83d\udea8 BOMBSHELL: HHS Sec. Bobby Kennedy reveals Medicare spending on \u201cwound care patches\u201d surged 6,900% from $200M to $14B.\nA massive kickback scheme where doctors bill huge sums for patients who never needed them.\nAnti-fraud controls through DOGE &amp; MAHA are urgently needed to stop",
+     "likes": 761,
+     "reposts": 263,
+     "replies": 16,
+     "quotes": 10,
+     "views": 28319,
+     "url": "https://x.com/RyanAFournier/status/2105684249747558623"
+    },
+    {
+     "id": "2106504574739902890",
+     "date": "2026-10-03",
+     "handle": "MAHA_Action",
+     "name": "MAHA Action",
+     "followers": 101700,
+     "text": "RFK Jr. says critical research on vaccines is FINALLY being done under his leadership.\n\nNo matter the controversy or what the research finds, the results will be published and the evidence followed wherever it leads.\n\n\u201cCDC researchers are using the VSD to compare healthcare https://t.co/KgyoDgNYaO",
+     "likes": 731,
+     "reposts": 227,
+     "replies": 42,
+     "quotes": 14,
+     "views": 8556,
+     "url": "https://x.com/MAHA_Action/status/2106504574739902890"
+    },
+    {
+     "id": "2105278907268153840",
+     "date": "2026-09-30",
+     "handle": "MollyJongFast",
+     "name": "Molly Jong-Fast",
+     "followers": 983172,
+     "text": "Health Secretary Robert F. Kennedy Jr., who has frequently advised Americans not to trust medical experts, said on Tuesday that artificial intelligence can offer patients \u201ca second opinion that is much better informed than any doctor in the country\u201d and has the power to \u201cfree us https://t.co/FKUBziCklE",
+     "likes": 535,
+     "reposts": 185,
+     "replies": 54,
+     "quotes": 11,
+     "views": 28667,
+     "url": "https://x.com/MollyJongFast/status/2105278907268153840"
+    },
+    {
+     "id": "2105332631768539208",
+     "date": "2026-09-30",
+     "handle": "AnnieForTruth",
+     "name": "Annie",
+     "followers": 145834,
+     "text": "Another day, another recall! \ud83e\udd2c 2,300 pounds of breakfast sausage recalled due to possible contamination with plastic shards. RFK Jr and the MAHA consider that healthy roughage and fiber to keep you regular! \ud83e\udd23 https://t.co/2U1dZ1LK5x",
+     "likes": 375,
+     "reposts": 268,
+     "replies": 55,
+     "quotes": 21,
+     "views": 4868,
+     "url": "https://x.com/AnnieForTruth/status/2105332631768539208"
+    },
+    {
+     "id": "2105306209704194308",
+     "date": "2026-09-30",
+     "handle": "calleymeans",
+     "name": "Calley Means",
+     "followers": 307945,
+     "text": "At the MAHA summit, a major food executive said \u201cwe all support the MAHA goal of healthy food.\u201d\n\nRespectfully, this is dead wrong. \n\nCase in point: junk food companies just started a shadow group to attack the Trump admin and undermine confidence in regenerative agriculture and https://t.co/IjPbUEINM6",
+     "likes": 470,
+     "reposts": 102,
+     "replies": 36,
+     "quotes": 10,
+     "views": 12088,
+     "url": "https://x.com/calleymeans/status/2105306209704194308"
     }
    ],
    "top_accounts": [
     {
-     "handle": "HHSResponse",
-     "posts": 10,
-     "engagement": 1832
-    },
-    {
-     "handle": "DrNeilStone",
-     "posts": 10,
-     "engagement": 4565
-    },
-    {
-     "handle": "JohnSgt",
-     "posts": 10,
-     "engagement": 21
-    },
-    {
      "handle": "MAHA_Action",
-     "posts": 8,
-     "engagement": 3978
+     "posts": 6,
+     "engagement": 2598
     },
     {
-     "handle": "realTuckFrumper",
-     "posts": 8,
-     "engagement": 142
+     "handle": "EmbracingTara",
+     "posts": 5,
+     "engagement": 75
     },
     {
-     "handle": "RblSports",
-     "posts": 7,
-     "engagement": 1
+     "handle": "rgccmgm",
+     "posts": 4,
+     "engagement": 0
     },
     {
      "handle": "AZMAHAMAMA",
-     "posts": 6,
-     "engagement": 13
+     "posts": 4,
+     "engagement": 3
     },
     {
-     "handle": "statnews",
-     "posts": 6,
+     "handle": "roosterpisces",
+     "posts": 4,
      "engagement": 4
     },
     {
+     "handle": "RblSports",
+     "posts": 4,
+     "engagement": 0
+    },
+    {
+     "handle": "statnews",
+     "posts": 4,
+     "engagement": 2
+    },
+    {
+     "handle": "LtsFlwr70",
+     "posts": 4,
+     "engagement": 0
+    },
+    {
      "handle": "DutchDane59",
-     "posts": 6,
+     "posts": 4,
      "engagement": 2
     },
     {
      "handle": "MedicalQuack",
-     "posts": 6,
-     "engagement": 3
-    },
-    {
-     "handle": "UnvarnishedGME",
-     "posts": 6,
-     "engagement": 20
-    },
-    {
-     "handle": "FairTaxBill",
-     "posts": 5,
+     "posts": 4,
      "engagement": 1
     },
     {
-     "handle": "MAHA_Institute",
-     "posts": 5,
-     "engagement": 98
+     "handle": "ReduxStl",
+     "posts": 3,
+     "engagement": 6
     },
     {
-     "handle": "iamgregk",
-     "posts": 5,
-     "engagement": 30
+     "handle": "LynnNewkirk5",
+     "posts": 3,
+     "engagement": 0
     },
     {
-     "handle": "virginiagmck",
-     "posts": 5,
-     "engagement": 69
+     "handle": "Healthinsurane4",
+     "posts": 3,
+     "engagement": 7
+    },
+    {
+     "handle": "hanktheyank58",
+     "posts": 3,
+     "engagement": 1
+    },
+    {
+     "handle": "NewYorkSun",
+     "posts": 3,
+     "engagement": 3
     }
    ]
   }
@@ -2605,62 +2600,97 @@
    "MAHA Summit when:7d"
   ],
   "window_days": 7,
-  "collected": "2026-10-02",
+  "collected": "2026-10-04",
   "note": "Google News returns up to 100 results per query; eight queries are merged and deduplicated by title. Tone, origin and theme are assigned by a language model from headline and outlet only, using a fixed rubric; article bodies are not read. 'Critical, inside' means the criticism in the headline comes from the movement or its allies.",
-  "n": 125,
+  "n": 120,
   "tone": {
-   "critical": 52,
-   "neutral": 59,
-   "positive": 14
+   "critical": 51,
+   "neutral": 51,
+   "positive": 18
   },
   "critical_origin": {
-   "outside": 40,
-   "na": 1,
-   "inside": 11
+   "inside": 11,
+   "outside": 40
   },
   "theme": {
-   "personnel-leadership": 28,
-   "policy-delivery": 25,
-   "culture-media": 21,
-   "politics-midterms": 18,
-   "other": 15,
-   "science-research": 8,
-   "money-pac": 6,
-   "food-chemicals": 2,
+   "culture-media": 24,
+   "policy-delivery": 22,
+   "personnel-leadership": 22,
+   "other": 20,
+   "politics-midterms": 14,
+   "science-research": 7,
+   "money-pac": 5,
+   "food-chemicals": 4,
    "vaccines": 2
   },
   "outlets": {
-   "The Hill": 8,
+   "The Hill": 6,
    "Politico": 4,
-   "Washington Examiner": 4,
-   "FOX One": 4,
+   "Fox News": 4,
+   "MedPage Today": 3,
    "Protect Our Care": 3,
    "washingtonsun.com": 3,
-   "MedPage Today": 3,
    "STAT": 3,
    "Baltimore Sun": 3,
-   "AOL.com": 3,
-   "Fox News": 3,
    "NTD News": 3,
+   "Washington Examiner": 3,
+   "Yahoo": 3,
    "Just The News": 3,
+   "KFF Health News": 2,
+   "The Daily Wire": 2,
    "The New York Sun": 2,
    "The Washington Post": 2,
-   "AOL.ca": 2,
+   "aol.ca": 2,
    "NBC News": 2,
    "The Guardian": 2,
-   "The Free Press": 2,
-   "The Independent": 2
+   "The Free Press": 2
   },
   "by_day": {
-   "2026-09-26": 1,
-   "2026-09-27": 7,
+   "2026-09-27": 3,
    "2026-09-28": 6,
-   "2026-09-29": 54,
-   "2026-09-30": 37,
-   "2026-10-01": 12,
-   "2026-10-02": 8
+   "2026-09-29": 48,
+   "2026-09-30": 39,
+   "2026-10-01": 11,
+   "2026-10-02": 9,
+   "2026-10-03": 4
   },
   "items": [
+   {
+    "title": "Rural MAHA followers say Trump health policies haven\u2019t reached them",
+    "outlet": "Antelope Valley Press",
+    "date": "2026-10-03",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYTlnZm9kc0oxNXNLY1dmS1JPc0VDTTZESFdzY2kxYnFqcXlRV192b2ZlcnZDWnZEc3dGbjA0dFFOSDF5TWRVWFA4SVBJaXZwbVg2STUyRE9pLWhwdEhpeHB2VHlFSTVjVVhBQWl2cGRjclBMa3Y4WTRUMXE4WGJidTFCdDBHdGZvVzQ1LXBxc3lhbThXbk1ubnhiVkJ5QzQ0eTFNNzBBMjJqQU5MMHdCT0h3ektSUTVEMlFHVXRET0FYalpWZkJTT2kyWVJXc3BFbmR1aG1OUEh0MG5NMWJkV3QzUXd1NjlDLVpj?oc=5",
+    "tone": "critical",
+    "origin": "inside",
+    "theme": "policy-delivery"
+   },
+   {
+    "title": "Whoops: New Report Finds Trump Broke His MAHA Promises",
+    "outlet": "HuffPost",
+    "date": "2026-10-03",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYVctNFBEV1VKeVZwc05DeS16VnhJdV9kS1VhU29qTGhrY3FoUDQ2cXBLVUVER3dwZHRmUjRsb1U5bjNwQlN3TDNMbEpFU1cxa1drWm93Y2dMYm1kNnFFTEhkODEwcDFVZ0duYnRES0RkTUg1amlMYnRfSU5rdTU2ZWdlWVMtajdWLWpPM3Z2NWM3ZTFpSWfSAZsBQVVfeXFMTXNENU1FWUFjdDhPMUZmYUFXTjJreWpIWXgxcEhzVVRvWkdWc2hxWm01Qjh1XzFMZ0pWZHBGdHRjdC1YRVNqeklLNFd1ME9Ed0UyUmQ5bXYtTDBvTG5ha2NRbnFUWk5HY2JILTBaVkFXR2VmNHN4OGMyZi15MUJWRGRhdkVrM1VJOE9vcEtuS2NJOFd6VVFoaWF5ck0?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "policy-delivery"
+   },
+   {
+    "title": "Journalists Evaluate Rural Voter Sentiment, MAHA Movement, and Gene-Editing Finding",
+    "outlet": "KFF Health News",
+    "date": "2026-10-03",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSzhoeVEwcGhYcTBUTjdMU09jUnJBV254ek1LR0pGUE5oby1IOVZNNTA1Z1VRZGZuLXViT0VCLTZqS2pKS3Q4aVZpQkV2U01GQXZVM3FEQXVBMnpxelRYbVRSUkZzVVphRlVaX2M2X2wtM2tZeGpiLUh0bVhySUN1eVBmVldxOFBvQml1UFR6VG1uNUtueWhHUUF4cDRQdkg1eXE5czg1anhmREU?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "politics-midterms"
+   },
+   {
+    "title": "Weekend Plans With Nurse Kate, America\u2019s MAHA Mom",
+    "outlet": "The Daily Wire",
+    "date": "2026-10-03",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOUhBZ0Y0UjhEQmFwRGJsSDRaU0VpYnJrWmJqUFc2N0VuRVk4YTNweHFwTnloMEdIR0d1bGlZSTVLRTR2REh0MTZvTlhSd3BoV2NRTzlkZnFoc1U2NUF4SW8wTDZoZmgwb1V5cnVYeXFqakxjSmF1UVRFZy1GX09qYVR3RXg?oc=5",
+    "tone": "positive",
+    "origin": "na",
+    "theme": "culture-media"
+   },
    {
     "title": "As Kennedy's MAHA Ruptures Over His Corrupt Betrayals, Will Democrats Respond?",
     "outlet": "National Memo",
@@ -2672,7 +2702,7 @@
    },
    {
     "title": "A dispatch from Tuesday\u2019s MAHA Summit",
-    "outlet": "themicrodose.substack.com",
+    "outlet": "The Microdose | Substack",
     "date": "2026-10-02",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5McXp1Wm9rZWw4YXhMejVneEgtMXNITXdxNGpISTJwbDdLTEdjWkxDdEFXVnJsNFR4ZWJzRl9uODlEV0VjVmE4elFrak8tSHlPQUZ2QnNNTXdCMGYyMlBLalp2US1ELXA3Qjk2RkNsaU52bE9UVXBLY1NmU0c?oc=5",
     "tone": "neutral",
@@ -2696,6 +2726,15 @@
     "tone": "critical",
     "origin": "outside",
     "theme": "policy-delivery"
+   },
+   {
+    "title": "Doctors Push Back on RFK Jr.'s AI Comments",
+    "outlet": "MedPage Today",
+    "date": "2026-10-02",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWZ6WnpyUUNzY2QzaUc2RUFzdl9WWlFBa1VKQ3FfbGdRMkNjaGJ5S1dxZ1FWeWwzNnpYcVhhaDRYbk1aTkNGSkQzNmhWcmRBbDJ6enhBUkg2clVhcDNnVl9MaVU1YUU0RFJaVnVyUDlSVF9PMXFVb09lSFJJTW4tWjVB?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "other"
    },
    {
     "title": "Review: RFK Jr.'s YouTube Cooking Show Is Both Informative and Unsettling",
@@ -2726,7 +2765,7 @@
    },
    {
     "title": "Democrats home in on MAHA amid MAGA tensions",
-    "outlet": "foodfix.co",
+    "outlet": "Food Fix",
     "date": "2026-10-02",
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9jWXpMcTFaT2F1czhISEhwUjJkU2pLOE5PVUFMZVZnY3NJOTVZTExIbWd4WGFKa3NFX2J5QVplYTRtdTVsQUVDYkZOSENGeGZLemptZ2FZYWFGT2otWkhjcVcyYi1Zdl93MGxTcVhkRXFNQQ?oc=5",
     "tone": "neutral",
@@ -2747,7 +2786,7 @@
     "outlet": "The Hill",
     "date": "2026-10-01",
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN29OX0prMXIwbkpjSFQtbWh2OVNMWjdHeXpEMmhCaDB2cUFLLXM5SnBsempUWFFGcVdQV05McW10NXNTM1NCUjQ4bndWTjc1SWM1WU5SRE1OUGF2NW55RzVXN1ZfOWtKY2RwdXZjZjVEX1lFc19EeEpCVWhMTGMtLUpBNlc5dEnSAYwBQVVfeXFMUEIzV3BMR2hQLURFV3J0UmlneEh3QnJjVFk4NXRIeXVPNi1BNmJUYmNxLVBwTU03WW1kVVpUNjZMaUNld0VjbFRRclZ0eXVjTmUydlA1MFVZQzktR3l6OGRVNFZsaUswVjUxaktBWS1saDlMaS1vXzUxZnAzQkdvVW5mN3NaOExybTBBUk4?oc=5",
-    "tone": "neutral",
+    "tone": "positive",
     "origin": "na",
     "theme": "politics-midterms"
    },
@@ -2780,7 +2819,7 @@
    },
    {
     "title": "Opinion - MAHA\u2019s not buying what AOC is selling",
-    "outlet": "AOL.ca",
+    "outlet": "aol.ca",
     "date": "2026-10-01",
     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE55TzB3TlMzZVFlWFZvTlBTWjVBZDd0MEZtWjhVQVBWck5Wc3B2RkVMaklUbVNFZThjeUphdDA0Ulc1TDNlbVoyeU1mcG9VTzhfMkRsTUN2S0ZLdnkxaWxNTnVpTnY0Yk83QWFySkFMNWpNNDdQMUR2aTZ3?oc=5",
     "tone": "positive",
@@ -2795,15 +2834,6 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "food-chemicals"
-   },
-   {
-    "title": "Doctors Push Back on RFK Jr.'s AI Comments",
-    "outlet": "MedPage Today",
-    "date": "2026-10-01",
-    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSWZ6WnpyUUNzY2QzaUc2RUFzdl9WWlFBa1VKQ3FfbGdRMkNjaGJ5S1dxZ1FWeWwzNnpYcVhhaDRYbk1aTkNGSkQzNmhWcmRBbDJ6enhBUkg2clVhcDNnVl9MaVU1YUU0RFJaVnVyUDlSVF9PMXFVb09lSFJJTW4tWjVB?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "science-research"
    },
    {
     "title": "Abdul El-Sayed tries to woo MAHA voters as Democrats seek inroads with RFK\u2019s supporters",
@@ -2837,13 +2867,13 @@
     "outlet": "geneonline.com",
     "date": "2026-10-01",
     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYUhsMTBuVHhyOGhaUmkwbWdxZmZ1Y3BWWEZQNUgwVFlvNXQyN0ZpSWU5QW54dzI2cy0zdS10M3BndDdUWkE0LXNZT01MX3NVaFRLWFA5MDhkaEhDTWNCTlNDZ2phVjBfZDZ1N3F1NVA1anBJcktWYUZKWktrN29hRmZTLTY4MUtSMWR3NXNxWmJyeHYzcV83UGZwOTlNRUNLQ0c1U29fdWw3c2xJMmdvRmIxT1ktMDA5YTR6Y1ZtTG8wRmhlTFJ6dVlLYXQ0WlJ1bkZ0R1VVWHJwNzA?oc=5",
-    "tone": "critical",
-    "origin": "outside",
+    "tone": "neutral",
+    "origin": "na",
     "theme": "policy-delivery"
    },
    {
     "title": "MAHA Gone Mild",
-    "outlet": "theatlantic.com",
+    "outlet": "The Atlantic",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yT3JRcV9Rbkg2aG1SQXhLQmwtMmZkWWljOTBlek1idkgxbmV3NFllVWR0SGVVRk45WjJidFRYbUJzYW1QZTgwdTVwVklMU18xeWUzZ0VJVUJhVXpuYk9WSGoxalZpQjBJdnNLdjdDZkFWOGM?oc=5",
     "tone": "critical",
@@ -2857,16 +2887,25 @@
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUGJIQjVyZTd5S3dVdVljeW5wRTdjX1ZRMUFYLTdMblIwYkRxVVE1dkU4cnlJUnF0WmJoWDk1RGw5TkZqY2Vrenk4WjM0RkpNYUdwNGk4S3NXQnRyRTE1Vy1MR2dzUHdqTFUzWTRXeGF4MzRSdlVUSVVxclU0LTN5LWVJWEt6V0NCNlVGekpTNmc1X0xnWGVRX2Y4MFFDNWNvTnNQeEtTVnBHYzVaSzMtQzNudw?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "policy-delivery"
+    "theme": "other"
    },
    {
     "title": "A \u2018freaked out\u2019 US food industry is hitting back at Maha \u2013 with social media influencers",
     "outlet": "The Guardian",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNzBXLVRLWnhRTlVBQUN5UURhQXltTko1cllkN1RkTEx6SEVreHB5Zzd4aWR0TnJsdzl4RjVrVjFFczI2aVVoQ1VoNV9DbUZYRWg5Yi1BeHVDcHM3WVFYWlZQUWJEX1V1ZmFTcXRQT1dUeFRBNHBETDRkVFhMZk1abzdEa0NDWEsyb0JJNTNtVGkxbWhMVGZWSjZFTQ?oc=5",
-    "tone": "neutral",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "food-chemicals"
+   },
+   {
+    "title": "MAHA Summit urges emphasis on early detection, preventive action in healthcare",
+    "outlet": "Baltimore Sun",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5WFRMS0xZLVh2eFhZdFZWQzdzOWY2Y2JCMWlLVXlWTlBiVUh4ZmlwdElQd2ozOTlCNXljNjQzR2VJV2NYY1otdlZ4aVR4UTFuUkNnanNlSUxWNFl6ejlGSUphWU1xOERHT3loN0VxX1pwQQ?oc=5",
+    "tone": "positive",
     "origin": "na",
-    "theme": "culture-media"
+    "theme": "policy-delivery"
    },
    {
     "title": "Rural Voters Like MAHA. They Just Don\u2019t Think It\u2019s Working.",
@@ -2874,35 +2913,35 @@
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMmdnNnhiZF92a0lBWGs1SnBSWWlzMlZBbTZtT056aVM5d1pSVTE2Y1NGZlEzdkw0MkhmNXNGeXpoTUpHeW0zRGNsTDl4dTFlRVZGZHN3WWQxQ3MwOUpvZUR0aExpa0dWNFZvWmhjQkk0bmNaejJYR0FpZHlEX2hRV3NpaEh3UThBQXRvVkpqa3FmS1pVcmRvWHVMQUU3QWxtV05v?oc=5",
     "tone": "critical",
-    "origin": "na",
-    "theme": "politics-midterms"
-   },
-   {
-    "title": "Rural MAHA followers say Trump hasn't improved health of their communities, an AP-KFF poll finds",
-    "outlet": "KTVN",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQZUUzX1dGRERWUGdVMFRMc2xQNk1uOXpQNjhSMjgxVTZ2RTd0UUtFek9QWG9wVTU4YUNjeWs4WXZwU2NOZDRLS0drR0l6U3lDak9RQzgtZDdUS2RTMkJtMmxRWkNFWDNxOVZFWUlWSGI0Q2Rnbm16Yk9VMnJweDlmdGxTUVNUMjdqdEhvaDl2SmgyRkJlTTNnQkh5QTRYSUJfNnJ5TXV4U0plYXNVXzBrazZSUzlEMDFjTkhGX3lMZUhfMFZkSW1Ob3hBTzJuVXd4SGlibjhWMktGYWF6eFhkMXZSeWJJN0RSMlU1cUVPY0VJY1JMdzFRWlhSYkhncWdVN0E?oc=5",
-    "tone": "critical",
-    "origin": "inside",
+    "origin": "outside",
     "theme": "policy-delivery"
    },
    {
-    "title": "JD Vance cozies up to the MAHA movement with an eye on 2028",
-    "outlet": "The Hill",
+    "title": "Poll: Rural MAHA Followers Say Trump Hasn't Improved Health of Their Communities",
+    "outlet": "MedPage Today",
     "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdEw0dTRQVlZpbnZVbUJXQ25UQ2E4aTNGZUdxQmlpclVmRFdjcm5MejVkaTZzSDZfZUlaZFhpMDRZRlNpX3RCaHM0T2lWY1cyVFpXdXI2QmFLSTBmSVJQNjA3ZGVjUmV5YjRFLXBadFAyU2VpM0FaTElMWnBLLW9EbGNuR204WXJ5bzczcDBheURfbk1VSmhwcmd3bHBqNXFiV2xCdk9pVXJfVlgwaXNJVWhtSnU4QQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wNUEzVUZ3M3Y1UHF3VjJkcUg2NF92Wm9JeUF4R3VNeXgwbWtDMGNsdVJ0UE45NS1mSjVyWmlEelI0c09uNE0wTU4tS2J2LWQ3UzBPUjhwOHR3MTljMnY4U1VyZWJXVzRya1k0M0R0Y0RHQVdwWFE?oc=5",
     "tone": "critical",
-    "origin": "outside",
-    "theme": "politics-midterms"
+    "origin": "inside",
+    "theme": "policy-delivery"
    },
    {
     "title": "A cure for \u2018medical tyranny\u2019: RFK Jr. puts a positive spin on AI",
     "outlet": "Politico",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcmxLTzdEMzhobnJGcE1fbUV4UndsdjExWlV5WE9SUENyc3NLT0czOFF5WlJvX1dEM3dwUGhwOGx2Mm5jQ2VjVEFjOG5lZEZDOXFuTFNfRmN5XzUyWlJvLTFHTkhScW1WbjNxeHVrVkVRX0d3djREcFVnbjI1c3ZITnU3SXFZcEZiaFhUUEpReXhpUVk?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "science-research"
+   },
+   {
+    "title": "JD Vance cozies up to the MAHA movement with an eye on 2028",
+    "outlet": "The Hill",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdEw0dTRQVlZpbnZVbUJXQ25UQ2E4aTNGZUdxQmlpclVmRFdjcm5MejVkaTZzSDZfZUlaZFhpMDRZRlNpX3RCaHM0T2lWY1cyVFpXdXI2QmFLSTBmSVJQNjA3ZGVjUmV5YjRFLXBadFAyU2VpM0FaTElMWnBLLW9EbGNuR204WXJ5bzczcDBheURfbk1VSmhwcmd3bHBqNXFiV2xCdk9pVXJfVlgwaXNJVWhtSnU4QQ?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "science-research"
+    "theme": "politics-midterms"
    },
    {
     "title": "More great stuff coming out of MAHA",
@@ -2914,15 +2953,6 @@
     "theme": "other"
    },
    {
-    "title": "MAHA Summit urges emphasis on early detection, preventive action in healthcare",
-    "outlet": "Baltimore Sun",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA5WFRMS0xZLVh2eFhZdFZWQzdzOWY2Y2JCMWlLVXlWTlBiVUh4ZmlwdElQd2ozOTlCNXljNjQzR2VJV2NYY1otdlZ4aVR4UTFuUkNnanNlSUxWNFl6ejlGSUphWU1xOERHT3loN0VxX1pwQQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "policy-delivery"
-   },
-   {
     "title": "What MAHA rooters said about AI\u2014and other hot topics\u2014at this week\u2019s \u2018open data\u2019 summit in Washington",
     "outlet": "HealthExec",
     "date": "2026-09-30",
@@ -2930,15 +2960,6 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "science-research"
-   },
-   {
-    "title": "Vance cozies up to MAHA movement",
-    "outlet": "The Hill",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaHBjb09NUmFndGVKUFdSMnNVak1VX19xdkJudWpkSnJxZ1U5NldaUmNQTkRwWG9wN1pqeGxCTzJLZE5LR24yVlFZR0VjbzJ6OUZkaHBHVUtFUjhmNkVPNi1uMGpuRzdyOUdPb2gzbGExSjRLbkZ3LVdPYUxRSE1jXzlEYUxWS0RYLXI4dThMOHdsclZyQjlyNVp3Q3d1R1kwYXUw0gGjAUFVX3lxTE1ocGNvT01SYWd0ZUpQV1Iyc1VqTVVfX3F2Qm51amRKcnFnVTk2V1pSY1BORHBYb3A3Wmp4bEJPMktkTktHbjJWUVlHRWNvMno5RmRocEdVS0VSOGY2RU82LW4wam5HN3I5R09vaDNsYTFKNEtuRnctV09hTFFITWNfOURhTFZLRFgtcjh1OEw4d2xyVnJCOXI1WndDd3VHWTBhdTA?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "politics-midterms"
    },
    {
     "title": "MAHA Versus the Machine - by Audrey Fahlberg",
@@ -2950,37 +2971,10 @@
     "theme": "other"
    },
    {
-    "title": "Rural MAHA Voters Turn on Trump and Give Grim Diagnosis",
-    "outlet": "The Daily Beast",
+    "title": "Rural MAHA followers say Trump hasn\u2019t improved health of their communities, poll finds",
+    "outlet": "Sentinel and Enterprise",
     "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSTVIbDhCVmxCU3NGajRjX2UwWWIxS1JHLUNrYU9WSUg1SDQwTXozdXJNOTJGYVdfdjZZYkxzLXk1SmdzVlNZZ3NSSjVYVW13V2U5TzRuQ3RTT3llSkl5TlBmcnlRa0VYSUttUkVYdkRlSFoydE1GejFEcWZDV3hRNldlaU9lQlI4b3EydmdCRQ?oc=5",
-    "tone": "critical",
-    "origin": "inside",
-    "theme": "politics-midterms"
-   },
-   {
-    "title": "KFF Health News: Rural MAHA Followers Say Trump Health Policies Haven\u2019t Reached Their Communities",
-    "outlet": "Sierra Sun Times",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQSVV5b2pkV0wwZVVfUFUzcUlKdVl2Y2d2ZS1Za2JHdDFMT3BoVVExNjFJUFlKZTMxUHFCRDRXSmpiZERBUU1EcktGWHFyT2xoNHNHblVHQVNaQjV1YlFzX3lFcVRoanc0WkFzU2sxbFJESlZ3Skp5ZFE5MFp1bVViU3p3Y25SUmczNmx2LUdfbkItY0ZKS1FjWllfSzlfR2FxTUZDWUlZZHRURHMwVEwxZEhmYmppUkJjTHU1V1BVOF9iMEFGc0VzZXlSZVNaYW93d0pDMVloV0xDSTJaNTVzMS1LVGJJeDM3aUNRTlM1anNQY2tYV0wwcHFiMA?oc=5",
-    "tone": "critical",
-    "origin": "inside",
-    "theme": "policy-delivery"
-   },
-   {
-    "title": "Rural MAHA followers say Trump hasn't improved health of the...",
-    "outlet": "Standard Democrat",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOXzc3VFFBOGdhb1Vka3hweHhkWnBibzZRNWtnaVg4Ql9yY1pDdTYwV1hna2I2U2ZtNkVZb2o3SUdBS0Npa2lHQVhyWFFqUUdxRnlrVHk3VHFGWWcwREYxalFXclh2aDJJUUdrMy0xVGRmTTkwY0lFNVJaVXhPMWNiYVNpYXZKTGl4RGkwU1ptZHhYXzU0WXd5QjEtV1JoSHZYcGp5QWJibk5lcHA0VlFVbVBBcmZTTzhhLVN3bUVsaFlMYW1QUkpScThNUHl0LWNPWThNSUpFQk9oNE9q?oc=5",
-    "tone": "critical",
-    "origin": "inside",
-    "theme": "policy-delivery"
-   },
-   {
-    "title": "Rural MAHA Voters Don't Think Trump Admin Has Helped Health In Their Communities, New Poll Shows",
-    "outlet": "AOL.com",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBydEdfQ2hJMVNNUG1nQ3lka3kyc2ZXcTdjSHk0Rm05WkM2MnlGam9ybjJmZ1FYTzQ3ZWRzS2RhempObE1JOHh2Q0hrb0hLNWJqTlk2Rmh1LUJULXlDLXpCeENyQkQzYTk2d21CVHpwUkpaeGdjMFVZY0hzMzY?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPWkEtNE8wZVBHQ0ZBU3FtRXYyZGZ4dFJnNUVnM0ZDMU1tR0RYbTYxbHZHcURhR2tDVjdDUmtCYXRsS0tPZjRiV0FYWjc4MUg5b1JvMTlKYWNJYmlZbFE3MFcyeTRyVkQ2aE5ud2g4THBIemNUdjNTTGY0M1R4M2R6WVJYQnNfNnlfN3VkSDRHZTZtREpoMVNjcnJrUk9sQmpQbzVUcHZlakdtR0k1YkdhajBNQlJ2LTdiSGY3dkpkU2lJSkRzd3RLX3BjV01LaFRvZmU4c1JIVzlaa2xoUFNUWGdyZEZIUVR3YTJLU29BZnJFQnBxbDZvUmtjZFF6T25VX2ZzSnJvZTZ4Nk5mWnlmMnV4alVLaWtNTjhqVERQOTdWNTZPSTJxeA?oc=5",
     "tone": "critical",
     "origin": "inside",
     "theme": "policy-delivery"
@@ -2992,7 +2986,34 @@
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVDNKWmdXY1Yyb2NJcncxeHVSVlBpdjRDX1FkR25rUzdoRHZkZ0VlXzNUZHJqOHZuVmtteUs1QmtaVzZaa1ZNenFXd3draGVBNTl2RGZCTEwyTndVdmZzOFktb3VvZ3dGZ2hRYnd5VXBkTlNFUW00VmRwZ2xFVlgzSFE4TldLdUJjSnFzalpxY25uQkd2RHo4RHE4NnBHcVRVTXJLYw?oc=5",
     "tone": "critical",
     "origin": "outside",
+    "theme": "culture-media"
+   },
+   {
+    "title": "KFF Health News: Rural MAHA Followers Say Trump Health Policies Haven\u2019t Reached Their Communities",
+    "outlet": "Sierra Sun Times",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQSVV5b2pkV0wwZVVfUFUzcUlKdVl2Y2d2ZS1Za2JHdDFMT3BoVVExNjFJUFlKZTMxUHFCRDRXSmpiZERBUU1EcktGWHFyT2xoNHNHblVHQVNaQjV1YlFzX3lFcVRoanc0WkFzU2sxbFJESlZ3Skp5ZFE5MFp1bVViU3p3Y25SUmczNmx2LUdfbkItY0ZKS1FjWllfSzlfR2FxTUZDWUlZZHRURHMwVEwxZEhmYmppUkJjTHU1V1BVOF9iMEFGc0VzZXlSZVNaYW93d0pDMVloV0xDSTJaNTVzMS1LVGJJeDM3aUNRTlM1anNQY2tYV0wwcHFiMA?oc=5",
+    "tone": "critical",
+    "origin": "inside",
+    "theme": "policy-delivery"
+   },
+   {
+    "title": "Rural MAHA Voters Turn on Trump and Give Grim Diagnosis",
+    "outlet": "The Daily Beast",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSTVIbDhCVmxCU3NGajRjX2UwWWIxS1JHLUNrYU9WSUg1SDQwTXozdXJNOTJGYVdfdjZZYkxzLXk1SmdzVlNZZ3NSSjVYVW13V2U5TzRuQ3RTT3llSkl5TlBmcnlRa0VYSUttUkVYdkRlSFoydE1GejFEcWZDV3hRNldlaU9lQlI4b3EydmdCRQ?oc=5",
+    "tone": "critical",
+    "origin": "inside",
     "theme": "politics-midterms"
+   },
+   {
+    "title": "Rural MAHA Voters Don't Think Trump Admin Has Helped Health In Their Communities, New Poll Shows",
+    "outlet": "AOL.com",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBydEdfQ2hJMVNNUG1nQ3lka3kyc2ZXcTdjSHk0Rm05WkM2MnlGam9ybjJmZ1FYTzQ3ZWRzS2RhempObE1JOHh2Q0hrb0hLNWJqTlk2Rmh1LUJULXlDLXpCeENyQkQzYTk2d21CVHpwUkpaeGdjMFVZY0hzMzY?oc=5",
+    "tone": "critical",
+    "origin": "inside",
+    "theme": "policy-delivery"
    },
    {
     "title": "At MAHA summit, industry CEOs the movement once vilified take the stage",
@@ -3004,13 +3025,22 @@
     "theme": "other"
    },
    {
+    "title": "Russell Brand and Dr. Oz joke about hugging female Trump secretary as rape-accused comic joins MAHA panel",
+    "outlet": "The Independent",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZDhXbExQcmpoS1N5bS11QkhHZVJkbnpQWHRqSEJ1ODhXWDNXc213YUR2ekI0MFpvbDFWaHoxci1zYWRKTmxEdVBlWlBrYnZPZnk3QkRXbmZWVlhOYUo0aXRaTTd5cDhTXzJYWUZEUGdMVE5QUGxGaXVNaXNBcndabEh3M1o5NzFaOEczdHFUZ21VN2xYYUdEV2NqZ1RDd3pYZGpmV1AwSHZsX3NJaTVOZg?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "personnel-leadership"
+   },
+   {
     "title": "Vice President Vance headlines MAHA summit in Washington, D.C., for second straight year",
     "outlet": "tippahnews.com",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYWZxNjBGbFIwUi04SnN1VG82WUI4cHRVeGVhTzAwbE5DTjdHc0h2SmY5b1pVUWNXTkg3OGdja1lGZnRfUzU5Ul9YdXAydUR1bUNxa0tqSzhma1VLYWY2Mnl5ZzQzbkd5VWlKS2QyRUhGb0JWYnBOM3ZibnA1SHM3eVlLVHZDYzlrcVdxQ0JFZm1tOU9JTllSa01Sb2ZpX3pxaV9oRlZ5Vm1YUGloRDdMbUY0Mm1lXzY4WkJBbzZ4VDI?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "personnel-leadership"
+    "theme": "other"
    },
    {
     "title": "Controversial figures Dr Oz and Russell Brand rally behind Trump MAHA agenda",
@@ -3028,7 +3058,16 @@
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNDhDQVFYVnVzUzNwX3FpVmozSjFrY3RKX0g1OE5MQlBSZlBzUG1oRzJZMFFfclJ1bnhCY1BodDlDVXFIcUV1aGdOd1ZOTHp0LTBNVlFBUmMyOWlhUlVPRE1valFRVGszcUtSRmdmSmppSWNjaTVQMG0xSW9VdlVwWEZ4Nmd6SG8zQ0RpZW14WnZkdzZjM09PTm44TE1YZEpPWlhSRnNvNkZUbEN5cjZN?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "policy-delivery"
+    "theme": "money-pac"
+   },
+   {
+    "title": "RFK Jr. Just Exposed a Fraudster \u2014 And It Is Him",
+    "outlet": "washingtonsun.com",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNFNGeDBIWXJiS0RnbS1NcG8zNVE1Y084OWRLcVZwb2dRcW1zN3RiT1Y3dl90d28ycWdQdDE4T1lTOEFvVmdEQnJPenhobjFmVWhoelJheHRKZ2oxTHhXWm82dkdWMmhoY195VURleTVjVWdUa0RtWnRDMDk3clQ1UTBvaFZ4Z25pYWV5ZHZFT0Ridw?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "personnel-leadership"
    },
    {
     "title": "RFK Jr. Adviser 'Raised His Voice' With White House Staff in Heated Label Debate: Sources",
@@ -3044,15 +3083,15 @@
     "outlet": "Irish Star",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWTNvZE9FSW5FOXpMN09hZmtUX3VZc2VXQ2lTNUFvVmpGYW5GaGNJMHFDR2FfY0RvV29nZk9ody0wdGtnQTg2bmcycUYzc0dfUVk3OWNkX21VMkJpQlhVMkJ6eGRXZWVxVXlWQUtWMUV4M21ZeUxLcnBMYWdvSFV0T2NEa9IBiAFBVV95cUxNaGw0dHU3cC1iUGtLQjZoN2NQcXVuRFB0eXBOeTZXZnVWbTFzTEV1aC1JSXNVZFF4QVR6alVZOHdpSU5iNEliVUpkQ2toQk5rTnV2VG5JX1NmYmlnanIzVHZ4ZEhPUE0ybTFNWXB1cmhxU2xZNDktV2otbnNQRktTVGllcDYzbnVU?oc=5",
-    "tone": "critical",
-    "origin": "outside",
+    "tone": "neutral",
+    "origin": "na",
     "theme": "personnel-leadership"
    },
    {
     "title": "Lara Trump slammed over unhealthy snack choice despite promoting MAHA diet",
     "outlet": "The Mirror US",
     "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYm5pcW1SN0twZWlYY2pGc2Z2ckVFSVRSZjVnLXd3VU4taE1PcjJwV040WjFOYjNhS05YYWpLMmRtMGtoN3NwRlhSNGRnNjlwLVJKbEhFV2ZJWlFNTFR3STZuNmR2T2lfQVlGR1BNQ2ZLa2NVc0NISlRSLU5hdXQ2MVo0YWZ0eXJ1aTI0YW16dzdnTWl2aEJSX0xhV0V3b0nSAZ8BQVVfeXFMT2JuaXFtUjdLcGVpWGNqRnNmdnJFRUlUUmY1Zy13d1VOLWhNT3IycFdONFoxTmIzYUtOWGFqSzJkbTBraDdzcEZYUjRkZzY5cC1SSmxIRVdmSVpRTUxUd0k2bjZkdk9pX0FZRkdQTUNmS2tjVXNDSEpUUi1OYXV0NjFaNGFmdHlydWkyNGFtenc3Z01pdmhCUl9MYVdFd29J?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQa3RpOWdua2NlVkJEYmd1YnJ4cDBsSTJ6SzY0VEZJb3JXWFRreU5ZWHJaVVY2eFhEY0ktbHZnSDBMV3pFQUFhVWRUU0I1NXVrNjVyajhVUWRRSlBRT0lvaVNsVFZEc2RrRXJNejBabzRLbzFpSTVsbzVlNWJPbEltc1JDV3cxdy05RHFfM3QzbG9jcEIyMWRMR0l30gGfAUFVX3lxTE9ibmlxbVI3S3BlaVhjakZzZnZyRUVJVFJmNWctd3dVTi1oTU9yMnBXTjRaMU5iM2FLTlhhaksyZG0wa2g3c3BGWFI0ZGc2OXAtUkpsSEVXZklaUU1MVHdJNm42ZHZPaV9BWUZHUE1DZktrY1VzQ0hKVFItTmF1dDYxWjRhZnR5cnVpMjRhbXp3N2dNaXZoQlJfTGFXRXdvSQ?oc=5",
     "tone": "critical",
     "origin": "outside",
     "theme": "food-chemicals"
@@ -3067,6 +3106,24 @@
     "theme": "other"
    },
    {
+    "title": "RFK Jr.: Medical AI Will Soon Be \u2018Better Informed than any Doctor in the Country\u2019",
+    "outlet": "breitbart.com",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYmdkcEU0ZzlnTnJubFI0eUVZdkhINmpkeWM1dV9Yem5tQXVqbVRSSXdDMEdtTFNpdHB6amlyMWlZbFhjbXo4SkF4aHhra3FxcG8xaWpDOGNmX1MteTF6YVFDLTlqQWVFRXJ5M1M3WC1HTlFxWGxzT0hvMHY0eGVxS0cweDVTSmhhRnNXVGNGdXRjMS00OEo2M28wVWhqZ0I0RmJWTkd6RVllWW11R1JDWHczVU0tMjJxWk9lY9IBwgFBVV95cUxOMzdiSTJwUVlDYmJCaHh3WG1NbGpQSEdzaURPSklOR1NIaUVRY0Z6WXM3ZEo2Y0xsa1JlSGtqSENyaFRMTXhHanBiSmJ2QlZyd1VRS04zcXMwUW5Yb0UtTlVIeTBGZHRxNzNmVEVnMWVvNGdDdU5tNjBlRGxPUkFldnRkZzEwQy1jYUhtbjVucWdWOHpqeUZDMEhaQnpiNnFfd28xU3lMSHNxcHZLOHp1WjlHNHExVDBCamlqZkpJWlc1UQ?oc=5",
+    "tone": "positive",
+    "origin": "na",
+    "theme": "science-research"
+   },
+   {
+    "title": "Pro-Trump actor facing rape charges appalls with joke about consent at MAHA summit",
+    "outlet": "rawstory.com",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE40cmR6aFhTaFRyUU50Q2s2YmJDdEJPUzNqSmRVN183M09GTDVsMlN5Yi12UHZTWmlpcE5Gb3FGMm1ibEd4bFJwcHEwdF9GWFRyZmNpTVFPbEVzLWk1X1FB0gFyQVVfeXFMUGlPOWl0Rk4zbGFmQ0hhQ2NKWXFkOW9GNEdfX2xhQ3NROXpIbjA2dE5lejU5WWszTGc3SE9LQV9OY0RFYkpfdkVzdW5zMVdEaDZFZURkOW1HN1JyenBWRmliTWJZOUtIOGxjX1pVMm00Yl9n?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "culture-media"
+   },
+   {
     "title": "Rural MAHA Followers Say Trump Health Policies Haven\u2019t Reached Their Communities",
     "outlet": "KFF Health News",
     "date": "2026-09-30",
@@ -3076,26 +3133,26 @@
     "theme": "policy-delivery"
    },
    {
-    "title": "Poll: Rural MAHA Followers Say Trump Hasn't Improved Health of Their Communities",
-    "outlet": "MedPage Today",
+    "title": "RFK Jr. Says AI Is \u2018Better Informed\u2019 Than Doctors And Can \u2018Free Us From Medical Tyranny\u2019",
+    "outlet": "Forbes",
     "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wNUEzVUZ3M3Y1UHF3VjJkcUg2NF92Wm9JeUF4R3VNeXgwbWtDMGNsdVJ0UE45NS1mSjVyWmlEelI0c09uNE0wTU4tS2J2LWQ3UzBPUjhwOHR3MTljMnY4U1VyZWJXVzRya1k0M0R0Y0RHQVdwWFE?oc=5",
-    "tone": "critical",
-    "origin": "inside",
-    "theme": "policy-delivery"
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbFFWM2lEc1F4ZUtNTEFDUURsb3JGOVdqUk9scjR3Q1MxbFBEdVpaSnRZV0NCVV9iVUpkQzZNLUh3SkRhWUZMMEdGQTZ3T05QNmJlMmxjOVh5ZjNIQmlEUDVUOG1DTUcwaVJocjVscUlSa0c0WTRwRDV6RmVIZjB6MEFqUXZoZlVzb1R0dmhacXoxOUpsMXhCVDFJelZKS0EyTldMd3N0dFBJbXlWTDVIWUpQUXhzVUZPOHJsRnlNR012OFRxNm5YZjF3MWVNUll3cWlR?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "other"
    },
    {
     "title": "Vice President Vance dodges RFK Jr's ice cream question during MAHA Summit exchange",
     "outlet": "Fox News",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rby1YZjRYTWdIMHNYQ2RYVERiUFJGZUd3M0h3MFg4d1oteVpDck9mV1F0MFVsWkRhYmJ3dnVaMlBsOHFSN2EtUVVCemUyNDFaVTlHNjN3?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "personnel-leadership"
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "culture-media"
    },
    {
     "title": "MAHA and Monkeys Betrayed: RFK Keeps the Lights on at Harvard Primate Lab",
-    "outlet": "washingtoncitypaper.com",
+    "outlet": "Washington City Paper",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdHhUNGg2cVlmX1VnUDhCZ1JHTnl1TTNGVTllcllxNDdxd0hiRVN0R3BBeHlQbjNIVkxYY1hfbW01dzh4dWVRdUlxNV90RGczOHdTYWFEQjByeWpUR0hiZ0JoTWRVVzhZTnRrYlpOaHUwTXpRRWRuV2pvQlNLbDRzSTI0MGo0SnN2RHRyNU54V1R6TTJEMkUyU0tjM1VRQnNDMXM4Si1XS1BudDJkME92T2JGMWNZWWlyQWVQOQ?oc=5",
     "tone": "critical",
@@ -3148,15 +3205,6 @@
     "theme": "vaccines"
    },
    {
-    "title": "Russell Brand and Dr. Oz joke about hugging female Trump secretary as rape-accused comic joins MAHA panel",
-    "outlet": "The Independent",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZDhXbExQcmpoS1N5bS11QkhHZVJkbnpQWHRqSEJ1ODhXWDNXc213YUR2ekI0MFpvbDFWaHoxci1zYWRKTmxEdVBlWlBrYnZPZnk3QkRXbmZWVlhOYUo0aXRaTTd5cDhTXzJYWUZEUGdMVE5QUGxGaXVNaXNBcndabEh3M1o5NzFaOEczdHFUZ21VN2xYYUdEV2NqZ1RDd3pYZGpmV1AwSHZsX3NJaTVOZg?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "personnel-leadership"
-   },
-   {
     "title": "Accused rapist Russell Brand jokes about hugging Agriculture Secretary backstage at MAHA Summit: 'She initiated that'",
     "outlet": "The Australian",
     "date": "2026-09-30",
@@ -3184,15 +3232,6 @@
     "theme": "other"
    },
    {
-    "title": "A.I. Is \u2018Better Informed\u2019 Than Doctors, Kennedy Tells Industry-Backed MAHA Summit",
-    "outlet": "The New York Times",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE51WVVEWHF0YmZyaWk4Y0JfNHgwOVowS3ZGSHRoYVhTQXBmU09NS2NDSHpwYzR4VXBrZF9Xc04xbVVKWS1xdHFfc1Y1OFNha2R6UXJrN0hmYnZtUWFEa2pJNVRRUkFzQlNUNE1fSW5Lc1BxcGp5MkRBOEtINmg?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "science-research"
-   },
-   {
     "title": "RFK Jr hosts MAHA Summit as business leaders rally to make America healthy again",
     "outlet": "Fox Business",
     "date": "2026-09-29",
@@ -3202,19 +3241,28 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "This Senate Democratic candidate is making a play for RFK Jr.\u2019s MAHA supporters",
-    "outlet": "The Washington Post",
+    "title": "A.I. Is \u2018Better Informed\u2019 Than Doctors, Kennedy Tells Industry-Backed MAHA Summit",
+    "outlet": "The New York Times",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbE5ud2RxMWdLUnNXOVQ0eVVZYlIybzdnSnl1X0F5MHdHVWNzeE5HQU1sRE9qQ21ubW9GaEJ1b0FEeGh0QzJLOG56cC1XMGluc0hPYzJUWnFaeDRtc0tLSzI3ZFQ5QXYzR20wOHNkSzVNOEZ5VlAxQ1lKZmpWbnZVUXYtNm02b1lPS0RPb2FBYk9JWER5OXhKTFBGZ3E2MWdJM2hlaVNNX0ZjTjRTSHp1akExNHE0RlJzOGZkcGtB?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE51WVVEWHF0YmZyaWk4Y0JfNHgwOVowS3ZGSHRoYVhTQXBmU09NS2NDSHpwYzR4VXBrZF9Xc04xbVVKWS1xdHFfc1Y1OFNha2R6UXJrN0hmYnZtUWFEa2pJNVRRUkFzQlNUNE1fSW5Lc1BxcGp5MkRBOEtINmg?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "science-research"
    },
    {
     "title": "Insurers make their case before MAHA",
     "outlet": "Axios",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RVm5vdHVoU1dKQXd1ZWphcFUwSnlHZTVHcm8xZXpKa2tpSExveHNDQUtWQlZXQTdmZ1dhUnNhXzV4QWJXVmUxR0FkOE5uc1FJUXJJZEJPRlliNTBwM2xlZ1ZmMW1NekwwUm8tYlgwSFR0dk5nUFE?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "policy-delivery"
+   },
+   {
+    "title": "Why MAHA wants to make health data much more accessible",
+    "outlet": "STAT",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLVM3NzQwenVEeWlpTU5CbmIwYjlYV2pBcmlJSmF5VktmWjNfR1FaelA1QU5kQXFKdXBMZldReDRWV3BYeXhZeUNpNmtiOFR4NEFNTjhXQ1lJdEQ4NW5iT0E4TVA0eUp0a2ZEVFA4MDlXOVNlLTBpTHFsSkcyMUNfZGEtZHJLekM2NVk0cmxieVpNNUxwa1lJ?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "policy-delivery"
@@ -3229,10 +3277,19 @@
     "theme": "politics-midterms"
    },
    {
-    "title": "Why MAHA wants to make health data much more accessible",
-    "outlet": "STAT",
+    "title": "This Senate Democratic candidate is making a play for RFK Jr.\u2019s MAHA supporters",
+    "outlet": "The Washington Post",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLVM3NzQwenVEeWlpTU5CbmIwYjlYV2pBcmlJSmF5VktmWjNfR1FaelA1QU5kQXFKdXBMZldReDRWV3BYeXhZeUNpNmtiOFR4NEFNTjhXQ1lJdEQ4NW5iT0E4TVA0eUp0a2ZEVFA4MDlXOVNlLTBpTHFsSkcyMUNfZGEtZHJLekM2NVk0cmxieVpNNUxwa1lJ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbE5ud2RxMWdLUnNXOVQ0eVVZYlIybzdnSnl1X0F5MHdHVWNzeE5HQU1sRE9qQ21ubW9GaEJ1b0FEeGh0QzJLOG56cC1XMGluc0hPYzJUWnFaeDRtc0tLSzI3ZFQ5QXYzR20wOHNkSzVNOEZ5VlAxQ1lKZmpWbnZVUXYtNm02b1lPS0RPb2FBYk9JWER5OXhKTFBGZ3E2MWdJM2hlaVNNX0ZjTjRTSHp1akExNHE0RlJzOGZkcGtB?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "politics-midterms"
+   },
+   {
+    "title": "Watch live: RFK Jr., Vance outline MAHA agenda at health summit",
+    "outlet": "The Hill",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSnYxc29JWnhfUHVjNFNIaUJCeUQ0RHg5YVQzRkV2WFRHemRyengyenRtMzNjZmE5cUZzOUhPVFd3aGJzUzVrc0pXejM0MnFJS1BrNS02WjQ3MktHOEdsTEZFXzRqcE9TVElaNy03YjJ0UVNwd2hIUjRzaUZMbEpKYmVpbW51MVlGZ1R6SUN2RVBKSXhrYUk0ZjFrWUxiNS1MY2Z4WnVIT0ZhSEZhNUF6MXJzd05tRmhi0gG-AUFVX3lxTE5RbEtSXzVWWWRHZ0JFeVdwd1F5NGxJRW4tWkFMTTVqQjJTa3A2T010djdzMXdvNzVrbk40dEVFc0wyZ0dlTTVpX05zblVaWmpKRl9hRFFROFgtWmJ5TGJCYVRpTVhseEdXc3pvV2p6T1RHb1Q2THVZNzZvMVAyRXJXRGFZZXM3aFRXMlQ0bmFGZjBheDVDX3JKQk1KamowV0g1WW1LNm9QQ0h3VmlwSG1XSUx1ZGJLaDU0V0I4cXc?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "policy-delivery"
@@ -3247,22 +3304,13 @@
     "theme": "policy-delivery"
    },
    {
-    "title": "Watch live: RFK Jr., Vance outline MAHA agenda at health summit",
-    "outlet": "The Hill",
+    "title": "MAHA summit to place prevention at center of push to reshape American health",
+    "outlet": "Baltimore Sun",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSnYxc29JWnhfUHVjNFNIaUJCeUQ0RHg5YVQzRkV2WFRHemRyengyenRtMzNjZmE5cUZzOUhPVFd3aGJzUzVrc0pXejM0MnFJS1BrNS02WjQ3MktHOEdsTEZFXzRqcE9TVElaNy03YjJ0UVNwd2hIUjRzaUZMbEpKYmVpbW51MVlGZ1R6SUN2RVBKSXhrYUk0ZjFrWUxiNS1MY2Z4WnVIT0ZhSEZhNUF6MXJzd05tRmhi0gG-AUFVX3lxTE5RbEtSXzVWWWRHZ0JFeVdwd1F5NGxJRW4tWkFMTTVqQjJTa3A2T010djdzMXdvNzVrbk40dEVFc0wyZ0dlTTVpX05zblVaWmpKRl9hRFFROFgtWmJ5TGJCYVRpTVhseEdXc3pvV2p6T1RHb1Q2THVZNzZvMVAyRXJXRGFZZXM3aFRXMlQ0bmFGZjBheDVDX3JKQk1KamowV0g1WW1LNm9QQ0h3VmlwSG1XSUx1ZGJLaDU0V0I4cXc?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUzFXUDNkems4WVNiVnoyYktWaUJwTHNrbXpBZm9tMVlKTS1ZaFhZZjNkbzNWUmdKaGFWRmJiTGc5N2RWMDkzT1JZMUo4VldrVmtnRzFzejZlT3hnelhHeUR1ZGJvaDhvTkFNcGE0S2U3RHVVR09aWDFlUnlXTTNqVFRHV1pmUDJEYzJ0RWxTVXV4cmkweUtBVGxiRnBLa3ZhUU10SUFfS3c3d1dlQXd3MW9EV0xUYnV2?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "policy-delivery"
-   },
-   {
-    "title": "3 takeaways from the MAHA Summit",
-    "outlet": "The Hill",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTmtsNUVHRm92Sk1tS2M5UmhJY0hlU0RfLW9QdG9taVVIZDFDVWJLaFJlNHVpRE5UR3c3SDJONlF3X25aRXhFMnVtZjd5SU8zcjlDc2VDenBHZFpzMXlpejI0MW5NckxCR3NrRGs5TFhmNlFiUTJSNXFURkZnNG5ndl8wY204T3ZpaXfSAYoBQVVfeXFMUE5rbDVFR0ZvdkpNbUtjOVJoSWNIZVNEXy1vUHRvbWlVSGQxQ1ViS2hSZTR1aUROVEd3N0gyTjZRd19uWkV4RTJ1bWY3eUlPM3I5Q3NlQ3pwR2RaczF5aXoyNDFuTXJMQkdza0RrOUxYZjZRYlEyUjVxVEZGZzRuZ3ZfMGNtOE92aWl3?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "other"
    },
    {
     "title": "MAHA summit highlights innovations reshaping American healthcare",
@@ -3274,13 +3322,13 @@
     "theme": "science-research"
    },
    {
-    "title": "MAHA summit to place prevention at center of push to reshape American health",
-    "outlet": "Baltimore Sun",
+    "title": "RFK Jr hosts MAHA Summit: Business leaders RALLY",
+    "outlet": "Fox News",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUzFXUDNkems4WVNiVnoyYktWaUJwTHNrbXpBZm9tMVlKTS1ZaFhZZjNkbzNWUmdKaGFWRmJiTGc5N2RWMDkzT1JZMUo4VldrVmtnRzFzejZlT3hnelhHeUR1ZGJvaDhvTkFNcGE0S2U3RHVVR09aWDFlUnlXTTNqVFRHV1pmUDJEYzJ0RWxTVXV4cmkweUtBVGxiRnBLa3ZhUU10SUFfS3c3d1dlQXd3MW9EV0xUYnV2?oc=5",
-    "tone": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DN2xYbGJaMTU3V3dhQU9tdVh4S3NMb3lPNFp2SG9EMDVfWG1ucHRLdlVuUVI3eHdrSUpDMWktNkJ3QVRNN0dlb1l5REpSRDZsN09VVUpR?oc=5",
+    "tone": "positive",
     "origin": "na",
-    "theme": "policy-delivery"
+    "theme": "other"
    },
    {
     "title": "Russell Brand to moderate panel at MAHA summit",
@@ -3292,31 +3340,13 @@
     "theme": "culture-media"
    },
    {
-    "title": "RFK Jr hosts MAHA Summit: Business leaders RALLY",
-    "outlet": "Fox News",
+    "title": "Denise Morrisey attends MAHA Summit, praises RFK Jr. and health agenda",
+    "outlet": "WV News",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DN2xYbGJaMTU3V3dhQU9tdVh4S3NMb3lPNFp2SG9EMDVfWG1ucHRLdlVuUVI3eHdrSUpDMWktNkJ3QVRNN0dlb1l5REpSRDZsN09VVUpR?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPc21BbEdTOXY2S1p0V1RsVFJoci02VVpUX2FkRkNrX1NNbG92eFdMYkVZUWRybFBrSS1nOU9QMFF1cHM0cVJRYjRNYURhVmQ3c1RYV2N1Y3JlU0J1eXFDUmpGOFV2cmJCV3hyZWdxeFZ6eHNqb3VrenBYZGJSMmhyZklDZGU5TXJiSHhuU0hQYk56RnJKUjhUTDlBa3VIMEktSVBBX3A2azYyaktWY0ZJRGRGbnI2MThvaDBlb25RRXR3MnMwNUZEbEpRb1FGenR5ZXphak5SelJBM1pMalBDTVl4OUZ0UFFL?oc=5",
     "tone": "positive",
     "origin": "na",
     "theme": "personnel-leadership"
-   },
-   {
-    "title": "VP Vance speaks at MAHA Summit with HHS Sec. Kennedy",
-    "outlet": "LiveNOW from FOX",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTd2RFNlJER0pWRVNqalhEd1BvaDdzQ29Jb3JnZS1HNWRzcUROVFg3ODU3cjdTSTk0bFZaNlBlTFpjY3d2NmRBSzAxMkRZU1ZWRHZGclZ4VDVKSWU1bVU0Y0RzbFd0TERY0gFoQVVfeXFMUFN3ZEU2UkRHSlZFU2pqWER3UG9oN3NDb0lvcmdlLUc1ZHNxRE5UWDc4NTdyN1NJOTRsVlo2UGVMWmNjd3Y2ZEFLMDEyRFlTVlZEdkZyVnhUNUpJZTVtVTRjRHNsV3RMRFg?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
-    "title": "WATCH LIVE: MAHA Summit kicks off in Washington, D.C.",
-    "outlet": "Fox Business",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5HclBZYlpQWXFOcVp2WmtxcHJiVmgyUDJ1VDNWcVJsUFp3dW9tbXVyS1ZqQmUtOUdOb21qbENjbUU3MDRuNkFDeVVxbXRuSE5KcXFCdzNhTG9uTHM?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "other"
    },
    {
     "title": "Vance and RFK Jr. tout AI\u2019s ability to double-check health experts",
@@ -3337,13 +3367,13 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Health Insurers Defend AI, Prior Authorizations at MAHA Event",
-    "outlet": "Bloomberg Law News",
+    "title": "At MAHA Summit, a grassroots movement goes corporate",
+    "outlet": "STAT",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQmRNa0I3WjgwdFVPSTZUXy1nbVp3eTd6UXNzTU51aTYxdzAzNjV3MmwwaEo1OTFSSHU0bk9jMkVBcWJrLXIyS19YcFFQSlZEblhiUlNWWDB2VjN1WkZEeDUzOU5GLXpQazB1OTBiOWVvR2tKbmRqRVZVN2tzbzUwdUx1QXVreGhLY2hkMmhmWDJlNEc1YlMwSk9JT3lCT3hZMmhKUmNyZlJFOHhwUzZCYXp4eW0?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "policy-delivery"
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSWpRXzA4a1FocnZjcTNxaWJqYk5GUkl3RWx0czBsOHBJU2NVUUxadkpodDF0SmlUSldHblRnNTkxOExUNlJMZUNrSTZSeXpfS2o0akxEcktvR3ROQUNqX250RDdGdTMtbzJoRGt4N1IzenR3TjkwbjJpNEw1a2pDc1R0MGprQW91aGVDZVp2aFUtTEJhcFRkUG5zZmtzeE9SN1BhNm82OA?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "money-pac"
    },
    {
     "title": "Watch Trump administration holds Make America Healthy Again summit - Varney & Company",
@@ -3355,35 +3385,8 @@
     "theme": "policy-delivery"
    },
    {
-    "title": "At MAHA Summit, a grassroots movement goes corporate",
-    "outlet": "STAT",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSWpRXzA4a1FocnZjcTNxaWJqYk5GUkl3RWx0czBsOHBJU2NVUUxadkpodDF0SmlUSldHblRnNTkxOExUNlJMZUNrSTZSeXpfS2o0akxEcktvR3ROQUNqX250RDdGdTMtbzJoRGt4N1IzenR3TjkwbjJpNEw1a2pDc1R0MGprQW91aGVDZVp2aFUtTEJhcFRkUG5zZmtzeE9SN1BhNm82OA?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "money-pac"
-   },
-   {
-    "title": "Vance, Kennedy, and Mike Tyson among speakers at the \"Make America Healthy Again\" summit",
-    "outlet": "Agenzia Nova",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPT0VMYThhSkV4NE56bEl1Y2hjSnJTUXFsY0Z1bGNtNklxQnIxZUhwNGI1dnREZTcyaWQ4WjVmeHRIOXl6TDRNUWdfVHo4R01rcVBfOHotUGRNMVhGSDkyQk9JSDdnQzZpT3U3MmZJM012YTJwX1dwRWRmVWVETE84azFwNkJZczU0b2ZXZm9FTmZ3MHRyYlBSTDdOV0Vfc0w1UEpqMlkzZjBOb01ERXI5TlliTUhSRmtYWXk1LQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "culture-media"
-   },
-   {
-    "title": "The MAHA Carnival: Russell Brand Joins Trump\u2019s Cabinet at DC Summit",
-    "outlet": "The New York Sun",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONVltdUU2UG8xRWhuTFA5Z0V0Y05IT2V5aDZkVTZmUTdXb2RwSTFMUzVHamF2aGZVSkUteVE4bkRpQnhUamt1clc3WWNxMnY5TmkzZTZDSTc0X3M2MVBxb2l0TXJVZ0hwZHVxTkJPSVpqWVZMelpDNnhMM3IyQTNQUHM4WGhmdlZwTzVXQXpPWFloTF8zYUU3QU9TVQ?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "culture-media"
-   },
-   {
     "title": "Russell Brand Jokes About Touching Trump Cabinet Member at MAHA Event",
-    "outlet": "Newsweek",
+    "outlet": "newsweek.com",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSHJ1dFBLQVdzZV9DeHlhRXE5ZC1HVmY1Vl9OVTdpWDRPUFg0OTBmX1BLejhxel9XWFhsQUp4bHVNLWJTU2hqRjFhb2h1YUJJaUhsYzE1bTR5ZDU5ZkZkWi1IQTNCTXVQc1kwQ2Q3S0Z6Z3RPYnR5Vk5kVk1tVU9Ccl9rRU93cy1GQmxpTlZLdFJxdw?oc=5",
     "tone": "neutral",
@@ -3419,12 +3422,30 @@
    },
    {
     "title": "El-Sayed pitches pesticide bans, clean water rules in bid for MAHA voters frustrated with Trump",
-    "outlet": "AOL.com",
+    "outlet": "Yahoo",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUHVEczd4VG9lZXYwNDllUnpqU0t5OEhTMUZ6LTV4UEM0UmJlU2FoWFlhZTdPMklDRW1OSU9IVG5oSlN5R29odmM1cl9xc2JxeklzSC1jcHpRNGVWUS1IWGc2bHNyWHhES2RqVnFPYVVCZnN2UWszNi0taGdVakFCUQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVTdyV1lLOTBVQ1JrV2tpM2E5NzQwTC1RaUIxMDl4cEZZNlBxdjZwUXBCX3ctUkkwYmZ0bE5CSFc4R013ZTYzbmFMSFNtSnJrLURtZXZFaFpBWGdzQ0FDc0VLdFJHbENZOUNvVURzSExzR1hEOFVNbVdFeFFXbFZjMGRWcFNla3AyZU9fa3lRQ3lucHFMU2c?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "politics-midterms"
+   },
+   {
+    "title": "[4KHDR] Driving In Germany: Bundesstra\u00dfe B10 From Landau In Der Pfalz To Pirmasens Make America Healthy Again (BqJ8VoprKx)",
+    "outlet": "Unisba Media",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VSnFWRE9IN240TzNyVi1kbENwN0s3LWxXcnlUdnlSa0wtR2lGLVNKcWJRN3dkeU1sNm82YnRUcTc0OFRKWTlVSG9CMnREZkdrUGU5R0ZKdFY3OWg4VmdfZ0hfb3ptdw?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "other"
+   },
+   {
+    "title": "RFK Jr. Says You Don\u2019t Need A Doctor, You Just Need ChatGPT",
+    "outlet": "jezebel.com",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnZG9pMXQwdDdQQnV6d25ILVhlZ0stelhFWGtqenk2ZFROQjlHQzFBMUhLUEJwLWVTZWx6MEQyNU1vQnIyZTJVOHMtakdZRDc0b19sOVNNV3d2YVRUNV9ucWpHa0pFMkNiV29ZRnFVeVRHeFd1NFIw?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "policy-delivery"
    },
    {
     "title": "Vance, Kennedy to headline 'Make America Healthy Again' summit this week",
@@ -3451,7 +3472,7 @@
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRTJoV2FlVFd5TGpmam5raVE4M3hRbURfQVBpUTUybEYxTnBvSHVWVTVSV1JZaWFVOHRKX0ZYS3VLQVpjUlpFUFB3Q1JfX2ZfNnZULW5ORTlKUGFYdW4zakdLdjJKUVdzTTgwcllRSDAyQjVZa2ZpWldPb2ZOcmJ6VzdBbUlCRGdjVVp0WGxfUTZWNTZpZ2tIc3RpUTlvSTBMUXcwb9IBqgFBVV95cUxOQ2YxSGRJdWxpbkpZRjRSTVlYOW9zaWdDbUdHVWVJVFlhRDRualFPc3FXdDVqSHlhc2hrRi1QQUY3ejlxeVRVdElwSVdzeVJfSzdJR2dvUEdzV25ycHRTV3ZKNy0zVW9PREh4U0xJcG5Pd2wzd2VOa3FOX184M1Z2OXpaczdCSlNJTmtidWR2OXJrVlp4b0otSUNDaG1DeGpxMFQySW1hUGNtdw?oc=5",
     "tone": "positive",
     "origin": "na",
-    "theme": "culture-media"
+    "theme": "personnel-leadership"
    },
    {
     "title": "Is MAHA Is Up for Grabs? The Health Voters Who Could Break Either Way in the Midterms",
@@ -3469,7 +3490,7 @@
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94UmJOd1BqLVRkUDhaZFJYTXNSTWllZ0w5OHFMbmQ5RF8yWlliTjByLWM2aXJpcDRIb1ppSXJENmdxakUwb1hKYWMxdmFjNGI5V1NndS1DVXhQTTJYZVNiYldUOVM3Nncwd1JnQQ?oc=5",
     "tone": "critical",
     "origin": "outside",
-    "theme": "personnel-leadership"
+    "theme": "other"
    },
    {
     "title": "RFK Jr outlines expansive vision for collecting US health data at Maha event",
@@ -3482,7 +3503,7 @@
    },
    {
     "title": "RFK on MAHA health and future of HHS at Summit",
-    "outlet": "The National Desk",
+    "outlet": "National News Desk",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQTJSaW9RVmc1WXd5T0FtSXlhU2NNN3VnbVQxVXMzMFNrS0tIVEtwYmhoSVpOYjd5eTd6TmxGZXpPRGNCOHpKcExVOEFHWC1EWVpHcTZ5WDJPMjZPX0p5M01tVnh1Zk9MbmxvVWZOLWxjQ1UycC0tOGpQLWR3UE0tYkhlVnZMN3Y4OXFzWEpPQi14NW1vMTFCMDNzQ29KUQ?oc=5",
     "tone": "neutral",
@@ -3490,13 +3511,13 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "MAHA\u2019s AI bet",
-    "outlet": "Politico",
+    "title": "VP Vance speaks at MAHA Summit with HHS Sec. Kennedy",
+    "outlet": "LiveNOW from FOX",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPelpYSnVReVY3ZnJTMGNVbmk1RXplMDV1d293RGFJSC16OVNqUkdwY3g0X1pTRmRJVGVzdnQwRzFCQ2JPWE9KVUcya1NSa2xVQ05jV19WeVJEbWo2c3c5cGI5MFBDVXdtekd3aDk3NXNqSm5QdkpXeC1Mc010dWJuYWhXajZJZUVTakVGcw?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1XZlBLUkJHakJjZnprU0Z3bVFLMmpBNWhDbTM1dmhzTlF2b2x6WTlSOVI0T0hzRHBoNE1lU2tnNkQxSWRINDVubTlFaWlXOEFlOWR6MFlxSXZIWHRPR0FpTVVkZ9IBaEFVX3lxTFBTd2RFNlJER0pWRVNqalhEd1BvaDdzQ29Jb3JnZS1HNWRzcUROVFg3ODU3cjdTSTk0bFZaNlBlTFpjY3d2NmRBSzAxMkRZU1ZWRHZGclZ4VDVKSWU1bVU0Y0RzbFd0TERY?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "policy-delivery"
+    "theme": "personnel-leadership"
    },
    {
     "title": "MAHA Summit 2026 Features VP Vance and Health Secretary Kennedy",
@@ -3518,30 +3539,12 @@
    },
    {
     "title": "RFK Jr.\u2019s Push to Revamp American Food Runs Into White House Resistance",
-    "outlet": "WSJ",
+    "outlet": "wsj.com",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa3lCRE0taVltUTVtalZZdE1LN19vX2lSWUhJaDl4YnZOOG1Da29sUkczY1gwVDVrODd5NDJFUWdlSmZaajJ3RlVVTTdfekZLbFpWdjlCdWRUTGc4Si1QSVFKaHJsYnAxclg5dnNrTlZSTXNpb2g1cmQ2M1Q4R1FJSENaTTlENkNZVWRqR2tVTkZhX0tjc19Na1p0Y00wVk9KeFZnbUxPZFFBeHY4dXYxV2kyQUs5UQ?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "policy-delivery"
-   },
-   {
-    "title": "Denise Morrisey attends MAHA Summit, praises RFK Jr. and health agenda",
-    "outlet": "WV News",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPc21BbEdTOXY2S1p0V1RsVFJoci02VVpUX2FkRkNrX1NNbG92eFdMYkVZUWRybFBrSS1nOU9QMFF1cHM0cVJRYjRNYURhVmQ3c1RYV2N1Y3JlU0J1eXFDUmpGOFV2cmJCV3hyZWdxeFZ6eHNqb3VrenBYZGJSMmhyZklDZGU5TXJiSHhuU0hQYk56RnJKUjhUTDlBa3VIMEktSVBBX3A2azYyaktWY0ZJRGRGbnI2MThvaDBlb25RRXR3MnMwNUZEbEpRb1FGenR5ZXphak5SelJBM1pMalBDTVl4OUZ0UFFL?oc=5",
-    "tone": "positive",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
-    "title": "Vance and RFK Jr. joins fireside chat to close out the MAHA Summit",
-    "outlet": "WKNO FM",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb0F3ZkhabEFXWVU5aFZqelIta2RUVzhFSW8xTWZuQVRnQmNYQVNCTE9YT1Q4SmwxQ3RGd3FBRWZ0ZHBzVVJSS0x5ZmMxVmNESzRFUHFGUkhULUk2V2tadEpLV3hxMVhZNVZJNUVVbU03dTd2cW9kUGpGN0hFSm0zajRfSHNTR21wOTg1WlloZjIxeTZNZkw2Mmdmd3dGcnJfRlZzSjhvSmZhUGprdnc?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "culture-media"
+    "theme": "food-chemicals"
    },
    {
     "title": "WATCH LIVE: Vance participates in fireside chat on America.gov with RFK Jr.",
@@ -3550,52 +3553,43 @@
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSEFoWW9qaHhhMFVfeEw2anNlbnQ0Z2FVNkI5NG9QejNVOU9sZFVtUDZ5SmxYUmt3NDJuMy1OMTVWb1ZNT01aS2dYekZYSkZxRTdvaWwwYlNBd3QwY3lBZENCa29vRVhpN0plN0IyejBJLW02UGxNbFYzZm1OZmw5OUVNYUU2cGVIS1BZcl83SkRiei1nWlRaLXNCMkJJdnQzc0RzSVJkR0VRb01nMDAw?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "personnel-leadership"
+    "theme": "culture-media"
    },
    {
-    "title": "RFK, Jr. likely violated federal ethics guidelines in accepting more than $4,275,000 in gifts and book advances from MAHA allies",
-    "outlet": "Genetic Literacy Project",
+    "title": "MAHA\u2019s AI bet",
+    "outlet": "Politico",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNajhjcW1JeGxTSzBZN1hHOUZjdDY2WW9jZFkzUWJfYVdwR0F1N1VFaGpHTEpjcnRWaUdERGkweHQxOWszRlRJbUxiT21faVZ4WGNLcXRqNjA1Njk0cTVRemJTNkR5VkN1VXJfVVZTT2QteWRLbXpnTkdKRU9IdGgxVmI4X2lHOWp2bWR1S1YxalFBUXVIU2ktcEtacTZGYWxGdlRpVWtzdFRRNm9sMjU3NjZ3R2g5OEpEUDhoZ2JHaHBadk9DWUQ3TGQzUHd3WGtZNXFjbzBYVmhvcjhhS2x6WFZQTGhYR2tLRHRZRmIzdHpISWZZcXA0QlZaU1B5dVk?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "money-pac"
-   },
-   {
-    "title": "RFK Jr. Just Exposed a Fraudster \u2014 And It Is Him",
-    "outlet": "washingtonsun.com",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT3hJd3Z2SmR2THoxWjNOVUJQWS1rZ1RQakY1RXQ5bFRsUlZ0eTRkVVo1VWF3b2ZKU3p4a0tTYTlRQV9zajhXQjd6OUhYSVd6YUZkajdKVDZaT09wUWZaMzZHSDRCdXJQOVRjWkRXeFdjTVpYckUzUUN3MkJMNXlxTHkyYVhHTlk?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "personnel-leadership"
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPelpYSnVReVY3ZnJTMGNVbmk1RXplMDV1d293RGFJSC16OVNqUkdwY3g0X1pTRmRJVGVzdnQwRzFCQ2JPWE9KVUcya1NSa2xVQ05jV19WeVJEbWo2c3c5cGI5MFBDVXdtekd3aDk3NXNqSm5QdkpXeC1Mc010dWJuYWhXajZJZUVTakVGcw?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "other"
    },
    {
     "title": "MAHA Summit Kicks Off With Panels Featuring Mike Tyson, Accused Rapist Russell Brand",
-    "outlet": "AOL.com",
+    "outlet": "Yahoo",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QczVHeVE1N1NGeHIzUERxRE5rNURTaGsxOVJ5SzloOXloRkFPNGMzRUQyUk9CVUxIdWRudTV3Y2EyYmtWTUl3VVdaNkpHeDhHaV9GZWZZYmFBbUNKaFd1MkdKWTItUTRIbE5kQ2F1WG1uSVRhVXh1MkVxRXI?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVdwMlNYdXNwajNJbDdZdS1rU194S1MxWXZlRjRsckVpNk9UUFdPc0RDRzdDWVVYTTVWNU9PcEdkTGNwVWZWdlJDQ0VVSHNISk0zT3ladFYzYTRrcndsdEwzWC1IRjNBQmUwVk1XTWR6QkE5SzhTOEJIVTB3WFhMdA?oc=5",
     "tone": "critical",
     "origin": "outside",
     "theme": "culture-media"
    },
    {
-    "title": "Dr. Oz and Russell Brand speak at MAHA Summit",
-    "outlet": "WKNO FM",
+    "title": "WATCH LIVE: MAHA Summit kicks off in Washington, D.C.",
+    "outlet": "Fox News",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdVI2TGx0VndyQ3l6MDl4WnNQSXY5aXV6RDlHcEY5ZzVfX2w1ZUlwTE5GUFpkZUpPVFMxUGlnMlZVaWNLdkphVndVMkZ3ZVp1THkxQ21rUnVtRVR6b0FzcjJwdTRNeV9pU0RiRWpUcjRHc2JaNTZVRVVpakFhQU02cU1XTVBla2lvZXZpNy1pM3Y1UQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5fc1dfV25hZ3pwaVJHcTBkajNIZG9pY3pVY3VrLXJPME8wakVYUFl1QlItY2xZZGlMWXR5a0R4WHVEZXBXUlE0Y2RQVFo1TlQ5TUhVejhB?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "culture-media"
+    "theme": "other"
    },
    {
-    "title": "Watch VP Vance speaks at MAHA Summit with HHS Sec. Kennedy - LiveNow",
-    "outlet": "FOX One",
+    "title": "The MAHA Carnival: Russell Brand Joins Trump\u2019s Cabinet at DC Summit",
+    "outlet": "The New York Sun",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNckJzc1RaVzNOQWx4UEZxM0hvdHNPeXlzRWJvNE9FOVBxUlI3QlpqNV9JSkpTaVlVbXYwNVdjTklHT1B4d2JDZG85eEhxMjlMN09lelhiZ1pjQm1idFJFM1l3bHFaeld1OXZLQTZzQ3ZqMWs1ZWY5ejZ6MUU4ZnlwZkZ5RkczVVllOE9BalFQcWY4U2ZqQmZSbzZZT0lOSGR6WFh3VTRR?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONVltdUU2UG8xRWhuTFA5Z0V0Y05IT2V5aDZkVTZmUTdXb2RwSTFMUzVHamF2aGZVSkUteVE4bkRpQnhUamt1clc3WWNxMnY5TmkzZTZDSTc0X3M2MVBxb2l0TXJVZ0hwZHVxTkJPSVpqWVZMelpDNnhMM3IyQTNQUHM4WGhmdlZwTzVXQXpPWFloTF8zYUU3QU9TVQ?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "culture-media"
    },
    {
     "title": "A Biological Age Test and Russell Brand: How Trump Officials Spent a Day With MAHA",
@@ -3607,15 +3601,6 @@
     "theme": "culture-media"
    },
    {
-    "title": "Watch MAHA Summit: Season 1, Episode 5 - (9/29) EPA Chief Lee Zeldin",
-    "outlet": "FOX One",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQU5vUmRpZU5la3R2MTFwNy1ubTllNlhKdWh3bFlGRVdhWEtUVDV4MGk1R2JvQVpuZXpNdW9sXzJ5bU80RERFNmhDSzgyVTVYcUlqTW83eEhGS0didXdiOXBPTUxKTzZ5YW9abkVtMzBUUDl4dkpSUURZem9NQnZrUnU5MWphbnc?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
     "title": "Watch MAHA Summit: Season 1, Episode 2 - Mike Tyson, Noah Syndergaard and Michael Chandler",
     "outlet": "FOX One",
     "date": "2026-09-29",
@@ -3625,13 +3610,13 @@
     "theme": "culture-media"
    },
    {
-    "title": "OpenAI official says avoiding AI health advice is \u2018medical malpractice\u2019 at MAHA Summit",
-    "outlet": "Washington Examiner",
+    "title": "Russell Brand Opened His MAHA Panel With a Consent Joke",
+    "outlet": "The Cut",
     "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTTJRbUppT3BGUzZvR0dXdnhUOFloMnFmeDNzODNQM3V1NUVTYW80Q0JROGhwRmdONXZKLUNuek9PZk5ETVJQQUhFdlUwY3NOUlhlRlIxQ3R3Y2tOLWpMbTRyNW9qRkRTNVpwczRMbG1JQmY3OWp1WGtOZXVKd2xrcHdocWZmekdTWkFKWDl6b2laRzFQRURZby05RTYxZzJCTXQ0VjFtaV9KTVFxeFVJV2I5STJLdjVJZllmN0gyY0g?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "science-research"
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SaC1iZ0QyOG9kWGcxMndrZTNGcGliSW1obE5wTm9xMUhzY0pKdlJYVkdyaU14dHQycUNGZjRBNl92WDZPZDFnUl9ycFFWMTFWS0JQdVhiY1RwRVpJbXVYTFRPNlBMcEtrcG4tN2MtMDV2ZUpvQ1FsSDdEbXJwQQ?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "culture-media"
    },
    {
     "title": "On Brand: Top Trump Health Officials Tap Accused Rapist Russell Brand to Moderate MAHA Summit Panel",
@@ -3643,15 +3628,6 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Russell Brand Opened His MAHA Panel With a Consent Joke",
-    "outlet": "thecut.com",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SaC1iZ0QyOG9kWGcxMndrZTNGcGliSW1obE5wTm9xMUhzY0pKdlJYVkdyaU14dHQycUNGZjRBNl92WDZPZDFnUl9ycFFWMTFWS0JQdVhiY1RwRVpJbXVYTFRPNlBMcEtrcG4tN2MtMDV2ZUpvQ1FsSDdEbXJwQQ?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "culture-media"
-   },
-   {
     "title": "Watch Live: Vice President JD Vance participates in Fireside chat at MAHA summit",
     "outlet": "Just The News",
     "date": "2026-09-29",
@@ -3659,6 +3635,24 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "other"
+   },
+   {
+    "title": "Dr. Oz will attend a panel at a MAHA summit in DC. The moderator is Russell Brand, who faces SA charges in London",
+    "outlet": "We Got This Covered",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTXN2TkRFYTlPR2J3VGNkejVjVlhzQkJhQ2tZM1lsWTVLNGVDR1E1V1NTVkpWMnZfNnQza0MyT0Vzd0c5ZEZ2M05OcUN3ZmVPU1Zaa0RwSlBLYjJSTERKWnhZZjAxOUVOejVZLVlEbm1vcVk2RmQ5bEVnWE1uYXNvREQ4al93S3pvdl9oUDdNU01Xdmt3NTZsSmlBd0dkVE5weXA1RjJWcUg0VjY4WF9aY1BHYWhLTkVQM2l4RlZvNVNrYWFNbXV3ZV9ZdHNKYWQzUUpxZkZZUUYzcnpwLURiSmQ1bw?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "culture-media"
+   },
+   {
+    "title": "MAHA Summit To Bring Together JD Vance, AI, A Convicted Rapist, An Accused Rapist, Literal Snake Oil, And Fast Food",
+    "outlet": "wonkette.com",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9HWUhDdWJkRVMtZGsyRWZSWGcwSnlCU3p2NktfN1Y5THZ0UkgtQ0dCU1NkbndlbFlkTjZ2TFp1OTZLWFV2b1ZtWmZleERfN3d0NUZkUjhMd01JMVZ1VXpXa3VDTThZRFNLV25R?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "culture-media"
    },
    {
     "title": "Vance, RFK Jr. and 'Iron' Mike to headline MAHA Summit",
@@ -3676,16 +3670,16 @@
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQ2R1OUxmUThSUElMQ2lYZlpKNXdvQm9MbDVMUGhTRGFsdVhzZlhtMmRNNVhhQVoxd0MwX0Y2SDNVV0VPVmhsUm14MlJGU0RpYUttV2g1SG9HRXRXYkIzT3Q5WFdkZDBUZWNfazVYVGZsWDRPYzI1OFZTTFRUZE5yRE1sS1TSAYoBQVVfeXFMT1hndUNjck5sLXljWkN1aWRBQzBwX0xyaWxtZENUN0JXcEZOdGRmOUVwR2FfNGNiY3hTQk1oMFRPVVhsbHhoNkJCY1dlUENqMkd6bC1VdkJhSThManc3bVZVcTh1VjZNRG9RRy1aN0dnMEt1LWwtTGdQVnVnRndBdlVWRzdnaXc5Qk1B?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "other"
+    "theme": "culture-media"
    },
    {
     "title": "Vice President Vance to speak at Make America Healthy Again summit in the US \u2014 The Hill",
-    "outlet": "UA.NEWS",
+    "outlet": "ua.news",
     "date": "2026-09-28",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMWZTQ3hIUk8tdFpad0xNWm1uMm9ONnBNNDV2MlNGQmtadVEwdFpuQ1JnSDBtZHFRUWNUekxFR3lUZEc0M2dWVS0zd095ZksyOVdaSWM3bDhyMXBQQXBzR0JUdERVNWJBT0NVR1ZYQU1mcHlFLVl6cTBaaEJvaWhnMDB2aTFiRUhqUmFUMmZObUMtUndidlFhZ0tTRUdSU2NWTG1RNzJpQVJSUQ?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "politics-midterms"
+    "theme": "personnel-leadership"
    },
    {
     "title": "House Dems make a MAHA wish",
@@ -3715,15 +3709,6 @@
     "theme": "vaccines"
    },
    {
-    "title": "Maha split shows all is not well with Kennedy\u2019s US health revolution",
-    "outlet": "Financial Times",
-    "date": "2026-09-27",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTXUtajNsRUVSdk45bjByMzdoVlBoTDJSMmN2WXJsMFAtTkwyUVJ1UHA1YkZaZlQzWWVWZ2ZqVXRyTHQ1d2lXRDdpXzNZQkEzR0Vua3AxZll2dFFfR3d3bnFMUGRaV0VmLTVEN0FOUFc0bHJBdVRuNjZ0ZlUtLXdPb2RJeXQ?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "personnel-leadership"
-   },
-   {
     "title": "MAHA movement turns on Donald Trump and Robert F. Kennedy Jr.",
     "outlet": "wonderwall.com",
     "date": "2026-09-27",
@@ -3734,39 +3719,12 @@
    },
    {
     "title": "RFK Jr. faces yet another round of ethics questions, adding to brutal pattern",
-    "outlet": "AOL.ca",
+    "outlet": "aol.ca",
     "date": "2026-09-27",
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1aTjdFa2lGbXpkR1ZSeGZvUzhhTTlDcWk4RW84LVZCU3EzcFA4SUl1djZMQTl1TXRoM2hCRUQ2VzRuaE01aFRtQkRiUWF3dVNVdUlvSjNTTFhiLWE3NkdIUVpTV24zc2dXR0xub3NqQkRWSTFjN3c?oc=5",
     "tone": "critical",
     "origin": "outside",
     "theme": "personnel-leadership"
-   },
-   {
-    "title": "Robert F. Kennedy Jr. Took $4 Million In Book Advances, Pricey Gifts From MAHA Allies While in Office, Seem...",
-    "outlet": "uPolitics",
-    "date": "2026-09-27",
-    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOckxoZE04NURpbXN3Mk1pLTc5aGluSUd5N0Z6RmN4clRPUW1wazV0ZXloLW9fUEQxbGJwSmkxZEFVMFQ1QWFQODNBVTZreEtnVXhLOFVTTDNBTzdpcFdLeWtQWHVBYVQ3Q0J2RDVEamM2aExJNnJCS2JhM0VOVTdhdHlZdENmZk5aRHRhTW9MN0YxbmlwTHlvMU5UWEhiSzVaMDdMQUdfS1ZRMkc2d0JWYlRiSDVoVnNRdGlQN0Fkc21vR2xZZ0g1VTZzTWtfYWExTU5QT2ZBYS0tS0JkRDFIclpqZXd5dHlKbksyUHF4WjJrRmJfUl9j0gH8AUFVX3lxTE51TEdMY0JiM0x5VWNOWFZLaTVlcmFTTjBKVFREcDNqYW0zVHFpYkRKQnpBYkZqNFFhWGlsejdyYXJjcFQxZUhKb1R1VU9TczA4TEpaLWNiWEZpMktwSFZWNENic0c4WWFIVlpvNDhQemI4WWE0UnFweVlWR2RHZndGYmFiUnVITVc0aTNDMjhZMG91V29la0lLalFUblYzVXBOc2o0eF9JRGFYQ2RsUDVyNkozOENEVzVDeWRncnB1SVc2b2pkV1FUWl9vbU45c2pwSGd6blY0dzl5SFpCMTVIWDFIYktLQm0wbGRaM25WQVo3U2ZEUlZibGkyXw?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "money-pac"
-   },
-   {
-    "title": "Maha divisions test Republicans as Kennedy movement expands political and corporate reach",
-    "outlet": "Traders Union",
-    "date": "2026-09-27",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZTRCRm8yWlYwdUlob1lCNTRhVlFTSVR1ckFxWE80a3BuSHFLN3N1RWVSZmI2LUkzdWR1cWhTcXVIY3k3QWpkeG95bnZyZ3RudER6U3JEQ1RPUTM5MjlIY2xkelo0MmRodFVsQ283UEZES01yYnVUcjh0TzkxZEYwY1VHWTcyVDl2VEpvU0FiMXRfa2MxYWtPendWNHE2ck10cENqbEhaa052QQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
-   },
-   {
-    "title": "Maha Satyagraha at Jantar Mantar for Bodoland",
-    "outlet": "Assam Times",
-    "date": "2026-09-27",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNkFqZFE5UkxTenVtNVNrLVpmaUJEUzFSUTZHbHZITThvZ1EyZUtjYTlJU2s4a3ZyckRCWEFVeUVMNUU1M2thNW9RUGlsWHhFMkw0NEZKaXlYdEFmamlYNktJT0twTDF5NVhQa2NMZmxoR0JxeFRPYVQ0ODRLV0syYTRPZV9zNVg1bGc?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "other"
    },
    {
     "title": "Nine MAHA Cold Remedies You Need This Flu Season",
@@ -3776,15 +3734,6 @@
     "tone": "positive",
     "origin": "na",
     "theme": "other"
-   },
-   {
-    "title": "CDC Cuts Complicate Kennedy's MAHA Agenda",
-    "outlet": "Yahoo",
-    "date": "2026-09-26",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQnBvWW45TUMyS0RLS25KaEphV0Z0YUdqenN2TmV0eDRNc1R2aF9LMS1MVEZPLXFfckNueDFmaHJrRWxHaFhQMnlaU2dOcWNiYnlPWmRoQ0RKVTRmTFRMUDZfT1AtSWV0cTBfLWk5emJtR1pVRUMwMnhvU2R5eU5KX1d3VEN4bTNHTHlfU3lkVWROd3R4UXNhSQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "policy-delivery"
    }
   ]
  },
@@ -11598,7 +11547,7 @@
  "fec": {
   "source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)",
   "url": "https://api.open.fec.gov/developers/",
-  "collected": "2026-10-03",
+  "collected": "2026-10-04",
   "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025\u201326 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24\u201348 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
   "committees": {
    "C00821439": {
