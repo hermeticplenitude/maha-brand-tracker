@@ -1,21 +1,21 @@
 {
- "date": "2026-10-04",
- "days_to_election": 30,
+ "date": "2026-10-05",
+ "days_to_election": 29,
  "items": [
   {
    "k": "X volume",
-   "v": "2,064",
+   "v": "2,294",
    "u": "original posts / week",
-   "d": "-30%",
-   "read": "Falling month over month; 3.3% of the election-week peak. MAHA runs at 9.2% of MAGA's X volume.",
+   "d": "-19%",
+   "read": "Falling month over month; 3.7% of the election-week peak. MAHA runs at 9.8% of MAGA's X volume.",
    "href": "#social"
   },
   {
    "k": "News tone",
-   "v": "42%",
-   "u": "of 120 headlines critical",
-   "d": "22% from inside",
-   "read": "Lead theme culture / media. Inside criticism above one in five critical headlines: watch the base.",
+   "v": "46%",
+   "u": "of 126 headlines critical",
+   "d": "17% from inside",
+   "read": "Lead theme policy / delivery. Inside criticism below one in five critical headlines.",
    "href": "#news"
   },
   {
@@ -28,9 +28,9 @@
   },
   {
    "k": "Bluesky",
-   "v": "397",
+   "v": "426",
    "u": "posts / week",
-   "d": "+5%",
+   "d": "+8%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
    "href": "#social"
   },
@@ -52,18 +52,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$63.9M",
+   "v": "$65.9M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$20.7M last 4 wks",
+   "d": "$18.6M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-04",
-   "Alaska: registration closes"
-  ],
   [
    "2026-10-05",
    "Arizona: registration closes"
@@ -91,6 +87,10 @@
   [
    "2026-10-06",
    "Ohio: early voting opens"
+  ],
+  [
+   "2026-10-07",
+   "Arizona: early voting opens"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
