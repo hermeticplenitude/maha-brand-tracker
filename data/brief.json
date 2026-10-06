@@ -1,6 +1,6 @@
 {
- "date": "2026-10-05",
- "days_to_election": 29,
+ "date": "2026-10-06",
+ "days_to_election": 28,
  "items": [
   {
    "k": "X volume",
@@ -12,10 +12,10 @@
   },
   {
    "k": "News tone",
-   "v": "46%",
-   "u": "of 126 headlines critical",
-   "d": "17% from inside",
-   "read": "Lead theme policy / delivery. Inside criticism below one in five critical headlines.",
+   "v": "48%",
+   "u": "of 124 headlines critical",
+   "d": "22% from inside",
+   "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {
@@ -30,7 +30,7 @@
    "k": "Bluesky",
    "v": "426",
    "u": "posts / week",
-   "d": "+8%",
+   "d": "+7%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
    "href": "#social"
   },
@@ -52,34 +52,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$65.9M",
+   "v": "$67.2M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$18.6M last 4 wks",
+   "d": "$19.8M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-05",
-   "Arizona: registration closes"
-  ],
-  [
-   "2026-10-05",
-   "Georgia: registration closes"
-  ],
-  [
-   "2026-10-05",
-   "Maine: early voting opens"
-  ],
-  [
-   "2026-10-05",
-   "Ohio: registration closes"
-  ],
-  [
-   "2026-10-05",
-   "Texas: registration closes"
-  ],
   [
    "2026-10-06",
    "Nevada: registration closes"
@@ -91,6 +71,26 @@
   [
    "2026-10-07",
    "Arizona: early voting opens"
+  ],
+  [
+   "2026-10-09",
+   "North Carolina: registration closes"
+  ],
+  [
+   "2026-10-13",
+   "Georgia: early voting opens"
+  ],
+  [
+   "2026-10-14",
+   "Iowa: early voting opens"
+  ],
+  [
+   "2026-10-14",
+   "Wisconsin: registration closes"
+  ],
+  [
+   "2026-10-15",
+   "North Carolina: early voting opens"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
