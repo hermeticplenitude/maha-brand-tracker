@@ -1,6 +1,6 @@
 {
- "date": "2026-10-06",
- "days_to_election": 28,
+ "date": "2026-10-07",
+ "days_to_election": 27,
  "items": [
   {
    "k": "X volume",
@@ -12,9 +12,9 @@
   },
   {
    "k": "News tone",
-   "v": "48%",
-   "u": "of 124 headlines critical",
-   "d": "22% from inside",
+   "v": "56%",
+   "u": "of 79 headlines critical",
+   "d": "23% from inside",
    "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
@@ -52,22 +52,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$67.2M",
+   "v": "$68.3M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$19.8M last 4 wks",
+   "d": "$20.9M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-06",
-   "Nevada: registration closes"
-  ],
-  [
-   "2026-10-06",
-   "Ohio: early voting opens"
-  ],
   [
    "2026-10-07",
    "Arizona: early voting opens"
@@ -91,6 +83,10 @@
   [
    "2026-10-15",
    "North Carolina: early voting opens"
+  ],
+  [
+   "2026-10-17",
+   "Nevada: early voting opens"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
