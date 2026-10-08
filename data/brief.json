@@ -1,6 +1,6 @@
 {
- "date": "2026-10-07",
- "days_to_election": 27,
+ "date": "2026-10-08",
+ "days_to_election": 26,
  "items": [
   {
    "k": "X volume",
@@ -12,25 +12,25 @@
   },
   {
    "k": "News tone",
-   "v": "56%",
-   "u": "of 79 headlines critical",
-   "d": "23% from inside",
+   "v": "60%",
+   "u": "of 62 headlines critical",
+   "d": "22% from inside",
    "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {
    "k": "News volume",
-   "v": "4.6",
+   "v": "4.0",
    "u": "per 100k US articles",
-   "d": "-70%",
-   "read": "Down vs the prior four weeks; 8% of the Sep 2025 peak.",
+   "d": "-72%",
+   "read": "Down vs the prior four weeks; 7% of the Sep 2025 peak.",
    "href": "#social"
   },
   {
    "k": "Bluesky",
    "v": "426",
    "u": "posts / week",
-   "d": "+7%",
+   "d": "+8%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
    "href": "#social"
   },
@@ -52,18 +52,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$68.3M",
+   "v": "$69.4M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$20.9M last 4 wks",
+   "d": "$22.0M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-07",
-   "Arizona: early voting opens"
-  ],
   [
    "2026-10-09",
    "North Carolina: registration closes"
