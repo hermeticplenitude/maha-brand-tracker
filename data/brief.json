@@ -1,6 +1,6 @@
 {
- "date": "2026-10-09",
- "days_to_election": 25,
+ "date": "2026-10-10",
+ "days_to_election": 24,
  "items": [
   {
    "k": "X volume",
@@ -12,9 +12,9 @@
   },
   {
    "k": "News tone",
-   "v": "61%",
-   "u": "of 61 headlines critical",
-   "d": "43% from inside",
+   "v": "58%",
+   "u": "of 52 headlines critical",
+   "d": "47% from inside",
    "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
@@ -30,7 +30,7 @@
    "k": "Bluesky",
    "v": "426",
    "u": "posts / week",
-   "d": "+8%",
+   "d": "+7%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
    "href": "#social"
   },
@@ -52,18 +52,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$70.5M",
+   "v": "$72.8M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$23.1M last 4 wks",
+   "d": "$25.4M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-09",
-   "North Carolina: registration closes"
-  ],
   [
    "2026-10-13",
    "Georgia: early voting opens"
@@ -91,6 +87,10 @@
   [
    "2026-10-19",
    "Iowa: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-19",
+   "Iowa: registration closes"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
