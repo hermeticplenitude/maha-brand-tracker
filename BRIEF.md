@@ -1,13 +1,13 @@
-# MAHA by the numbers — week of October 11, 2026
-23 days to Election Day. Source and method for every figure: https://hermeticplenitude.github.io/maha-brand-tracker/
+# MAHA by the numbers — week of October 12, 2026
+22 days to Election Day. Source and method for every figure: https://hermeticplenitude.github.io/maha-brand-tracker/
 
-- **X volume: 2,294 original posts / week** (-19%). Falling month over month; 3.7% of the election-week peak. MAHA runs at 9.8% of MAGA's X volume.
-- **News tone: 52% of 52 headlines critical** (44% from inside). Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.
+- **X volume: 2,290 original posts / week** (-12%). Falling month over month; 3.6% of the election-week peak. MAHA runs at 9.8% of MAGA's X volume.
+- **News tone: 52% of 48 headlines critical** (44% from inside). Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.
 - **News volume: 4.0 per 100k US articles** (-72%). Down vs the prior four weeks; 7% of the Sep 2025 peak.
-- **Bluesky: 426 posts / week** (+8%). Critical-outside channel; steady volume means sustained opposition attention, not growth.
+- **Bluesky: 384 posts / week** (-15%). Critical-outside channel; steady volume means sustained opposition attention, not growth.
 - **Newest poll: 35% identify with MAHA (U.S. adults)** (Reuters/Ipsos). 12% strongly + 23% somewhat; 42% not at all; 21% don't know. Registered voters: 38% identify (14 strongly, 24 somewhat), 45% not at all.
 - **MAHA PAC (FEC): $3.18M raised vs $100M pledge** (Q3 due Oct 15). Through 2026-08-31: $712K in independent expenditures, $1.03M cash. MAHA Action PAC (registered Sep 3) files its first report Oct 15.
-- **Google ad spend: $72.8M by the 20 races' nominees this cycle** ($25.4M last 4 wks). MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.
+- **Google ad spend: $75.2M by the 20 races' nominees this cycle** ($22.2M last 4 wks). MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.
 
 **Deadlines in the next ten days:** Oct 13 Georgia: early voting opens; Oct 14 Iowa: early voting opens; Oct 14 Wisconsin: registration closes; Oct 15 North Carolina: early voting opens; Oct 17 Nevada: early voting opens; Oct 19 Alaska: early voting opens; Oct 19 Iowa: mail-ballot request deadline; Oct 19 Iowa: registration closes
 

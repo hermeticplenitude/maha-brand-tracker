@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "bluesky": {
   "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
   "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
@@ -12,19 +12,19 @@
    "MAHA moms"
   ],
   "window_days": 90,
-  "since": "2026-07-13",
+  "since": "2026-07-14",
   "note": "Every public Bluesky post in the window matching the phrase set, deduplicated across queries. Bare-acronym posts are kept only if the text also carries a political cue (RFK, Kennedy, HHS, vaccine, MAGA, Trump, food dye, seed oil, mRNA, etc.). Engagement = likes + reposts + replies + quotes at collection time. Bluesky skews left of the US electorate; treat it as the critical-outside channel, not a census.",
-  "total_posts": 4926,
+  "total_posts": 4921,
   "weekly": [
    {
     "week": "2026-07-13",
-    "posts": 266,
-    "engagement": 20400
+    "posts": 248,
+    "engagement": 19955
    },
    {
     "week": "2026-07-20",
     "posts": 342,
-    "engagement": 27074
+    "engagement": 27069
    },
    {
     "week": "2026-07-27",
@@ -34,7 +34,7 @@
    {
     "week": "2026-08-03",
     "posts": 390,
-    "engagement": 26421
+    "engagement": 26425
    },
    {
     "week": "2026-08-10",
@@ -48,45 +48,50 @@
    },
    {
     "week": "2026-08-24",
-    "posts": 437,
-    "engagement": 27916
+    "posts": 438,
+    "engagement": 27918
    },
    {
     "week": "2026-08-31",
-    "posts": 456,
-    "engagement": 16736
+    "posts": 455,
+    "engagement": 16719
    },
    {
     "week": "2026-09-07",
     "posts": 499,
-    "engagement": 13363
+    "engagement": 13366
    },
    {
     "week": "2026-09-14",
     "posts": 262,
-    "engagement": 12000
+    "engagement": 11999
    },
    {
     "week": "2026-09-21",
     "posts": 374,
-    "engagement": 10442
+    "engagement": 10444
    },
    {
     "week": "2026-09-28",
-    "posts": 569,
-    "engagement": 8088
+    "posts": 568,
+    "engagement": 8084
    },
    {
     "week": "2026-10-05",
-    "posts": 322,
-    "engagement": 5343
+    "posts": 333,
+    "engagement": 5605
+   },
+   {
+    "week": "2026-10-12",
+    "posts": 3,
+    "engagement": 1
    }
   ],
   "summary": {
-   "last4w_avg_posts": 426.0,
-   "prev4w_avg_posts": 396.2,
-   "change_pct": 7.5,
-   "unique_authors": 3351
+   "last4w_avg_posts": 384.2,
+   "prev4w_avg_posts": 452.5,
+   "change_pct": -15.1,
+   "unique_authors": 3348
   },
   "top_posts": [
    {
@@ -274,7 +279,7 @@
    {
     "handle": "gavinyamey.bsky.social",
     "posts": 165,
-    "engagement": 16318
+    "engagement": 16348
    },
    {
     "handle": "joho.bsky.social",
@@ -1689,7 +1694,7 @@
    },
    {
     "week": "2026-06-22",
-    "count": 2715
+    "count": 2701
    },
    {
     "week": "2026-06-29",
@@ -1701,11 +1706,11 @@
    },
    {
     "week": "2026-07-13",
-    "count": 2004
+    "count": 1935
    },
    {
     "week": "2026-07-20",
-    "count": 1950
+    "count": 1860
    },
    {
     "week": "2026-07-27",
@@ -1721,7 +1726,7 @@
    },
    {
     "week": "2026-08-17",
-    "count": 3103
+    "count": 3133
    },
    {
     "week": "2026-08-24",
@@ -1729,7 +1734,7 @@
    },
    {
     "week": "2026-08-31",
-    "count": 2014
+    "count": 2022
    },
    {
     "week": "2026-09-07",
@@ -1749,7 +1754,11 @@
    },
    {
     "week": "2026-10-05",
-    "count": 1985
+    "count": 2146
+   },
+   {
+    "week": "2026-10-12",
+    "count": 74
    }
   ],
   "weekly_counts_maga": [
@@ -2151,7 +2160,7 @@
    },
    {
     "week": "2026-06-22",
-    "count": 23490
+    "count": 23107
    },
    {
     "week": "2026-06-29",
@@ -2163,11 +2172,11 @@
    },
    {
     "week": "2026-07-13",
-    "count": 23597
+    "count": 22969
    },
    {
     "week": "2026-07-20",
-    "count": 22471
+    "count": 21346
    },
    {
     "week": "2026-07-27",
@@ -2183,7 +2192,7 @@
    },
    {
     "week": "2026-08-17",
-    "count": 21306
+    "count": 21597
    },
    {
     "week": "2026-08-24",
@@ -2191,7 +2200,7 @@
    },
    {
     "week": "2026-08-31",
-    "count": 18545
+    "count": 18661
    },
    {
     "week": "2026-09-07",
@@ -2199,7 +2208,7 @@
    },
    {
     "week": "2026-09-14",
-    "count": 23837
+    "count": 24021
    },
    {
     "week": "2026-09-21",
@@ -2211,7 +2220,11 @@
    },
    {
     "week": "2026-10-05",
-    "count": 22174
+    "count": 24285
+   },
+   {
+    "week": "2026-10-12",
+    "count": 1358
    }
   ],
   "weekly_ratio_maha_to_maga": [
@@ -2613,7 +2626,7 @@
    },
    {
     "week": "2026-06-22",
-    "value": 0.1156
+    "value": 0.1169
    },
    {
     "week": "2026-06-29",
@@ -2625,11 +2638,11 @@
    },
    {
     "week": "2026-07-13",
-    "value": 0.0849
+    "value": 0.0842
    },
    {
     "week": "2026-07-20",
-    "value": 0.0868
+    "value": 0.0871
    },
    {
     "week": "2026-07-27",
@@ -2645,7 +2658,7 @@
    },
    {
     "week": "2026-08-17",
-    "value": 0.1456
+    "value": 0.1451
    },
    {
     "week": "2026-08-24",
@@ -2653,7 +2666,7 @@
    },
    {
     "week": "2026-08-31",
-    "value": 0.1086
+    "value": 0.1084
    },
    {
     "week": "2026-09-07",
@@ -2661,7 +2674,7 @@
    },
    {
     "week": "2026-09-14",
-    "value": 0.0727
+    "value": 0.0722
    },
    {
     "week": "2026-09-21",
@@ -2673,23 +2686,27 @@
    },
    {
     "week": "2026-10-05",
-    "value": 0.0895
+    "value": 0.0884
+   },
+   {
+    "week": "2026-10-12",
+    "value": 0.0545
    }
   ],
   "summary": {
-   "total_posts_since_start": 1102806,
-   "last4w_avg_weekly": 2294,
-   "prev4w_avg_weekly": 2838,
-   "change_pct": -19.2,
+   "total_posts_since_start": 1102906,
+   "last4w_avg_weekly": 2290,
+   "prev4w_avg_weekly": 2596,
+   "change_pct": -11.8,
    "peak_week": {
     "week": "2024-11-04",
     "count": 62753
    },
-   "last4w_ratio_to_maga": 0.0979
+   "last4w_ratio_to_maga": 0.0982
   },
   "sample": {
    "n": 593,
-   "since": "2026-10-05",
+   "since": "2026-10-06",
    "unique_authors": 471,
    "top_posts": [
     {
@@ -2697,27 +2714,55 @@
      "date": "2026-10-07",
      "handle": "jimmy_dore",
      "name": "Jimmy Dore",
-     "followers": 732999,
+     "followers": 732954,
      "text": "This is what RFK promised MAHA he was gong to fix, instead he's continuing it &amp; telling us Big Agriculture has to keep poisoning Americans cuz it cost too much to produce healthy food. \n\nCan we vote our way out of this? NOPE. \n\nSo what do we do? https://t.co/6jgscPjlXG",
-     "likes": 5026,
-     "reposts": 1053,
+     "likes": 5027,
+     "reposts": 1054,
      "replies": 174,
      "quotes": 18,
-     "views": 101530,
+     "views": 101762,
      "url": "https://x.com/jimmy_dore/status/2107911665295716712"
+    },
+    {
+     "id": "2109403072187585007",
+     "date": "2026-10-11",
+     "handle": "pelositracker",
+     "name": "Nancy Pelosi Stock Tracker \u265f",
+     "followers": 1982559,
+     "text": "This is tough to defend\n\nTrevor Milton was convicted of fraud when he showed Nikola investors a video of a truck \"driving\" \n\nWhen in reality it was rolling downhill\n\nProsecutors asked the court to make him pay $680M back to the investors he defrauded\n\nThen, weeks before 2024 https://t.co/742JCZw9XH",
+     "likes": 3152,
+     "reposts": 474,
+     "replies": 130,
+     "quotes": 46,
+     "views": 260342,
+     "url": "https://x.com/pelositracker/status/2109403072187585007"
+    },
+    {
+     "id": "2109071518437441883",
+     "date": "2026-10-11",
+     "handle": "NEWSMAX",
+     "name": "NEWSMAX",
+     "followers": 3670594,
+     "text": "Steak 'n Shake\u2019s chief Make America Healthy Again officer said that the burger chain\u2019s move to drop seed oils has driven \"astronomically high\" sales growth, though he acknowledged suppliers were not eager to make the change. https://t.co/UpOUjNEPJT",
+     "likes": 2789,
+     "reposts": 550,
+     "replies": 19,
+     "quotes": 9,
+     "views": 57906,
+     "url": "https://x.com/NEWSMAX/status/2109071518437441883"
     },
     {
      "id": "2107962877055283396",
      "date": "2026-10-07",
      "handle": "HealthRanger",
      "name": "HealthRanger",
-     "followers": 413630,
+     "followers": 413617,
      "text": "Anybody who tells me \"Trust the plan\" earns an instant \"F\" grade, whether it's with MAGA or MAHA.\n\nWe've given the plan well enough time at this point, and it appears the joke's on us.\n\nBut we should thank RFK Jr. and Trump for one thing: NOW IT IS READILY APPARENT TO ANY",
-     "likes": 1760,
+     "likes": 1761,
      "reposts": 341,
      "replies": 159,
      "quotes": 22,
-     "views": 25641,
+     "views": 25701,
      "url": "https://x.com/HealthRanger/status/2107962877055283396"
     },
     {
@@ -2725,13 +2770,13 @@
      "date": "2026-10-08",
      "handle": "HealthRanger",
      "name": "HealthRanger",
-     "followers": 413630,
+     "followers": 413617,
      "text": "It's clear at this point that MAHA has been completely overrun by Zionists. And RFK Jr answers to them, not to you.",
-     "likes": 1888,
-     "reposts": 230,
+     "likes": 1887,
+     "reposts": 229,
      "replies": 46,
      "quotes": 4,
-     "views": 14742,
+     "views": 14801,
      "url": "https://x.com/HealthRanger/status/2108032340471726361"
     },
     {
@@ -2739,125 +2784,111 @@
      "date": "2026-10-08",
      "handle": "SecKennedy",
      "name": "Secretary Kennedy",
-     "followers": 1229079,
+     "followers": 1228973,
      "text": ".@RepLuna is one of the strongest champions of the Make America Healthy Again movement in Congress. \n \nWe sat down to discuss her work to address harmful food additives and pesticides, how special interests shape our food system, and what it will take to advance MAHA priorities https://t.co/s1ESg25gLa",
-     "likes": 1622,
-     "reposts": 275,
-     "replies": 142,
+     "likes": 1629,
+     "reposts": 276,
+     "replies": 149,
      "quotes": 15,
-     "views": 74317,
+     "views": 76435,
      "url": "https://x.com/SecKennedy/status/2108256115368804354"
-    },
-    {
-     "id": "2109071518437441883",
-     "date": "2026-10-11",
-     "handle": "NEWSMAX",
-     "name": "NEWSMAX",
-     "followers": 3670384,
-     "text": "Steak 'n Shake\u2019s chief Make America Healthy Again officer said that the burger chain\u2019s move to drop seed oils has driven \"astronomically high\" sales growth, though he acknowledged suppliers were not eager to make the change. https://t.co/UpOUjNEPJT",
-     "likes": 1436,
-     "reposts": 282,
-     "replies": 17,
-     "quotes": 5,
-     "views": 39435,
-     "url": "https://x.com/NEWSMAX/status/2109071518437441883"
-    },
-    {
-     "id": "2108325348442308972",
-     "date": "2026-10-08",
-     "handle": "RedpillDrifter",
-     "name": "Redpill Drifter",
-     "followers": 365018,
-     "text": "Nothing to see here just the admin giving us a nod that we've been right all along. There are still over 2 years left and so much has happened but people don't like when you bring any of it up. Clearly much more is going on than everyone realizes.\n\nHold the line.\n\nOh and here is https://t.co/WUEIQ90wRx",
-     "likes": 1160,
-     "reposts": 384,
-     "replies": 61,
-     "quotes": 31,
-     "views": 24355,
-     "url": "https://x.com/RedpillDrifter/status/2108325348442308972"
-    },
-    {
-     "id": "2107928041624064218",
-     "date": "2026-10-07",
-     "handle": "RealAlexJones",
-     "name": "Alex Jones",
-     "followers": 4442338,
-     "text": "WE'RE WITNESSING A HOSTILE TAKEOVER OF MAHA Warns The Inventor Of mRNA Tech, Dr Robert Malone!\n\nThere Is A Major Attempt To Fully Hijack MAHA Taking Place Right Now! The People Of America And The World Must Take Back Control Of The Movement We Started To Ensure That The Horrors https://t.co/zByiX7oyvb",
-     "likes": 1066,
-     "reposts": 435,
-     "replies": 56,
-     "quotes": 20,
-     "views": 144433,
-     "url": "https://x.com/RealAlexJones/status/2107928041624064218"
-    },
-    {
-     "id": "2108681912592007207",
-     "date": "2026-10-09",
-     "handle": "RedactedNews",
-     "name": "Redacted",
-     "followers": 306738,
-     "text": "SUSIE WILES: FROM NETANYAHU CAMPAIGNS TO BIG FOOD, AND A MAHA BACKLASH\n\nIs Trump\u2019s chief of staff, Susie Wiles, working against the America First and Make America Healthy Again agenda?\n\nMike Adams points to Wiles\u2019 history of representing major corporate interests and campaigning https://t.co/rEji9nnyHV",
-     "likes": 951,
-     "reposts": 361,
-     "replies": 60,
-     "quotes": 12,
-     "views": 34716,
-     "url": "https://x.com/RedactedNews/status/2108681912592007207"
-    },
-    {
-     "id": "2107827569198322090",
-     "date": "2026-10-07",
-     "handle": "Q_TheStormRider",
-     "name": "Q The Storm Rider",
-     "followers": 100422,
-     "text": "\ud83d\udea8 HOLY CRAP, FDA Commissioner Marty Makary CONFIRMED the FDA purposefully lied to the people for nearly 2 decades against dietary fats to help Big Pharma\n\nPeople avoided fat and ate MORE SUGAR, so Pharma could sell them more drugs \n\nRFK Jr. just declared open WAR on added sugar https://t.co/SN31jZP8V4",
-     "likes": 761,
-     "reposts": 470,
-     "replies": 14,
-     "quotes": 15,
-     "views": 9103,
-     "url": "https://x.com/Q_TheStormRider/status/2107827569198322090"
-    },
-    {
-     "id": "2108920489251147967",
-     "date": "2026-10-10",
-     "handle": "HHSGov",
-     "name": "HHS",
-     "followers": 1674121,
-     "text": "\u2757 11 days remaining \u2757\n\nHHS is\u00a0investigating the relationship between electromagnetic radiation and human health\u00a0\u2014 a clear directive from the MAHA Strategy Report\u00a0\u2014 and has\u00a0launched a formal Request for Information that closes October 21st.\n\nLearn more and submit a comment here: https://t.co/JzyGTJWfbd",
-     "likes": 833,
-     "reposts": 364,
-     "replies": 55,
-     "quotes": 43,
-     "views": 22019,
-     "url": "https://x.com/HHSGov/status/2108920489251147967"
     },
     {
      "id": "2108969996227604729",
      "date": "2026-10-10",
      "handle": "DrNeilStone",
      "name": "Neil Stone",
-     "followers": 164005,
+     "followers": 164014,
      "text": "3,887 measles cases in the US this year, and it's only October. \n\nAll of 2025 was 2,289. \n\nWe eliminated this disease in 2000. \n\nEliminating it took decades of work. \n\nLosing it took just two years of RFK Jr and MAHA https://t.co/Fl0aB4Cm5p",
-     "likes": 916,
-     "reposts": 299,
-     "replies": 35,
-     "quotes": 12,
-     "views": 7556,
+     "likes": 1378,
+     "reposts": 474,
+     "replies": 74,
+     "quotes": 16,
+     "views": 12770,
      "url": "https://x.com/DrNeilStone/status/2108969996227604729"
+    },
+    {
+     "id": "2108325348442308972",
+     "date": "2026-10-08",
+     "handle": "RedpillDrifter",
+     "name": "Redpill Drifter",
+     "followers": 364969,
+     "text": "Nothing to see here just the admin giving us a nod that we've been right all along. There are still over 2 years left and so much has happened but people don't like when you bring any of it up. Clearly much more is going on than everyone realizes.\n\nHold the line.\n\nOh and here is https://t.co/WUEIQ90wRx",
+     "likes": 1163,
+     "reposts": 384,
+     "replies": 60,
+     "quotes": 31,
+     "views": 24667,
+     "url": "https://x.com/RedpillDrifter/status/2108325348442308972"
+    },
+    {
+     "id": "2108681912592007207",
+     "date": "2026-10-09",
+     "handle": "RedactedNews",
+     "name": "Redacted",
+     "followers": 306789,
+     "text": "SUSIE WILES: FROM NETANYAHU CAMPAIGNS TO BIG FOOD, AND A MAHA BACKLASH\n\nIs Trump\u2019s chief of staff, Susie Wiles, working against the America First and Make America Healthy Again agenda?\n\nMike Adams points to Wiles\u2019 history of representing major corporate interests and campaigning https://t.co/rEji9nnyHV",
+     "likes": 1113,
+     "reposts": 411,
+     "replies": 68,
+     "quotes": 14,
+     "views": 44696,
+     "url": "https://x.com/RedactedNews/status/2108681912592007207"
+    },
+    {
+     "id": "2107928041624064218",
+     "date": "2026-10-07",
+     "handle": "RealAlexJones",
+     "name": "Alex Jones",
+     "followers": 4441966,
+     "text": "WE'RE WITNESSING A HOSTILE TAKEOVER OF MAHA Warns The Inventor Of mRNA Tech, Dr Robert Malone!\n\nThere Is A Major Attempt To Fully Hijack MAHA Taking Place Right Now! The People Of America And The World Must Take Back Control Of The Movement We Started To Ensure That The Horrors https://t.co/zByiX7oyvb",
+     "likes": 1069,
+     "reposts": 436,
+     "replies": 56,
+     "quotes": 20,
+     "views": 145004,
+     "url": "https://x.com/RealAlexJones/status/2107928041624064218"
+    },
+    {
+     "id": "2108920489251147967",
+     "date": "2026-10-10",
+     "handle": "HHSGov",
+     "name": "HHS",
+     "followers": 1674133,
+     "text": "\u2757 11 days remaining \u2757\n\nHHS is\u00a0investigating the relationship between electromagnetic radiation and human health\u00a0\u2014 a clear directive from the MAHA Strategy Report\u00a0\u2014 and has\u00a0launched a formal Request for Information that closes October 21st.\n\nLearn more and submit a comment here: https://t.co/JzyGTJWfbd",
+     "likes": 950,
+     "reposts": 421,
+     "replies": 64,
+     "quotes": 49,
+     "views": 25520,
+     "url": "https://x.com/HHSGov/status/2108920489251147967"
+    },
+    {
+     "id": "2107827569198322090",
+     "date": "2026-10-07",
+     "handle": "Q_TheStormRider",
+     "name": "Q The Storm Rider",
+     "followers": 101799,
+     "text": "\ud83d\udea8 HOLY CRAP, FDA Commissioner Marty Makary CONFIRMED the FDA purposefully lied to the people for nearly 2 decades against dietary fats to help Big Pharma\n\nPeople avoided fat and ate MORE SUGAR, so Pharma could sell them more drugs \n\nRFK Jr. just declared open WAR on added sugar https://t.co/SN31jZP8V4",
+     "likes": 761,
+     "reposts": 469,
+     "replies": 14,
+     "quotes": 15,
+     "views": 9130,
+     "url": "https://x.com/Q_TheStormRider/status/2107827569198322090"
     },
     {
      "id": "2108173876869869920",
      "date": "2026-10-08",
      "handle": "MaryBowdenMD",
      "name": "Mary Talley Bowden MD",
-     "followers": 646676,
+     "followers": 646840,
      "text": "While our letter to @SecKennedy and @POTUS cost nothing and brought together medical freedom activists from all over the world, Kennedy loyalists are framing me as a chaos agent while simultaneously accusing me of having a \"dangerous lack of political strategy\" and \"profound lack https://t.co/8YyUXjxcxm",
-     "likes": 834,
-     "reposts": 339,
-     "replies": 88,
-     "quotes": 28,
-     "views": 29742,
+     "likes": 855,
+     "reposts": 345,
+     "replies": 91,
+     "quotes": 32,
+     "views": 74078,
      "url": "https://x.com/MaryBowdenMD/status/2108173876869869920"
     },
     {
@@ -2865,13 +2896,13 @@
      "date": "2026-10-09",
      "handle": "RepNancyMace",
      "name": "Rep. Nancy Mace",
-     "followers": 769484,
+     "followers": 769428,
      "text": "Americans shouldn\u2019t need a chemistry degree to know what they\u2019re eating.\n\nSo we got to work. In the last two months, we introduced FIVE bills to make America healthy again.\n\n\u2705 The REAL Sugar Act would ban high-fructose corn syrup in food sold in the United States. Manufacturers https://t.co/1AxRB7fvGc",
-     "likes": 612,
+     "likes": 618,
      "reposts": 146,
-     "replies": 80,
+     "replies": 81,
      "quotes": 7,
-     "views": 11952,
+     "views": 12360,
      "url": "https://x.com/RepNancyMace/status/2108671407718650247"
     },
     {
@@ -2879,65 +2910,51 @@
      "date": "2026-10-09",
      "handle": "KuwlShow",
      "name": "Rob Cunningham",
-     "followers": 94467,
+     "followers": 94528,
      "text": "When you KNQW you KNQW!\n@realDonaldTrump @POTUS @PapiTrumpo @WhiteHouse @DanScavino #MAGA #MAHA https://t.co/yJsVDoIOw9",
-     "likes": 411,
-     "reposts": 132,
-     "replies": 22,
+     "likes": 420,
+     "reposts": 137,
+     "replies": 23,
      "quotes": 10,
-     "views": 13633,
+     "views": 14050,
      "url": "https://x.com/KuwlShow/status/2108680583668985964"
-    },
-    {
-     "id": "2108371657471521139",
-     "date": "2026-10-09",
-     "handle": "AJNlive",
-     "name": "Alex Jones Network",
-     "followers": 369258,
-     "text": "BREAKING BOMBSHELL: Monsanto Given ANOTHER 15 YEARS to NOT Certify Glyphosate!\n\nThis Is Just Another Of Many Devastating BLOWS To The MAHA \u2018Movement\u2019 Revealed By Tiffany Cianci In Her Viral MAHA Scorecard\u2014 MUST WATCH/SHARE! https://t.co/10RLGLcKGF https://t.co/gXufnjLCTI",
-     "likes": 333,
-     "reposts": 145,
-     "replies": 18,
-     "quotes": 6,
-     "views": 91075,
-     "url": "https://x.com/AJNlive/status/2108371657471521139"
     }
    ],
    "top_accounts": [
     {
-     "handle": "AllicinV",
-     "posts": 9,
-     "engagement": 12
-    },
-    {
      "handle": "EmbracingTara",
-     "posts": 8,
-     "engagement": 153
+     "posts": 9,
+     "engagement": 143
     },
     {
-     "handle": "AZMAHAMAMA",
-     "posts": 8,
-     "engagement": 13
+     "handle": "JzarNade",
+     "posts": 9,
+     "engagement": 4
     },
     {
-     "handle": "HealthRanger",
-     "posts": 7,
-     "engagement": 5209
+     "handle": "JohnSgt",
+     "posts": 9,
+     "engagement": 18
     },
     {
      "handle": "LiamSchubel",
      "posts": 7,
-     "engagement": 134
+     "engagement": 136
     },
     {
-     "handle": "Doug15222",
-     "posts": 7,
-     "engagement": 0
+     "handle": "HealthRanger",
+     "posts": 6,
+     "engagement": 5137
     },
     {
-     "handle": "JzarNade",
-     "posts": 5,
-     "engagement": 4
+     "handle": "AZMAHAMAMA",
+     "posts": 6,
+     "engagement": 6
+    },
+    {
+     "handle": "AllicinV",
+     "posts": 6,
+     "engagement": 9
     },
     {
      "handle": "roosterpisces",
@@ -2950,19 +2967,14 @@
      "engagement": 0
     },
     {
-     "handle": "MAHA_Institute",
-     "posts": 4,
-     "engagement": 2
-    },
-    {
-     "handle": "micyoung75",
-     "posts": 4,
-     "engagement": 42
-    },
-    {
      "handle": "MAHANAKA_Phuket",
      "posts": 4,
      "engagement": 0
+    },
+    {
+     "handle": "MAHA_Institute",
+     "posts": 4,
+     "engagement": 1
     },
     {
      "handle": "ChicagoBreaking",
@@ -2970,14 +2982,19 @@
      "engagement": 0
     },
     {
-     "handle": "azrael_333",
-     "posts": 4,
-     "engagement": 29
+     "handle": "Salty_in_CO",
+     "posts": 3,
+     "engagement": 2
     },
     {
-     "handle": "JohnSgt",
+     "handle": "nj4rfk",
      "posts": 3,
-     "engagement": 4
+     "engagement": 2
+    },
+    {
+     "handle": "TrevorFitzgibb1",
+     "posts": 3,
+     "engagement": 7
     }
    ]
   }
@@ -2996,28 +3013,27 @@
    "MAHA Summit when:7d"
   ],
   "window_days": 7,
-  "collected": "2026-10-11",
+  "collected": "2026-10-12",
   "note": "Google News returns up to 100 results per query; eight queries are merged and deduplicated by title. Tone, origin and theme are assigned by a language model from headline and outlet only, using a fixed rubric; article bodies are not read. 'Critical, inside' means the criticism in the headline comes from the movement or its allies.",
-  "n": 52,
+  "n": 48,
   "tone": {
-   "critical": 27,
-   "positive": 4,
-   "neutral": 21
+   "critical": 25,
+   "positive": 6,
+   "neutral": 17
   },
   "critical_origin": {
-   "inside": 12,
-   "outside": 14,
-   "na": 1
+   "inside": 11,
+   "outside": 14
   },
   "theme": {
-   "policy-delivery": 18,
+   "policy-delivery": 14,
    "politics-midterms": 11,
-   "other": 6,
-   "science-research": 4,
-   "culture-media": 4,
+   "other": 5,
+   "science-research": 5,
    "personnel-leadership": 4,
+   "food-chemicals": 3,
    "vaccines": 3,
-   "food-chemicals": 2
+   "culture-media": 3
   },
   "outlets": {
    "The Hill": 2,
@@ -3025,26 +3041,25 @@
    "STAT": 2,
    "Protect Our Care": 2,
    "TrialSite News": 2,
-   "Genetic Literacy Project": 2,
    "Yahoo": 2,
-   "The Daily Beast": 2,
+   "Courthouse News": 2,
    "Jacksonville Journal-Courier": 1,
    "Nacionale News": 1,
    "Newsweek": 1,
+   "Genetic Literacy Project": 1,
    "The 19th News": 1,
    "Medscape": 1,
    "Fast Company": 1,
+   "Plastics News": 1,
    "RadarOnline": 1,
-   "Hoodline": 1,
    "Raw Story": 1,
-   "timesdaily.com": 1,
+   "Hoodline": 1,
    "NTD News": 1,
    "MedPage Today": 1
   },
   "by_day": {
-   "2026-10-04": 2,
-   "2026-10-05": 12,
-   "2026-10-06": 10,
+   "2026-10-05": 9,
+   "2026-10-06": 11,
    "2026-10-07": 8,
    "2026-10-08": 9,
    "2026-10-09": 8,
@@ -3059,7 +3074,7 @@
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3YwSnJzUkZlNjJmRzhwdlE2TTRvbVBKVzV2NWVfUFZMSzEtY0JGcGhpUVZtMGJUbk9xV2pLVlF6Ry0tZUZmdmZXUEYxT1ByME5HQVdzaUwxdElZVG9uQTFTdXRDZ0V4Vmc2cjlLM3diRWhvSlNsLTctX3lQTFRRRE5sWTZmNlJRX2MzcGZ5dzVidGlKTS1PdmJUMDQtNXRCSENraGNLNDdOUQ?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "policy-delivery"
+    "theme": "other"
    },
    {
     "title": "GOP priorities alienate MAHA supporters",
@@ -3102,7 +3117,7 @@
     "outlet": "Newsweek",
     "date": "2026-10-09",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdjhBQWdWNkhnMTJSZm1fQ0V5aWNXWmpYUll1RzVvWExfMjdaZVBONldWZExVNWNscU9SY3BQRDRUVEtQM2ZiTTMwMGU2a1VrSy1hdkdCbEJvZzgzSy04dFh2U0VNTU5xT2hUTjlKa3JCTjJramZvenRnY2FRTUNsNjZQb0VlSUtsSHlMbF9rbkVJbXlCMjVTVTBZQTVfdzg?oc=5",
-    "tone": "neutral",
+    "tone": "positive",
     "origin": "na",
     "theme": "politics-midterms"
    },
@@ -3111,7 +3126,7 @@
     "outlet": "The Hill",
     "date": "2026-10-09",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVWxHZTVyT0NzREQydVBGczAtWG9lR21GSWZUNGk2Z2RhZFNfMVRGYnZBRHBac0JtMC1iZ1RJdVVlWE5USVlxU0ZtZkJObFFacXB6TWsyX2pnM2xyN3JvdlVmYXhRcDBpb0NMOUN6NGFhMWdZR1NtNzBHVklCOHZxWm9jUF_SAYoBQVVfeXFMTVN5MG9PMHVrNlFyaTcwb1hNUFRza1lTaTZnQzhxenRFVnNMN1JkcXB1LTUzUVE0OXo5Vm5uTHVUbmFsUkoybzlGLWs3UXI3ZzhrYk42a25VQk5PRmYzRlY0dm1ydGdVNUdBTk5ZY00tSGZaREs5U3RsaDlVeWdQSVdibkdxb3J3Z0F3?oc=5",
-    "tone": "neutral",
+    "tone": "positive",
     "origin": "na",
     "theme": "politics-midterms"
    },
@@ -3188,22 +3203,22 @@
     "theme": "science-research"
    },
    {
+    "title": "EPA pressured by MAHA, Democrats to rethink microplastics stance",
+    "outlet": "Plastics News",
+    "date": "2026-10-08",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNUxsSjJadXJIeFNfbVhTSnFJOHE4REtqeWE2M19HN0FWOEkwd0lXRl94elpzUmktTTFDNDB6VEZta1ZUbDhWOV9CZHBtM09yTlJTRDN0SEgwUnE2cHRYVV9mU1d2NHhNWXJOU094UzZ6aW9Wb05WcmR0LXRfZjBENlBQUWE2Umlkd1l2eUJIQmpITEZUSDNTX2JqSTJxajh4Z2pfaWpSeXV2T0VBcWF6cUJ1OA?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "food-chemicals"
+   },
+   {
     "title": "RFK Jr. Called Out by MAHA Ally After Boasting AI Will Help Americans 'Fact-Check Their Own Medical Advice'",
     "outlet": "RadarOnline",
     "date": "2026-10-08",
     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTVJaZUt3bTJjZThFMW9fR1RlMjNYcDJTalBBckJjQklxTFNVUzN3ZTVjdXkyaUVPVWJCajNQQU9jbVZPa1U0RkNrdU9EM3R0TnZNSldJb2pYTXBwa0NtclhRVXFLOVRCdHhuZGoxaW9RdjhNZ05sclR1cWRidXd3bDVyZXI4Vng1RXJjR19BVUphUQ?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "policy-delivery"
-   },
-   {
-    "title": "RFK Jr.'s AI Health Push Divides MAHA Movement",
-    "outlet": "Hoodline",
-    "date": "2026-10-08",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnY5bWtLbkhBY2k3LWFkTkhqYWNEZ0l4NzZwVWR4Y0U1enpTRUJWVzFGZk5OV0kyTUQ3ZE4ybzZhb2JtVWdhVTVMWFNMak1hbzU3bks0b0JtU3B3eEk0QWhXY3JrcjFMY3MzTWNXaGY1d2xuU1B2Y2dSSTNpUGQ1dmF3VXE0Mmp5YnNGVmw1ZDBReF9BSC1kb0c3ZkM?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "policy-delivery"
+    "theme": "science-research"
    },
    {
     "title": "RFK Jr. faces MAHA revolt after failing to meet most 'basic promises': report",
@@ -3215,13 +3230,13 @@
     "theme": "policy-delivery"
    },
    {
-    "title": "RFK Jr.'s embrace of AI confounds some MAHA allies",
-    "outlet": "timesdaily.com",
+    "title": "RFK Jr.'s AI Health Push Divides MAHA Movement",
+    "outlet": "Hoodline",
     "date": "2026-10-08",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaDZXNjI0MHRfek0zQWhXMjBVazhGUzYtOUZwRjBaY0xxblkzMERqYjRVbWJ4OXZ2YzVTLXdJWFJRMHZlb0dQOTBXNl9QbUZDWGoySngwZ1VHNmotbzBneEtsUEh6LVFoUWFJd29rTU5xSzVPc1p1SlJFc2xMR2JXYzVrMkhCWU9xVGtXZ2M4bGt4cGpLS3BYaHh1QW1mQlM0N09VZWpnaXpIcGJWX1lCM0tGWm1VOXNCbFZjemNhZzZUeW0wbm9QVFRCSEVObGxrTi1vYg?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYnY5bWtLbkhBY2k3LWFkTkhqYWNEZ0l4NzZwVWR4Y0U1enpTRUJWVzFGZk5OV0kyTUQ3ZE4ybzZhb2JtVWdhVTVMWFNMak1hbzU3bks0b0JtU3B3eEk0QWhXY3JrcjFMY3MzTWNXaGY1d2xuU1B2Y2dSSTNpUGQ1dmF3VXE0Mmp5YnNGVmw1ZDBReF9BSC1kb0c3ZkM?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "science-research"
+    "theme": "policy-delivery"
    },
    {
     "title": "MAHA Report Discusses Divisions Within Movement, Health Policy Issues",
@@ -3239,24 +3254,6 @@
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yTUFqckxQREFqSVJVNWxoOTRNaU1xTnZrQ1FaYURyaEZCT0dxdEs1MDN5dnk1eEJBR1JNQ0t2TU1xaGpZY3Q0TWc1aWluU0RidUoxX3FYbEFvWXlOX1pEWFdOOC04WGpaRzMwNC10YVFVSFV0TDc0OQ?oc=5",
     "tone": "critical",
     "origin": "outside",
-    "theme": "other"
-   },
-   {
-    "title": "First Circuit urged to unblock RFK Jr MAHA vaccine policy makeover",
-    "outlet": "Courthouse News",
-    "date": "2026-10-07",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaWtGQzdhbC1LZkwwOXVrR0xJTHlrZDBETEZialNTeGFtR3EwTFlEV3E4Z0J3alR4bjRvUXlHMDF0cnJnd05HU0twNjNOVlRBeThOdXZRUXBYeW5aMzgwNTdZWkVMRkVJRVlXbHdoaUlvcmc3QjdFWTFMVFJ6NkQ3UmlCd0JudVZSYllZV2g3aF9UanVqZzdOeU5sTnJ0SGM?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "vaccines"
-   },
-   {
-    "title": "A Progressive Democrat Tried to Woo MAHA Republicans. The Early Response Is Revealing.",
-    "outlet": "Slate",
-    "date": "2026-10-07",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVWJ1NlBiNndWWlRpUTB4MXVOeGpWajJQaE1DQndiRGh6UDVHSUEzWW5icExVUUUyRHpXMVBJd2w0ZHd4ekdOQ1RaZzJXaHhYZkhiNTdFcW9SRUFFNkJiU0tBWElzTXc3UUFENGszaEp5TEdTQjNETVVuVzVWMW82VkZmVDVIanpBWnhwdmlEOXJaaFBhYnU0US1lbWI0dFNXckFhcEpucw?oc=5",
-    "tone": "neutral",
-    "origin": "na",
     "theme": "politics-midterms"
    },
    {
@@ -3266,7 +3263,7 @@
     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNUYyc1NvdGdCcWVfeXdmaW95OExicDQ5MHVxb2IwZ0UwcGFwVG13N21ORmNTaUhsRGZzdGRCV3hkU0hTb3g4WTA4WWVqMTlSUDgzWFVySVJHNFlTYnF2bGdJVmJiQ3RJMHJuanVmcmg3NGR4VjJTZDdyRmczVnJubFpkUU04WkhaSUt0bWJxcDM1QXd4WkFRVFFYRm9qeXpaLXhHTEhZUUNxeE04QmkwZDdtTTg4YlhjQXVINzZiNzdBMW1JZGw3WVU5OENiTE9LemlxeG1pT3JvWE5iOHhwY1ZidWtxWjNJNUx6dDEzZFVLMGvSAfgBQVVfeXFMTlE3TDczMUs1V2FqenB5MVRST2l5bWZvYVNwb2otN2NnQ0NQam9fU1NFSkNEZ005SUVhcHhuZ0gxRUN4Mmo4Y1JadElaQWpnQVJpVERuSzlLSU42ZW1mcGs1YTlTOUw5RThYOUN1T2NqQ1hvRGpiNFVYQmZ0b1pXZlV2TXE4V1lrVjNNTy1FY3VSdTFTN3pCOGVxNnlMRGlCNGJrVnNEMmVoZGViS25tal9zcjJweEV0ZEpaVENzYVhmUmNFMDBkV0xCZF9JcWtFSlg4dlVubkxXdW9Fai04V3RWOXdwbXFQQzA2Y1BKZ0xDX0dZamJsTlM?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "policy-delivery"
+    "theme": "science-research"
    },
    {
     "title": "Democrats plot a midterms push for MAHA voters",
@@ -3278,6 +3275,15 @@
     "theme": "politics-midterms"
    },
    {
+    "title": "First Circuit urged to unblock RFK Jr MAHA vaccine policy makeover",
+    "outlet": "Courthouse News",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSndGaGJCMG1uX3ZIOW5IaHhNNHdxQ1JIUkc4VzQzV2dCTzA4WlJnVDBFYmRBOVVxUWM3WmM4WU9HTG9pMVhtaFZjN3E5Tm9MbE4zS1RERmpGb25jdFZHY0g0aGZVdWh1SFNGZnV5azlBTmtWNEtaMUpuVFo3ZGxYRUlSemNDbHRRbXEwT1JaRXZrdkcwc3A1eUhZR0szZw?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "vaccines"
+   },
+   {
     "title": "Food recalls, 'crunchy moms' how the MAHA movement is changing",
     "outlet": "USA Today",
     "date": "2026-10-07",
@@ -3285,6 +3291,15 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "culture-media"
+   },
+   {
+    "title": "A Progressive Democrat Tried to Woo MAHA Republicans. The Early Response Is Revealing.",
+    "outlet": "Slate",
+    "date": "2026-10-07",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVWJ1NlBiNndWWlRpUTB4MXVOeGpWajJQaE1DQndiRGh6UDVHSUEzWW5icExVUUUyRHpXMVBJd2w0ZHd4ekdOQ1RaZzJXaHhYZkhiNTdFcW9SRUFFNkJiU0tBWElzTXc3UUFENGszaEp5TEdTQjNETVVuVzVWMW82VkZmVDVIanpBWnhwdmlEOXJaaFBhYnU0US1lbWI0dFNXckFhcEpucw?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "politics-midterms"
    },
    {
     "title": "MAHA isn\u2019t about big government regulation. It\u2019s a free market movement",
@@ -3328,7 +3343,7 @@
     "date": "2026-10-06",
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSTZCVV9mSmtBdEkyeDVjOFNiRUlYU203bmZ3YWNfdDUyOW50VFNxYmxHN2xfTmlLNXBNT1czc1JfbUhZODBqVkMxUFNIVThrdzFTSDl4aHhBckUzTTZWODNyYUhQLUtWc3JXcVgzR0pXZmltb3NnSGF5a3RfNHpVYW9sRTdLOW1lY0FaT2xzM3FoU1NFeEJxS3FCMUJuYnpS0gGmAUFVX3lxTE05Z3poT3dmUGU4clhKbWxxOUJkaU1aX2hUX0tybjRiVHV5SndVY3VCNmdMOTVRZGNlai1IMnJMZGxISGZWZF9aVHc3c0JfVnJINzFwRUJhcDJ5SXF4YVQ0YzVRRHpxSzkyVmg5bFNuSVpSNEQ0ZDlFUlhJLWxsYkpnbjFCVzVfSENzTGY1TWNjR0hzZ2swZ1Bzb1J0MzNKYWFWaTBEdlE?oc=5",
     "tone": "critical",
-    "origin": "inside",
+    "origin": "outside",
     "theme": "science-research"
    },
    {
@@ -3337,8 +3352,17 @@
     "date": "2026-10-06",
     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMWdJQnhta2JEWDRQYmJtQ2RtbDM0SW9CRk5sVGZzclBqaEY3b2drMDZWN05MMGphamotODdPcWFtWk1lMmtVUEFWOXczUTF2M2hKbG13eVhfOXVBSFZsZ1pSNWMtVzF0c1RQNjFrcnVaWWs5WjdteTdCWEQzdHVxSm5GSmtneDJHeXl1WA?oc=5",
     "tone": "critical",
-    "origin": "outside",
+    "origin": "inside",
     "theme": "policy-delivery"
+   },
+   {
+    "title": "First Circuit urged to unblock RJK Jr MAHA vaccine policy makeover",
+    "outlet": "Courthouse News",
+    "date": "2026-10-06",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQckhObVRYaW9hc2VUWm0yeFI5WUtTaVNMVThqc0VqZWI4bVNEeEtvQVJyaFo4dEZGOE1vamhEb0NERE04TzBOZ01za2d2OU8wNHF2OHljTmNXa1l2TU5QaWtmMW16X3N3bjJrZVNhR1I4VGFVZTF3UzdMcmF1MzJtdjg4aXBWWVBFWHNxY0UxUVVCSnQzSVU2bm50VGJMNGs?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "vaccines"
    },
    {
     "title": "Donald Trump and RKF Jr. promised to make America healthy again. MAHA activists are no longer buying it",
@@ -3404,15 +3428,6 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "RFK Jr.\u2019s MAHA Movement Erupts Into Civil War",
-    "outlet": "The Daily Beast",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWDVTSThlamdBWmtkVUFFd1JtSnpaVFZiRk9LX1UtZ2ZIUlZSck9qWVFzRlk3U3VBTjFqS1NmaW8tN2ZqaFRhd3VTYW9BMWE0YW82c0k1VVBuVUl1SlJ6bXRjSGNtVEJvcGE3QVYzbUdFR2otUnFxSHdGSnJLbTRUblFuSjAxTjZCRjNYVXdmQQ?oc=5",
-    "tone": "critical",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
     "title": "MAHA Moms Helped Elect Trump. Now Democrats Want Them.",
     "outlet": "The Daily Signal",
     "date": "2026-10-05",
@@ -3428,7 +3443,7 @@
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNX01HVVBtdUZ0aExFYkhzMWJsN2NwNXM0RHpZNVlBd19rN1R1aXA2bThXYy13STRVU2xkMlczejltVVdiSXl4eVlVMVE2Zm5ZN3pkcTBnM0FTNm9aV0lTRlBTbnZsNjU0Qkl3U3dxdk1PYVowMHZ3TGhOTGtJb2hxbkwxV1ZoWklBNFM4R2VBdmwyclo3NzJWcTVOVXhjTjl6QzZMU253UGxYV1A5V09tRi0zME43UEhTWFlYcXlORmY4UEJhcTl6ZVA3QkVOeVdlaWFr?oc=5",
     "tone": "critical",
     "origin": "outside",
-    "theme": "other"
+    "theme": "personnel-leadership"
    },
    {
     "title": "MAHA Coup: With Activists (And Women) Pushed Aside, Corporate Shills Took Over",
@@ -3449,15 +3464,6 @@
     "theme": "policy-delivery"
    },
    {
-    "title": "At anti-vaccine MAHA conference, RFK Jr. pledges to unify federal health information and combat vaccine safety \u2018misinformation\u2019",
-    "outlet": "Genetic Literacy Project",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTTBIX1ItXzRBcHF5R09BdC1VVDE0TWVsNEJzeVBYTmY2Q0k4U2hraHNJNnVHdUQtVldFNS02OWZTZGs0d1BsRlItWXc4UFdaaE9OUWVyTEFJRlJWa3FDN0hyVlMzYnotSWdwajJ2WDZIb25zM0ZXRm92VmZMS05EcjlvYjE4QVFITmVxQU5Vdjh2aEpVN01CSjV6dEptV2sxQ0NYWS1ZdkZ2OHRxak5WTXVjZGliaEFfX0NndE5HVFEwbzU1dWx2SGhzZmtkalVSMTRLcFQ3Z1FHczdmN0xBZGt0SWFBeXdmd3RSdGRqY2R2SjJiMzFxSzRnM2pLWFk?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "vaccines"
-   },
-   {
     "title": "\u2018MAHA Betrayed\u2019: New Report On How Trump, RFK Jr Sold Out Movement to Toxic Corporate Interests",
     "outlet": "Protect Our Care",
     "date": "2026-10-05",
@@ -3465,15 +3471,6 @@
     "tone": "critical",
     "origin": "outside",
     "theme": "food-chemicals"
-   },
-   {
-    "title": "MAHA movement in revolt over Trump and RFK Jr.\u2019s broken promises",
-    "outlet": "Dagens.com",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaU1jbkIyaVBfcU9jNFBNeWRxTWJ1dFFLZUYtcnhhRGFMQWNNVmpKaWtvdFlOZTdRd0RJTDBxMWd0UXMxYUpjekZOLWpPM2VvejJnM0NMVE9HdnREczlhYmtNNkt4WlU4ZUZjeGVnMDZ4UEhfd3pqYnAwSnNGcXFsNmp3OGMyZnJBVkpJcmlTZVFkT29OaGc?oc=5",
-    "tone": "critical",
-    "origin": "inside",
-    "theme": "policy-delivery"
    },
    {
     "title": "Tony Lyons Discusses the MAHA Movement & Campaign 2026",
@@ -3501,24 +3498,6 @@
     "tone": "critical",
     "origin": "outside",
     "theme": "culture-media"
-   },
-   {
-    "title": "Ted Lasso Kills Off Beloved Character In Devastating Season 4 Episode | E! News Make America Healthy Again (wPUYo4v1R3)",
-    "outlet": "Unisba Media",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYZWtFdzI5QkZ0QmdOYU85dGduZTBpaVlueXhrUzBSYi1ldUJhMDFMRzJTYTZXNWtyc3RqVTZnbjY5Q1o5WTVXZTNzQlgwYTV0SGxqdG9yXzF2SVZfOTN4UGowcUI0dw?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "culture-media"
-   },
-   {
-    "title": "JD Vance flexing Maha connections as he eyes 2028 election",
-    "outlet": "The Guardian",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVJaR1F1eGpRTkt0M1JkMXQ3ZHR3R1JQbFpxdk9IVDVrUGRCem5lZDNieF9adXBfQS1tdmsxejcxOEtKMlZoOG0xTThGc2xKYUNYUkZSRmozVjlvWTFJZTFEN1JfcTRnSWxCdEo5U1ZZQjNiZThpNmNDN2VaaDdOdA?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
    }
   ]
  },
@@ -3526,7 +3505,7 @@
   "source": "Google Political Advertising transparency bundle (advertiser weekly spend, advertiser stats)",
   "url": "https://adstransparency.google.com/political?topic=political&region=US",
   "bundle": "https://storage.googleapis.com/political-csv/google-political-ads-transparency-bundle.zip",
-  "report_updated_pt": "2026-10-10 20:05:35",
+  "report_updated_pt": "2026-10-12 00:03:47",
   "note": "Spend on Google Ads and YouTube for ads Google classifies as election ads, reported in $100 increments per advertiser per week. Cycle = weeks from Jan 5, 2025. Campaign committees are matched by Google's verified advertiser name; some campaigns run under several advertiser accounts, all of which are summed. Google only; it says nothing about TV, Meta or mail.",
   "cycle_start": "2025-01-05",
   "watchlist": [
@@ -3592,10 +3571,10 @@
     "name": "314 Action Fund",
     "race": "Opposition groups",
     "side": "anti",
-    "cycle_spend": 870100.0,
-    "last4w": 237800.0,
-    "prev4w": 107900.0,
-    "all_time": 1135800.0,
+    "cycle_spend": 877000.0,
+    "last4w": 110000.0,
+    "prev4w": 179000.0,
+    "all_time": 1142700.0,
     "creatives": 127,
     "weekly": [
      [
@@ -3780,7 +3759,7 @@
      ],
      [
       "2026-10-04",
-      17300.0
+      24200.0
      ]
     ]
    },
@@ -3789,10 +3768,10 @@
     "name": "314 Action Fund (2)",
     "race": "Opposition groups",
     "side": "anti",
-    "cycle_spend": 151300.0,
-    "last4w": 61100.0,
+    "cycle_spend": 156300.0,
+    "last4w": 66100.0,
     "prev4w": 0,
-    "all_time": 176300.0,
+    "all_time": 181400.0,
     "creatives": 49,
     "weekly": [
      [
@@ -3825,7 +3804,7 @@
      ],
      [
       "2026-10-04",
-      17100.0
+      22100.0
      ]
     ]
    },
@@ -3863,11 +3842,11 @@
     "name": "Lahn for Governor",
     "race": "US-IA Governor",
     "side": "R",
-    "cycle_spend": 1478800.0,
-    "last4w": 501200.0,
-    "prev4w": 280600.0,
-    "all_time": 1479100.0,
-    "creatives": 93,
+    "cycle_spend": 1560100.0,
+    "last4w": 481600.0,
+    "prev4w": 319800.0,
+    "all_time": 1560500.0,
+    "creatives": 130,
     "weekly": [
      [
       "2026-03-15",
@@ -3983,7 +3962,7 @@
      ],
      [
       "2026-10-04",
-      187300.0
+      268600.0
      ]
     ]
    },
@@ -3992,11 +3971,11 @@
     "name": "Rob Sand for Iowa",
     "race": "US-IA Governor",
     "side": "D",
-    "cycle_spend": 4715400.0,
-    "last4w": 1270000.0,
-    "prev4w": 1083000.0,
-    "all_time": 4748800.0,
-    "creatives": 455,
+    "cycle_spend": 4809800.0,
+    "last4w": 1107300.0,
+    "prev4w": 1074200.0,
+    "all_time": 4843200.0,
+    "creatives": 459,
     "weekly": [
      [
       "2025-03-23",
@@ -4308,7 +4287,7 @@
      ],
      [
       "2026-10-04",
-      272600.0
+      367000.0
      ]
     ]
    },
@@ -4354,11 +4333,11 @@
     "name": "Josh Turek for Iowa",
     "race": "US-IA Senate",
     "side": "D",
-    "cycle_spend": 2739900.0,
-    "last4w": 1345800.0,
-    "prev4w": 869400.0,
-    "all_time": 2740000.0,
-    "creatives": 175,
+    "cycle_spend": 2907100.0,
+    "last4w": 1273500.0,
+    "prev4w": 963100.0,
+    "all_time": 2907200.0,
+    "creatives": 190,
     "weekly": [
      [
       "2025-08-10",
@@ -4586,7 +4565,7 @@
      ],
      [
       "2026-10-04",
-      339100.0
+      506300.0
      ]
     ]
    },
@@ -4595,10 +4574,10 @@
     "name": "Ashley Hinson Victory Committee",
     "race": "US-IA Senate",
     "side": "R",
-    "cycle_spend": 58100.0,
-    "last4w": 5700.0,
-    "prev4w": 6100.0,
-    "all_time": 58300.0,
+    "cycle_spend": 58400.0,
+    "last4w": 4200.0,
+    "prev4w": 6200.0,
+    "all_time": 58600.0,
     "creatives": 3,
     "weekly": [
      [
@@ -4827,7 +4806,7 @@
      ],
      [
       "2026-10-04",
-      900.0
+      1200.0
      ]
     ]
    },
@@ -4836,10 +4815,10 @@
     "name": "Abdul for US Senate",
     "race": "US-MI Senate",
     "side": "D",
-    "cycle_spend": 2411600.0,
-    "last4w": 1437400.0,
-    "prev4w": 768400.0,
-    "all_time": 2411600.0,
+    "cycle_spend": 2571600.0,
+    "last4w": 1210700.0,
+    "prev4w": 1022400.0,
+    "all_time": 2571700.0,
     "creatives": 157,
     "weekly": [
      [
@@ -5144,7 +5123,7 @@
      ],
      [
       "2026-10-04",
-      337700.0
+      497700.0
      ]
     ]
    },
@@ -5153,10 +5132,10 @@
     "name": "Rogers for Senate",
     "race": "US-MI Senate",
     "side": "R",
-    "cycle_spend": 626600.0,
-    "last4w": 401800.0,
-    "prev4w": 132400.0,
-    "all_time": 690900.0,
+    "cycle_spend": 682500.0,
+    "last4w": 370200.0,
+    "prev4w": 176100.0,
+    "all_time": 746800.0,
     "creatives": 448,
     "weekly": [
      [
@@ -5469,7 +5448,7 @@
      ],
      [
       "2026-10-04",
-      105900.0
+      161800.0
      ]
     ]
    },
@@ -5478,10 +5457,10 @@
     "name": "Jocelyn Benson for Governor",
     "race": "US-MI Governor",
     "side": "D",
-    "cycle_spend": 121500.0,
-    "last4w": 45600.0,
-    "prev4w": 34800.0,
-    "all_time": 121300.0,
+    "cycle_spend": 124000.0,
+    "last4w": 35300.0,
+    "prev4w": 41300.0,
+    "all_time": 123800.0,
     "creatives": 7,
     "weekly": [
      [
@@ -5650,7 +5629,7 @@
      ],
      [
       "2026-10-04",
-      3700.0
+      6200.0
      ]
     ]
    },
@@ -5700,10 +5679,10 @@
     "name": "Friends of Sherrod Brown",
     "race": "US-OH Senate",
     "side": "D",
-    "cycle_spend": 3958500.0,
-    "last4w": 1547300.0,
-    "prev4w": 981500.0,
-    "all_time": 11088300.0,
+    "cycle_spend": 4063000.0,
+    "last4w": 1355100.0,
+    "prev4w": 878600.0,
+    "all_time": 11192800.0,
     "creatives": 1681,
     "weekly": [
      [
@@ -5796,7 +5775,7 @@
      ],
      [
       "2026-10-04",
-      305100.0
+      409600.0
      ]
     ]
    },
@@ -5805,10 +5784,10 @@
     "name": "Friends of Sherrod Brown (2)",
     "race": "US-OH Senate",
     "side": "D",
-    "cycle_spend": 1457900.0,
-    "last4w": 471100.0,
-    "prev4w": 215500.0,
-    "all_time": 1457700.0,
+    "cycle_spend": 1498700.0,
+    "last4w": 425700.0,
+    "prev4w": 250300.0,
+    "all_time": 1498500.0,
     "creatives": 64,
     "weekly": [
      [
@@ -6049,7 +6028,7 @@
      ],
      [
       "2026-10-04",
-      111700.0
+      152500.0
      ]
     ]
    },
@@ -6058,10 +6037,10 @@
     "name": "Husted for Senate",
     "race": "US-OH Senate",
     "side": "R",
-    "cycle_spend": 53500.0,
-    "last4w": 8400.0,
-    "prev4w": 4100.0,
-    "all_time": 53500.0,
+    "cycle_spend": 54500.0,
+    "last4w": 7500.0,
+    "prev4w": 5200.0,
+    "all_time": 54500.0,
     "creatives": 11,
     "weekly": [
      [
@@ -6338,7 +6317,7 @@
      ],
      [
       "2026-10-04",
-      1700.0
+      2700.0
      ]
     ]
    },
@@ -6348,8 +6327,8 @@
     "race": "US-OH Governor",
     "side": "D",
     "cycle_spend": 469000.0,
-    "last4w": 146000.0,
-    "prev4w": 68400.0,
+    "last4w": 104700.0,
+    "prev4w": 95400.0,
     "all_time": 468900.0,
     "creatives": 28,
     "weekly": [
@@ -6584,11 +6563,11 @@
     "name": "Ramaswamy and McColley for Ohio",
     "race": "US-OH Governor",
     "side": "R",
-    "cycle_spend": 2552500.0,
-    "last4w": 883200.0,
-    "prev4w": 625900.0,
-    "all_time": 2552500.0,
-    "creatives": 294,
+    "cycle_spend": 2656100.0,
+    "last4w": 752200.0,
+    "prev4w": 736600.0,
+    "all_time": 2656100.0,
+    "creatives": 296,
     "weekly": [
      [
       "2026-03-08",
@@ -6712,7 +6691,7 @@
      ],
      [
       "2026-10-04",
-      245500.0
+      349100.0
      ]
     ]
    },
@@ -6721,11 +6700,11 @@
     "name": "Troy Jackson for Maine",
     "race": "US-ME Senate",
     "side": "D",
-    "cycle_spend": 3079800.0,
-    "last4w": 1623500.0,
-    "prev4w": 983500.0,
-    "all_time": 3079900.0,
-    "creatives": 161,
+    "cycle_spend": 3187700.0,
+    "last4w": 1445700.0,
+    "prev4w": 1063900.0,
+    "all_time": 3187700.0,
+    "creatives": 170,
     "weekly": [
      [
       "2026-07-19",
@@ -6773,7 +6752,7 @@
      ],
      [
       "2026-10-04",
-      398100.0
+      506000.0
      ]
     ]
    },
@@ -6819,11 +6798,11 @@
     "name": "Collins for Senator",
     "race": "US-ME Senate",
     "side": "R",
-    "cycle_spend": 1836900.0,
-    "last4w": 250200.0,
-    "prev4w": 317800.0,
-    "all_time": 2922900.0,
-    "creatives": 527,
+    "cycle_spend": 1855000.0,
+    "last4w": 198500.0,
+    "prev4w": 307000.0,
+    "all_time": 2940900.0,
+    "creatives": 533,
     "weekly": [
      [
       "2025-02-23",
@@ -7151,7 +7130,7 @@
      ],
      [
       "2026-10-04",
-      46500.0
+      64600.0
      ]
     ]
    },
@@ -7160,11 +7139,11 @@
     "name": "Chris Pappas for Senate",
     "race": "US-NH Senate",
     "side": "D",
-    "cycle_spend": 1016600.0,
-    "last4w": 566300.0,
-    "prev4w": 262200.0,
-    "all_time": 1016500.0,
-    "creatives": 100,
+    "cycle_spend": 1062800.0,
+    "last4w": 493900.0,
+    "prev4w": 344800.0,
+    "all_time": 1062700.0,
+    "creatives": 102,
     "weekly": [
      [
       "2025-03-30",
@@ -7484,7 +7463,7 @@
      ],
      [
       "2026-10-04",
-      119400.0
+      165600.0
      ]
     ]
    },
@@ -7493,10 +7472,10 @@
     "name": "Sununu Senator",
     "race": "US-NH Senate",
     "side": "R",
-    "cycle_spend": 271400.0,
-    "last4w": 137800.0,
-    "prev4w": 133000.0,
-    "all_time": 271400.0,
+    "cycle_spend": 282900.0,
+    "last4w": 117000.0,
+    "prev4w": 139100.0,
+    "all_time": 283000.0,
     "creatives": 72,
     "weekly": [
      [
@@ -7545,7 +7524,7 @@
      ],
      [
       "2026-10-04",
-      28700.0
+      40200.0
      ]
     ]
    },
@@ -7566,10 +7545,10 @@
     "name": "Alaskans for Dan Sullivan",
     "race": "US-AK Senate",
     "side": "R",
-    "cycle_spend": 640800.0,
-    "last4w": 225800.0,
-    "prev4w": 105000.0,
-    "all_time": 654000.0,
+    "cycle_spend": 657600.0,
+    "last4w": 183600.0,
+    "prev4w": 148000.0,
+    "all_time": 670800.0,
     "creatives": 230,
     "weekly": [
      [
@@ -7626,7 +7605,7 @@
      ],
      [
       "2026-10-04",
-      40300.0
+      57100.0
      ]
     ]
    },
@@ -7635,10 +7614,10 @@
     "name": "Cooper for North Carolina",
     "race": "US-NC Senate",
     "side": "D",
-    "cycle_spend": 1906100.0,
-    "last4w": 524200.0,
-    "prev4w": 572000.0,
-    "all_time": 1905700.0,
+    "cycle_spend": 1949400.0,
+    "last4w": 396700.0,
+    "prev4w": 656000.0,
+    "all_time": 1949000.0,
     "creatives": 494,
     "weekly": [
      [
@@ -7731,7 +7710,7 @@
      ],
      [
       "2026-10-04",
-      102500.0
+      145800.0
      ]
     ]
    },
@@ -7741,8 +7720,8 @@
     "race": "US-NC Senate",
     "side": "D",
     "cycle_spend": 374300.0,
-    "last4w": 11700.0,
-    "prev4w": 39700.0,
+    "last4w": 7900.0,
+    "prev4w": 13500.0,
     "all_time": 374300.0,
     "creatives": 26,
     "weekly": [
@@ -7825,10 +7804,10 @@
     "name": "Cooper Victory Fund",
     "race": "US-NC Senate",
     "side": "D",
-    "cycle_spend": 642300.0,
-    "last4w": 150000.0,
-    "prev4w": 123100.0,
-    "all_time": 642400.0,
+    "cycle_spend": 650200.0,
+    "last4w": 117100.0,
+    "prev4w": 134800.0,
+    "all_time": 650300.0,
     "creatives": 13,
     "weekly": [
      [
@@ -7957,7 +7936,7 @@
      ],
      [
       "2026-10-04",
-      17700.0
+      25600.0
      ]
     ]
    },
@@ -8262,7 +8241,7 @@
     "side": "R",
     "cycle_spend": 817700.0,
     "last4w": 0,
-    "prev4w": 550700.0,
+    "prev4w": 425400.0,
     "all_time": 817700.0,
     "creatives": 27,
     "weekly": [
@@ -8301,10 +8280,10 @@
     "name": "Talarico for Texas",
     "race": "US-TX Senate",
     "side": "D",
-    "cycle_spend": 5323100.0,
-    "last4w": 1464900.0,
-    "prev4w": 994000.0,
-    "all_time": 5323300.0,
+    "cycle_spend": 5453200.0,
+    "last4w": 1219300.0,
+    "prev4w": 1219200.0,
+    "all_time": 5453400.0,
     "creatives": 73,
     "weekly": [
      [
@@ -8533,7 +8512,7 @@
      ],
      [
       "2026-10-04",
-      323800.0
+      453900.0
      ]
     ]
    },
@@ -8542,10 +8521,10 @@
     "name": "Talarico for Texas (2)",
     "race": "US-TX Senate",
     "side": "D",
-    "cycle_spend": 4337400.0,
-    "last4w": 2538000.0,
-    "prev4w": 71900.0,
-    "all_time": 4337400.0,
+    "cycle_spend": 4557200.0,
+    "last4w": 2192800.0,
+    "prev4w": 577700.0,
+    "all_time": 4557100.0,
     "creatives": 61,
     "weekly": [
      [
@@ -8622,7 +8601,7 @@
      ],
      [
       "2026-10-04",
-      543200.0
+      763000.0
      ]
     ]
    },
@@ -8631,10 +8610,10 @@
     "name": "Ken Paxton for Senate",
     "race": "US-TX Senate",
     "side": "R",
-    "cycle_spend": 164800.0,
-    "last4w": 60200.0,
-    "prev4w": 45000.0,
-    "all_time": 164300.0,
+    "cycle_spend": 169400.0,
+    "last4w": 51100.0,
+    "prev4w": 51000.0,
+    "all_time": 168900.0,
     "creatives": 11,
     "weekly": [
      [
@@ -8819,7 +8798,7 @@
      ],
      [
       "2026-10-04",
-      12400.0
+      17000.0
      ]
     ]
    },
@@ -8828,11 +8807,11 @@
     "name": "Jackson for Governor, Inc.",
     "race": "US-GA Governor",
     "side": "R",
-    "cycle_spend": 11475500.0,
-    "last4w": 2988600.0,
-    "prev4w": 1755300.0,
-    "all_time": 11475200.0,
-    "creatives": 779,
+    "cycle_spend": 11756600.0,
+    "last4w": 2549100.0,
+    "prev4w": 2062600.0,
+    "all_time": 11756400.0,
+    "creatives": 804,
     "weekly": [
      [
       "2026-02-01",
@@ -8952,11 +8931,11 @@
      ],
      [
       "2026-09-27",
-      875300.0
+      875200.0
      ],
      [
       "2026-10-04",
-      624000.0
+      905200.0
      ]
     ]
    },
@@ -8965,10 +8944,10 @@
     "name": "Committee to Elect Aaron Ford",
     "race": "US-NV Governor",
     "side": "D",
-    "cycle_spend": 41300.0,
-    "last4w": 17700.0,
-    "prev4w": 6400.0,
-    "all_time": 290800.0,
+    "cycle_spend": 43700.0,
+    "last4w": 17200.0,
+    "prev4w": 7600.0,
+    "all_time": 293200.0,
     "creatives": 27,
     "weekly": [
      [
@@ -9193,7 +9172,7 @@
      ],
      [
       "2026-10-04",
-      5000.0
+      7400.0
      ]
     ]
    },
@@ -9202,11 +9181,11 @@
     "name": "Lombardo for Governor",
     "race": "US-NV Governor",
     "side": "R",
-    "cycle_spend": 568300.0,
-    "last4w": 116300.0,
-    "prev4w": 104500.0,
-    "all_time": 670800.0,
-    "creatives": 94,
+    "cycle_spend": 576400.0,
+    "last4w": 94300.0,
+    "prev4w": 106900.0,
+    "all_time": 678900.0,
+    "creatives": 95,
     "weekly": [
      [
       "2026-05-17",
@@ -9290,7 +9269,7 @@
      ],
      [
       "2026-10-04",
-      24900.0
+      33000.0
      ]
     ]
    },
@@ -9299,10 +9278,10 @@
     "name": "Lombardo for Governor (2)",
     "race": "US-NV Governor",
     "side": "R",
-    "cycle_spend": 490200.0,
-    "last4w": 121900.0,
-    "prev4w": 82700.0,
-    "all_time": 490400.0,
+    "cycle_spend": 498100.0,
+    "last4w": 77400.0,
+    "prev4w": 108200.0,
+    "all_time": 498300.0,
     "creatives": 32,
     "weekly": [
      [
@@ -9419,7 +9398,7 @@
      ],
      [
       "2026-10-04",
-      19600.0
+      27500.0
      ]
     ]
    },
@@ -9428,10 +9407,10 @@
     "name": "Crowley for Wisconsin",
     "race": "US-WI Governor",
     "side": "D",
-    "cycle_spend": 782800.0,
-    "last4w": 337800.0,
-    "prev4w": 294500.0,
-    "all_time": 782700.0,
+    "cycle_spend": 838700.0,
+    "last4w": 321500.0,
+    "prev4w": 341200.0,
+    "all_time": 838600.0,
     "creatives": 33,
     "weekly": [
      [
@@ -9480,7 +9459,7 @@
      ],
      [
       "2026-10-04",
-      108200.0
+      164100.0
      ]
     ]
    },
@@ -9489,10 +9468,10 @@
     "name": "Tiffany for Wisconsin",
     "race": "US-WI Governor",
     "side": "R",
-    "cycle_spend": 3911600.0,
-    "last4w": 1592900.0,
-    "prev4w": 990800.0,
-    "all_time": 3911500.0,
+    "cycle_spend": 4035600.0,
+    "last4w": 1276100.0,
+    "prev4w": 1208700.0,
+    "all_time": 4035500.0,
     "creatives": 83,
     "weekly": [
      [
@@ -9697,7 +9676,7 @@
      ],
      [
       "2026-10-04",
-      311300.0
+      435300.0
      ]
     ]
    },
@@ -9756,9 +9735,9 @@
     "race": "US-AZ Governor",
     "side": "D",
     "cycle_spend": 31300.0,
-    "last4w": 1700.0,
-    "prev4w": 4100.0,
-    "all_time": 31100.0,
+    "last4w": 1200.0,
+    "prev4w": 3500.0,
+    "all_time": 31200.0,
     "creatives": 3,
     "weekly": [
      [
@@ -9940,10 +9919,10 @@
     "name": "Biggs for Arizona",
     "race": "US-AZ Governor",
     "side": "R",
-    "cycle_spend": 103100.0,
-    "last4w": 27300.0,
-    "prev4w": 21400.0,
-    "all_time": 103500.0,
+    "cycle_spend": 106400.0,
+    "last4w": 26900.0,
+    "prev4w": 20100.0,
+    "all_time": 106700.0,
     "creatives": 12,
     "weekly": [
      [
@@ -10216,7 +10195,7 @@
      ],
      [
       "2026-10-04",
-      8300.0
+      11600.0
      ]
     ]
    },
@@ -10225,10 +10204,10 @@
     "name": "Shapiro for Pennsylvania",
     "race": "US-PA Governor",
     "side": "D",
-    "cycle_spend": 3269400.0,
-    "last4w": 1229300.0,
-    "prev4w": 612900.0,
-    "all_time": 8371400.0,
+    "cycle_spend": 3394000.0,
+    "last4w": 1027600.0,
+    "prev4w": 890500.0,
+    "all_time": 8496100.0,
     "creatives": 313,
     "weekly": [
      [
@@ -10305,7 +10284,7 @@
      ],
      [
       "2026-10-04",
-      277300.0
+      401900.0
      ]
     ]
    },
@@ -10314,10 +10293,10 @@
     "name": "Shapiro for Pennsylvania (2)",
     "race": "US-PA Governor",
     "side": "D",
-    "cycle_spend": 263300.0,
-    "last4w": 62800.0,
-    "prev4w": 32800.0,
-    "all_time": 1000200.0,
+    "cycle_spend": 268900.0,
+    "last4w": 55700.0,
+    "prev4w": 36400.0,
+    "all_time": 1005800.0,
     "creatives": 15,
     "weekly": [
      [
@@ -10682,7 +10661,7 @@
      ],
      [
       "2026-10-04",
-      14400.0
+      20000.0
      ]
     ]
    },
@@ -10691,10 +10670,10 @@
     "name": "Julia Letlow for Louisiana",
     "race": "US-LA Senate",
     "side": "R",
-    "cycle_spend": 169200.0,
-    "last4w": 5100.0,
-    "prev4w": 0,
-    "all_time": 169100.0,
+    "cycle_spend": 173900.0,
+    "last4w": 9700.0,
+    "prev4w": 100.0,
+    "all_time": 173800.0,
     "creatives": 29,
     "weekly": [
      [
@@ -10759,7 +10738,7 @@
      ],
      [
       "2026-10-04",
-      3800.0
+      8500.0
      ]
     ]
    },
@@ -10768,10 +10747,10 @@
     "name": "Moody for Florida",
     "race": "US-FL Senate",
     "side": "R",
-    "cycle_spend": 513500.0,
-    "last4w": 501600.0,
-    "prev4w": 0,
-    "all_time": 513700.0,
+    "cycle_spend": 591700.0,
+    "last4w": 560200.0,
+    "prev4w": 19600.0,
+    "all_time": 591800.0,
     "creatives": 22,
     "weekly": [
      [
@@ -10800,7 +10779,7 @@
      ],
      [
       "2026-10-04",
-      99600.0
+      177800.0
      ]
     ]
    },
@@ -10811,7 +10790,7 @@
     "side": "R",
     "cycle_spend": 3623700.0,
     "last4w": 0,
-    "prev4w": 1388500.0,
+    "prev4w": 1175800.0,
     "all_time": 3623700.0,
     "creatives": 102,
     "weekly": [
@@ -10942,11 +10921,11 @@
     "name": "Byron Donalds",
     "race": "US-FL Governor",
     "side": "R",
-    "cycle_spend": 2910500.0,
-    "last4w": 2708900.0,
-    "prev4w": 201600.0,
-    "all_time": 2910600.0,
-    "creatives": 48,
+    "cycle_spend": 3195900.0,
+    "last4w": 2620400.0,
+    "prev4w": 575500.0,
+    "all_time": 3196000.0,
+    "creatives": 61,
     "weekly": [
      [
       "2026-09-06",
@@ -10966,7 +10945,7 @@
      ],
      [
       "2026-10-04",
-      554300.0
+      839700.0
      ]
     ]
    },
@@ -10977,7 +10956,7 @@
     "side": "R",
     "cycle_spend": 38300.0,
     "last4w": 0,
-    "prev4w": 1000.0,
+    "prev4w": 0,
     "all_time": 38300.0,
     "creatives": 4,
     "weekly": [
@@ -11068,10 +11047,10 @@
     "name": "David Jolly for Governor",
     "race": "US-FL Governor",
     "side": "D",
-    "cycle_spend": 166000.0,
-    "last4w": 45100.0,
-    "prev4w": 28700.0,
-    "all_time": 166400.0,
+    "cycle_spend": 166700.0,
+    "last4w": 38700.0,
+    "prev4w": 31900.0,
+    "all_time": 167000.0,
     "creatives": 5,
     "weekly": [
      [
@@ -11356,135 +11335,135 @@
      ],
      [
       "2026-10-04",
-      5600.0
+      6300.0
      ]
     ]
    }
   ],
   "races": {
    "US-IA Governor": {
-    "D": 4756400.0,
-    "R": 1478800.0,
-    "last4_D": 1270000.0,
-    "last4_R": 501200.0
+    "D": 4850800.0,
+    "R": 1560100.0,
+    "last4_D": 1107300.0,
+    "last4_R": 481600.0
    },
    "US-IA Senate": {
-    "D": 2739900.0,
-    "R": 58100.0,
-    "last4_D": 1345800.0,
-    "last4_R": 5700.0
+    "D": 2907100.0,
+    "R": 58400.0,
+    "last4_D": 1273500.0,
+    "last4_R": 4200.0
    },
    "US-MI Senate": {
-    "D": 2411600.0,
-    "R": 626600.0,
-    "last4_D": 1437400.0,
-    "last4_R": 401800.0
+    "D": 2571600.0,
+    "R": 682500.0,
+    "last4_D": 1210700.0,
+    "last4_R": 370200.0
    },
    "US-MI Governor": {
-    "D": 121500.0,
+    "D": 124000.0,
     "R": 149900.0,
-    "last4_D": 45600.0,
+    "last4_D": 35300.0,
     "last4_R": 0.0
    },
    "US-OH Senate": {
-    "D": 5416400.0,
-    "R": 53500.0,
-    "last4_D": 2018400.0,
-    "last4_R": 8400.0
+    "D": 5561700.0,
+    "R": 54500.0,
+    "last4_D": 1780800.0,
+    "last4_R": 7500.0
    },
    "US-OH Governor": {
     "D": 469000.0,
-    "R": 2552500.0,
-    "last4_D": 146000.0,
-    "last4_R": 883200.0
+    "R": 2656100.0,
+    "last4_D": 104700.0,
+    "last4_R": 752200.0
    },
    "US-ME Senate": {
-    "D": 3105300.0,
-    "R": 1836900.0,
-    "last4_D": 1623500.0,
-    "last4_R": 250200.0
+    "D": 3213200.0,
+    "R": 1855000.0,
+    "last4_D": 1445700.0,
+    "last4_R": 198500.0
    },
    "US-NH Senate": {
-    "D": 1016600.0,
-    "R": 271400.0,
-    "last4_D": 566300.0,
-    "last4_R": 137800.0
+    "D": 1062800.0,
+    "R": 282900.0,
+    "last4_D": 493900.0,
+    "last4_R": 117000.0
    },
    "US-AK Senate": {
     "D": 0.0,
-    "R": 640800.0,
+    "R": 657600.0,
     "last4_D": 0.0,
-    "last4_R": 225800.0
+    "last4_R": 183600.0
    },
    "US-NC Senate": {
-    "D": 3383600.0,
+    "D": 3434800.0,
     "R": 1897800.0,
-    "last4_D": 685900.0,
+    "last4_D": 521700.0,
     "last4_R": 0.0
    },
    "US-TX Senate": {
-    "D": 9660500.0,
-    "R": 164800.0,
-    "last4_D": 4002900.0,
-    "last4_R": 60200.0
+    "D": 10010400.0,
+    "R": 169400.0,
+    "last4_D": 3412100.0,
+    "last4_R": 51100.0
    },
    "US-GA Governor": {
     "D": 0.0,
-    "R": 11475500.0,
+    "R": 11756600.0,
     "last4_D": 0.0,
-    "last4_R": 2988600.0
+    "last4_R": 2549100.0
    },
    "US-NV Governor": {
-    "D": 41300.0,
-    "R": 1058500.0,
-    "last4_D": 17700.0,
-    "last4_R": 238200.0
+    "D": 43700.0,
+    "R": 1074500.0,
+    "last4_D": 17200.0,
+    "last4_R": 171700.0
    },
    "US-WI Governor": {
-    "D": 782800.0,
-    "R": 3911600.0,
-    "last4_D": 337800.0,
-    "last4_R": 1592900.0
+    "D": 838700.0,
+    "R": 4035600.0,
+    "last4_D": 321500.0,
+    "last4_R": 1276100.0
    },
    "US-AZ Governor": {
     "D": 1619300.0,
-    "R": 103100.0,
-    "last4_D": 1700.0,
-    "last4_R": 27300.0
+    "R": 106400.0,
+    "last4_D": 1200.0,
+    "last4_R": 26900.0
    },
    "US-PA Governor": {
-    "D": 3532700.0,
+    "D": 3662900.0,
     "R": 0.0,
-    "last4_D": 1292100.0,
+    "last4_D": 1083300.0,
     "last4_R": 0.0
    },
    "US-LA Senate": {
     "D": 0.0,
-    "R": 169200.0,
+    "R": 173900.0,
     "last4_D": 0.0,
-    "last4_R": 5100.0
+    "last4_R": 9700.0
    },
    "US-FL Senate": {
     "D": 0.0,
-    "R": 513500.0,
+    "R": 591700.0,
     "last4_D": 0.0,
-    "last4_R": 501600.0
+    "last4_R": 560200.0
    },
    "US-FL Governor": {
-    "D": 166000.0,
-    "R": 6572500.0,
-    "last4_D": 45100.0,
-    "last4_R": 2708900.0
+    "D": 166700.0,
+    "R": 6857900.0,
+    "last4_D": 38700.0,
+    "last4_R": 2620400.0
    }
   },
   "maha_orgs_cycle_total": 500.0,
-  "opposition_groups_cycle_total": 1074500.0,
+  "opposition_groups_cycle_total": 1086400.0,
   "new_maha_named_advertisers": []
  },
  "fec": {
   "source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)",
   "url": "https://api.open.fec.gov/developers/",
-  "collected": "2026-10-11",
+  "collected": "2026-10-12",
   "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025\u201326 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24\u201348 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
   "committees": {
    "C00821439": {
