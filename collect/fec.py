@@ -19,7 +19,17 @@ COMMITTEES = {
  "C00960799": {"name": "MAHA Action PAC", "type": "Super PAC", "note": "Registered Sep 3, 2026; treasurer Anthony Lyons; quarterly filer. First financial report due Oct 15", "since": "2026-09-03"},
  "C00888172": {"name": "MAHA Alliance", "type": "Super PAC", "note": "Treasurer Del Bigtree; registered Sep 2024, last filing Nov 2025", "since": "2024-09-05"},
  "C00896936": {"name": "MAHA Moms PAC", "type": "Super PAC", "note": "Registered Jan 30, 2025", "since": "2025-01-30"},
+ "C00887901": {"name": "The Unbound Majority (formerly Make America Healthy Again (MAHA) PAC)", "type": "Super PAC", "note": "Registered Aug 2024 as Make America Healthy Again (MAHA) PAC, treasurer Thomas Datwyler (Michigan); 2024: $326K raised, $32.8K independent expenditures supporting Trump. Renamed The Unbound Majority by amended Form 1, Jun 4, 2025: a MAHA-branded committee that dropped the name.", "since": "2024-08-31", "renamed": "2025-06-04"},
 }
+
+
+DEADLINES = [("2026-10-15", "quarterly reports due (MAHA Action PAC's first)"), ("2026-10-20", "monthly reports due (MAHA PAC, through Sep 30)"), ("2026-10-22", "pre-general reports due (Oct 1–14)"), ("2026-12-03", "post-general reports due")]
+
+
+def next_deadline():
+    t = _today().isoformat()
+    d = next((x for x in DEADLINES if x[0] >= t), DEADLINES[-1])
+    return {"date": d[0], "label": d[1]}
 
 
 def _today(): return dt.datetime.now(ZoneInfo("America/New_York")).date()
@@ -94,7 +104,7 @@ def main():
     existing["updated"] = _today().isoformat()
     existing["fec"] = {"source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)", "url": "https://api.open.fec.gov/developers/", "collected": _today().isoformat(),
                        "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025–26 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24–48 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
-                       "committees": out, "recent_ie": [r for r in all_ie if r["date"] >= "2025-01-01"][:40], "next_deadline": {"date": "2026-10-15", "label": "Q3 (Jul 1 – Sep 30) reports due"}}
+                       "committees": out, "recent_ie": [r for r in all_ie if r["date"] >= "2025-01-01"][:40], "next_deadline": next_deadline()}
     OUT.write_text(json.dumps(existing, indent=1))
     print("wrote fec")
 

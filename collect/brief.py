@@ -38,6 +38,15 @@ def main():
     if b:
         s = b["summary"]
         items.append({"k": "Bluesky", "v": f"{s['last4w_avg_posts']:.0f}", "u": "posts / week", "d": pct(s["change_pct"]), "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.", "href": "#social"})
+    # search attention (Google Trends, refreshed by hand)
+    try:
+        tr = load("trends.json"); wk = tr["weekly_2024"]; ci = wk["columns"].index("topic")
+        rows = [r for r in wk["rows"] if r[0] >= "2025-05-01"]; last = rows[-1]; pk = max(rows[-8:], key=lambda r: r[ci])
+        tm = tr["maha_vs_maga_terms"][-1]
+        items.append({"k": "Search interest", "v": f"{last[ci]}", "u": "MAHA topic, US (0-100)", "d": f"vs {pk[ci]} in wk of {pk[0][5:]}",
+                      "read": f"Google Trends, refreshed {tr['retrieved']}; the latest week may be partial. Searches for 'MAHA' ran at {tm[1] / max(tm[2], 1) * 100:.0f}% of 'MAGA' the same week.", "href": "#attention"})
+    except Exception as e:
+        print("trends item skipped:", e)
     # newest poll
     polls = sorted(P["identification"], key=lambda p: p["field"].split("/")[1], reverse=True)
     if polls:
@@ -47,9 +56,9 @@ def main():
     fec = L.get("fec", {}).get("committees", {}).get("C00821439")
     if fec and fec.get("totals_2026", {}).get("receipts") is not None:
         t = fec["totals_2026"]
-        items.append({"k": "MAHA PAC (FEC)", "v": f"${t['receipts'] / 1e6:.2f}M", "u": "raised vs $100M pledge", "d": "Q3 due Oct 15", "read": f"Through {t['coverage_end'][:10]}: ${t['independent_expenditures'] / 1e3:.0f}K in independent expenditures, ${t['cash_on_hand'] / 1e6:.2f}M cash. MAHA Action PAC (registered Sep 3) files its first report Oct 15.", "href": "#fec-card"})
+        items.append({"k": "MAHA PAC (FEC)", "v": f"${t['receipts'] / 1e6:.2f}M", "u": "raised vs $100M pledge", "d": "Sep report due Oct 20", "read": f"Through {t['coverage_end'][:10]}: ${t['independent_expenditures'] / 1e3:.0f}K in independent expenditures, ${t['cash_on_hand'] / 1e6:.2f}M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.", "href": "#fec-card"})
     else:
-        items.append({"k": "MAHA PAC", "v": "$3.18M", "u": "raised vs $100M pledge", "d": "Q3 due Oct 15", "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 15 quarterly is the next test.", "href": "#midterms"})
+        items.append({"k": "MAHA PAC", "v": "$3.18M", "u": "raised vs $100M pledge", "d": "Sep report due Oct 20", "read": "Aug 31 FEC filing; $1.03M cash on hand. The Oct 20 monthly is the next test.", "href": "#midterms"})
     ga = L.get("googleads")
     if ga:
         tot = sum(v["D"] + v["R"] for v in ga["races"].values()); l4 = sum(v["last4_D"] + v["last4_R"] for v in ga["races"].values())

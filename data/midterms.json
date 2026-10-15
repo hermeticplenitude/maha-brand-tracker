@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-15",
  "election_day": "2026-11-03",
  "ratings_source": {
   "label": "Political.org race ratings, Oct 2, 2026",
@@ -17,7 +17,7 @@
    "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"
   },
   {
-   "value": "\u224819%",
+   "value": "≈19%",
    "label": "of registered voters support MAHA but are not MAGA (derived)",
    "source": "Derived from KFF",
    "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-maha-and-the-midterms/"
@@ -681,7 +681,7 @@
    "rating": "Not competitive (Shapiro)",
    "incumbent": "Josh Shapiro (D)",
    "dem": "Josh Shapiro",
-   "rep": "\u2014",
+   "rep": "—",
    "maha": "Kennedy launched his 'Take Back Your Health' tour in Pennsylvania (Jan 2026) and in late August publicly questioned the state's reporting of two measles deaths, triggering a feud with Shapiro. MAHA-endorsed Rep. Scott Perry (PA-10) is a battleground House incumbent.",
    "maha_level": "medium",
    "sources": [
@@ -712,7 +712,7 @@
     },
     "kennedy": {
      "status": "none",
-     "label": "None; Kennedy\u2013Shapiro measles feud, Aug 2026",
+     "label": "None; Kennedy–Shapiro measles feud, Aug 2026",
      "url": "https://www.politico.com/news/2026/08/21/rfk-midterms-maha-vaccines-food-pesticides-01046544"
     }
    }
@@ -723,9 +723,9 @@
    "office": "U.S. Senate (GOP primary)",
    "rating": "Safe R general",
    "incumbent": "Bill Cassidy (R), defeated",
-   "dem": "\u2014",
+   "dem": "—",
    "rep": "Julia Letlow",
-   "maha": "MAHA's signature intervention of the cycle: MAHA PAC pledged $1M and spent about $700\u2013740K to help Trump-endorsed Letlow unseat Cassidy, who had criticised Kennedy's vaccine-schedule changes. Nearly all of MAHA PAC's reported candidate spending went here.",
+   "maha": "MAHA's signature intervention of the cycle: MAHA PAC pledged $1M and spent about $700–740K to help Trump-endorsed Letlow unseat Cassidy, who had criticised Kennedy's vaccine-schedule changes. Nearly all of MAHA PAC's reported candidate spending went here.",
    "maha_level": "high",
    "sources": [
     [
@@ -740,7 +740,7 @@
    "backing": {
     "maha_pac": {
      "status": "yes",
-     "label": "Letlow: $1M pledged, \u2248$700\u2013740K spent against Cassidy",
+     "label": "Letlow: $1M pledged, ≈$700–740K spent against Cassidy",
      "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
     },
     "maha_action": {
@@ -805,7 +805,7 @@
    "office": "U.S. House (CO-8)",
    "rating": "Battleground",
    "incumbent": "Gabe Evans (R)",
-   "dem": "\u2014",
+   "dem": "—",
    "rep": "Gabe Evans",
    "maha": "One of three endangered House Republicans Kennedy campaigned with in person (with Barrett MI-7 and Van Orden WI-3).",
    "maha_level": "medium",
@@ -853,19 +853,43 @@
    "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
   },
   {
-   "label": "Spent on Julia Letlow's Louisiana primary vs Sen. Cassidy \u2014 nearly all reported candidate spending",
+   "label": "Contributed to MAHA PAC in 2026, from fewer than 20 donors, many with business before HHS",
+   "value": "$1M",
+   "source": "Politico, Oct 4, 2026",
+   "url": "https://www.politico.com/news/2026/10/04/rfk-kennedy-maha-tony-lyons-healthy-01105844"
+  },
+  {
+   "label": "Transferred by MAHA PAC to MAHA Action (the Lyons-run 501(c)(4)) since January 2025, more than its total candidate spending",
+   "value": "$4M",
+   "source": "Politico, Oct 4, 2026",
+   "url": "https://www.politico.com/news/2026/10/04/rfk-kennedy-maha-tony-lyons-healthy-01105844"
+  },
+  {
+   "label": "Of 85 candidates endorsed by Lyons' MAHA groups, six are in races that decide control of Congress (Luna, Barrett, Perry, Morrin, Mitchell, Sununu); none has received MAHA PAC money",
+   "value": "0 of 6",
+   "source": "Politico, Oct 4, 2026",
+   "url": "https://www.politico.com/news/2026/10/04/rfk-kennedy-maha-tony-lyons-healthy-01105844"
+  },
+  {
+   "label": "Paid by MAHA PAC to X this cycle; also >$500K to Merit Street Media (Dr. Phil) and >$155K to Ned's Club, Washington",
+   "value": "$810K",
+   "source": "Politico, Oct 4, 2026",
+   "url": "https://www.politico.com/news/2026/10/04/rfk-kennedy-maha-tony-lyons-healthy-01105844"
+  },
+  {
+   "label": "Spent supporting Julia Letlow against Sen. Cassidy: 90% of MAHA PAC's $790K in 2026 federal candidate spending (Politico, Oct 4)",
    "value": "$700K",
-   "source": "The Hill, Aug 30, 2026",
+   "source": "The Hill, Aug 30; Politico, Oct 4, 2026",
    "url": "https://thehill.com/policy/healthcare/6058532-trump-maha-midterm-impact/"
   },
   {
-   "label": "Candidates endorsed by MAHA Action / MAHA Institute; 4 for Congress; 1 in a competitive congressional race (Barrett, MI-7)",
-   "value": "40",
-   "source": "Politico, Jun 6, 2026",
-   "url": "https://www.politico.com/news/2026/06/06/rfk-maha-midterms-lyons-congress-00952583"
+   "label": "Candidates endorsed by Lyons' MAHA groups (40 in June, per Politico Jun 6); only six are in races that decide control of Congress",
+   "value": "85",
+   "source": "Politico, Oct 4, 2026",
+   "url": "https://www.politico.com/news/2026/10/04/rfk-kennedy-maha-tony-lyons-healthy-01105844"
   },
   {
-   "label": "From a single kratom/kava beverage company (Botanic Tonics) \u2014 about 31% of all reported receipts; next largest donors $100K each (Jack Green Group, OPS International, Venni Capital)",
+   "label": "From a single kratom/kava beverage company (Botanic Tonics) — about 31% of all reported receipts; next largest donors $100K each (Jack Green Group, OPS International, Venni Capital)",
    "value": "$1M",
    "source": "FEC via Legis1, Sep 25, 2026",
    "url": "https://legis1.com/news/maha-pac-cassidy-louisiana-spent-109-million"
@@ -902,7 +926,7 @@
    ],
    [
     "Pesticides / glyphosate",
-    "8% top priority \u2014 but the Feb 2026 glyphosate liability EO and Trump siding with Bayer at SCOTUS triggered the sharpest intra-movement backlash",
+    "8% top priority — but the Feb 2026 glyphosate liability EO and Trump siding with Bayer at SCOTUS triggered the sharpest intra-movement backlash",
     "KFF; Hankyoreh; Washington Examiner"
    ],
    [
@@ -934,7 +958,7 @@
    ],
    [
     "Friction",
-    "Glyphosate liability EO, Schwartz CDC nomination, mRNA inaction \u2014 168-signatory letter (Sep 21) warns of a 'political price'",
+    "Glyphosate liability EO, Schwartz CDC nomination, mRNA inaction — 168-signatory letter (Sep 21) warns of a 'political price'",
     "Bowden letter; Yournews"
    ],
    [
@@ -1009,16 +1033,44 @@
    "Kennedy's August blitz: Iowa, Nebraska, Minnesota; FEC filings through Aug 31 show $3.18M raised vs $100M pledge"
   ],
   [
-   "2026-09-21",
-   "168-signatory mRNA letter: 'you will pay a political price'"
-  ],
-  [
    "2026-09-17",
    "House Democrats' working-group memo to Jeffries includes a 'Reclaiming MAHA' section and bill list (Politico publishes Sep 25)"
   ],
   [
+   "2026-09-21",
+   "168-signatory mRNA letter: 'you will pay a political price'"
+  ],
+  [
    "2026-09-29",
    "MAHA Summit (Vance, Kennedy); El-Sayed releases MAHA-targeted agenda"
+  ],
+  [
+   "2026-10-04",
+   "Politico: MAHA PAC has fewer than 20 donors in 2026 ($1M); $4M moved to MAHA Action; nothing spent in races that decide Congress. Supporters turn on Tony Lyons ('It's a civil war')"
+  ],
+  [
+   "2026-10-07",
+   "Lyons calls for unity on weekly call; announces MAHA PAC rallies in Fort Worth, Lansing and Des Moines later in October (Politico Pulse)"
+  ],
+  [
+   "2026-10-07",
+   "STAT: Democratic leaders meet MAHA activists and roll out food and environmental agendas, setting aside vaccine injury"
+  ],
+  [
+   "2026-10-08",
+   "Activist scorecard by former Kennedy campaign staff (author Tiffany Cianci): of 42 MAHA promises, 37 broken, 5 partially kept, none kept (NBC News first)"
+  ],
+  [
+   "2026-10-08",
+   "MAHA allies criticize Kennedy's Summit embrace of AI and corporate sponsors (AP)"
+  ],
+  [
+   "2026-10-13",
+   "Axios-Ipsos: trust in Kennedy's health information at a survey low of 25%; trust in childhood vaccine schedule 62%, down from 71% in Jun 2025"
+  ],
+  [
+   "2026-10-15",
+   "MAHA Action PAC's first quarterly report due; MAHA PAC's September monthly due Oct 20"
   ],
   [
    "2026-11-03",
@@ -1535,16 +1587,20 @@
   "url": "https://www.politico.com/f/?id=000001a0-da3a-d276-aff6-fb7f2c380000",
   "coverage": [
    [
-    "Politico \u2014 House Dems to Jeffries: Woo RFK Jr.'s followers (Sep 25, 2026)",
+    "Politico — House Dems to Jeffries: Woo RFK Jr.'s followers (Sep 25, 2026)",
     "https://www.politico.com/news/2026/09/25/house-dems-to-jeffries-woo-rfk-jr-s-followers-00584230"
    ],
    [
-    "Alston & Bird \u2014 release noted Sep 17, 2026",
+    "Alston & Bird — release noted Sep 17, 2026",
     "https://www.alston.com/en/insights/publications/2026/09/health-care-week-in-review-september-18-2026"
    ],
    [
-    "Holland & Knight \u2014 co-leads, status as recommendations",
+    "Holland & Knight — co-leads, status as recommendations",
     "https://www.hklaw.com/en/insights/publications/2026/09/holland-knight-health-dose-september-22-2026"
+   ],
+   [
+    "STAT — Democrats plot a midterms push for MAHA voters (Oct 7, 2026)",
+    "https://www.statnews.com/2026/10/07/democrats-focus-on-food-toxins-win-maha-voters-midterm-elections/"
    ]
   ],
   "facts": [
@@ -1646,7 +1702,7 @@
    [
     "First year",
     "Policy idea: ban harmful additives in school meals; front-of-package warnings",
-    "\u2014",
+    "—",
     "National dye-free school-meal standard"
    ]
   ],

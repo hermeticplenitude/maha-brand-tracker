@@ -15,3 +15,7 @@
 ## Election night (Nov 3–4)
 
 Results live in `data/results.json`, one object per race under `races[]`. For each called race set `result.status` ("called" / "too close" / "runoff"), `reporting_pct`, `dem_pct`, `rep_pct`, `margin` (R minus D, points), `winner`, `source` (AP or state canvass URL) and `as_of`. Set top-level `results_as_of` and, once known, `national_env.house_popular_vote_margin`. The War Room page (`/war-room/`) computes the swing, the backed-vs-non-backed means and the chart from these fields; nothing else needs editing. Baselines (2024 presidential margin; last comparable race) are locked and must not change.
+
+## Google Trends refresh (manual, weekly)
+
+Google returns HTTP 429 to the sandbox. Open a cloud browser on trends.google.com, then call `/trends/api/explore` and `/trends/api/widgetdata/multiline` from inside the page (same origin), one request every few seconds. Keep the term sets fixed: weekly US 2024→today [`Make America Healthy Again`, `/g/11x8sdrsf0`, `maha movement`, `what is maha`, `maha moms`]; `MAHA` vs `MAGA` terms from 2024-07-28; MAHA vs MAGA topics [`/g/11x8sdrsf0`, `/g/11bw1_6lwn`] from 2024-07-28; phrase monthly from 2016-01-01; 12-month [`/g/11x8sdrsf0`, `/m/02l5km`, `/g/11bw1_6lwn`, phrase]. Write into data/trends.json and set `retrieved` plus `retrieved_note` naming any series left on an older pull. Last full refresh: Oct 15, 2026 (12-month topic comparison, geography and related queries still Oct 2).

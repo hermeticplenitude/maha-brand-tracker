@@ -92,7 +92,7 @@ function resultsOverlay(R) {
   const swing = r => (r.result.margin === null || r.baseline_pres_2024 === null) ? null : r.result.margin - r.baseline_pres_2024;
   const mean = xs => xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null;
   const sb = mean(backed.map(swing).filter(x => x !== null)), su = mean(unbacked.map(swing).filter(x => x !== null));
-  const days = Math.max(0, Math.round((new Date(R.election_day + 'T00:00:00') - new Date()) / 86400000));
+  const days = Math.max(0, Math.round((new Date(R.election_day + 'T00:00:00') - new Date(new Date().setHours(0, 0, 0, 0))) / 86400000));
   const tiles = [
     { label: 'Races in the overlay', value: races.length, small: `${backed.length} MAHA-backed`, desc: `${races.filter(r => /Senate/.test(r.office)).length} Senate, ${races.filter(r => /Governor/.test(r.office)).length} governor, ${races.filter(r => /House/.test(r.office)).length} House. Baselines locked ${fmtDate(R.updated)}.`, accent: C.ink },
     { label: 'Results in', value: done.length, small: `of ${races.length}`, desc: done.length ? `As of ${R.results_as_of || '—'}.` : `Election Day is ${fmtDate(R.election_day)}, ${days} days away. Results populate here as races are called.`, accent: C.grey },
@@ -260,7 +260,7 @@ function backingCell(b) {
 }
 
 function midterms(m) {
-  const days = Math.round((new Date(m.election_day + 'T00:00:00') - new Date()) / 86400000);
+  const days = Math.round((new Date(m.election_day + 'T00:00:00') - new Date(new Date().setHours(0, 0, 0, 0))) / 86400000);
   document.getElementById('days-out').textContent = days;
   const rl = document.getElementById('ratings-link'); rl.textContent = m.ratings_source.label; rl.href = m.ratings_source.url;
   const bloc = document.getElementById('bloc');

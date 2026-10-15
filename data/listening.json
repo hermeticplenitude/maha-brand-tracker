@@ -12399,6 +12399,41 @@
     "ie_rows_fetched": 0,
     "ie_by_candidate": [],
     "ie_by_candidate_2024": []
+   },
+   "C00887901": {
+    "name": "The Unbound Majority (formerly Make America Healthy Again (MAHA) PAC)",
+    "type": "Super PAC",
+    "note": "Registered Aug 2024 as Make America Healthy Again (MAHA) PAC, treasurer Thomas Datwyler (Michigan); 2024: $326K raised, $32.8K independent expenditures supporting Trump. Renamed The Unbound Majority by amended Form 1, Jun 4, 2025: a MAHA-branded committee that dropped the name.",
+    "since": "2024-08-31",
+    "renamed": "2025-06-04",
+    "unavailable": false,
+    "treasurer": "DATWYLER, THOMAS",
+    "city": "KALAMAZOO",
+    "state": "MI",
+    "filing_frequency": "Q",
+    "first_file_date": "2024-08-31",
+    "last_file_date": "2026-07-23",
+    "totals_2026": {
+     "receipts": 80196.34,
+     "disbursements": 135028.85,
+     "independent_expenditures": 0.0,
+     "cash_on_hand": 196.08,
+     "coverage_end": "2026-06-30T00:00:00",
+     "individual_contributions": 78853.34,
+     "contributions": 78853.34
+    },
+    "ie_count": 2,
+    "ie_total": 0,
+    "ie_total_2024_reported_late": 32847.6,
+    "ie_rows_fetched": 2,
+    "ie_by_candidate": [],
+    "ie_by_candidate_2024": [
+     {
+      "candidate": "TRUMP, DONALD J.",
+      "support_oppose": "S",
+      "amount": 32847.6
+     }
+    ]
    }
   },
   "recent_ie": [
@@ -13045,7 +13080,7 @@
   ],
   "next_deadline": {
    "date": "2026-10-15",
-   "label": "Q3 (Jul 1 \u2013 Sep 30) reports due"
+   "label": "quarterly reports due (MAHA Action PAC's first)"
   }
  }
 }

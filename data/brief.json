@@ -35,6 +35,14 @@
    "href": "#social"
   },
   {
+   "k": "Search interest",
+   "v": "15",
+   "u": "MAHA topic, US (0-100)",
+   "d": "vs 51 in wk of 09-27",
+   "read": "Google Trends, refreshed 2026-10-15; the latest week may be partial. Searches for 'MAHA' ran at 14% of 'MAGA' the same week.",
+   "href": "#attention"
+  },
+  {
    "k": "Newest poll",
    "v": "35%",
    "u": "identify with MAHA (U.S. adults)",
@@ -46,8 +54,8 @@
    "k": "MAHA PAC (FEC)",
    "v": "$3.18M",
    "u": "raised vs $100M pledge",
-   "d": "Q3 due Oct 15",
-   "read": "Through 2026-08-31: $712K in independent expenditures, $1.03M cash. MAHA Action PAC (registered Sep 3) files its first report Oct 15.",
+   "d": "Sep report due Oct 20",
+   "read": "Through 2026-08-31: $712K in independent expenditures, $1.03M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.",
    "href": "#fec-card"
   },
   {
