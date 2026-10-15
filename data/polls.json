@@ -348,5 +348,49 @@
    "maga_share": 56,
    "derived": 18.9
   }
- ]
+ ],
+ "context": {
+  "title": "Electorate context: the issue terrain",
+  "note": "This poll asks no MAHA or Kennedy question. It is not used in any MAHA attention, identification or non-MAGA estimate; it shows the electorate MAHA messaging is competing for.",
+  "poll": {
+   "pollster": "Fox News Poll (Beacon Research D / Shaw & Company R)",
+   "field": "2026-10-09/2026-10-12",
+   "population": "Registered voters, national voter file; live phone + text-to-web",
+   "n": 1202,
+   "moe": 2.5,
+   "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_october-9-12-2026_complete_national_topline_october-14-release.pdf",
+   "article": "https://www.foxnews.com/politics/fox-news-poll-cost-living-concerns-weigh-gop-midterms"
+  },
+  "items": [
+   {
+    "label": "Concerned about health care (extremely/very)",
+    "value": "80%",
+    "detail": "48% extremely. Fourth of 13 issues; essentially flat vs 81% in Mar 2026. Asked of half the sample (±4).",
+    "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_october-9-12-2026_complete_national_topline_october-14-release.pdf"
+   },
+   {
+    "label": "Party better on health care",
+    "value": "D+22",
+    "detail": "Democrats 60%, Republicans 38%. Was D+19 in Jul 2025 and D+21 through 2026. Democrats' largest lead on the 14 issues tested. Half sample (±4).",
+    "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_october-9-12-2026_complete_national_topline_october-14-release.pdf"
+   },
+   {
+    "label": "Concerned about corruption in government",
+    "value": "88%",
+    "detail": "60% extremely, the top concern of 13 issues. Democrats seen as better on corruption by 10 points.",
+    "url": "https://www.foxnews.com/politics/fox-news-poll-cost-living-concerns-weigh-gop-midterms"
+   },
+   {
+    "label": "Generic House ballot",
+    "value": "D 54–45",
+    "detail": "Among voters certain to vote, 52–46. Trump job approval 36%, a record low in Fox polling.",
+    "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/fox_october-9-12-2026_complete_national_topline_october-14-release.pdf"
+   }
+  ],
+  "implications": [
+   "Health care is the Republicans' weakest issue (D+22), and health is MAHA's home turf. MAHA's cost-of-care wins (TrumpRx, Medicaid MFN pricing, $50B rural health) speak directly to that concern; food-additive and vaccine messages don't.",
+   "Corruption is voters' top concern (88%). Reporting that MAHA money comes from fewer than 20 donors, and that none of six competitive candidates were funded, is the movement's sharpest integrity risk in this climate; the Oct 20 filing is the moment to address it.",
+   "This is concern and party trust, not vote intent among MAHA identifiers. It doesn't change the tracker's non-MAGA MAHA estimate."
+  ]
+ }
 }

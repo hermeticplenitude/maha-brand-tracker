@@ -39,6 +39,7 @@ async function load() {
   if (listen.googlenews && has('gn-tiles')) run(googleNewsPanel, listen.googlenews);
   if (has('results')) run(resultsOverlay, results);
   if (has('wins')) run(winsSection, wins);
+  if (has('context')) run(contextCard, polls);
   if (has('studies')) run(socialSection, social);
   if (has('listen-tiles')) run(listeningSection, listen);
   if (has('sources')) run(sources, polls, news, social);
@@ -82,6 +83,15 @@ function googleAdsChart(G, m) {
     options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${money(c.parsed.x)}` } } }, scales: { x: { grid: { color: '#ece7de' }, ticks: { font: { size: 10 }, callback: v => '$' + (v / 1e6).toFixed(v >= 1e6 ? 0 : 1) + 'M' } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
   const top4 = [...G.watchlist].sort((a, b) => b.last4w - a.last4w).slice(0, 6);
   document.getElementById('gads-foot').innerHTML = `<p style="font-size:.82rem;margin:10px 0 4px"><b>Last four weeks, biggest Google buyers:</b> ${top4.map(w => `${w.name} ${money(w.last4w)}`).join(' · ')}.</p><p class="muted" style="font-size:.76rem;margin:0">MAHA Action Inc has spent ${money(G.maha_orgs_cycle_total)} on Google this cycle (one ad); MAHA PAC, MAHA Alliance and MAHA Moms PAC do not appear as verified Google advertisers. ${G.new_maha_named_advertisers.length ? 'New MAHA-named advertisers: ' + G.new_maha_named_advertisers.map(n => n.name).join(', ') + '.' : ''} ${G.note}</p>`;
+}
+
+function contextCard(P) {
+  const C = P.context; if (!C) return;
+  const p = C.poll;
+  document.getElementById('context').innerHTML = `<h3 style="margin:0 0 4px">${C.title}</h3>
+    <p class="muted" style="margin:0 0 12px;font-size:.84rem"><a href="${p.url}" target="_blank" rel="noopener">${p.pollster}</a>, ${fmtRange(p.field)} · ${p.population} · n=${p.n.toLocaleString()} · ±${p.moe}. ${C.note}</p>
+    <div class="ctx-grid">${C.items.map(x => `<div class="ctx-i"><div class="v">${x.value}</div><b>${x.label}</b><p>${x.detail}</p><a href="${x.url}" target="_blank" rel="noopener">Fox News Poll</a></div>`).join('')}</div>
+    <h4 class="ctx-h">What it means for MAHA</h4><ul class="ctx-l">${C.implications.map(t => `<li>${t}</li>`).join('')}</ul>`;
 }
 
 function winsSection(W) {
@@ -451,6 +461,7 @@ function sources(p, n, s) {
   const add = (label, url) => { if (seen.has(url)) return; seen.add(url); ul.appendChild(el('li', '', `<a href="${url}" target="_blank" rel="noopener">${label}</a>`)); };
   add('Google Trends (explore; US / Worldwide; Topics /g/11x8sdrsf0, /g/11bw1_6lwn, /m/02l5km)', 'https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11x8sdrsf0,%2Fg%2F11bw1_6lwn');
   [...p.identification, ...p.favorability, ...p.rfk, ...p.delivery].forEach(x => add(`${x.pollster || x.source}${x.field ? ' — ' + fmtRange(x.field) : ''}`, x.url));
+  if (p.context) add(`${p.context.poll.pollster} — ${fmtRange(p.context.poll.field)} (context only; no MAHA question)`, p.context.poll.url);
   s.studies.forEach(x => add(x.title, x.url));
   add('Google News RSS search (US edition) — eight MAHA queries, 7-day window', 'https://news.google.com/rss/search?q=%22Make+America+Healthy+Again%22&hl=en-US&gl=US&ceid=US:en');
   add('X API v2 — counts/all and search/recent (phrase set, retweets excluded)', 'https://docs.x.com/x-api/posts/counts/introduction');

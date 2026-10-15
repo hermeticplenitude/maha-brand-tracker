@@ -324,3 +324,15 @@ h3.sub{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:26px 0 
 .wcat li .ag{margin-left:auto;flex:none;font-size:.7rem;color:var(--muted);white-space:nowrap}
 @media (max-width:1000px){.wins-take{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.wins-take{grid-template-columns:1fr}.wa td.num,.wa th.num{width:80px}.wcat li .ag{display:none}}
+
+.ctx{margin-top:16px}
+.ctx-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.ctx-i{border:1px solid var(--rule);border-radius:10px;padding:12px 14px;background:var(--paper)}
+.ctx-i .v{font-family:var(--serif);font-size:1.8rem;line-height:1.1;color:var(--ink)}
+.ctx-i b{display:block;font-size:.84rem;margin:4px 0}
+.ctx-i p{margin:0 0 6px;font-size:.78rem;line-height:1.45;color:var(--ink-2)}
+.ctx-i a{font-size:.72rem}
+.ctx-h{margin:0 0 6px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.ctx-l{margin:0;padding-left:18px}.ctx-l li{font-size:.86rem;line-height:1.5;margin:0 0 6px}
+@media (max-width:1000px){.ctx-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.ctx-grid{grid-template-columns:1fr}}
