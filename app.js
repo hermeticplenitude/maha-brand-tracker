@@ -21,7 +21,7 @@ const axisY = (max, title) => ({ min: 0, max, grid: { color: '#ece7de' }, ticks:
 
 async function load() {
   const B = window.DATA_BASE || 'data/';
-  const [trends, polls, news, social, mid, listen, action, brief, results] = await Promise.all(['trends.json', 'polls.json', 'news.json', 'social.json', 'midterms.json', 'listening.json', 'action.json', 'brief.json', 'results.json'].map(u => fetch(B + u).then(r => r.json())));
+  const [trends, polls, news, social, mid, listen, action, brief, results, wins] = await Promise.all(['trends.json', 'polls.json', 'news.json', 'social.json', 'midterms.json', 'listening.json', 'action.json', 'brief.json', 'results.json', 'wins.json'].map(u => fetch(B + u).then(r => r.json())));
   const has = id => !!document.getElementById(id);
   const run = (fn, ...args) => { try { fn(...args); } catch (e) { console.error(fn.name, e); } };
   run(status, trends, polls, news, social, listen);
@@ -38,6 +38,7 @@ async function load() {
   if (has('news')) run(newsSection, news);
   if (listen.googlenews && has('gn-tiles')) run(googleNewsPanel, listen.googlenews);
   if (has('results')) run(resultsOverlay, results);
+  if (has('wins')) run(winsSection, wins);
   if (has('studies')) run(socialSection, social);
   if (has('listen-tiles')) run(listeningSection, listen);
   if (has('sources')) run(sources, polls, news, social);
@@ -81,6 +82,31 @@ function googleAdsChart(G, m) {
     options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: c => `${c.dataset.label}: ${money(c.parsed.x)}` } } }, scales: { x: { grid: { color: '#ece7de' }, ticks: { font: { size: 10 }, callback: v => '$' + (v / 1e6).toFixed(v >= 1e6 ? 0 : 1) + 'M' } }, y: { grid: { display: false }, ticks: { font: { size: 10 }, autoSkip: false } } } } });
   const top4 = [...G.watchlist].sort((a, b) => b.last4w - a.last4w).slice(0, 6);
   document.getElementById('gads-foot').innerHTML = `<p style="font-size:.82rem;margin:10px 0 4px"><b>Last four weeks, biggest Google buyers:</b> ${top4.map(w => `${w.name} ${money(w.last4w)}`).join(' · ')}.</p><p class="muted" style="font-size:.76rem;margin:0">MAHA Action Inc has spent ${money(G.maha_orgs_cycle_total)} on Google this cycle (one ad); MAHA PAC, MAHA Alliance and MAHA Moms PAC do not appear as verified Google advertisers. ${G.new_maha_named_advertisers.length ? 'New MAHA-named advertisers: ' + G.new_maha_named_advertisers.map(n => n.name).join(', ') + '.' : ''} ${G.note}</p>`;
+}
+
+function winsSection(W) {
+  const fd = d => new Date(d + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const srcs = s => s.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join(' · ');
+  document.getElementById('wins-intro').innerHTML = `${W.intro} <span class="muted">${W.standard}</span>`;
+  document.getElementById('wins-take').innerHTML = W.takeaways.map((t, i) => `<div class="wt"><b>${i + 1}</b><p>${t}</p></div>`).join('');
+  // agency breakdown of the scorecard
+  const S = W.scorecard, items = S.items, ag = {};
+  items.forEach(([n, cat, title, v, a]) => { const k = a.startsWith('HHS') ? 'HHS (incl. MAHA Commission)' : a; ag[k] = ag[k] || { b: 0, p: 0, k: 0 }; ag[k][v === 'Broken' ? 'b' : v === 'Kept' ? 'k' : 'p']++; });
+  const solidBy = {}; W.tiers[0].items.forEach(x => { const k = /FDA|CMS|CDC|HHS/.test(x.agency) ? 'HHS (incl. MAHA Commission)' : /USDA/.test(x.agency) ? 'USDA' : 'White House'; solidBy[k] = (solidBy[k] || 0) + 1; });
+  const order = Object.keys(ag).sort((x, y) => (ag[y].b + ag[y].p) - (ag[x].b + ag[x].p));
+  const maxN = Math.max(...order.map(k => ag[k].b + ag[k].p));
+  document.getElementById('wins-agency').innerHTML = `<h3 style="margin:0 0 4px">Who owns the broken promises</h3><p class="muted" style="margin:0 0 10px;font-size:.84rem">Scorecard items by responsible agency, next to the solid wins on the left list. ${S.agency_note}</p>
+    <table class="wa"><thead><tr><th>Agency</th><th>Scorecard: broken / partly kept</th><th class="num">Solid wins (left list)</th></tr></thead><tbody>${order.map(k => `<tr><td><b>${k}</b></td><td><div class="wrow"><div class="wbar"><span class="b" style="width:${ag[k].b / maxN * 100}%"></span><span class="p" style="width:${ag[k].p / maxN * 100}%"></span></div><em>${ag[k].b} broken${ag[k].p ? ` · ${ag[k].p} partly kept` : ''}</em></div></td><td class="num">${solidBy[k] || '—'}</td></tr>`).join('')}</tbody></table>`;
+  // left: wins
+  const tierHtml = t => `<div class="wtier ${t.id}"><h4>${t.label} <span class="muted">(${t.items.length})</span></h4>${t.items.map(x => `<div class="wi"><div class="wi-h"><span class="wa-tag">${x.area}</span><b>${x.win}</b></div><div class="wi-m">${fd(x.date)} · ${x.agency}</div><p>${x.say}</p><p class="careful"><span>Careful:</span> ${x.careful}</p><div class="wi-s">${srcs(x.src)}</div></div>`).join('')}</div>`;
+  document.getElementById('wins-left').innerHTML = `<h3 style="margin:0 0 4px">What the administration can solidly claim</h3><p class="muted" style="margin:0 0 12px;font-size:.84rem">Each item confirmed at a primary federal source. \u201cCareful\u201d notes what not to overclaim.</p>${W.tiers.map(tierHtml).join('')}`;
+  // right: scorecard
+  const cats = [...new Set(items.map(x => x[1]))];
+  const vc = v => v === 'Broken' ? 'vb' : v === 'Kept' ? 'vk' : 'vp';
+  const tot = { b: items.filter(x => x[3] === 'Broken').length, p: items.filter(x => x[3] === 'Partially kept').length, k: items.filter(x => x[3] === 'Kept').length };
+  document.getElementById('wins-right').innerHTML = `<h3 style="margin:0 0 4px">What the grassroots scorecard says</h3><p class="muted" style="margin:0 0 8px;font-size:.84rem"><a href="${S.url}" target="_blank" rel="noopener">${S.name}</a> · ${S.author} · covers ${S.coverage}. ${S.method}</p>
+    <div class="wsum"><span class="vk">${tot.k} kept</span><span class="vp">${tot.p} partly kept</span><span class="vb">${tot.b} broken</span></div>
+    ${cats.map(c => { const r = items.filter(x => x[1] === c); return `<div class="wcat"><h4>${c} <span class="muted">${r.filter(x => x[3] === 'Broken').length} of ${r.length} broken</span></h4><ul>${r.map(x => `<li><span class="v ${vc(x[3])}">${x[3] === 'Partially kept' ? 'partly' : x[3].toLowerCase()}</span> ${x[2]} <span class="ag">${x[4]}</span></li>`).join('')}</ul></div>`; }).join('')}`;
 }
 
 function resultsOverlay(R) {

@@ -1,0 +1,598 @@
+{
+ "updated": "2026-10-15",
+ "title": "Delivered vs. promised",
+ "intro": "Two lists, kept separate. On the left, what the administration can state without being knocked down: actions that are final, in force or signed into law, each confirmed in a primary federal source. On the right, the grassroots MAHA Promises Scorecard by former Kennedy campaign staff, tagged by the agency responsible. The lists mostly do not overlap: the scorecard covers pesticides, environment, farms and appointments; most solid wins are food, nutrition, drug prices and vaccines at HHS and USDA.",
+ "standard": "A 'solid' win is final (signed law, final rule or order, adopted federal recommendation, or awarded funding) and verifiable at a .gov source. Voluntary pledges, proposed rules and reports are listed separately as 'real but limited'. Administration-reported figures are labeled as such.",
+ "tiers": [
+  {
+   "id": "solid",
+   "label": "Solid: final and in force",
+   "items": [
+    {
+     "area": "Food & nutrition",
+     "win": "Dietary Guidelines 2025–2030, “Eat Real Food”",
+     "date": "2026-01-07",
+     "agency": "HHS + USDA",
+     "say": "The most significant reset of federal nutrition policy in decades: protein at every meal, full-fat dairy allowed, sharp limits on highly processed foods, added sugars and artificial additives. It is the basis for federal nutrition programs, including WIC and school meals.",
+     "careful": "Guidance, not a ban. School-meal standards are still being rewritten to match it.",
+     "src": [
+      [
+       "HHS release",
+       "https://www.hhs.gov/press-room/historic-reset-federal-nutrition-policy.html"
+      ]
+     ]
+    },
+    {
+     "area": "Food & nutrition",
+     "win": "Whole Milk for Healthy Kids Act signed into law",
+     "date": "2026-01-14",
+     "agency": "Congress + USDA",
+     "say": "Whole and 2% milk are back in school lunch and child nutrition programs. Bipartisan law (Marshall–Welch); USDA final rule issued May 8, 2026.",
+     "careful": "Bipartisan bill; credit is shared with Congress.",
+     "src": [
+      [
+       "White House: S. 222 signed",
+       "https://www.whitehouse.gov/briefings-statements/2026/01/congressional-bill-s-222-signed-into-law/"
+      ],
+      [
+       "USDA final rule",
+       "https://www.usda.gov/about-usda/news/press-releases/2026/05/08/usda-implements-president-trumps-whole-milk-healthy-kids-act"
+      ]
+     ]
+    },
+    {
+     "area": "Food & nutrition",
+     "win": "SNAP soda and candy restrictions approved for 19 states",
+     "date": "2025-05-19",
+     "agency": "USDA",
+     "say": "The first waivers ever to take soda and candy out of SNAP. 23 approved; 19 stand. In effect now in 8 states (AR, FL, ID, IN, LA, OK, TX, UT); 11 more start between Nov 2026 and 2028.",
+     "careful": "A federal court vacated four approvals on Jun 22, 2026 (CO, IA, TN, WV). Say “19 states,” not 23.",
+     "src": [
+      [
+       "USDA SNAP waiver tracker",
+       "https://www.fna.usda.gov/snap/waivers/foodrestriction"
+      ]
+     ]
+    },
+    {
+     "area": "Food dyes",
+     "win": "Five natural food colors approved or expanded",
+     "date": "2025-05-09",
+     "agency": "FDA (HHS)",
+     "say": "Galdieria extract blue, butterfly pea flower (expanded), calcium phosphate (May 9, 2025), gardenia blue (Jul 14, 2025) and beetroot red: replacements that let companies drop petroleum dyes.",
+     "careful": "Approving alternatives is not removing dyes; six petroleum dyes remain legal pending voluntary phase-out by end-2027.",
+     "src": [
+      [
+       "FDA: three natural colors",
+       "https://www.fda.gov/news-events/press-announcements/fda-approves-three-food-colors-natural-sources"
+      ],
+      [
+       "FDA: gardenia blue",
+       "https://www.fda.gov/news-events/press-announcements/fda-approves-gardenia-genipin-blue-color-additive-while-encouraging-faster-phase-out-fdc-red-no-3"
+      ]
+     ]
+    },
+    {
+     "area": "Food dyes",
+     "win": "Orange B revoked; Citrus Red No. 2 proposed for revocation",
+     "date": "2026-09-08",
+     "agency": "FDA (HHS)",
+     "say": "A final order removed Orange B from the food supply effective Sep 8, 2026.",
+     "careful": "Orange B had not been certified for food since 1978, and Citrus Red No. 2 since 2020. Red No. 3's ban was issued Jan 15, 2025, under the prior administration. Do not claim it.",
+     "src": [
+      [
+       "Federal Register final order",
+       "https://www.federalregister.gov/documents/full_text/html/2026/07/23/2026-14910.html"
+      ],
+      [
+       "FDA announcement",
+       "https://www.fda.gov/news-events/press-announcements/fda-takes-further-steps-remove-outdated-authorizations-color-additives-food"
+      ]
+     ]
+    },
+    {
+     "area": "Drug prices",
+     "win": "TrumpRx and Most-Favored-Nation pricing deals",
+     "date": "2026-02-05",
+     "agency": "White House + HHS",
+     "say": "26 drugmakers covering about 89% of the branded market signed MFN deals; TrumpRx.gov launched Feb 5, 2026; MFN prices extended to every state Medicaid program (Sep 2026). GLP-1s from $149 a month; $50 for eligible Medicare seniors.",
+     "careful": "“$700M saved” and the price-decline claims are administration-reported figures. Cite them as such.",
+     "src": [
+      [
+       "White House: TrumpRx launch",
+       "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-launches-trumprx-gov-to-bring-lower-drug-prices-to-american-patients/"
+      ],
+      [
+       "White House: 26 MFN deals",
+       "https://www.whitehouse.gov/fact-sheets/2026/08/fact-sheet-president-donald-j-trump-announces-deal-with-nine-additional-pharmaceutical-manufacturers-to-lower-drug-prices-for-americans/"
+      ]
+     ]
+    },
+    {
+     "area": "Rural health",
+     "win": "$50B Rural Health Transformation Program, awards to all 50 states",
+     "date": "2025-12-29",
+     "agency": "CMS (HHS)",
+     "say": "First-year awards of $147M–$281M per state, $10B a year through 2030, created by the Working Families Tax Cuts law. Georgia: $219M; Michigan: $173M; Wisconsin: $204M.",
+     "careful": "Created by statute; CMS administers it.",
+     "src": [
+      [
+       "CMS award list",
+       "https://www.cms.gov/newsroom/press-releases/cms-announces-50-billion-awards-strengthen-rural-health-all-50-states"
+      ]
+     ]
+    },
+    {
+     "area": "Women's health",
+     "win": "Boxed warnings removed from menopause hormone therapy",
+     "date": "2026-02-12",
+     "agency": "FDA (HHS)",
+     "say": "Breast cancer, cardiovascular and dementia statements removed from the boxed warning on HRT; first six product labels approved Feb 12, 2026 (initiated Nov 10, 2025).",
+     "careful": "The risks remain in the Warnings section; the endometrial-cancer boxed warning stays for estrogen-alone products.",
+     "src": [
+      [
+       "FDA label approvals",
+       "https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products"
+      ]
+     ]
+    },
+    {
+     "area": "Vaccines",
+     "win": "Thimerosal (mercury) removed from all U.S. flu vaccines",
+     "date": "2025-07-22",
+     "agency": "HHS / CDC",
+     "say": "Single-dose, thimerosal-free flu vaccines are now official CDC policy for children, pregnant women and all adults.",
+     "careful": "Contested by medical groups; strong with the base.",
+     "src": [
+      [
+       "HHS adopts ACIP recommendation",
+       "https://www.hhs.gov/press-room/thimerosal-mercury-removed-from-us-flu-vaccines-acip.html"
+      ],
+      [
+       "CDC MMWR",
+       "https://www.cdc.gov/mmwr/volumes/74/wr/mm7432a2.htm"
+      ]
+     ]
+    },
+    {
+     "area": "Vaccines",
+     "win": "Hospital pay no longer tied to staff COVID-vaccination reporting",
+     "date": "2025-08-01",
+     "agency": "CMS (HHS)",
+     "say": "The FY2026 inpatient payment final rule removed the COVID-19 vaccination coverage among health-care personnel measure from hospital quality reporting.",
+     "careful": "Removes a reporting measure, not a mandate (the staff mandate ended in 2023).",
+     "src": [
+      [
+       "CMS FY2026 IPPS final rule",
+       "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-long-term-care-hospital-prospective-0"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "limited",
+   "label": "Real, but voluntary, proposed or limited",
+   "items": [
+    {
+     "area": "Food dyes",
+     "win": "Industry pledges to drop petroleum dyes",
+     "date": "2025-04-22",
+     "agency": "FDA (HHS)",
+     "say": "27 of the largest food companies pledged to remove synthetic dyes; FDA targets the six remaining dyes for end-2027.",
+     "careful": "Voluntary, no enforcement; the scorecard rates it partly kept.",
+     "src": [
+      [
+       "FDA pledge tracker",
+       "https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes"
+      ]
+     ]
+    },
+    {
+     "area": "Food safety",
+     "win": "GRAS self-certification rule proposed; first ultra-processed-food definition at final review",
+     "date": "2026-08-10",
+     "agency": "FDA (HHS) + USDA",
+     "say": "Companies would have to notify FDA before using a self-affirmed “GRAS” ingredient.",
+     "careful": "Proposed, not final. Finalizing it is the single cleanest available win.",
+     "src": [
+      [
+       "HHS 18-month summary",
+       "https://www.hhs.gov/press-room/trump-kennedy-18-months-make-america-healthy-again-reforms.html"
+      ]
+     ]
+    },
+    {
+     "area": "Medical training",
+     "win": "76 medical schools in 36 states commit to 40 hours of nutrition education",
+     "date": "2026-08-05",
+     "agency": "HHS + Education",
+     "say": "Starting fall 2026, plus eight accrediting and board organizations.",
+     "careful": "Voluntary commitments.",
+     "src": [
+      [
+       "HHS nutrition education",
+       "https://www.hhs.gov/nutrition-education/index.html"
+      ]
+     ]
+    },
+    {
+     "area": "Infant formula",
+     "win": "Operation Stork Speed",
+     "date": "2025-03-18",
+     "agency": "FDA (HHS)",
+     "say": "First full review of formula nutrient requirements since 1998; more heavy-metal testing.",
+     "careful": "Administrative review; no new enforceable standard yet.",
+     "src": [
+      [
+       "FDA Operation Stork Speed",
+       "https://www.fda.gov/food/infant-formula-homepage/operation-stork-speed"
+      ]
+     ]
+    },
+    {
+     "area": "Labels",
+     "win": "Front-of-package nutrition labels",
+     "date": "2025-01-14",
+     "agency": "FDA (HHS)",
+     "say": "Final rule listed for Dec 2026 on FDA's agenda.",
+     "careful": "Proposed under the prior administration; not final.",
+     "src": [
+      [
+       "FDA front-of-package",
+       "https://www.fda.gov/food/food-labeling-nutrition/front-package-nutrition-labeling"
+      ]
+     ]
+    },
+    {
+     "area": "Water",
+     "win": "CDC told to stop recommending community water fluoridation",
+     "date": "2025-04-07",
+     "agency": "HHS / CDC",
+     "say": "Federal recommendation withdrawn; Utah and Florida banned added fluoride.",
+     "careful": "Nonbinding and late, per the scorecard (partly kept). The state bans are state actions.",
+     "src": [
+      [
+       "MAHA Promises Scorecard",
+       "https://mahascorecard.com"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "contested",
+   "label": "Done, but contested or in court",
+   "items": [
+    {
+     "area": "Vaccines",
+     "win": "Childhood schedule realigned: 11 diseases recommended for all children, down from 18",
+     "date": "2026-08-10",
+     "agency": "White House + CDC",
+     "say": "CDC decision memo (Jan 5, 2026) and executive orders (May 29 and Aug 2026) move hepatitis A/B, rotavirus, meningococcal, flu and COVID to shared decision-making; COVID shots dropped for healthy children and pregnant women (May 2025).",
+     "careful": "The August order itself says implementation was delayed by litigation over ACIP's composition. Public trust in the childhood schedule fell from 71% to 62% (Axios-Ipsos). Strong with the base, risky with swing voters.",
+     "src": [
+      [
+       "White House executive order",
+       "https://www.whitehouse.gov/presidential-actions/2026/08/delivering-gold-standard-childhood-vaccine-recommendations-for-americans/"
+      ],
+      [
+       "CDC decision memo",
+       "https://www.cdc.gov/media/releases/2026/2026-cdc-acts-on-presidential-memorandum-to-update-childhood-immunization-schedule.html"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "scorecard": {
+  "name": "MAHA Promises Scorecard",
+  "author": "Tiffany Cianci, with former Kennedy campaign staff (released Oct 8, 2026)",
+  "url": "https://mahascorecard.com",
+  "coverage": "Jan 2025 – Aug 2026",
+  "method": "Kept = concrete, enforceable action; voluntary agreements do not count. Partially kept = incomplete, nonbinding, contradicted or late. Broken = contrary action, program eliminated, or no action.",
+  "agency_note": "Agency tags are the tracker's, assigned from each item's description; the scorecard does not tag items by agency.",
+  "items": [
+   [
+    1,
+    "Agency capture",
+    "Nancy Beck returns to EPA",
+    "Broken",
+    "EPA"
+   ],
+   [
+    2,
+    "Agency capture",
+    "Chemical-industry lobbyist at EPA",
+    "Broken",
+    "EPA"
+   ],
+   [
+    3,
+    "Agency capture",
+    "Pesticide lobbyist to oversee pesticides",
+    "Broken",
+    "EPA"
+   ],
+   [
+    4,
+    "Agency capture",
+    "68% of EPA/DOE/DOI nominees tied to regulated industries",
+    "Broken",
+    "Multi-agency"
+   ],
+   [
+    5,
+    "Agency capture",
+    "Chemical-industry insider in top EPA post",
+    "Broken",
+    "EPA"
+   ],
+   [
+    6,
+    "Agency capture",
+    "22 officials tied to Bayer's network",
+    "Broken",
+    "Multi-agency"
+   ],
+   [
+    7,
+    "Pesticides",
+    "MAHA Strategy drops pesticides",
+    "Broken",
+    "HHS / MAHA Commission"
+   ],
+   [
+    8,
+    "Pesticides",
+    "Pesticide recordkeeping ended",
+    "Broken",
+    "USDA"
+   ],
+   [
+    9,
+    "Pesticides",
+    "Paraquat announcement with no new action",
+    "Broken",
+    "EPA"
+   ],
+   [
+    10,
+    "Pesticides",
+    "Dicamba re-registered",
+    "Broken",
+    "EPA"
+   ],
+   [
+    11,
+    "Pesticides",
+    "Glyphosate executive order",
+    "Broken",
+    "White House"
+   ],
+   [
+    12,
+    "Pesticides",
+    "Amicus brief for Bayer at the Supreme Court",
+    "Broken",
+    "DOJ"
+   ],
+   [
+    13,
+    "Pesticides",
+    "Five PFAS pesticides approved",
+    "Broken",
+    "EPA"
+   ],
+   [
+    14,
+    "Clean air & water",
+    "$1.7B clean air/water grants cancelled",
+    "Broken",
+    "EPA"
+   ],
+   [
+    15,
+    "Clean air & water",
+    "31 rollbacks announced",
+    "Broken",
+    "EPA"
+   ],
+   [
+    16,
+    "Clean air & water",
+    "Chemical-spill database removed",
+    "Broken",
+    "EPA"
+   ],
+   [
+    17,
+    "Clean air & water",
+    "Fluoride guidance (late, nonbinding)",
+    "Partially kept",
+    "HHS"
+   ],
+   [
+    18,
+    "Clean air & water",
+    "PFAS drinking-water limits rolled back",
+    "Broken",
+    "EPA"
+   ],
+   [
+    19,
+    "Clean air & water",
+    "EPA research office gutted",
+    "Broken",
+    "EPA"
+   ],
+   [
+    20,
+    "Clean air & water",
+    "PFAS research cut",
+    "Broken",
+    "EPA"
+   ],
+   [
+    21,
+    "Clean air & water",
+    "Air-pollution health lab closed",
+    "Broken",
+    "EPA"
+   ],
+   [
+    22,
+    "Clean air & water",
+    "Phthalates assessment on outdated science",
+    "Broken",
+    "EPA"
+   ],
+   [
+    23,
+    "Clean air & water",
+    "Mercury standards rolled back",
+    "Broken",
+    "EPA"
+   ],
+   [
+    24,
+    "Clean air & water",
+    "20 polluters exempted",
+    "Broken",
+    "White House"
+   ],
+   [
+    25,
+    "Clean air & water",
+    "EPA MAHA agenda dropped",
+    "Broken",
+    "EPA"
+   ],
+   [
+    26,
+    "Clean air & water",
+    "Microplastics not monitored",
+    "Broken",
+    "EPA"
+   ],
+   [
+    27,
+    "Food for kids",
+    "FDA staff cut by 3,500",
+    "Broken",
+    "HHS"
+   ],
+   [
+    28,
+    "Food for kids",
+    "Local Food for Schools cancelled",
+    "Broken",
+    "USDA"
+   ],
+   [
+    29,
+    "Food for kids",
+    "Voluntary dye phase-out",
+    "Partially kept",
+    "HHS"
+   ],
+   [
+    30,
+    "Food for kids",
+    "WIC fruit/vegetable cut proposed (FY26)",
+    "Broken",
+    "White House"
+   ],
+   [
+    31,
+    "Food for kids",
+    "Household Food Security Report ended",
+    "Broken",
+    "USDA"
+   ],
+   [
+    32,
+    "Food for kids",
+    "WIC cut proposed again (FY27)",
+    "Broken",
+    "White House"
+   ],
+   [
+    33,
+    "Food for kids",
+    "GRAS rule proposed",
+    "Partially kept",
+    "HHS"
+   ],
+   [
+    34,
+    "Food for kids",
+    "Harvest to Hallways",
+    "Partially kept",
+    "USDA"
+   ],
+   [
+    35,
+    "Family farms",
+    "$1B local food programs cancelled",
+    "Broken",
+    "USDA"
+   ],
+   [
+    36,
+    "Family farms",
+    "Tariffs raise farm input costs",
+    "Broken",
+    "White House"
+   ],
+   [
+    37,
+    "Family farms",
+    "$1B conservation funding cancelled",
+    "Broken",
+    "USDA"
+   ],
+   [
+    38,
+    "Family farms",
+    "Regional Food Business Centers closed",
+    "Broken",
+    "USDA"
+   ],
+   [
+    39,
+    "Family farms",
+    "Organic program staff cut by a third",
+    "Broken",
+    "USDA"
+   ],
+   [
+    40,
+    "Family farms",
+    "Regenerative pilot offsets earlier cuts",
+    "Broken",
+    "USDA"
+   ],
+   [
+    41,
+    "Family farms",
+    "USDA field staff losses",
+    "Broken",
+    "USDA"
+   ],
+   [
+    42,
+    "Family farms",
+    "$560M beef processing (mixed)",
+    "Partially kept",
+    "USDA"
+   ]
+  ]
+ },
+ "takeaways": [
+  "35 of the scorecard's 37 “broken” items are EPA, USDA, White House or DOJ actions. Of its 5 HHS items, 3 are rated partly kept.",
+  "The two lists barely overlap. The scorecard tracks pesticides, environment, farms and appointments. Most solid wins (Dietary Guidelines, whole milk, SNAP waivers, drug prices, HRT labels) are not on it.",
+  "The defensible message is “HHS is delivering on food, prices and choice; the fights still open are at EPA and USDA,” not “every promise kept.”",
+  "Pesticides are the gap with no offsetting win: 7 of 7 broken, and the movement's sharpest grievance (glyphosate)."
+ ]
+}
