@@ -1,10 +1,10 @@
 {
- "date": "2026-10-19",
- "days_to_election": 15,
+ "date": "2026-10-20",
+ "days_to_election": 14,
  "items": [
   {
    "k": "X volume",
-   "v": "2,272",
+   "v": "2,271",
    "u": "original posts / week",
    "d": "+2%",
    "read": "Flat month over month; 3.6% of the election-week peak. MAHA runs at 9.6% of MAGA's X volume.",
@@ -12,10 +12,10 @@
   },
   {
    "k": "News tone",
-   "v": "49%",
-   "u": "of 45 headlines critical",
-   "d": "18% from inside",
-   "read": "Lead theme policy / delivery. Inside criticism below one in five critical headlines.",
+   "v": "38%",
+   "u": "of 52 headlines critical",
+   "d": "20% from inside",
+   "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {
@@ -28,7 +28,7 @@
   },
   {
    "k": "Bluesky",
-   "v": "358",
+   "v": "359",
    "u": "posts / week",
    "d": "-13%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
@@ -60,34 +60,14 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$84.1M",
+   "v": "$85.4M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$24.4M last 4 wks",
+   "d": "$25.8M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-19",
-   "Alaska: early voting opens"
-  ],
-  [
-   "2026-10-19",
-   "Iowa: mail-ballot request deadline"
-  ],
-  [
-   "2026-10-19",
-   "Iowa: registration closes"
-  ],
-  [
-   "2026-10-19",
-   "Michigan: registration closes"
-  ],
-  [
-   "2026-10-19",
-   "Texas: early voting opens"
-  ],
   [
    "2026-10-20",
    "Nevada: mail-ballot request deadline"
@@ -99,6 +79,26 @@
   [
    "2026-10-20",
    "Wisconsin: early voting opens"
+  ],
+  [
+   "2026-10-23",
+   "Arizona: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-23",
+   "Georgia: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-23",
+   "Texas: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-24",
+   "Alaska: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-24",
+   "Michigan: early voting opens"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
