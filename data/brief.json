@@ -1,6 +1,6 @@
 {
- "date": "2026-10-20",
- "days_to_election": 14,
+ "date": "2026-10-21",
+ "days_to_election": 13,
  "items": [
   {
    "k": "X volume",
@@ -12,10 +12,10 @@
   },
   {
    "k": "News tone",
-   "v": "38%",
-   "u": "of 52 headlines critical",
-   "d": "20% from inside",
-   "read": "Lead theme policy / delivery. Inside criticism above one in five critical headlines: watch the base.",
+   "v": "35%",
+   "u": "of 51 headlines critical",
+   "d": "22% from inside",
+   "read": "Lead theme other. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {
@@ -28,7 +28,7 @@
   },
   {
    "k": "Bluesky",
-   "v": "359",
+   "v": "360",
    "u": "posts / week",
    "d": "-13%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
@@ -52,34 +52,22 @@
   },
   {
    "k": "MAHA PAC (FEC)",
-   "v": "$3.18M",
+   "v": "$3.20M",
    "u": "raised vs $100M pledge",
    "d": "Sep report due Oct 20",
-   "read": "Through 2026-08-31: $712K in independent expenditures, $1.03M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.",
+   "read": "Through 2026-09-30: $738K in independent expenditures, $0.70M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.",
    "href": "#fec-card"
   },
   {
    "k": "Google ad spend",
-   "v": "$85.4M",
+   "v": "$86.8M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$25.8M last 4 wks",
+   "d": "$27.2M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
  ],
  "deadlines": [
-  [
-   "2026-10-20",
-   "Nevada: mail-ballot request deadline"
-  ],
-  [
-   "2026-10-20",
-   "North Carolina: mail-ballot request deadline"
-  ],
-  [
-   "2026-10-20",
-   "Wisconsin: early voting opens"
-  ],
   [
    "2026-10-23",
    "Arizona: mail-ballot request deadline"
@@ -99,6 +87,18 @@
   [
    "2026-10-24",
    "Michigan: early voting opens"
+  ],
+  [
+   "2026-10-27",
+   "Ohio: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-29",
+   "Maine: mail-ballot request deadline"
+  ],
+  [
+   "2026-10-29",
+   "Wisconsin: mail-ballot request deadline"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
