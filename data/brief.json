@@ -1,6 +1,6 @@
 {
- "date": "2026-10-21",
- "days_to_election": 13,
+ "date": "2026-10-22",
+ "days_to_election": 12,
  "items": [
   {
    "k": "X volume",
@@ -12,10 +12,10 @@
   },
   {
    "k": "News tone",
-   "v": "35%",
-   "u": "of 51 headlines critical",
-   "d": "22% from inside",
-   "read": "Lead theme other. Inside criticism above one in five critical headlines: watch the base.",
+   "v": "38%",
+   "u": "of 53 headlines critical",
+   "d": "15% from inside",
+   "read": "Lead theme policy / delivery. Inside criticism below one in five critical headlines.",
    "href": "#news"
   },
   {
@@ -60,9 +60,9 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$86.8M",
+   "v": "$88.1M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$27.2M last 4 wks",
+   "d": "$28.4M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
