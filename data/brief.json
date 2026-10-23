@@ -1,6 +1,6 @@
 {
- "date": "2026-10-22",
- "days_to_election": 12,
+ "date": "2026-10-23",
+ "days_to_election": 11,
  "items": [
   {
    "k": "X volume",
@@ -13,9 +13,9 @@
   {
    "k": "News tone",
    "v": "38%",
-   "u": "of 53 headlines critical",
-   "d": "15% from inside",
-   "read": "Lead theme policy / delivery. Inside criticism below one in five critical headlines.",
+   "u": "of 82 headlines critical",
+   "d": "39% from inside",
+   "read": "Lead theme personnel / leadership. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
   {
@@ -28,7 +28,7 @@
   },
   {
    "k": "Bluesky",
-   "v": "360",
+   "v": "359",
    "u": "posts / week",
    "d": "-13%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
@@ -55,14 +55,14 @@
    "v": "$3.20M",
    "u": "raised vs $100M pledge",
    "d": "Sep report due Oct 20",
-   "read": "Through 2026-09-30: $738K in independent expenditures, $0.70M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.",
+   "read": "Through 2026-10-14: $738K in independent expenditures, $0.41M cash. Politico (Oct 4): fewer than 20 donors in 2026, $4M moved to MAHA Action. MAHA Action PAC's first quarterly was due Oct 15; pre-general reports Oct 22.",
    "href": "#fec-card"
   },
   {
    "k": "Google ad spend",
-   "v": "$88.1M",
+   "v": "$89.4M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$28.4M last 4 wks",
+   "d": "$29.7M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
