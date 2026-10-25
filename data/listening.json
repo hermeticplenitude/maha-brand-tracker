@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "bluesky": {
   "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
   "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
@@ -12,15 +12,10 @@
    "MAHA moms"
   ],
   "window_days": 90,
-  "since": "2026-07-26",
+  "since": "2026-07-27",
   "note": "Every public Bluesky post in the window matching the phrase set, deduplicated across queries. Bare-acronym posts are kept only if the text also carries a political cue (RFK, Kennedy, HHS, vaccine, MAGA, Trump, food dye, seed oil, mRNA, etc.). Engagement = likes + reposts + replies + quotes at collection time. Bluesky skews left of the US electorate; treat it as the critical-outside channel, not a census.",
-  "total_posts": 4840,
+  "total_posts": 4854,
   "weekly": [
-   {
-    "week": "2026-07-20",
-    "posts": 40,
-    "engagement": 1609
-   },
    {
     "week": "2026-07-27",
     "posts": 316,
@@ -28,8 +23,8 @@
    },
    {
     "week": "2026-08-03",
-    "posts": 387,
-    "engagement": 26413
+    "posts": 388,
+    "engagement": 26416
    },
    {
     "week": "2026-08-10",
@@ -38,8 +33,8 @@
    },
    {
     "week": "2026-08-17",
-    "posts": 418,
-    "engagement": 10108
+    "posts": 417,
+    "engagement": 10100
    },
    {
     "week": "2026-08-24",
@@ -48,8 +43,8 @@
    },
    {
     "week": "2026-08-31",
-    "posts": 455,
-    "engagement": 17393
+    "posts": 456,
+    "engagement": 17408
    },
    {
     "week": "2026-09-07",
@@ -64,34 +59,34 @@
    {
     "week": "2026-09-21",
     "posts": 368,
-    "engagement": 10399
+    "engagement": 10413
    },
    {
     "week": "2026-09-28",
-    "posts": 565,
-    "engagement": 8077
+    "posts": 564,
+    "engagement": 8073
    },
    {
     "week": "2026-10-05",
     "posts": 332,
-    "engagement": 5652
+    "engagement": 5651
    },
    {
     "week": "2026-10-12",
     "posts": 168,
-    "engagement": 1647
+    "engagement": 1649
    },
    {
     "week": "2026-10-19",
-    "posts": 317,
-    "engagement": 4134
+    "posts": 371,
+    "engagement": 4875
    }
   ],
   "summary": {
-   "last4w_avg_posts": 358.2,
-   "prev4w_avg_posts": 413.0,
-   "change_pct": -13.3,
-   "unique_authors": 3227
+   "last4w_avg_posts": 358.0,
+   "prev4w_avg_posts": 413.2,
+   "change_pct": -13.4,
+   "unique_authors": 3231
   },
   "top_posts": [
    {
@@ -137,7 +132,7 @@
     "name": "Ryan Marino, MD",
     "text": "Taking my time to really listen and learn from the very valid concerns of the MAHA movement:",
     "likes": 5036,
-    "reposts": 996,
+    "reposts": 995,
     "replies": 98,
     "quotes": 59,
     "url": "https://bsky.app/profile/ryanmarino.bsky.social/post/3msdwrahln22i"
@@ -278,33 +273,28 @@
   "top_accounts": [
    {
     "handle": "gavinyamey.bsky.social",
-    "posts": 143,
-    "engagement": 15431
+    "posts": 142,
+    "engagement": 14779
+   },
+   {
+    "handle": "mcbridetd.bsky.social",
+    "posts": 30,
+    "engagement": 112
    },
    {
     "handle": "joho.bsky.social",
     "posts": 30,
-    "engagement": 1116
-   },
-   {
-    "handle": "mcbridetd.bsky.social",
-    "posts": 29,
-    "engagement": 111
+    "engagement": 1123
    },
    {
     "handle": "joffirphd.bsky.social",
-    "posts": 25,
-    "engagement": 225
+    "posts": 24,
+    "engagement": 216
    },
    {
     "handle": "ghostofmarktwain.bsky.social",
     "posts": 24,
     "engagement": 82
-   },
-   {
-    "handle": "benecal.bsky.social",
-    "posts": 22,
-    "engagement": 305
    },
    {
     "handle": "banmarnj.bsky.social",
@@ -317,6 +307,11 @@
     "engagement": 3
    },
    {
+    "handle": "benecal.bsky.social",
+    "posts": 21,
+    "engagement": 295
+   },
+   {
     "handle": "bigearthdata.ai",
     "posts": 20,
     "engagement": 12
@@ -324,7 +319,7 @@
    {
     "handle": "motherjones.com",
     "posts": 20,
-    "engagement": 2775
+    "engagement": 2778
    },
    {
     "handle": "realtuckfrumper.bsky.social",
@@ -2699,7 +2694,7 @@
    },
    {
     "week": "2026-10-19",
-    "count": 1811
+    "count": 2072
    }
   ],
   "weekly_counts_maga": [
@@ -3169,7 +3164,7 @@
    },
    {
     "week": "2026-10-19",
-    "count": 20393
+    "count": 23658
    }
   ],
   "weekly_ratio_maha_to_maga": [
@@ -3639,11 +3634,11 @@
    },
    {
     "week": "2026-10-19",
-    "value": 0.0888
+    "value": 0.0876
    }
   ],
   "summary": {
-   "total_posts_since_start": 1102661,
+   "total_posts_since_start": 1102922,
    "last4w_avg_weekly": 2271,
    "prev4w_avg_weekly": 2228,
    "change_pct": 1.9,
@@ -3654,22 +3649,22 @@
    "last4w_ratio_to_maga": 0.0959
   },
   "sample": {
-   "n": 500,
+   "n": 599,
    "since": "2026-10-21",
-   "unique_authors": 425,
+   "unique_authors": 496,
    "top_posts": [
     {
      "id": "2113724786387882454",
      "date": "2026-10-23",
      "handle": "nicksortor",
      "name": "Nick Sortor",
-     "followers": 1631818,
+     "followers": 1631987,
      "text": "\ud83d\udea8 JUST IN: RFK Jr. and President Trump just announced a \"MADE IN AMERICA\" label for ALL American-made seafood as part of their MAHA efforts\n\n\"Vietnam and Cambodia... the shrimp are SO LOADED with antibiotics and disinfectants that no European country will take them. They ship https://t.co/tZ0flBlJ7j",
-     "likes": 26852,
-     "reposts": 6385,
-     "replies": 602,
-     "quotes": 211,
-     "views": 295340,
+     "likes": 38868,
+     "reposts": 9628,
+     "replies": 894,
+     "quotes": 289,
+     "views": 428194,
      "url": "https://x.com/nicksortor/status/2113724786387882454"
     },
     {
@@ -3677,13 +3672,13 @@
      "date": "2026-10-22",
      "handle": "calleymeans",
      "name": "Calley Means",
-     "followers": 308089,
+     "followers": 308189,
      "text": "I am resigning from the White House with tremendous respect for President Trump and Bobby Kennedy. \n\nThey laid out a vision of combatting the entrenched, dark forces in DC that profit from Americans getting sick. \n\nMore policy and cultural change has happened around these goals https://t.co/8vtSjgbmKx",
-     "likes": 11118,
-     "reposts": 872,
-     "replies": 1245,
-     "quotes": 159,
-     "views": 1113211,
+     "likes": 11163,
+     "reposts": 879,
+     "replies": 1251,
+     "quotes": 160,
+     "views": 1146532,
      "url": "https://x.com/calleymeans/status/2113320722919559349"
     },
     {
@@ -3691,27 +3686,41 @@
      "date": "2026-10-23",
      "handle": "Brick_Suit",
      "name": "Brick Suit",
-     "followers": 329347,
+     "followers": 329341,
      "text": "Robert F. Kennedy Jr. is at today's rally in Fort Myers...\n\nMAHA! https://t.co/G7kMoY13vH",
-     "likes": 6290,
-     "reposts": 653,
-     "replies": 35,
+     "likes": 6545,
+     "reposts": 675,
+     "replies": 37,
      "quotes": 9,
-     "views": 33552,
+     "views": 35528,
      "url": "https://x.com/Brick_Suit/status/2113675451524661508"
+    },
+    {
+     "id": "2113963718430085449",
+     "date": "2026-10-24",
+     "handle": "ValerieAnne1970",
+     "name": "Valerie Anne Smith",
+     "followers": 284518,
+     "text": "American strawberry fields are being DRENCHED in cancer-linked pesticides \u2014 while workers are in full-head-to-toe hazmat suits, respirators, and gloves!\n\nTwo workmen, spraying poison directly onto the berries that will soon hit grocery stores nationwide. These are the \u201cfresh\u201d https://t.co/I4kXZvAMcq",
+     "likes": 3457,
+     "reposts": 2382,
+     "replies": 219,
+     "quotes": 181,
+     "views": 59988,
+     "url": "https://x.com/ValerieAnne1970/status/2113963718430085449"
     },
     {
      "id": "2113748927593746675",
      "date": "2026-10-23",
      "handle": "AndrewKolvet",
      "name": "Andrew Kolvet",
-     "followers": 312187,
+     "followers": 312166,
      "text": "RFK Jr. says he prayed for 18 years for a chance to fix America's chronic disease crisis, and then got Donald Trump.\n\n\"Every commitment, every promise that Donald Trump has made to me, he has kept in spades... And we kept that promise, and the data show that we kept that https://t.co/kpMxG8FdY5",
-     "likes": 4012,
-     "reposts": 781,
-     "replies": 75,
-     "quotes": 12,
-     "views": 48124,
+     "likes": 4744,
+     "reposts": 929,
+     "replies": 98,
+     "quotes": 16,
+     "views": 74611,
      "url": "https://x.com/AndrewKolvet/status/2113748927593746675"
     },
     {
@@ -3719,13 +3728,13 @@
      "date": "2026-10-22",
      "handle": "RedactedNews",
      "name": "Redacted",
-     "followers": 308861,
+     "followers": 308840,
      "text": "FORMER RFK ADVISER: MAHA HAS BEEN CAPTURED BY CORPORATE INTERESTS\n\nFormer RFK Jr. adviser Tiffany Cianci reveals corporate interests are absorbing the MAHA movement it was built to fight.\n\nRFK Jr. now claims a measles outbreak is tied to missed COVID-era vaccinations, and points https://t.co/Fl4hnCZlEY",
-     "likes": 2902,
-     "reposts": 1233,
-     "replies": 193,
-     "quotes": 128,
-     "views": 122105,
+     "likes": 2986,
+     "reposts": 1265,
+     "replies": 204,
+     "quotes": 134,
+     "views": 128214,
      "url": "https://x.com/RedactedNews/status/2113391408237445198"
     },
     {
@@ -3733,69 +3742,83 @@
      "date": "2026-10-22",
      "handle": "danbostic",
      "name": "Dan Bostic",
-     "followers": 68611,
+     "followers": 68604,
      "text": "Guess who was boxing Calley Means out and stalling the MAHA agenda?\n\nSusie Wiles.\n\nWho is trying to keep RFK Jr. on a leash?\n\nSusie Wiles.\n\nWho is keeping MAHA movers out of government roles?\n\nSusie Wiles.\n\nWho co-chaired a lobbying firm that represented Pfizer, and was lobbying https://t.co/874SEoebTi",
-     "likes": 2595,
-     "reposts": 510,
+     "likes": 2601,
+     "reposts": 516,
      "replies": 142,
      "quotes": 55,
-     "views": 112622,
+     "views": 113253,
      "url": "https://x.com/danbostic/status/2113337942001520744"
-    },
-    {
-     "id": "2113342538169905288",
-     "date": "2026-10-22",
-     "handle": "nytimes",
-     "name": "The New York Times",
-     "followers": 53866874,
-     "text": "Breaking News: Calley Means, a leader of the MAHA movement, resigned from the Trump administration just ahead of the midterm elections. https://t.co/d3w4JTYTom",
-     "likes": 908,
-     "reposts": 265,
-     "replies": 80,
-     "quotes": 10,
-     "views": 758316,
-     "url": "https://x.com/nytimes/status/2113342538169905288"
     },
     {
      "id": "2113700972275134544",
      "date": "2026-10-23",
      "handle": "CalltoActivism",
      "name": "CALL TO ACTIVISM",
-     "followers": 1225675,
+     "followers": 1225668,
      "text": "RFK is at a MAGA rally in Florida explaining how healthy he is making America when a man collapsed right behind him.\n\nThe crowd chanted \"Bobby, Bobby\" like he is a doctor.\n\nHe is not. He said a prayer, blessed Donald Trump, and walked off.\n\nMAHA, everybody. https://t.co/r4DMeTd64W",
-     "likes": 803,
-     "reposts": 208,
-     "replies": 45,
-     "quotes": 13,
-     "views": 97076,
+     "likes": 1010,
+     "reposts": 253,
+     "replies": 47,
+     "quotes": 16,
+     "views": 115160,
      "url": "https://x.com/CalltoActivism/status/2113700972275134544"
+    },
+    {
+     "id": "2113342538169905288",
+     "date": "2026-10-22",
+     "handle": "nytimes",
+     "name": "The New York Times",
+     "followers": 53866805,
+     "text": "Breaking News: Calley Means, a leader of the MAHA movement, resigned from the Trump administration just ahead of the midterm elections. https://t.co/d3w4JTYTom",
+     "likes": 910,
+     "reposts": 265,
+     "replies": 80,
+     "quotes": 10,
+     "views": 761240,
+     "url": "https://x.com/nytimes/status/2113342538169905288"
     },
     {
      "id": "2113624010499969336",
      "date": "2026-10-23",
      "handle": "MaryBowdenMD",
      "name": "Mary Talley Bowden MD",
-     "followers": 647232,
+     "followers": 647218,
      "text": "I predict Kennedy will run in 2028, and Calley Means will be his running mate.  Calley just strategically distanced himself from Trump. \nTheir campaign will be backed by an arsenal of MAHA entities:\nMAHA PAC\nMAHA Action PAC\nMAHA TM\nMAHA Worldwide\nMAHA Holdings\nMAHA Action\nMAHA",
-     "likes": 872,
-     "reposts": 121,
-     "replies": 340,
-     "quotes": 24,
-     "views": 70448,
+     "likes": 982,
+     "reposts": 130,
+     "replies": 385,
+     "quotes": 25,
+     "views": 97036,
      "url": "https://x.com/MaryBowdenMD/status/2113624010499969336"
+    },
+    {
+     "id": "2114114715475484707",
+     "date": "2026-10-24",
+     "handle": "MAHA_Action",
+     "name": "MAHA Action",
+     "followers": 102323,
+     "text": "RFK Jr. says President Trump is ALL IN on the MAHA agenda, and they are just getting started.\n\n\u201cPresident Trump is absolutely committed to the MAHA agenda.\u201d\n\n\u201cWe\u2019ve done more over the past 2 years than probably all the HHS secretaries put together in advancing that agenda.\u201d\n\n\u201cAnd https://t.co/LJu6weOo8l",
+     "likes": 654,
+     "reposts": 125,
+     "replies": 57,
+     "quotes": 11,
+     "views": 8384,
+     "url": "https://x.com/MAHA_Action/status/2114114715475484707"
     },
     {
      "id": "2113511371836981433",
      "date": "2026-10-23",
      "handle": "HealthRanger",
      "name": "HealthRanger",
-     "followers": 414736,
+     "followers": 414735,
      "text": "Calley Means resigns. The MAHA movement is in a state of accelerating collapse, because RFK Jr. is clearly captured by pharmaceutical interests and has completely forgotten the people who voted him into power. https://t.co/BpboWVPe5f",
-     "likes": 659,
-     "reposts": 115,
+     "likes": 660,
+     "reposts": 116,
      "replies": 36,
      "quotes": 7,
-     "views": 12220,
+     "views": 12462,
      "url": "https://x.com/HealthRanger/status/2113511371836981433"
     },
     {
@@ -3803,92 +3826,84 @@
      "date": "2026-10-22",
      "handle": "DMichaelTripi",
      "name": "Dominic Michael Tripi",
-     "followers": 94455,
+     "followers": 94432,
      "text": "NEW: Top advisor to HHS Secretary RFK Jr. resigns over frustrations stemming from not implementing the MAHA agenda as finger-pointing reportedly begins to mount throughout Trump administration.",
-     "likes": 636,
-     "reposts": 111,
+     "likes": 637,
+     "reposts": 112,
      "replies": 26,
      "quotes": 13,
-     "views": 13758,
+     "views": 13877,
      "url": "https://x.com/DMichaelTripi/status/2113328422785265884"
+    },
+    {
+     "id": "2113713140391129520",
+     "date": "2026-10-23",
+     "handle": "DavidZorkocy",
+     "name": "David Zorkocy",
+     "followers": 229303,
+     "text": "I am voting Republican for Secretary Kennedy!\n\nOne of the areas the Trump Administration has been most successful is the MAHA movement.\n\nFrom removing toxic chemicals and dyes, to restructuring education with a new food pyramid, Secretary Kennedy is the most important HHS https://t.co/R6v1VVibiG",
+     "likes": 606,
+     "reposts": 109,
+     "replies": 79,
+     "quotes": 6,
+     "views": 6406,
+     "url": "https://x.com/DavidZorkocy/status/2113713140391129520"
     },
     {
      "id": "2113323371752562806",
      "date": "2026-10-22",
      "handle": "Realalexclark",
      "name": "Alexandra Voetberg",
-     "followers": 165851,
+     "followers": 165827,
      "text": "Two weeks from the midterms, and MAHA just suffered a major blow. One of the movement\u2019s fiercest advocates and most influential voices, Calley Means, second only to RFK himself, is OUT. And the reason behind his departure should be setting off alarm bells for everyone who cares",
-     "likes": 582,
+     "likes": 584,
      "reposts": 118,
      "replies": 78,
      "quotes": 13,
-     "views": 86698,
+     "views": 87219,
      "url": "https://x.com/Realalexclark/status/2113323371752562806"
-    },
-    {
-     "id": "2113322723183391089",
-     "date": "2026-10-22",
-     "handle": "ChildrensHD",
-     "name": "Children\u2019s Health Defense",
-     "followers": 329323,
-     "text": "BREAKING NEWS\ud83d\udea8Politico reports: \u201cCalley Means, senior adviser to Health Secretary Robert F. Kennedy Jr., resigned on Thursday over frustrations that the Make America Healthy Again agenda had stalled inside the White House.\u201d\n\nhttps://t.co/Z5fWoCa9FH",
-     "likes": 482,
-     "reposts": 132,
-     "replies": 85,
-     "quotes": 15,
-     "views": 13577,
-     "url": "https://x.com/ChildrensHD/status/2113322723183391089"
-    },
-    {
-     "id": "2113345847287271831",
-     "date": "2026-10-22",
-     "handle": "davetroy",
-     "name": "Dave Troy",
-     "followers": 161015,
-     "text": "Disturbance in the force: MAGA/MAHA schism has begun. RFK Jr out in 10...9...8...7...? https://t.co/zcgfLspELQ",
-     "likes": 469,
-     "reposts": 118,
-     "replies": 1,
-     "quotes": 2,
-     "views": 12130,
-     "url": "https://x.com/davetroy/status/2113345847287271831"
-    },
-    {
-     "id": "2113612164426563803",
-     "date": "2026-10-23",
-     "handle": "thefoodbabe",
-     "name": "Vani Hari",
-     "followers": 242546,
-     "text": "To be clear. @SecKennedy is a hero but his commitments to our movement are being stalled by corporate capture and special interests at the very top of the White House. The progress he is trying to make is getting killed by the corporations poisoning us. For example, @epaleezeldin https://t.co/TqB90xuDZw",
-     "likes": 468,
-     "reposts": 78,
-     "replies": 76,
-     "quotes": 10,
-     "views": 30612,
-     "url": "https://x.com/thefoodbabe/status/2113612164426563803"
     }
    ],
    "top_accounts": [
     {
      "handle": "EmbracingTara",
-     "posts": 13,
-     "engagement": 258
+     "posts": 18,
+     "engagement": 343
     },
     {
      "handle": "AZMAHAMAMA",
-     "posts": 6,
-     "engagement": 3
+     "posts": 8,
+     "engagement": 4
     },
     {
      "handle": "shartstorm8d8",
      "posts": 5,
-     "engagement": 17
+     "engagement": 19
+    },
+    {
+     "handle": "sgtnewsnetwork",
+     "posts": 4,
+     "engagement": 39
+    },
+    {
+     "handle": "ConleyParker",
+     "posts": 4,
+     "engagement": 0
+    },
+    {
+     "handle": "DutchDane59",
+     "posts": 4,
+     "engagement": 1
+    },
+    {
+     "handle": "PAC_watch",
+     "posts": 4,
+     "engagement": 0
     },
     {
      "handle": "MotherJones",
      "posts": 4,
-     "engagement": 36
+     "engagement": 38
     },
     {
      "handle": "MAHANAKA_Phuket",
@@ -3901,49 +3916,29 @@
      "engagement": 6
     },
     {
-     "handle": "ConleyParker",
+     "handle": "Rain09654229",
      "posts": 3,
-     "engagement": 0
+     "engagement": 15
     },
     {
-     "handle": "1reggaedancer",
+     "handle": "ADAkikks",
      "posts": 3,
-     "engagement": 0
+     "engagement": 1
     },
     {
-     "handle": "MAHA_PAC",
+     "handle": "MAHA_Action",
      "posts": 3,
-     "engagement": 37
-    },
-    {
-     "handle": "PAC_watch",
-     "posts": 3,
-     "engagement": 0
-    },
-    {
-     "handle": "ShannonJoyRadio",
-     "posts": 3,
-     "engagement": 488
-    },
-    {
-     "handle": "tannernau15",
-     "posts": 3,
-     "engagement": 21
+     "engagement": 1075
     },
     {
      "handle": "ConstitustionX",
-     "posts": 2,
-     "engagement": 311
+     "posts": 3,
+     "engagement": 717
     },
     {
-     "handle": "Frost16Frost",
-     "posts": 2,
-     "engagement": 27
-    },
-    {
-     "handle": "ThoughtsAccess",
-     "posts": 2,
-     "engagement": 0
+     "handle": "MAHA_Institute",
+     "posts": 3,
+     "engagement": 7
     }
    ]
   }
@@ -3962,79 +3957,124 @@
    "MAHA Summit when:7d"
   ],
   "window_days": 7,
-  "collected": "2026-10-24",
+  "collected": "2026-10-25",
   "note": "Google News returns up to 100 results per query; eight queries are merged and deduplicated by title. Tone, origin and theme are assigned by a language model from headline and outlet only, using a fixed rubric; article bodies are not read. 'Critical, inside' means the criticism in the headline comes from the movement or its allies.",
   "n": 87,
   "tone": {
-   "critical": 35,
-   "neutral": 50,
-   "positive": 2
+   "critical": 37,
+   "neutral": 47,
+   "positive": 3
   },
   "critical_origin": {
-   "outside": 21,
-   "inside": 12,
-   "na": 2
+   "outside": 22,
+   "inside": 14,
+   "na": 1
   },
   "theme": {
    "personnel-leadership": 58,
    "politics-midterms": 12,
-   "other": 5,
-   "food-chemicals": 4,
-   "money-pac": 3,
-   "policy-delivery": 2,
-   "culture-media": 1,
-   "vaccines": 1,
+   "food-chemicals": 5,
+   "other": 4,
+   "policy-delivery": 3,
+   "vaccines": 2,
+   "money-pac": 2,
    "science-research": 1
   },
   "outlets": {
+   "The Hill": 3,
    "Politico": 3,
    "Washington Examiner": 3,
    "The Daily Wire": 3,
+   "WSJ": 2,
    "PBS": 2,
    "Civil Eats": 2,
    "Bloomberg Law News": 2,
    "Protect Our Care": 2,
    "NBC News": 2,
-   "The Hill": 2,
    "CIDRAP": 2,
    "Common Dreams": 2,
-   "NTD News": 2,
-   "Modern Ghana": 1,
+   "Agri-Pulse Communications, Inc.": 2,
+   "Hindustan Times": 1,
+   "Northwest Arkansas Democrat-Gazette": 1,
+   "Salon.com": 1,
+   "Hoodline": 1,
+   "News-Medical": 1,
    "The Washington Post": 1,
-   "WCYB": 1,
-   "The Columbus Dispatch": 1,
-   "Center for American Progress": 1,
-   "Tri-City Herald": 1,
-   "Heartlander News": 1,
-   "NewsCord": 1
+   "WSTM": 1
   },
   "by_day": {
-   "2026-10-18": 3,
-   "2026-10-19": 6,
-   "2026-10-20": 3,
+   "2026-10-18": 1,
+   "2026-10-19": 5,
+   "2026-10-20": 2,
    "2026-10-21": 1,
    "2026-10-22": 46,
-   "2026-10-23": 27,
-   "2026-10-24": 1
+   "2026-10-23": 25,
+   "2026-10-24": 6,
+   "2026-10-25": 1
   },
   "items": [
    {
-    "title": "Is AI Helping or Hurting Cybersecurity? And Are Republicans Losing the MAHA Movement? - Oct. 23",
-    "outlet": "Modern Ghana",
-    "date": "2026-10-24",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE42dE1vLXBrLW5jOHVaQUtFTjFIbEpTVlh0Z184bHFJdS02dnNEWGxEbk9mVkpOaEJvcDNzRTFna3JScGl6TWpBR0RLQ2xQamtVUXNwUEpDdTlZNU5YR3pZ0gFcQVVfeXFMUHdDcjVMNXpTNGYwYjF1aXNPcldkeDlpZDR5U0V0NjliMk9KZzktR2FZWGhiNzhQeTFSTGRwRF9uY0U2bEFZdTlrUmswaTFWR3dtNXVBR045MDFET20?oc=5",
+    "title": "The MAHA-MAGA Alliance Is Fracturing Before the Midterms | World News",
+    "outlet": "Hindustan Times",
+    "date": "2026-10-25",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS1dtd0dvZmdybWJiWjIyZFZNS1V0WHZiYktUTmVCcmRjSHZzU0J6akFEZnhFdzJNbFVZaGNvNDZ6eWlTVnB0UzgzUUJPc0szdzVoMkFucUpvQUJwSXYxaWE0WGF0eXFxc0JiUHNXX0R5blhneWl3UERFYWxSeFVYbWlYX0MxM1Z3OFBsTjN2TWEzdUNqdTRNOUFaVXdMZW92Rk5UNDQ3emxYWDZvRzc3cnBmOXlPLWl2Njl1OEkwemnSAcABQVVfeXFMTktXbXdHb2Zncm1iYloyMmRWTUtVdFh2YmJLVE5lQnJkY0h2c1NCempBRGZ4RXcyTWxVWWhjbzQ2enlpU1ZwdFM4M1FCT3NLM3c1aDJBbnFKb0FCcEl2MWlhNFhhdHlxcXNCYlBzV19EeW5YZ3lpd1BERWFsUnhVWG1pWF9DMTNWdzhQbE4zdk1hM3VDanU0TTlBWlV3TGVvdkZOVDQ0N3psWFg2b0c3N3JwZjl5Ty1pdjY5dThJMHpp?oc=5",
     "tone": "critical",
     "origin": "outside",
     "theme": "politics-midterms"
    },
    {
-    "title": "RFK Jr. ally Calley Means quits Trump administration amid food agenda delays",
-    "outlet": "The Washington Post",
-    "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbEhDenp3WTdJM0NFWVh0aW44UHNJSGJYRUxVQmUxTGpoV3dQNnotbkxUQ1ZLWWNnM3VqNHh1c0t4aU1rU2w5azZ5S0xTUm9tQ0tZa3JwWGZpVFlQLWxOVXZKSzdkY1ZpZGNsZldPeHo3ZHBvd0dra0VuaXZyT1pXNTJha1ZRZ2hSM2dBQXFRZVVuN1lRZnhHbWJGSnd2X2dKTDc1YlQ0NVVsWERZWGI5MGQ1Ym9wNTEtci01MmxFMWFqTWM?oc=5",
-    "tone": "critical",
-    "origin": "inside",
+    "title": "Top adviser to Kennedy exits from Trump administration",
+    "outlet": "Northwest Arkansas Democrat-Gazette",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVElXMHZrM2tyanRRY0lKUk5nMEFOcmR2Q1RmaDVtdVR2Ui1DZ0JPNVZ2RV9TVEp0QmVQMXVhdjZmRjBUY29pcllTZVhScnhLWF93ZXBkOXcyU3VMaE9ZTjZXUU5kLWhYSjAyWUQxSTE2WXV2ZHpoSTZOczBWSkNHT3ByV3dRSnJfUHVj?oc=5",
+    "tone": "neutral",
+    "origin": "na",
     "theme": "personnel-leadership"
+   },
+   {
+    "title": "The MAHA-MAGA Alliance Is Fracturing Before the Midterms",
+    "outlet": "WSJ",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaG1hSFNiTExrZW5qWjlZSlIzLVBuVU1lU3RndF9XUERNS0cwUzY3b1c5eHR3N3dzOF9XSEU1bmZaRklCX1lSSEx5amYwRlJUVlV2VGpGVDJua3ZaMWdTb3lxaHJlbTVlLUpHY2wwVmc4NEhZR04yT3FqVnhEVEEzeFhzVGlJOVlTTGpfWlhnVXFPQUtJWVpjd05nbDVQRkNKYlAw?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "politics-midterms"
+   },
+   {
+    "title": "How MAHA fueled a new wave of doctors running for office",
+    "outlet": "The Hill",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbHZRTkpsSlJxU0FWOWUzWm1pcVE1ZU9qN2U1clpPYW5nbGw5eXZaSmNBWllza2JRa0hxUjViQXEwc0ZJOEZJTm1uVE9iRV8ySFRuSmVFTW5ndFpKRVNuTnFaemRvUTl5M2h6RG1rYWszOVRzcUF1SkZUOHBOMUY1cE12OXJ1eUnSAYwBQVVfeXFMTmFUR2M2VlRKdE1jTFN2T3hhd0ZVaGxCVVdCdjd6NHdBNGlWU3l1S2tqVnhGLTVMYjc1UDdlSnNZVDN5aXRLbkVObGNyMWR1Y01YenlqUWM4R0R5bEwza3FOdWpTZURibldPaTd5TExyU2Q2YjVtVmdGU1lLVFJQZDBNUVlwaUc0RVhuNVE?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "politics-midterms"
+   },
+   {
+    "title": "Measles is a reckoning for RFK Jr. and MAHA",
+    "outlet": "Salon.com",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRVdhVVRPN1hEd3BIR041dTc1N0dIVEptMkRuQ3E5ZzNTemhjQ0EyQUYzS2FKWjNGb0NQSTRHcWJSZjFmLWdUTXVrOU5YUm9XV0V3Ym1zZ3c5OERuOXJrUFZOTmdKa2Y2Q0R1aVJzd3BFSzdRZlBBRzZnRmNla1Y0M25R?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "vaccines"
+   },
+   {
+    "title": "Calley Means Resigns as RFK Jr.'s Senior HHS Adviser",
+    "outlet": "Hoodline",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbHNZUHBMcWZxN2J4di1CdEIxMTV4SEJMUndoUFZKMzE5TkRtLS10em5FWDU0NlZzUWh6QlZucFVpWmNuLXFHZDQ2amhrYmNnWFBkalFvNjN6UkJ1R3NGNXYzUzlidU82WHZPLVRtMzBsdFpyR1JOWmN1SGdycEVOSE9yOE1XQ1dxYnpXQlA2REJXSTBDYnVPXzZYUjZ1X1lQWDJqT0JrTi1qOVEyZUE?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "Food quality concerns unite Americans far beyond MAHA political support",
+    "outlet": "News-Medical",
+    "date": "2026-10-24",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZmZZaHF0aXlGNVp5Q3l4WXJzblBqejFuZWFLY2JteXAyVkEzNlY0Ymp2N2lRV0pDWXgxVkJFZ3IwbV9oLTYtdFpLRDB0cW1FZ3gwbFVVX2xBSkxjWDZOLU9RZ3NsSlJ5eEU1RGUyVDdlUEZsM1VYYUNQX0g0dTA1ZHpXV09KdHc4QUpoSzI4bEJ1ekI5cEw2WDctcUR6amdoalpSN3NvY2hIUnBYU2RVaGlsSnFMbWRoNDdJ?oc=5",
+    "tone": "positive",
+    "origin": "na",
+    "theme": "food-chemicals"
    },
    {
     "title": "RFK Jr. adviser Calley Means resigns amid growing MAHA discontent over lack of progress",
@@ -4046,31 +4086,22 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "MAHA food policy delays reportedly drove RFK Jr. adviser to quit",
-    "outlet": "WCYB",
+    "title": "RFK Jr. ally Calley Means quits Trump administration amid food agenda delays",
+    "outlet": "The Washington Post",
     "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLU1zTFVOT28tRGEzY0FfSFd5SmtxQVE2eUEzRGF5WWVETG1aM0VpZGpnMXNjR1h0N21lS0tuZjRZTTB5NnVIX092Qm9wMFhrZ2hSRWJ4N0otRzhZLW9BQkVnaGxDUzRpSy1jZHhIdlhFemJOck5jMGVWTzRuS0Z1a0dBOVE5RkxoZE1hX3dlLXpCSTQtZ2tzUEFPQkN3RWZxSzNCNWd0SDBaQVZZdldQOVViYw?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbEhDenp3WTdJM0NFWVh0aW44UHNJSGJYRUxVQmUxTGpoV3dQNnotbkxUQ1ZLWWNnM3VqNHh1c0t4aU1rU2w5azZ5S0xTUm9tQ0tZa3JwWGZpVFlQLWxOVXZKSzdkY1ZpZGNsZldPeHo3ZHBvd0dra0VuaXZyT1pXNTJha1ZRZ2hSM2dBQXFRZVVuN1lRZnhHbWJGSnd2X2dKTDc1YlQ0NVVsWERZWGI5MGQ1Ym9wNTEtci01MmxFMWFqTWM?oc=5",
     "tone": "critical",
     "origin": "inside",
     "theme": "personnel-leadership"
    },
    {
-    "title": "Cracks are showing in the MAHA-Trump alliance",
-    "outlet": "The Columbus Dispatch",
+    "title": "MAHA food policy delays reportedly drove RFK Jr. adviser to quit",
+    "outlet": "WSTM",
     "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYXlYMVhGdE1qVnhWT1FXcml1WXFaZnBJU1FLSTIyb1FBdDVOS3NwQVFkNWJwLVU0ZXoyUVlzVENaRFFYRUJGOW5oelBSTVlISHY1RVJHdzJ1NW15aVFXam9XVFAyWjdtY0xzQmNhX1pUalVoREd3YmJMQmQ0eEt4LVRIaXZzNlU1a2xpN2FIb1gtdy16VHNaZ3lnY19BODFyR1JNM1dfN1I3emVRbURTYXVXVjh4UkVkRk9tQzVWZmtrcHRaOWdTajUxSQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUmFZbloweXVWQURtUldrTmltWFdBTjBWdUwtcGdYU3NnR3g0NUhTS2VHYlViSjYxZ2hwSzRwdkxNbXBBTklLMFJ5QTUySzB4b2ZHWGJyMU96aTVWYmlnbUZQT0JQTHV3WDZaSUJDcDB5dUVOOUpod0xJUHFWYVR2cHdkNm5kYlFvSnJHejhUSk42dHYyOTVyWXRzVzJDejNYUnNPazZ1ejQ3M2VpLXY0Q0Y1QkhHVDJnNDRF?oc=5",
     "tone": "critical",
-    "origin": "outside",
-    "theme": "politics-midterms"
-   },
-   {
-    "title": "You Are What You Eat: An Alternative to MAHA for Healthy Food and Fewer Chemicals",
-    "outlet": "Center for American Progress",
-    "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRmpid0FieWNZc1lEY1d4NGx2emF5QXZpclppT3YzR1pVU0dWOTNMUU8wNEtoajljQlRyRnBuVGg1N3U4N2p6UFkwNHpkRkpPVTdTY1lOSjRCT21Namctd0w2ZG5YRVNqbjJ5WFNCUzJlWEVITC1CbUJtSWhLbWFQVnFnRnJLOHJwY0lSRVcwZzRjb09DR1ZndDRTcjhqQk5lUGFwVjRoTGlzMS1PcjBGQ0VtQW10UUpEQ2dKYXkwMA?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "food-chemicals"
+    "origin": "inside",
+    "theme": "personnel-leadership"
    },
    {
     "title": "Top MAHA Food Policy Adviser Exits Trump Administration",
@@ -4104,8 +4135,8 @@
     "outlet": "Heartlander News",
     "date": "2026-10-23",
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ1lJdGhLZjh6QWRCaFE1T3QyTGV2TVA4bnlTcXZWY1ZFVlZfMGFZUzBHeHYzOEVMcW1ucXpMdHYyWUg5dTRoRnhLaGpZU1dlSWotLTF4UmRHU3FPREU0eWVNQ2R0dmdOLVVxdzQxb1RuRllWeDhqdE9yYjc1UXJsSHlCcEoyMFlkNWJBQkVSY3RMNFE?oc=5",
-    "tone": "neutral",
-    "origin": "na",
+    "tone": "critical",
+    "origin": "outside",
     "theme": "personnel-leadership"
    },
    {
@@ -4124,7 +4155,7 @@
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeGd6elp2Q3hmUE9USVdwZ2JKOE43dzB3ZWVUNENGVXJIQ2xoRWV5N0hJMHRsa3JyVVpGblQ0X0NFNkFBRV9ZQU1qOGRhQnBxSWlkVnpkUjQ5aGpfajd4bDV6ZkFCQ083UFBsVFpiVE1jZHEzOXUxQmEzbjNyemZqdGxLampfOGpuYzRZb2Q3WW1XeG5oNkVlNlZJOWRZMUlMajVvSDdiLU90UXhMZ3lkWTNuZEFQdw?oc=5",
     "tone": "critical",
     "origin": "outside",
-    "theme": "personnel-leadership"
+    "theme": "food-chemicals"
    },
    {
     "title": "Calley Means Resigns As Top RFK Jr. Health Adviser Amid MAHA Discontent: who 11 outlets blamed",
@@ -4140,8 +4171,8 @@
     "outlet": "Washington Examiner",
     "date": "2026-10-23",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVFZHTXE1QW5qTHdOMEpQWGlqMDhWcEhtNE9FRG9qa1h1RGhDdFVMS3NldXo3R3JNUEd4eXNDN1JtSDFxYWZ5b1E1ZVF2VVhJVnhnbkJmUE0tLVNzejJRQnJ1a0Q4U2ZyUzI5VmlxRnBrdDJyR0FsVGJ6MWNKZjczY1ZnaVpuNlBXN3J3amVLSVRCdzFUOGJuRHZocU14X2t2eWJYQzQwNlhyb3BpTDF5YUJZcw?oc=5",
-    "tone": "critical",
-    "origin": "inside",
+    "tone": "neutral",
+    "origin": "na",
     "theme": "personnel-leadership"
    },
    {
@@ -4172,15 +4203,6 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Calley Means resigns as top RFK Jr. adviser",
-    "outlet": "Gulf News",
-    "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOVk2UjI5eEZuLXBQcWRNbXR4c1NNb0hkcVJoOFFaR3VCQ3NDSmRGSTIzNkRBNlltQ21MM2dEcndhS3hsY2pkZEFjQUdLWDV4R0ZnbVBRajd4ODJUYVNQLXk3SXo5QkZlUElKa3htcVp0c2djSWdTVFVMTzZoTURGSThSYjA1Ym5TVE9KQ1d6T0xuU1lfc1g4cnNfQThYdFV2bFl6dldfTdIBpwFBVV95cUxQOVk2UjI5eEZuLXBQcWRNbXR4c1NNb0hkcVJoOFFaR3VCQ3NDSmRGSTIzNkRBNlltQ21MM2dEcndhS3hsY2pkZEFjQUdLWDV4R0ZnbVBRajd4ODJUYVNQLXk3SXo5QkZlUElKa3htcVp0c2djSWdTVFVMTzZoTURGSThSYjA1Ym5TVE9KQ1d6T0xuU1lfc1g4cnNfQThYdFV2bFl6dldfTQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
     "title": "Liberal group releases plan to woo MAHA voters for Democrats",
     "outlet": "Washington Examiner",
     "date": "2026-10-23",
@@ -4190,10 +4212,10 @@
     "theme": "politics-midterms"
    },
    {
-    "title": "Top health adviser and MAHA ally quits Trump admin",
-    "outlet": "news.lavx.hu",
+    "title": "Calley Means resigns as top RFK Jr. adviser",
+    "outlet": "Gulf News",
     "date": "2026-10-23",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOERMVmFTMnZNWWdqXzJYSmNmTVZVNC15bGdNR3FHUF9sTXlMUmlZNFhoZEdTYmthTW9JNkIySDc4S2YzUlBuWGlxSkVBcXRpX1dESzdyZGNQQ3RrajktS2c1ZUFOMFN4RE5WUEhnLThPRENBaXRxS1dSb2JSUVkycjRDV1Vwdw?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOVk2UjI5eEZuLXBQcWRNbXR4c1NNb0hkcVJoOFFaR3VCQ3NDSmRGSTIzNkRBNlltQ21MM2dEcndhS3hsY2pkZEFjQUdLWDV4R0ZnbVBRajd4ODJUYVNQLXk3SXo5QkZlUElKa3htcVp0c2djSWdTVFVMTzZoTURGSThSYjA1Ym5TVE9KQ1d6T0xuU1lfc1g4cnNfQThYdFV2bFl6dldfTdIBpwFBVV95cUxQOVk2UjI5eEZuLXBQcWRNbXR4c1NNb0hkcVJoOFFaR3VCQ3NDSmRGSTIzNkRBNlltQ21MM2dEcndhS3hsY2pkZEFjQUdLWDV4R0ZnbVBRajd4ODJUYVNQLXk3SXo5QkZlUElKa3htcVp0c2djSWdTVFVMTzZoTURGSThSYjA1Ym5TVE9KQ1d6T0xuU1lfc1g4cnNfQThYdFV2bFl6dldfTQ?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
@@ -4222,7 +4244,7 @@
     "date": "2026-10-23",
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU0FVRDB0RHI3QTdnd2psNVFhcmhQZDdUVTJJTXBteEpsc2thb24yNlhEQ01Jd0c1M1BudFpWZ1Z1TUhrdlVCeVBDZzRtREU4dWM2dk5Ra09STTZwdWJuUGR4alJFT0lKZWNQX19Ia2lIS2tRNFlVSktmLXBMRndlUmYycU1QRndrYmgtVG80TzVlbHp3Wi1TS2g5MlBXeFdwUGIza01BY1BaVFQxZWlmYUQ2TU51VzdDakVxQ1YySQ?oc=5",
     "tone": "critical",
-    "origin": "na",
+    "origin": "outside",
     "theme": "personnel-leadership"
    },
    {
@@ -4253,6 +4275,15 @@
     "theme": "politics-midterms"
    },
    {
+    "title": "Ditch Microplastics With These Seven MAHA Swaps",
+    "outlet": "The Daily Wire",
+    "date": "2026-10-23",
+    "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQeEtSLUJHcHpSNWpXb3RXS01IWGttZFFBc3kxVTF3OWlzU1BGYThPUEFIeXNWR1g5ZEd2LXpDSVg0SUxFSGo1elVIOEx6Rl8zTFJSS1FGSFJ0VmdOcnVuWGF0eWZzOFM0YXpNN3hTOFBRYlRiMGFTektTa19TLXlBUGQ2b1daZVIwYU1XaEVMWnRVUEd6LXJERDlVSXNyZnpyZC1DWHF4QU4xeG1SQ0JfWXZEMDRKeXRrcjU1QmYyaDZZaE90VDQ1Y3hFd1M3dy1TbWhTN3d3RmFuQ0Y1MmNIRVRmSVI3Y3h2QnRfSjFvbVRhUnlOMUx6aW9FdFAwQWRBQ1Z3V3lnU0xaTzJzanFtMnh4aHZxX21zYlQwT3cxZDhmZENITURFaTE2QUFXR0E5LW5fX0lTTUw3RENENzFxMlNn?oc=5",
+    "tone": "positive",
+    "origin": "na",
+    "theme": "food-chemicals"
+   },
+   {
     "title": "Top MAHA Advisor Resigns from White House",
     "outlet": "The Western Journal",
     "date": "2026-10-23",
@@ -4266,18 +4297,9 @@
     "outlet": "PBS",
     "date": "2026-10-23",
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORkU3Q3lfa0Y0SlhqRjVZMngtcGFsOGZPZnNGVHJCRUdyMFRTeGE4RGdwbHo4Y1hucDFkcUtWNFNsUGJzSFlzN3ViY3RYOVpXQ0NLYjhCV0VQMWl2bGVMZ3oxRFBpcEhPTVNpUFlwdGN5alJZY1lvNlI2Unp5dGw4eVBpaU1yQXNQVGpaUnZyTUFKZllLUlRQb2tpb1dVLTMwVWtHcy1RUzZpMkpXWDBkeEZPekl4bm9OYTE4TldSUQ?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "food-chemicals"
-   },
-   {
-    "title": "Calley Means, top MAHA ally, resigns from Trump administration",
-    "outlet": "Politico",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQY19EUWx4ZVBfZ3NJSVJjR1ktMmRQUlZnR0stTWp5UXIxVTMyano1Qi1ybGdWR0ItUHpWVlFaakhvWExyZ2VuVzA3YkxLSVFnRUt0cGJsOEpJWDhMTnJEUlhaOWp0OGpQLVladXUtRVRfQzJrLUh2X2doaWI2TkRsWjZId3hjdDRvWmtjSFFGbm5xTzJHNmZaWTVRZzZHYU5sNnJXUllZaEpzTmZ5VnNF?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "personnel-leadership"
+    "theme": "food-chemicals"
    },
    {
     "title": "MAHA adviser who introduced RFK Jr. to Trump quits admin amid frustrations over food policy",
@@ -4289,10 +4311,10 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Calley Means, a Top RFK Jr. Adviser, Quits Trump Administration",
-    "outlet": "WSJ",
+    "title": "Calley Means, top MAHA ally, resigns from Trump administration",
+    "outlet": "Politico",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeGpreWVpbXdPQ1cxaGs1MTQ3bzhrd1gwMWxDV2ZMN3JVNGt6TlJqdm5lU3E5enQwN201WFZnSVdyV2pWdkNmNjZoOFVQSFFoVDk4enNaZGdZV2R6MDVuWXFRRUp6QVRfQUppdU9US0thSnBhZTZCQnl0Q0NLdVJLT2dCWFl1NldTMTMxSFFDcUtLTFcycEswWFVKVGJOYkdHRk13Qm9IVzQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQY19EUWx4ZVBfZ3NJSVJjR1ktMmRQUlZnR0stTWp5UXIxVTMyano1Qi1ybGdWR0ItUHpWVlFaakhvWExyZ2VuVzA3YkxLSVFnRUt0cGJsOEpJWDhMTnJEUlhaOWp0OGpQLVladXUtRVRfQzJrLUh2X2doaWI2TkRsWjZId3hjdDRvWmtjSFFGbm5xTzJHNmZaWTVRZzZHYU5sNnJXUllZaEpzTmZ5VnNF?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
@@ -4307,6 +4329,15 @@
     "theme": "personnel-leadership"
    },
    {
+    "title": "MAHA's Calley Means resigns as a top RFK Jr. health adviser days before the midterm elections",
+    "outlet": "ABC News - Breaking News, Latest News and Videos",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX3pWeWx6OHFjalQ3VWxLRWUyUHdnV1ZINVZQVXMwZ19nTGxOYVJjN01nRXZwYXhVZ2ozd3VpejVGbFlUWnUtcnRlZ2VYazNwcVRVRWswbkdtUmpmc2ZfVVNRV1hwX2JtaXg0OC0yMVZSQUVhd0ptM1haOHRkRnFpanA5R3Q5Vk80Y0xYOF9icXRUSlIzUjZfedIBngFBVV95cUxQemxmRGZNU29mNHNCZGRNT1VCTWJJZkdFZkwzRERkX2lMR2pDM19iNzlUR2xfTl9RcndzYjZoM2FNbWY3SmpuUUp4T1hFREhVeUxrUTEtX1hEY0NtYUFZbWVDOXM1V1Utdl9zZm92MEwxbDhRa0lMTVlOMkJla2RGbkxlTzU0UlEycF9wdDBlcTkxMFFiM01YSC12OGhrQQ?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "personnel-leadership"
+   },
+   {
     "title": "Calley Means, senior adviser to RFK Jr. at HHS, resigns from Trump administration",
     "outlet": "WSMH",
     "date": "2026-10-22",
@@ -4316,10 +4347,10 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "MAHA's Calley Means resigns as a top RFK Jr. health adviser days before the midterm elections",
-    "outlet": "ABC News - Breaking News, Latest News and Videos",
+    "title": "Calley Means, a Top RFK Jr. Adviser, Quits Trump Administration",
+    "outlet": "WSJ",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX3pWeWx6OHFjalQ3VWxLRWUyUHdnV1ZINVZQVXMwZ19nTGxOYVJjN01nRXZwYXhVZ2ozd3VpejVGbFlUWnUtcnRlZ2VYazNwcVRVRWswbkdtUmpmc2ZfVVNRV1hwX2JtaXg0OC0yMVZSQUVhd0ptM1haOHRkRnFpanA5R3Q5Vk80Y0xYOF9icXRUSlIzUjZfedIBngFBVV95cUxQemxmRGZNU29mNHNCZGRNT1VCTWJJZkdFZkwzRERkX2lMR2pDM19iNzlUR2xfTl9RcndzYjZoM2FNbWY3SmpuUUp4T1hFREhVeUxrUTEtX1hEY0NtYUFZbWVDOXM1V1Utdl9zZm92MEwxbDhRa0lMTVlOMkJla2RGbkxlTzU0UlEycF9wdDBlcTkxMFFiM01YSC12OGhrQQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeGpreWVpbXdPQ1cxaGs1MTQ3bzhrd1gwMWxDV2ZMN3JVNGt6TlJqdm5lU3E5enQwN201WFZnSVdyV2pWdkNmNjZoOFVQSFFoVDk4enNaZGdZV2R6MDVuWXFRRUp6QVRfQUppdU9US0thSnBhZTZCQnl0Q0NLdVJLT2dCWFl1NldTMTMxSFFDcUtLTFcycEswWFVKVGJOYkdHRk13Qm9IVzQ?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
@@ -4353,9 +4384,18 @@
    },
    {
     "title": "Make America Healthy Again figure Calley Means resigns",
-    "outlet": "NonStop Local KHQ",
+    "outlet": "Nonstop Local News",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemdTcUlQQUNneTVOUnhOSVMzVzBMLXVVSWNwTWthUHkzWU1mR0NMWVRrSld2c2Vwb2l3VnVFdnZWa2pQNnRjQTBncEFWbThrSktBQ1dnOThjcDBLVDFVMVNGMkc0MjUtN001ak9vb1ZfdFZvY3JxM2RsMTEzdUFhdDdZTVdDOXpSdHluWVBxakxRNEQzRkhyMGVxbTJ6ZVJyTDBDYndRUFBKdlhwUEJOV3cwR09YdGczdW5PQU1BQmp0TzEySjhTYXB6dUVFSkh2cm56UmpSNA?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORWptWk1oM1otay1ZcGxlb2J6RW1GNThGMW5WUFgyWjZaS0lMb01CWnVwb3BHQUZKTFA2T3ZzaXYxVTB5U2JRNnZLY25OSmdOUHJZSktnX1huWEhJSjFvVVBlNlQ5dVBQR3c2LXItcVVnVFVWbkZwYnE3YzY2d1M5YnZVODE5WGpVazlYNnprdGg2MHlDd1ZyVV94NGEwcGlhNTNPOVFaRUp2ejhzYmlGSFUtMUZBT1JnaWI5VTZDanV5dHBzZ0U3WXFGZWlyRUd6MnRfaGpVS3pYdDd5WHd2U1ZR?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "Calley Means, top RFK Jr. adviser, quits Trump administration",
+    "outlet": "The Hill",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWlhncy1iT0JObGN2emE0b0Z6clF1YndaMFh4alB6M0tONHhEWVk1eDI3TFJMdzQ5bThuX1ljYWNQVXpiS1FLTHBqR08tSUdzS0Q3NFFQX3diLXNFTFlKQ05sbm9XdUVoMF9ibW42a3B0QW1QLVQzVVZwTzNOd1BpVmZYUHVTa1FOeVdhRzJFN2g3YndpMWRMLVVHeTFYT2c1X3RiTlNn0gGrAUFVX3lxTE9fcjVka3c1NUVEX1JHb0xDR0FJLUM3ZUNNYXFSdkU5eXdmNlNXM1dtbkdQZVhfaFBoZnk5TFdSXzYtNVVrN2NaLTNYbGl2a2Q0OVJxZ1NyQzI0WE9RQlN2WnJtSFFDMFN3YWhWRXA3QXprZ2dNQTA5clBCZ3BIMldERUsxR1NCRmpzTkFqYjlCS294TjY3d2ZLX01qNVNHYVJjcnFLUVNIZE9Vaw?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
@@ -4370,13 +4410,13 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Calley Means, top RFK Jr. adviser, quits Trump administration",
-    "outlet": "The Hill",
+    "title": "Cracks are showing in the MAHA-Trump alliance",
+    "outlet": "The Columbus Dispatch",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWlhncy1iT0JObGN2emE0b0Z6clF1YndaMFh4alB6M0tONHhEWVk1eDI3TFJMdzQ5bThuX1ljYWNQVXpiS1FLTHBqR08tSUdzS0Q3NFFQX3diLXNFTFlKQ05sbm9XdUVoMF9ibW42a3B0QW1QLVQzVVZwTzNOd1BpVmZYUHVTa1FOeVdhRzJFN2g3YndpMWRMLVVHeTFYT2c1X3RiTlNn0gGrAUFVX3lxTE9fcjVka3c1NUVEX1JHb0xDR0FJLUM3ZUNNYXFSdkU5eXdmNlNXM1dtbkdQZVhfaFBoZnk5TFdSXzYtNVVrN2NaLTNYbGl2a2Q0OVJxZ1NyQzI0WE9RQlN2WnJtSFFDMFN3YWhWRXA3QXprZ2dNQTA5clBCZ3BIMldERUsxR1NCRmpzTkFqYjlCS294TjY3d2ZLX01qNVNHYVJjcnFLUVNIZE9Vaw?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYXlYMVhGdE1qVnhWT1FXcml1WXFaZnBJU1FLSTIyb1FBdDVOS3NwQVFkNWJwLVU0ZXoyUVlzVENaRFFYRUJGOW5oelBSTVlISHY1RVJHdzJ1NW15aVFXam9XVFAyWjdtY0xzQmNhX1pUalVoREd3YmJMQmQ0eEt4LVRIaXZzNlU1a2xpN2FIb1gtdy16VHNaZ3lnY19BODFyR1JNM1dfN1I3emVRbURTYXVXVjh4UkVkRk9tQzVWZmtrcHRaOWdTajUxSQ?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "politics-midterms"
    },
    {
     "title": "\u201cDisillusioned\u201d MAHA leader quits as Trump admin\u2019s food agenda spoils: Report",
@@ -4421,13 +4461,22 @@
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxVTdVODJNQWhPc1hJVld6cXM2UzhWTHZ4Vk9tdWdpS1RXQ3M4QzI2VUNBd0NPeDdxQjNpbFJJTzBsSVFCUllZWm45OGNDZVp2Vno0VVZwYTU0cU5WMWtxaWlVX2JmYTljblhoZC1LSEdfOGY5U3c?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "culture-media"
+    "theme": "other"
    },
    {
     "title": "Trump\u2019s top MAHA ally just resigned over stalled agenda",
     "outlet": "Yahoo News New Zealand",
     "date": "2026-10-22",
     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTWGFsaWNyQzJJcXgtMjB5TVZybDluQW5uSlg0REJvSzZoVktOcXFqUDZ0WTgySEJLSWEtc2hwREhNeGZ1Z01zZ2I3MWFfdWJOdkI1UUpUOEh2dVBNdG1kTGRwLV9LRDA0VHp0TWVXV3hmYlU?oc=5",
+    "tone": "critical",
+    "origin": "inside",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "'Grifter Got Grifted': RFK Jr. Adviser Calley Means Quits as Trump 'Hemorrhaging' MAHA Support",
+    "outlet": "Common Dreams",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RTjNSSmpkcTNGdWoyZGVqQXpQWDNqMlB3cWlvUXl4Y2liWEdrd25IdkFkOENXTXBXRVhkYlFFTzZjbjFDNzNWR1haWWIweDdhN3Y3S2Y3OFN5UQ?oc=5",
     "tone": "critical",
     "origin": "inside",
     "theme": "personnel-leadership"
@@ -4451,21 +4500,12 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "'Grifter Got Grifted': RFK Jr. Adviser Calley Means Quits as Trump 'Hemorrhaging' MAHA Support",
-    "outlet": "Common Dreams",
+    "title": "Calley Means Resigns As Top RFK Jr. Advisor",
+    "outlet": "KFI AM 640",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9RTjNSSmpkcTNGdWoyZGVqQXpQWDNqMlB3cWlvUXl4Y2liWEdrd25IdkFkOENXTXBXRVhkYlFFTzZjbjFDNzNWR1haWWIweDdhN3Y3S2Y3OFN5UQ?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "personnel-leadership"
-   },
-   {
-    "title": "MAHA Adviser, Unhappy at Pace, Quits Administration",
-    "outlet": "Newser",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdTV2UVo0ZTQ5TTZNMG1LNlR5cjFfY1VSb3JIRlVmaW4zTjNkU3JuUk1PeXozcWxNbXNqa3dObjI0ZlZNQVdNQUNjYTNsaG1HTWtQbDZEckNKSEgyMjVsanFXbHpGeE1yZWwtektOQ1BhXy1YVlc5dlJzeVJtOEt6WExzTFBhTlB4cHcyZ3JB?oc=5",
-    "tone": "critical",
-    "origin": "inside",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZUJqalRNMUdBRDhEUmJIajBFV0FVMHRjZVJUYjdXRGt5SzEwb0NUMVJPRWxOZndrMHdBTWRFa3lTNmM4NGU2a1BVV3hmUzJIWjkxR2RZRzR0Wld5ZTJjQk5TdXctbW1hbzJyQVdibVhtNUktdXpyR3oxaEtuWXNVQ21aLXMwVFpxQjQtUlo3Y3l2dnpz?oc=5",
+    "tone": "neutral",
+    "origin": "na",
     "theme": "personnel-leadership"
    },
    {
@@ -4478,13 +4518,22 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "MAHA activist Calley Means quits Trump White House following food policy disputes",
-    "outlet": "Washington Examiner",
+    "title": "MAHA Adviser, Unhappy at Pace, Quits Administration",
+    "outlet": "Newser",
     "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRHp3OXExck9pU3duZjhGdERtUGtEc1RwWmZ0UG9GeC1QdG8yNHlyUml2YV9ESmJvUjlXZ0JzQ2w4dm5XQVhFS2h2MGFxQ1ZCWlRtTXBYYndrWld5Wk9BMm1nd21NMUE5al8xS1gwdHBLeE9kLWZmMENNNXRnQmFqd1JmMnlVMGNBQlp0cHcwVUJkVFE3ZXduMkFRc3RNY2NkalFkOGF4Yy1YS1hhajd3UVZ3?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdTV2UVo0ZTQ5TTZNMG1LNlR5cjFfY1VSb3JIRlVmaW4zTjNkU3JuUk1PeXozcWxNbXNqa3dObjI0ZlZNQVdNQUNjYTNsaG1HTWtQbDZEckNKSEgyMjVsanFXbHpGeE1yZWwtektOQ1BhXy1YVlc5dlJzeVJtOEt6WExzTFBhTlB4cHcyZ3JB?oc=5",
+    "tone": "critical",
+    "origin": "inside",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "Abdul El-Sayed Wants MAHA Voters",
+    "outlet": "notus.org",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fcDVtU3dqeWFuSTFYNldrV2ZaNG5jNDdaUFJQLXphVTNCV3lrdXdSN3RWREF0OFo5MnZ5aG1VLVRIWUJXYWx5aFZGb3hDMFZTeVhwaGZvX1VzemVNSXFNU2o4VWtVLW1WUXdVSF85XzdCQQ?oc=5",
     "tone": "neutral",
     "origin": "na",
-    "theme": "personnel-leadership"
+    "theme": "politics-midterms"
    },
    {
     "title": "Top Make America Healthy Again adviser quits Trump cabinet just before midterms",
@@ -4509,8 +4558,17 @@
     "outlet": "MS NOW",
     "date": "2026-10-22",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ock1OYktnR0pKLWo1cnh3VWJEYjlNZThZNFRnRkozLS1LTDJjc01aaC1qdUhHVGM0MnhKc0VDYzJuQTFVRllpY3ZPdWFlYTdXVEhpNWEwX1BxZ3dzdVdscWVDVUo2ek81enB2ODhR?oc=5",
-    "tone": "neutral",
-    "origin": "na",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "MAHA activist Calley Means quits Trump White House following food policy disputes",
+    "outlet": "Washington Examiner",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRHp3OXExck9pU3duZjhGdERtUGtEc1RwWmZ0UG9GeC1QdG8yNHlyUml2YV9ESmJvUjlXZ0JzQ2w4dm5XQVhFS2h2MGFxQ1ZCWlRtTXBYYndrWld5Wk9BMm1nd21NMUE5al8xS1gwdHBLeE9kLWZmMENNNXRnQmFqd1JmMnlVMGNBQlp0cHcwVUJkVFE3ZXduMkFRc3RNY2NkalFkOGF4Yy1YS1hhajd3UVZ3?oc=5",
+    "tone": "critical",
+    "origin": "inside",
     "theme": "personnel-leadership"
    },
    {
@@ -4521,24 +4579,6 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
-   },
-   {
-    "title": "Calley Means Resigns As Top RFK Jr. Advisor",
-    "outlet": "iHeart",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZkRwcm5INkNnSzU0VVJYVjdZRW5Pak5TTEdtbnRLWFR5LWpUbWJHNEtKbmJPclNZZDBqRWcyWW11QVFOMDhROGFpeTM2V2xTbEI3cU1RNzJUc1FZRlY4X2p4eXVyZW9WT1FHRUl6Z19qTV9Iam5pVjh6RUp4d19TeHZLY08ybENZbzJVaFkzaGJOc3h5TVIwYw?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "personnel-leadership"
-   },
-   {
-    "title": "Abdul El-Sayed Wants MAHA Voters",
-    "outlet": "NOTUS",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPemVoZkZkQ2tYZFFyc1NQQUtsVU42R2dwaXk1QmpJdjRZZFYxa3RUSlBVNGlScTlETUg2TTlCQjNMeGxYUGR1RDdPU2MtcjdmQkJNcTZkWlBRZzRyanF1dmVYVTJWdl9oM0JJYjlmcDZoS29Ba1VlRVctNGtuLXl3UDRnU2xaWlJvLXUzSQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
    },
    {
     "title": "Top RFK Adviser\u2019s Resignation Sends Shock Waves Through MAHA Movement",
@@ -4556,15 +4596,6 @@
     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZDJqYVpLVUQyTkhnSW00V2dCZVNFOEtORjhVVlVSR1B0VnVzak1tcngxMlNkeGFUdHJOY1dGZmhmejNQVTVwbTh2SzIxT1p6VUJpSkpSSmk5eWduZHktaW5GRUdqcnpra0Y3cGxBajV2UVVmaHR5NGZ0dm1YNEFVRGVRcVo3dDBWYWFCRmpOZlhRTXVxWnpCQUtQT0R6M1NaOWFJbklZeG5abUFDMnNPVHJDMklKMGxMWjJUQ0Y2UmxLWGp1NGhSeXJCZngzUXowZmhyV0tNUTAxTGY0?oc=5",
     "tone": "critical",
     "origin": "inside",
-    "theme": "personnel-leadership"
-   },
-   {
-    "title": "Top RFK Jr. Adviser Resigns",
-    "outlet": "NTD News",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01YzMyY0VxY05NLXlDb2E2ZXVpelhld3NiNTZFeTRCRGl1TmVtUjhKamVzR3hfaHp4Vjd5LW5BRVpCLUNqT2ZKT0JUeWRrOWliNlRjZGh5QmlHV0JpRkgwWExrWmxaSVlKSUs4?oc=5",
-    "tone": "neutral",
-    "origin": "na",
     "theme": "personnel-leadership"
    },
    {
@@ -4636,7 +4667,7 @@
     "date": "2026-10-22",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRS1lNHJ1dVJScy13UmRzY1pRa1c1MXAxV0o0T0k4N2FqZ3JEeTZjYVQ5Nk5LSTVFeGhQTlg1MFNqbE1kT2xkSUt5NGxBN1VrS2I4WFBpZ053ZFY4RW56NGxFUVRxX3p3TUgweTJxeGhud29zc19Hcl9PM3pyMzNBS3NPdw?oc=5",
     "tone": "critical",
-    "origin": "outside",
+    "origin": "inside",
     "theme": "personnel-leadership"
    },
    {
@@ -4644,6 +4675,15 @@
     "outlet": "Agri-Pulse Communications, Inc.",
     "date": "2026-10-22",
     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNlAtb2lrc256VTlXcHNXUDZqMUtCWnVzY2NCZ09taF9KcFprdWFlSTI1U0U5eU9aWWNVd0xXTm1XY1dTOFJ6a3pUR2ZfbWtQcjZvTU9ERG1fZnU4b0hhT2lIVVZLeXFQMDdUWFl6TnZWTkV1bHZyRVV4MjNhNEI4RnVOOVF2cTlrMEpmbktiY1ZjalVuSjhNOVEwRGFMaDY5Qk55WnJLbUI?oc=5",
+    "tone": "neutral",
+    "origin": "na",
+    "theme": "personnel-leadership"
+   },
+   {
+    "title": "Top RFK Jr. MAHA ally Calley Means resigns from White House",
+    "outlet": "Agri-Pulse Communications, Inc.",
+    "date": "2026-10-22",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUnE0NFZ2blJRWnY4RFZORkIwVWF6ZmhWbGFYSjJULS1qWm9EQ0o0SWpvekxicVhuT0NXRDBpenBxOVRzdGFhQjhPOEhnR1NZUG01YjQ2Q3p6eWNBMlB5cWhPVWwydk0xZG9HSW9DNWQ3VElkZUlVUS02Q3RCanlWb2c4eVdVNkVhdmF3UXZSRkJRTEphZjZsU1NoQjhObDlEZnc?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "personnel-leadership"
@@ -4667,15 +4707,6 @@
     "theme": "personnel-leadership"
    },
    {
-    "title": "Ditch Microplastics With These Seven MAHA Swaps",
-    "outlet": "The Daily Wire",
-    "date": "2026-10-22",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMnJFa1U4WWM1QzQ1bk5JUU5rYm44eTJ6X3Q3TGtkUDU2VlJINW1DU1Z5M2ZwakFGVmhaMndyZk4zeHZ1bTV5eG1ydDRPQnFxeXNXenBURU15XzNjeENHekV1ak9tRHA2QmRHRDRQYUY1WE5FTkRvOUNFYlNYaFhhZkNBUEw?oc=5",
-    "tone": "positive",
-    "origin": "na",
-    "theme": "food-chemicals"
-   },
-   {
     "title": "RFK Jr., Sen. Rick Scott Attend Alzheimer\u2019s Summit in Florida",
     "outlet": "NTD News",
     "date": "2026-10-22",
@@ -4694,19 +4725,10 @@
     "theme": "other"
    },
    {
-    "title": "WATCH: MAHA and the midterm elections",
-    "outlet": "The New Lede",
-    "date": "2026-10-20",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rMnFPa203bHN4UlVnMW1BQ3h6QjhUdndBbmdPc0dDbjBQd05rc2F2SnZVdXBBRGlDaTdXcEQxUlVuNFBuT2loWWVhdnBQRm1kNDJRVS1PTFNiLVRBQkhaSjJnaTVVb3Z4d3RDRXAwajkwQUFjWDVCNGJDb1U?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
-   },
-   {
     "title": "MAHA Action backs Ken Paxton's Senate Push With $1.3 Million",
-    "outlet": "Tioga Publishing",
+    "outlet": "yadkinripple.com",
     "date": "2026-10-20",
-    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPSFdNUElmMDQwS0RMNXJyOHBzalJwMzlRc012cEhjRW9VN19ySmNjQXRvYUVkTnVUM3hYWDhnRVQ1cGRMTXJPcDdJbUhkQTVTcFFQUHpET25NLXRXMW9ONUFoZHRjQmxYbTB1d2ZPa09rN0V0WVExZ0pmVUJvRkhOZlhNY2s4d0lpalhkNDBCbC1ONVFZS2pRQ2Izc2dyLWZIdEhmZk1fQ21IMFU1MFFid1h5YWxCUkx5RXEtY3A0Z0F1Unl2VTNaY1ZmWXpFd2c5UmlZMkJmR2dqWWVyNHRhelRocGhVUWl2YUdDaGp5cERjbUxIakxtRERWa3NiVzZN?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOUVc2TkxxbFZwcDE4YVEwQWpxcmhXY1BiR3pONG4wNnZ3Z2FPcW1KUkVXRU9QZ2ZISWVJUXk1Mm5sLU9ZY2lLLUROaUVFa3FUd1RxaGZHMjNYbWotNnZFZk9tR01kZTg2MFRPYUdXTjVCcHpWWGNSRjVqWUVsZmRCdlZEYzdDcnZsVWlMUTRncExUTnU2WURfNUZhVlZuYWJ4SDAwOHJMcFZxcXpXZVhnTGw4OUxRc3IwaHBjZjJfZEVGc29KUEMwSHVPbFBad1RRZ3ZRSjhsWUUxRkpQbVA4TklhZDFHWVkzWEtLUEVORDgwMV9wYndlV0wyeFM?oc=5",
     "tone": "neutral",
     "origin": "na",
     "theme": "money-pac"
@@ -4721,19 +4743,19 @@
     "theme": "other"
    },
    {
-    "title": "How Trump Conned MAHA",
-    "outlet": "Public Citizen",
-    "date": "2026-10-19",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KODJmMkVZNzkyR1V0YnNGeE1wOFc4YzZQM2pzMF9jbkc0dkJxZEttcGc4TW5EYWw5bmNveTItVGJqWHZnamNRTjN4UDFHYUJPbTlfODF2NlZsYzZqXzdfQWE4bGg?oc=5",
-    "tone": "critical",
-    "origin": "outside",
-    "theme": "other"
-   },
-   {
     "title": "Toxic Betrayal: Report Details How Trump Duped His MAHA Base by Appeasing Corporate Interests",
     "outlet": "Common Dreams",
     "date": "2026-10-19",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40aDZoYVVoLUNXbV9xcGJuQXBLMm1sMmRTX1JTQVZFVWltelJHMHhTSVZlX0wtVE5GelZ1NlBCV3VFNWh5WHRNYXhDOGhDWlV6TzZOcUFuMTlMNUtQcmJwZXFSX1ROb3c?oc=5",
+    "tone": "critical",
+    "origin": "outside",
+    "theme": "policy-delivery"
+   },
+   {
+    "title": "How Trump Conned MAHA",
+    "outlet": "Public Citizen",
+    "date": "2026-10-19",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KODJmMkVZNzkyR1V0YnNGeE1wOFc4YzZQM2pzMF9jbkc0dkJxZEttcGc4TW5EYWw5bmNveTItVGJqWHZnamNRTjN4UDFHYUJPbTlfODF2NlZsYzZqXzdfQWE4bGg?oc=5",
     "tone": "critical",
     "origin": "outside",
     "theme": "policy-delivery"
@@ -4757,15 +4779,6 @@
     "theme": "politics-midterms"
    },
    {
-    "title": "Maha Ashtami Celebrations Peak in Bhubaneswar: Devotees Flock in Thousands for Mahagauri Darshan and Sandhi Puja",
-    "outlet": "Pragativadi",
-    "date": "2026-10-19",
-    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZTYyZHZIZV9ucGRRcHBVUGxMQkFkemNJYU9pRjNwdDZ6SXBZUXE3eGVXMHdlSGY0QzdMM1lmYzlIQXJjMEQwSWdaR2N1dXdkNEp5R1RidHdhdjdSZnVmdi03eWNEd0xKU1FqenRJWWRSRG5FM1RDQk03bGg3Y2FYSjFxLVRpQlRJY3B4TXNNTklhYTNaTnJRWXp3eS1oQlVBNlJYSHh5cjk2WUtYdmZaaS1WbzN3bWxoTDh6VEdHaUNWbG5jZ3NqMWJPdDB5clBMQ1E?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "other"
-   },
-   {
     "title": "Maha Navami Significance: Why The Ninth Day Of Navratri Matters Most",
     "outlet": "Boldsky",
     "date": "2026-10-19",
@@ -4782,24 +4795,6 @@
     "tone": "neutral",
     "origin": "na",
     "theme": "politics-midterms"
-   },
-   {
-    "title": "Some MAHA Voters in Arizona Question Their G.O.P. Ties",
-    "outlet": "The New York Times",
-    "date": "2026-10-18",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBOODhSVGNOajNpSVA1RFBDVGRmS1ZKdUg0Wkx0Q05BUUxwVEZzd3JYYlNkZmZIR3pRMnNHWkZsVTdBZG1MWXBMUkRDNG1WdXNtSkFzbTUtMHNuSDA3b25mVzhINFphdkhSTFA4SWhTR0tEWEd2YTYySDc5SQ?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "politics-midterms"
-   },
-   {
-    "title": "MAHA Action PAC throws financial support behind Iowa GOP gubernatorial candidate",
-    "outlet": "KEYE",
-    "date": "2026-10-18",
-    "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNRHRKOF85MTZmSW1QNEJCOTd6TUpLOGNSSXA0bzFQWUlIQUZ0ZF90ZGJONWhESllSblVMMVJueUZjQ2JSaTFldVZtSUhHSVVVekIyZi1hVHhSWnJxTExvYWkwbWFpOXpMNENkQVhWcmVqTUJoekZBZ01NWkd0bUEtRXgtbWRYQ2VaMnE1eG41dWRRVHl5Y2R0NHEzYno4aS0wekpRZk4tLXdiYUpQMEZWM2Y0SW1nM1lIMmJEd0RMLWtKcXNhcnVvcEhIM2YwQkV2a2lBNWtIenc2R1RKSlVRcUZlNXRhby03RkxxbDlMVkMwUllWQ0FWWlA3UnFMd2lqLW9qWlRR?oc=5",
-    "tone": "neutral",
-    "origin": "na",
-    "theme": "money-pac"
    }
   ]
  },
@@ -4807,7 +4802,7 @@
   "source": "Google Political Advertising transparency bundle (advertiser weekly spend, advertiser stats)",
   "url": "https://adstransparency.google.com/political?topic=political&region=US",
   "bundle": "https://storage.googleapis.com/political-csv/google-political-ads-transparency-bundle.zip",
-  "report_updated_pt": "2026-10-24 00:04:09",
+  "report_updated_pt": "2026-10-24 20:06:14",
   "note": "Spend on Google Ads and YouTube for ads Google classifies as election ads, reported in $100 increments per advertiser per week. Cycle = weeks from Jan 5, 2025. Campaign committees are matched by Google's verified advertiser name; some campaigns run under several advertiser accounts, all of which are summed. Google only; it says nothing about TV, Meta or mail.",
   "cycle_start": "2025-01-05",
   "watchlist": [
@@ -5297,10 +5292,10 @@
     "name": "Rob Sand for Iowa",
     "race": "US-IA Governor",
     "side": "D",
-    "cycle_spend": 5403000.0,
-    "last4w": 1370800.0,
+    "cycle_spend": 5402900.0,
+    "last4w": 1370700.0,
     "prev4w": 1121000.0,
-    "all_time": 5436400.0,
+    "all_time": 5436300.0,
     "creatives": 493,
     "weekly": [
      [
@@ -5621,7 +5616,7 @@
      ],
      [
       "2026-10-18",
-      261400.0
+      261300.0
      ]
     ]
    },
@@ -5675,10 +5670,10 @@
     "name": "Josh Turek for Iowa",
     "race": "US-IA Senate",
     "side": "D",
-    "cycle_spend": 4353000.0,
-    "last4w": 2347900.0,
+    "cycle_spend": 4352800.0,
+    "last4w": 2347700.0,
     "prev4w": 1058500.0,
-    "all_time": 4353200.0,
+    "all_time": 4352900.0,
     "creatives": 362,
     "weekly": [
      [
@@ -5911,11 +5906,11 @@
      ],
      [
       "2026-10-11",
-      872800.0
+      872700.0
      ],
      [
       "2026-10-18",
-      573200.0
+      573100.0
      ]
     ]
    },
@@ -7069,10 +7064,10 @@
     "name": "Friends of Sherrod Brown",
     "race": "US-OH Senate",
     "side": "D",
-    "cycle_spend": 4808000.0,
-    "last4w": 1655200.0,
+    "cycle_spend": 4807900.0,
+    "last4w": 1655100.0,
     "prev4w": 1007500.0,
-    "all_time": 11937800.0,
+    "all_time": 11937700.0,
     "creatives": 2003,
     "weekly": [
      [
@@ -7169,7 +7164,7 @@
      ],
      [
       "2026-10-11",
-      362100.0
+      362000.0
      ],
      [
       "2026-10-18",
@@ -7984,7 +7979,7 @@
     "cycle_spend": 3316600.0,
     "last4w": 1217100.0,
     "prev4w": 762600.0,
-    "all_time": 3316600.0,
+    "all_time": 3316500.0,
     "creatives": 308,
     "weekly": [
      [
@@ -8126,10 +8121,10 @@
     "name": "Troy Jackson for Maine",
     "race": "US-ME Senate",
     "side": "D",
-    "cycle_spend": 4067000.0,
-    "last4w": 1917300.0,
+    "cycle_spend": 4066900.0,
+    "last4w": 1917200.0,
     "prev4w": 1222200.0,
-    "all_time": 4067100.0,
+    "all_time": 4067000.0,
     "creatives": 240,
     "weekly": [
      [
@@ -8186,7 +8181,7 @@
      ],
      [
       "2026-10-18",
-      336900.0
+      336800.0
      ]
     ]
    },
@@ -8922,10 +8917,10 @@
     "name": "Sununu Senator",
     "race": "US-NH Senate",
     "side": "R",
-    "cycle_spend": 351000.0,
-    "last4w": 147600.0,
+    "cycle_spend": 350900.0,
+    "last4w": 147500.0,
     "prev4w": 140500.0,
-    "all_time": 351100.0,
+    "all_time": 351000.0,
     "creatives": 96,
     "weekly": [
      [
@@ -8982,7 +8977,7 @@
      ],
      [
       "2026-10-18",
-      28400.0
+      28300.0
      ]
     ]
    },
@@ -9083,7 +9078,7 @@
     "cycle_spend": 2201300.0,
     "last4w": 513300.0,
     "prev4w": 650400.0,
-    "all_time": 2200900.0,
+    "all_time": 2200800.0,
     "creatives": 498,
     "weekly": [
      [
@@ -9765,7 +9760,7 @@
     "cycle_spend": 6237900.0,
     "last4w": 1721300.0,
     "prev4w": 1317400.0,
-    "all_time": 6238100.0,
+    "all_time": 6238000.0,
     "creatives": 78,
     "weekly": [
      [
@@ -10011,10 +10006,10 @@
     "name": "Talarico for Texas (2)",
     "race": "US-TX Senate",
     "side": "D",
-    "cycle_spend": 5857400.0,
-    "last4w": 2832000.0,
+    "cycle_spend": 5857300.0,
+    "last4w": 2831900.0,
     "prev4w": 1238700.0,
-    "all_time": 5857200.0,
+    "all_time": 5857100.0,
     "creatives": 82,
     "weekly": [
      [
@@ -10099,7 +10094,7 @@
      ],
      [
       "2026-10-18",
-      541200.0
+      541100.0
      ]
     ]
    },
@@ -10313,10 +10308,10 @@
     "name": "Jackson for Governor, Inc.",
     "race": "US-GA Governor",
     "side": "R",
-    "cycle_spend": 13346900.0,
-    "last4w": 3370700.0,
+    "cycle_spend": 13346800.0,
+    "last4w": 3370600.0,
     "prev4w": 2414000.0,
-    "all_time": 13346700.0,
+    "all_time": 13346600.0,
     "creatives": 903,
     "weekly": [
      [
@@ -10449,7 +10444,7 @@
      ],
      [
       "2026-10-18",
-      708600.0
+      708500.0
      ]
     ]
    },
@@ -10945,8 +10940,8 @@
     "name": "Crowley for Wisconsin",
     "race": "US-WI Governor",
     "side": "D",
-    "cycle_spend": 1263300.0,
-    "last4w": 673800.0,
+    "cycle_spend": 1263200.0,
+    "last4w": 673700.0,
     "prev4w": 354200.0,
     "all_time": 1263200.0,
     "creatives": 37,
@@ -11005,7 +11000,7 @@
      ],
      [
       "2026-10-18",
-      204800.0
+      204700.0
      ]
     ]
    },
@@ -12345,8 +12340,8 @@
     "name": "Moody for Florida",
     "race": "US-FL Senate",
     "side": "R",
-    "cycle_spend": 869700.0,
-    "last4w": 641500.0,
+    "cycle_spend": 869600.0,
+    "last4w": 641400.0,
     "prev4w": 216300.0,
     "all_time": 869700.0,
     "creatives": 35,
@@ -12385,7 +12380,7 @@
      ],
      [
       "2026-10-18",
-      108500.0
+      108400.0
      ]
     ]
    },
@@ -12527,10 +12522,10 @@
     "name": "Byron Donalds",
     "race": "US-FL Governor",
     "side": "R",
-    "cycle_spend": 5383400.0,
-    "last4w": 3809500.0,
+    "cycle_spend": 5383300.0,
+    "last4w": 3809400.0,
     "prev4w": 1573900.0,
-    "all_time": 5383400.0,
+    "all_time": 5383300.0,
     "creatives": 138,
     "weekly": [
      [
@@ -12559,7 +12554,7 @@
      ],
      [
       "2026-10-18",
-      972900.0
+      972800.0
      ]
     ]
    },
@@ -12964,15 +12959,15 @@
   ],
   "races": {
    "US-IA Governor": {
-    "D": 5450400.0,
+    "D": 5450300.0,
     "R": 1883000.0,
-    "last4_D": 1377200.0,
+    "last4_D": 1377100.0,
     "last4_R": 698400.0
    },
    "US-IA Senate": {
-    "D": 4353000.0,
+    "D": 4352800.0,
     "R": 60600.0,
-    "last4_D": 2347900.0,
+    "last4_D": 2347700.0,
     "last4_R": 4800.0
    },
    "US-MI Senate": {
@@ -12988,9 +12983,9 @@
     "last4_R": 236900.0
    },
    "US-OH Senate": {
-    "D": 6576900.0,
+    "D": 6576800.0,
     "R": 64500.0,
-    "last4_D": 2244000.0,
+    "last4_D": 2243900.0,
     "last4_R": 15100.0
    },
    "US-OH Governor": {
@@ -13000,16 +12995,16 @@
     "last4_R": 1217100.0
    },
    "US-ME Senate": {
-    "D": 4092500.0,
+    "D": 4092400.0,
     "R": 1966800.0,
-    "last4_D": 1917300.0,
+    "last4_D": 1917200.0,
     "last4_R": 242400.0
    },
    "US-NH Senate": {
     "D": 1326400.0,
-    "R": 351000.0,
+    "R": 350900.0,
     "last4_D": 612500.0,
-    "last4_R": 147600.0
+    "last4_R": 147500.0
    },
    "US-AK Senate": {
     "D": 0.0,
@@ -13024,16 +13019,16 @@
     "last4_R": 0.0
    },
    "US-TX Senate": {
-    "D": 12095300.0,
+    "D": 12095200.0,
     "R": 198100.0,
-    "last4_D": 4553300.0,
+    "last4_D": 4553200.0,
     "last4_R": 62700.0
    },
    "US-GA Governor": {
     "D": 0.0,
-    "R": 13346900.0,
+    "R": 13346800.0,
     "last4_D": 0.0,
-    "last4_R": 3370700.0
+    "last4_R": 3370600.0
    },
    "US-NV Governor": {
     "D": 55000.0,
@@ -13042,9 +13037,9 @@
     "last4_R": 185600.0
    },
    "US-WI Governor": {
-    "D": 1263300.0,
+    "D": 1263200.0,
     "R": 4733000.0,
-    "last4_D": 673800.0,
+    "last4_D": 673700.0,
     "last4_R": 1576400.0
    },
    "US-AZ Governor": {
@@ -13067,15 +13062,15 @@
    },
    "US-FL Senate": {
     "D": 0.0,
-    "R": 869700.0,
+    "R": 869600.0,
     "last4_D": 0.0,
-    "last4_R": 641500.0
+    "last4_R": 641400.0
    },
    "US-FL Governor": {
     "D": 175800.0,
-    "R": 9045400.0,
+    "R": 9045300.0,
     "last4_D": 28100.0,
-    "last4_R": 3809500.0
+    "last4_R": 3809400.0
    }
   },
   "maha_orgs_cycle_total": 500.0,
@@ -13085,7 +13080,7 @@
  "fec": {
   "source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)",
   "url": "https://api.open.fec.gov/developers/",
-  "collected": "2026-10-24",
+  "collected": "2026-10-25",
   "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025\u201326 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24\u201348 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
   "committees": {
    "C00821439": {

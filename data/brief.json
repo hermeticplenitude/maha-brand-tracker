@@ -1,6 +1,6 @@
 {
- "date": "2026-10-24",
- "days_to_election": 10,
+ "date": "2026-10-25",
+ "days_to_election": 9,
  "items": [
   {
    "k": "X volume",
@@ -12,9 +12,9 @@
   },
   {
    "k": "News tone",
-   "v": "40%",
+   "v": "43%",
    "u": "of 87 headlines critical",
-   "d": "34% from inside",
+   "d": "38% from inside",
    "read": "Lead theme personnel / leadership. Inside criticism above one in five critical headlines: watch the base.",
    "href": "#news"
   },
@@ -69,14 +69,6 @@
  ],
  "deadlines": [
   [
-   "2026-10-24",
-   "Alaska: mail-ballot request deadline"
-  ],
-  [
-   "2026-10-24",
-   "Michigan: early voting opens"
-  ],
-  [
    "2026-10-27",
    "Ohio: mail-ballot request deadline"
   ],
@@ -99,6 +91,10 @@
   [
    "2026-11-03",
    "Maine: registration closes"
+  ],
+  [
+   "2026-11-03",
+   "New Hampshire: registration closes"
   ]
  ],
  "action": "9 of 12 items on the Democratic 'Reclaiming MAHA' list are proposed or voluntary but not final, 1 untouched, 2 moving the other way, 0 delivered. Finalizing any one of the proposed rules (GRAS, front-of-package labels) before Nov 3 removes it from the Democratic list.",
