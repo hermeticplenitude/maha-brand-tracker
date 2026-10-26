@@ -1,13 +1,13 @@
 {
- "date": "2026-10-25",
- "days_to_election": 9,
+ "date": "2026-10-26",
+ "days_to_election": 8,
  "items": [
   {
    "k": "X volume",
-   "v": "2,271",
+   "v": "2,223",
    "u": "original posts / week",
-   "d": "+2%",
-   "read": "Flat month over month; 3.6% of the election-week peak. MAHA runs at 9.6% of MAGA's X volume.",
+   "d": "+6%",
+   "read": "Flat month over month; 3.6% of the election-week peak. MAHA runs at 9.2% of MAGA's X volume.",
    "href": "#social"
   },
   {
@@ -20,17 +20,17 @@
   },
   {
    "k": "News volume",
-   "v": "8.9",
+   "v": "15.8",
    "u": "per 100k US articles",
-   "d": "+16%",
-   "read": "Up vs the prior four weeks; 15% of the Sep 2025 peak.",
+   "d": "+247%",
+   "read": "Up vs the prior four weeks; 26% of the Sep 2025 peak.",
    "href": "#social"
   },
   {
    "k": "Bluesky",
-   "v": "358",
+   "v": "361",
    "u": "posts / week",
-   "d": "-13%",
+   "d": "-9%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
    "href": "#social"
   },
@@ -60,9 +60,9 @@
   },
   {
    "k": "Google ad spend",
-   "v": "$90.7M",
+   "v": "$93.7M",
    "u": "by the 20 races' nominees this cycle",
-   "d": "$31.0M last 4 wks",
+   "d": "$26.6M last 4 wks",
    "read": "MAHA organizations: $500 on Google all cycle. The movement is absent from the paid-search and YouTube air war its own races are fighting.",
    "href": "#c-gads"
   }
