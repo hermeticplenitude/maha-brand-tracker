@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "bluesky": {
   "source": "Bluesky AppView public search (app.bsky.feed.searchPosts)",
   "docs": "https://docs.bsky.app/docs/api/app-bsky-feed-search-posts",
@@ -12,24 +12,24 @@
    "MAHA moms"
   ],
   "window_days": 90,
-  "since": "2026-07-30",
+  "since": "2026-07-31",
   "note": "Every public Bluesky post in the window matching the phrase set, deduplicated across queries. Bare-acronym posts are kept only if the text also carries a political cue (RFK, Kennedy, HHS, vaccine, MAGA, Trump, food dye, seed oil, mRNA, etc.). Engagement = likes + reposts + replies + quotes at collection time. Bluesky skews left of the US electorate; treat it as the critical-outside channel, not a census.",
-  "total_posts": 4795,
+  "total_posts": 4785,
   "weekly": [
    {
     "week": "2026-07-27",
-    "posts": 159,
-    "engagement": 5690
+    "posts": 103,
+    "engagement": 4838
    },
    {
     "week": "2026-08-03",
-    "posts": 386,
-    "engagement": 26407
+    "posts": 389,
+    "engagement": 26420
    },
    {
     "week": "2026-08-10",
     "posts": 275,
-    "engagement": 39284
+    "engagement": 39283
    },
    {
     "week": "2026-08-17",
@@ -48,8 +48,8 @@
    },
    {
     "week": "2026-09-07",
-    "posts": 498,
-    "engagement": 13366
+    "posts": 496,
+    "engagement": 13315
    },
    {
     "week": "2026-09-14",
@@ -59,7 +59,7 @@
    {
     "week": "2026-09-21",
     "posts": 368,
-    "engagement": 10417
+    "engagement": 10418
    },
    {
     "week": "2026-09-28",
@@ -69,29 +69,29 @@
    {
     "week": "2026-10-05",
     "posts": 332,
-    "engagement": 5647
+    "engagement": 5646
    },
    {
     "week": "2026-10-12",
-    "posts": 167,
+    "posts": 168,
     "engagement": 1652
    },
    {
     "week": "2026-10-19",
     "posts": 382,
-    "engagement": 5046
+    "engagement": 5058
    },
    {
     "week": "2026-10-26",
-    "posts": 92,
-    "engagement": 2101
+    "posts": 136,
+    "engagement": 2612
    }
   ],
   "summary": {
-   "last4w_avg_posts": 361.2,
-   "prev4w_avg_posts": 396.0,
-   "change_pct": -8.8,
-   "unique_authors": 3205
+   "last4w_avg_posts": 361.5,
+   "prev4w_avg_posts": 395.5,
+   "change_pct": -8.6,
+   "unique_authors": 3190
   },
   "top_posts": [
    {
@@ -137,7 +137,7 @@
     "name": "Ryan Marino, MD",
     "text": "Taking my time to really listen and learn from the very valid concerns of the MAHA movement:",
     "likes": 5036,
-    "reposts": 995,
+    "reposts": 994,
     "replies": 98,
     "quotes": 59,
     "url": "https://bsky.app/profile/ryanmarino.bsky.social/post/3msdwrahln22i"
@@ -270,7 +270,7 @@
     "text": "Top Big Pharma drugmakers have raked in $300B in revenue so far this year and increased their stock buybacks and dividend payments.\n\nWhat's driving those windfalls?\n\nLifesaving cancer drugs that Trump excluded from Medicare drug price negotiation.\n\n\"Make America Healthy Again.\"",
     "likes": 937,
     "reposts": 514,
-    "replies": 36,
+    "replies": 35,
     "quotes": 17,
     "url": "https://bsky.app/profile/rbreich.bsky.social/post/3mt345657ma2p"
    }
@@ -278,13 +278,13 @@
   "top_accounts": [
    {
     "handle": "gavinyamey.bsky.social",
-    "posts": 140,
-    "engagement": 14820
+    "posts": 142,
+    "engagement": 14926
    },
    {
     "handle": "joho.bsky.social",
     "posts": 31,
-    "engagement": 1135
+    "engagement": 1136
    },
    {
     "handle": "mcbridetd.bsky.social",
@@ -297,14 +297,14 @@
     "engagement": 222
    },
    {
+    "handle": "porcellato.bsky.social",
+    "posts": 23,
+    "engagement": 3
+   },
+   {
     "handle": "banmarnj.bsky.social",
     "posts": 22,
     "engagement": 22
-   },
-   {
-    "handle": "porcellato.bsky.social",
-    "posts": 21,
-    "engagement": 3
    },
    {
     "handle": "motherjones.com",
@@ -1398,7 +1398,7 @@
    },
    {
     "week": "2026-10-26",
-    "count": 576
+    "count": 853
    }
   ],
   "weekly_counts_maga": [
@@ -1872,7 +1872,7 @@
    },
    {
     "week": "2026-10-26",
-    "count": 8351
+    "count": 11759
    }
   ],
   "weekly_ratio_maha_to_maga": [
@@ -2346,11 +2346,11 @@
    },
    {
     "week": "2026-10-26",
-    "value": 0.069
+    "value": 0.0725
    }
   ],
   "summary": {
-   "total_posts_since_start": 1104474,
+   "total_posts_since_start": 1104751,
    "last4w_avg_weekly": 2223,
    "prev4w_avg_weekly": 2099,
    "change_pct": 5.9,
@@ -2361,134 +2361,120 @@
    "last4w_ratio_to_maga": 0.0919
   },
   "sample": {
-   "n": 593,
+   "n": 594,
    "since": "2026-10-23",
-   "unique_authors": 456,
+   "unique_authors": 454,
    "top_posts": [
     {
      "id": "2113724786387882454",
      "date": "2026-10-23",
      "handle": "nicksortor",
      "name": "Nick Sortor",
-     "followers": 1633444,
+     "followers": 1633586,
      "text": "\ud83d\udea8 JUST IN: RFK Jr. and President Trump just announced a \"MADE IN AMERICA\" label for ALL American-made seafood as part of their MAHA efforts\n\n\"Vietnam and Cambodia... the shrimp are SO LOADED with antibiotics and disinfectants that no European country will take them. They ship https://t.co/tZ0flBlJ7j",
-     "likes": 42033,
-     "reposts": 10538,
-     "replies": 959,
+     "likes": 42032,
+     "reposts": 10531,
+     "replies": 958,
      "quotes": 317,
-     "views": 457966,
+     "views": 458677,
      "url": "https://x.com/nicksortor/status/2113724786387882454"
-    },
-    {
-     "id": "2113675451524661508",
-     "date": "2026-10-23",
-     "handle": "Brick_Suit",
-     "name": "Brick Suit",
-     "followers": 329479,
-     "text": "Robert F. Kennedy Jr. is at today's rally in Fort Myers...\n\nMAHA! https://t.co/G7kMoY13vH",
-     "likes": 6552,
-     "reposts": 676,
-     "replies": 37,
-     "quotes": 9,
-     "views": 35997,
-     "url": "https://x.com/Brick_Suit/status/2113675451524661508"
     },
     {
      "id": "2113963718430085449",
      "date": "2026-10-24",
      "handle": "ValerieAnne1970",
      "name": "Valerie Anne Smith",
-     "followers": 284746,
+     "followers": 284882,
      "text": "American strawberry fields are being DRENCHED in cancer-linked pesticides \u2014 while workers are in full-head-to-toe hazmat suits, respirators, and gloves!\n\nTwo workmen, spraying poison directly onto the berries that will soon hit grocery stores nationwide. These are the \u201cfresh\u201d https://t.co/I4kXZvAMcq",
-     "likes": 3746,
+     "likes": 3749,
      "reposts": 2554,
      "replies": 240,
-     "quotes": 196,
-     "views": 71049,
+     "quotes": 197,
+     "views": 71499,
      "url": "https://x.com/ValerieAnne1970/status/2113963718430085449"
-    },
-    {
-     "id": "2113748927593746675",
-     "date": "2026-10-23",
-     "handle": "AndrewKolvet",
-     "name": "Andrew Kolvet",
-     "followers": 312323,
-     "text": "RFK Jr. says he prayed for 18 years for a chance to fix America's chronic disease crisis, and then got Donald Trump.\n\n\"Every commitment, every promise that Donald Trump has made to me, he has kept in spades... And we kept that promise, and the data show that we kept that https://t.co/kpMxG8FdY5",
-     "likes": 4777,
-     "reposts": 934,
-     "replies": 101,
-     "quotes": 16,
-     "views": 76122,
-     "url": "https://x.com/AndrewKolvet/status/2113748927593746675"
     },
     {
      "id": "2115257697826140300",
      "date": "2026-10-28",
      "handle": "MrWhiplash_",
      "name": "Whiplash437",
-     "followers": 126414,
+     "followers": 127214,
      "text": "\ud83d\udea8 IT'S OFFICIAL: By the stroke of pen and flanked by RFK Jr., President Trump establishes a new US vaccine schedule that decreases the number of jabs from 72 to 11 \u2014 and spreads them out over multiple visits, rather than pumping the child all at once\n\n\"That's a big one in my https://t.co/xiCUNSsHbO",
-     "likes": 1377,
-     "reposts": 451,
-     "replies": 56,
-     "quotes": 27,
-     "views": 14468,
+     "likes": 4606,
+     "reposts": 1511,
+     "replies": 196,
+     "quotes": 104,
+     "views": 50598,
      "url": "https://x.com/MrWhiplash_/status/2115257697826140300"
     },
     {
-     "id": "2113700972275134544",
+     "id": "2113748927593746675",
      "date": "2026-10-23",
-     "handle": "CalltoActivism",
-     "name": "CALL TO ACTIVISM",
-     "followers": 1225773,
-     "text": "RFK is at a MAGA rally in Florida explaining how healthy he is making America when a man collapsed right behind him.\n\nThe crowd chanted \"Bobby, Bobby\" like he is a doctor.\n\nHe is not. He said a prayer, blessed Donald Trump, and walked off.\n\nMAHA, everybody. https://t.co/r4DMeTd64W",
-     "likes": 1016,
-     "reposts": 254,
-     "replies": 48,
-     "quotes": 17,
-     "views": 118088,
-     "url": "https://x.com/CalltoActivism/status/2113700972275134544"
-    },
-    {
-     "id": "2113624010499969336",
-     "date": "2026-10-23",
-     "handle": "MaryBowdenMD",
-     "name": "Mary Talley Bowden MD",
-     "followers": 647105,
-     "text": "I predict Kennedy will run in 2028, and Calley Means will be his running mate.  Calley just strategically distanced himself from Trump. \nTheir campaign will be backed by an arsenal of MAHA entities:\nMAHA PAC\nMAHA Action PAC\nMAHA TM\nMAHA Worldwide\nMAHA Holdings\nMAHA Action\nMAHA",
-     "likes": 1003,
-     "reposts": 134,
-     "replies": 382,
-     "quotes": 25,
-     "views": 100701,
-     "url": "https://x.com/MaryBowdenMD/status/2113624010499969336"
+     "handle": "AndrewKolvet",
+     "name": "Andrew Kolvet",
+     "followers": 312462,
+     "text": "RFK Jr. says he prayed for 18 years for a chance to fix America's chronic disease crisis, and then got Donald Trump.\n\n\"Every commitment, every promise that Donald Trump has made to me, he has kept in spades... And we kept that promise, and the data show that we kept that https://t.co/kpMxG8FdY5",
+     "likes": 4777,
+     "reposts": 934,
+     "replies": 101,
+     "quotes": 16,
+     "views": 76276,
+     "url": "https://x.com/AndrewKolvet/status/2113748927593746675"
     },
     {
      "id": "2115118249125777728",
      "date": "2026-10-27",
      "handle": "Holden_Culotta",
      "name": "Holden Culotta",
-     "followers": 158111,
+     "followers": 158152,
      "text": "This ex-RFK Jr. supporter just sounded the alarm.\n\nTiffany Cianci: \u201cMAHA is fully captured by corporate interests.\u201d\n\nAnd she named the one person who\u2019s responsible:\n\n\u201cSusie Wiles.\u201d\n\n\u201cThe former lobbyist for Bayer-Monsanto and Pfizer.\u201d\n\nBookmark this.\n\n\u201cShe was the lead lobbyist https://t.co/GkrPrmCOS2",
-     "likes": 812,
-     "reposts": 296,
-     "replies": 31,
-     "quotes": 23,
-     "views": 16998,
+     "likes": 1575,
+     "reposts": 599,
+     "replies": 61,
+     "quotes": 56,
+     "views": 40865,
      "url": "https://x.com/Holden_Culotta/status/2115118249125777728"
+    },
+    {
+     "id": "2113700972275134544",
+     "date": "2026-10-23",
+     "handle": "CalltoActivism",
+     "name": "CALL TO ACTIVISM",
+     "followers": 1225871,
+     "text": "RFK is at a MAGA rally in Florida explaining how healthy he is making America when a man collapsed right behind him.\n\nThe crowd chanted \"Bobby, Bobby\" like he is a doctor.\n\nHe is not. He said a prayer, blessed Donald Trump, and walked off.\n\nMAHA, everybody. https://t.co/r4DMeTd64W",
+     "likes": 1016,
+     "reposts": 254,
+     "replies": 48,
+     "quotes": 17,
+     "views": 118227,
+     "url": "https://x.com/CalltoActivism/status/2113700972275134544"
+    },
+    {
+     "id": "2115488785307971593",
+     "date": "2026-10-28",
+     "handle": "ClaytonMorris",
+     "name": "Clayton Morris",
+     "followers": 211172,
+     "text": "Name a bigger failure in the Trump administration than Lee Zeldin?\n\nWhile promising to Make America Healthy Again, his EPA has:\n\n\u2022 Moved to scrap drinking-water limits on 4 toxic PFAS \u201cforever chemicals\u201d\n\u2022 Sought to weaken mercury pollution standards\n\u2022 Allowed continued use of",
+     "likes": 838,
+     "reposts": 218,
+     "replies": 82,
+     "quotes": 8,
+     "views": 13796,
+     "url": "https://x.com/ClaytonMorris/status/2115488785307971593"
     },
     {
      "id": "2114114715475484707",
      "date": "2026-10-24",
      "handle": "MAHA_Action",
      "name": "MAHA Action",
-     "followers": 102343,
+     "followers": 102357,
      "text": "RFK Jr. says President Trump is ALL IN on the MAHA agenda, and they are just getting started.\n\n\u201cPresident Trump is absolutely committed to the MAHA agenda.\u201d\n\n\u201cWe\u2019ve done more over the past 2 years than probably all the HHS secretaries put together in advancing that agenda.\u201d\n\n\u201cAnd https://t.co/LJu6weOo8l",
      "likes": 815,
      "reposts": 154,
      "replies": 78,
      "quotes": 17,
-     "views": 23560,
+     "views": 23679,
      "url": "https://x.com/MAHA_Action/status/2114114715475484707"
     },
     {
@@ -2496,13 +2482,13 @@
      "date": "2026-10-23",
      "handle": "DavidZorkocy",
      "name": "David Zorkocy",
-     "followers": 229276,
+     "followers": 229289,
      "text": "I am voting Republican for Secretary Kennedy!\n\nOne of the areas the Trump Administration has been most successful is the MAHA movement.\n\nFrom removing toxic chemicals and dyes, to restructuring education with a new food pyramid, Secretary Kennedy is the most important HHS https://t.co/R6v1VVibiG",
      "likes": 610,
      "reposts": 110,
      "replies": 79,
      "quotes": 6,
-     "views": 6608,
+     "views": 6618,
      "url": "https://x.com/DavidZorkocy/status/2113713140391129520"
     },
     {
@@ -2510,92 +2496,111 @@
      "date": "2026-10-25",
      "handle": "MaryBowdenMD",
      "name": "Mary Talley Bowden MD",
-     "followers": 647105,
+     "followers": 646802,
      "text": "The MAHA Empire has 16 registered or pending trademark applications, owned by Gavin de Becker's for-profit MAHA TM LLC. \n\nKennedy earned $100,000 in licensing fees before giving the rights to Del Bigtree.  After Del was pushed out of MAHA, ownership transferred to Gavin de https://t.co/7RxOVo63Nn",
-     "likes": 478,
+     "likes": 479,
      "reposts": 153,
      "replies": 45,
      "quotes": 11,
-     "views": 31453,
+     "views": 31679,
      "url": "https://x.com/MaryBowdenMD/status/2114413633002197419"
-    },
-    {
-     "id": "2113612164426563803",
-     "date": "2026-10-23",
-     "handle": "thefoodbabe",
-     "name": "Vani Hari",
-     "followers": 242440,
-     "text": "To be clear. @SecKennedy is a hero but his commitments to our movement are being stalled by corporate capture and special interests at the very top of the White House. The progress he is trying to make is getting killed by the corporations poisoning us. For example, @epaleezeldin https://t.co/TqB90xuDZw",
-     "likes": 532,
-     "reposts": 87,
-     "replies": 92,
-     "quotes": 11,
-     "views": 37588,
-     "url": "https://x.com/thefoodbabe/status/2113612164426563803"
     },
     {
      "id": "2113731729685094607",
      "date": "2026-10-23",
      "handle": "andweknow",
      "name": "And We Know\u00a9\ud83c\uddfa\ud83c\uddf8",
-     "followers": 228169,
+     "followers": 228218,
      "text": "\ud83c\uddfa\ud83c\uddf8 RFK JR. AND PRESIDENT TRUMP ANNOUNCE \u201cMADE IN AMERICA\u201d LABEL\n\nRFK Jr. and President Trump just announced a \u201cMade in America\u201d label for all American-made seafood as part of their MAHA efforts.\n\n\u201cVietnam and Cambodia\u2026 the shrimp are SO LOADED with antibiotics and disinfectants https://t.co/FU0MhTlrXj",
      "likes": 467,
      "reposts": 121,
      "replies": 11,
      "quotes": 7,
-     "views": 7362,
+     "views": 7408,
      "url": "https://x.com/andweknow/status/2113731729685094607"
-    },
-    {
-     "id": "2113674806524879030",
-     "date": "2026-10-23",
-     "handle": "SenDuckworth",
-     "name": "Tammy Duckworth",
-     "followers": 655376,
-     "text": "Trump slashed 30% of the CDC\u2019s workforce, weakening our ability to detect outbreaks, fight disease and protect American lives.\n\u00a0\nYou can't make America healthy again by firing the people who protect our public health. https://t.co/KyPRVYT2tp",
-     "likes": 389,
-     "reposts": 127,
-     "replies": 197,
-     "quotes": 7,
-     "views": 8252,
-     "url": "https://x.com/SenDuckworth/status/2113674806524879030"
     },
     {
      "id": "2113710497342378471",
      "date": "2026-10-23",
      "handle": "emilyjashinsky",
      "name": "Emily Jashinsky",
-     "followers": 137398,
+     "followers": 137430,
      "text": "Something interesting about this (other than the @esaagar cameo) is that it seems clear 2018-2024 Dems would have never countenanced messaging from a competitive candidate in a major race like, \"Free speech IS under attack and we SHOULD make America healthy again\" https://t.co/rNrFdWJ90u",
      "likes": 483,
      "reposts": 34,
      "replies": 20,
      "quotes": 4,
-     "views": 55085,
+     "views": 55197,
      "url": "https://x.com/emilyjashinsky/status/2113710497342378471"
+    },
+    {
+     "id": "2114397646542549227",
+     "date": "2026-10-25",
+     "handle": "DavidJUrban",
+     "name": "\ud83c\uddfa\ud83c\uddf8 David J. Urban \ud83c\uddfa\ud83c\uddf8",
+     "followers": 64434,
+     "text": "Trump has the base locked down. But if Republicans want to win the midterms, they need to turn out the full coalition that delivered 2024.\n\nHispanics, the MAHA movement, young men, and working-class voters who crossed over.\n\nRepublicans can\u2019t afford to leave a single piece of it https://t.co/BObEdGq23b",
+     "likes": 383,
+     "reposts": 97,
+     "replies": 18,
+     "quotes": 2,
+     "views": 10898,
+     "url": "https://x.com/DavidJUrban/status/2114397646542549227"
+    },
+    {
+     "id": "2113720676620161373",
+     "date": "2026-10-23",
+     "handle": "Brick_Suit",
+     "name": "Brick Suit",
+     "followers": 329569,
+     "text": "Robert F. Kennedy Jr.'s intro to a PACKED rally in Fort Myers Florida...\n\nMAHA! https://t.co/ekbpICyl4l",
+     "likes": 407,
+     "reposts": 60,
+     "replies": 3,
+     "quotes": 0,
+     "views": 6616,
+     "url": "https://x.com/Brick_Suit/status/2113720676620161373"
+    },
+    {
+     "id": "2114856563194093936",
+     "date": "2026-10-26",
+     "handle": "magachrchpastr",
+     "name": "Magachurch Pastor\ud83d\ude4f\ud83c\uddfa\ud83c\uddf8",
+     "followers": 15527,
+     "text": "I read an article that said more Americans are forgoing health insurance and medical care due to high costs. To me, this is proof that Make America Healthy Again is working because now people will finally discover the wonder-working power of Ivermectin and sunshine\ud83d\ude4f\ud83c\uddfa\ud83c\uddf8",
+     "likes": 429,
+     "reposts": 33,
+     "replies": 87,
+     "quotes": 3,
+     "views": 5133,
+     "url": "https://x.com/magachrchpastr/status/2114856563194093936"
     }
    ],
    "top_accounts": [
     {
      "handle": "JohnSgt",
      "posts": 16,
-     "engagement": 26
+     "engagement": 27
+    },
+    {
+     "handle": "AZMAHAMAMA",
+     "posts": 14,
+     "engagement": 21
     },
     {
      "handle": "EmbracingTara",
      "posts": 14,
-     "engagement": 280
+     "engagement": 291
     },
     {
-     "handle": "AZMAHAMAMA",
-     "posts": 10,
-     "engagement": 20
+     "handle": "MAHANAKA_Phuket",
+     "posts": 11,
+     "engagement": 0
     },
     {
      "handle": "magagrandmom",
      "posts": 7,
-     "engagement": 568
+     "engagement": 550
     },
     {
      "handle": "ConleyParker",
@@ -2603,19 +2608,9 @@
      "engagement": 1
     },
     {
-     "handle": "MAHANAKA_Phuket",
-     "posts": 5,
-     "engagement": 0
-    },
-    {
-     "handle": "shartstorm8d8",
-     "posts": 5,
-     "engagement": 19
-    },
-    {
      "handle": "AJNlive",
      "posts": 4,
-     "engagement": 140
+     "engagement": 153
     },
     {
      "handle": "DutchDane59",
@@ -2623,34 +2618,39 @@
      "engagement": 1
     },
     {
-     "handle": "InquiringFinds",
-     "posts": 4,
-     "engagement": 0
-    },
-    {
      "handle": "sgtnewsnetwork",
      "posts": 4,
      "engagement": 45
     },
     {
-     "handle": "PAC_watch",
-     "posts": 4,
-     "engagement": 0
+     "handle": "LiamSchubel",
+     "posts": 3,
+     "engagement": 22
     },
     {
-     "handle": "USATODAY",
+     "handle": "MAHA_Action",
      "posts": 3,
-     "engagement": 95
+     "engagement": 1341
     },
     {
-     "handle": "HISteveWilliams",
+     "handle": "Dpmansdo",
      "posts": 3,
-     "engagement": 1
+     "engagement": 35
     },
     {
      "handle": "DillinD_",
      "posts": 3,
      "engagement": 2
+    },
+    {
+     "handle": "divinerank949",
+     "posts": 3,
+     "engagement": 1
+    },
+    {
+     "handle": "CivicDuty465256",
+     "posts": 3,
+     "engagement": 0
     }
    ]
   }
@@ -3568,7 +3568,7 @@
   "source": "Google Political Advertising transparency bundle (advertiser weekly spend, advertiser stats)",
   "url": "https://adstransparency.google.com/political?topic=political&region=US",
   "bundle": "https://storage.googleapis.com/political-csv/google-political-ads-transparency-bundle.zip",
-  "report_updated_pt": "2026-10-28 00:18:55",
+  "report_updated_pt": "2026-10-28 22:56:41",
   "note": "Spend on Google Ads and YouTube for ads Google classifies as election ads, reported in $100 increments per advertiser per week. Cycle = weeks from Jan 5, 2025. Campaign committees are matched by Google's verified advertiser name; some campaigns run under several advertiser accounts, all of which are summed. Google only; it says nothing about TV, Meta or mail.",
   "cycle_start": "2025-01-05",
   "watchlist": [
@@ -4070,10 +4070,10 @@
     "name": "Rob Sand for Iowa",
     "race": "US-IA Governor",
     "side": "D",
-    "cycle_spend": 5667800.0,
-    "last4w": 1225000.0,
+    "cycle_spend": 5667600.0,
+    "last4w": 1224800.0,
     "prev4w": 1230800.0,
-    "all_time": 5701100.0,
+    "all_time": 5700900.0,
     "creatives": 501,
     "weekly": [
      [
@@ -4398,7 +4398,7 @@
      ],
      [
       "2026-10-25",
-      146300.0
+      146100.0
      ]
     ]
    },
@@ -4456,8 +4456,8 @@
     "name": "Josh Turek for Iowa",
     "race": "US-IA Senate",
     "side": "D",
-    "cycle_spend": 4737600.0,
-    "last4w": 2336800.0,
+    "cycle_spend": 4737500.0,
+    "last4w": 2336700.0,
     "prev4w": 1191700.0,
     "all_time": 4737600.0,
     "creatives": 427,
@@ -4700,7 +4700,7 @@
      ],
      [
       "2026-10-25",
-      172300.0
+      172200.0
      ]
     ]
    },
@@ -5870,10 +5870,10 @@
     "name": "Friends of Sherrod Brown",
     "race": "US-OH Senate",
     "side": "D",
-    "cycle_spend": 5328700.0,
-    "last4w": 1675300.0,
+    "cycle_spend": 5328600.0,
+    "last4w": 1675200.0,
     "prev4w": 1414900.0,
-    "all_time": 12458400.0,
+    "all_time": 12458300.0,
     "creatives": 2171,
     "weekly": [
      [
@@ -5978,7 +5978,7 @@
      ],
      [
       "2026-10-25",
-      249900.0
+      249800.0
      ]
     ]
    },
@@ -6798,10 +6798,10 @@
     "name": "Ramaswamy and McColley for Ohio",
     "race": "US-OH Governor",
     "side": "R",
-    "cycle_spend": 3816800.0,
-    "last4w": 1509800.0,
+    "cycle_spend": 3816700.0,
+    "last4w": 1509700.0,
     "prev4w": 817000.0,
-    "all_time": 3816700.0,
+    "all_time": 3816600.0,
     "creatives": 326,
     "weekly": [
      [
@@ -6934,7 +6934,7 @@
      ],
      [
       "2026-10-18",
-      490400.0
+      490300.0
      ],
      [
       "2026-10-25",
@@ -6947,10 +6947,10 @@
     "name": "Troy Jackson for Maine",
     "race": "US-ME Senate",
     "side": "D",
-    "cycle_spend": 4210900.0,
-    "last4w": 1529200.0,
+    "cycle_spend": 4211000.0,
+    "last4w": 1529300.0,
     "prev4w": 1485100.0,
-    "all_time": 4211000.0,
+    "all_time": 4211100.0,
     "creatives": 261,
     "weekly": [
      [
@@ -7007,7 +7007,7 @@
      ],
      [
       "2026-10-18",
-      409700.0
+      409800.0
      ],
      [
       "2026-10-25",
@@ -7843,7 +7843,7 @@
     "cycle_spend": 797600.0,
     "last4w": 197100.0,
     "prev4w": 241100.0,
-    "all_time": 810900.0,
+    "all_time": 810800.0,
     "creatives": 306,
     "weekly": [
      [
@@ -8867,7 +8867,7 @@
     "cycle_spend": 6285900.0,
     "last4w": 2491700.0,
     "prev4w": 2007500.0,
-    "all_time": 6285900.0,
+    "all_time": 6285800.0,
     "creatives": 102,
     "weekly": [
      [
@@ -9174,10 +9174,10 @@
     "name": "Jackson for Governor, Inc.",
     "race": "US-GA Governor",
     "side": "R",
-    "cycle_spend": 13976800.0,
-    "last4w": 3125400.0,
+    "cycle_spend": 13976700.0,
+    "last4w": 3125300.0,
     "prev4w": 2895800.0,
-    "all_time": 13976600.0,
+    "all_time": 13976500.0,
     "creatives": 921,
     "weekly": [
      [
@@ -9310,7 +9310,7 @@
      ],
      [
       "2026-10-18",
-      1022300.0
+      1022200.0
      ],
      [
       "2026-10-25",
@@ -9822,8 +9822,8 @@
     "name": "Crowley for Wisconsin",
     "race": "US-WI Governor",
     "side": "D",
-    "cycle_spend": 1439900.0,
-    "last4w": 765300.0,
+    "cycle_spend": 1439800.0,
+    "last4w": 765200.0,
     "prev4w": 338200.0,
     "all_time": 1439800.0,
     "creatives": 44,
@@ -9886,7 +9886,7 @@
      ],
      [
       "2026-10-25",
-      117200.0
+      117100.0
      ]
     ]
    },
@@ -9895,8 +9895,8 @@
     "name": "Tiffany for Wisconsin",
     "race": "US-WI Governor",
     "side": "R",
-    "cycle_spend": 5001200.0,
-    "last4w": 1400900.0,
+    "cycle_spend": 5001100.0,
+    "last4w": 1400800.0,
     "prev4w": 1596300.0,
     "all_time": 5001000.0,
     "creatives": 108,
@@ -10111,7 +10111,7 @@
      ],
      [
       "2026-10-18",
-      445300.0
+      445200.0
      ],
      [
       "2026-10-25",
@@ -11443,7 +11443,7 @@
     "cycle_spend": 6389800.0,
     "last4w": 4033600.0,
     "prev4w": 2356200.0,
-    "all_time": 6389900.0,
+    "all_time": 6389800.0,
     "creatives": 139,
     "weekly": [
      [
@@ -11885,15 +11885,15 @@
   ],
   "races": {
    "US-IA Governor": {
-    "D": 5720500.0,
+    "D": 5720300.0,
     "R": 2037000.0,
-    "last4_D": 1236700.0,
+    "last4_D": 1236500.0,
     "last4_R": 745500.0
    },
    "US-IA Senate": {
-    "D": 4737600.0,
+    "D": 4737500.0,
     "R": 61400.0,
-    "last4_D": 2336800.0,
+    "last4_D": 2336700.0,
     "last4_R": 4200.0
    },
    "US-MI Senate": {
@@ -11909,21 +11909,21 @@
     "last4_R": 260200.0
    },
    "US-OH Senate": {
-    "D": 7168000.0,
+    "D": 7167900.0,
     "R": 68300.0,
-    "last4_D": 2168400.0,
+    "last4_D": 2168300.0,
     "last4_R": 16500.0
    },
    "US-OH Governor": {
     "D": 738900.0,
-    "R": 3816800.0,
+    "R": 3816700.0,
     "last4_D": 270400.0,
-    "last4_R": 1509800.0
+    "last4_R": 1509700.0
    },
    "US-ME Senate": {
-    "D": 4236400.0,
+    "D": 4236500.0,
     "R": 2005100.0,
-    "last4_D": 1529200.0,
+    "last4_D": 1529300.0,
     "last4_R": 214700.0
    },
    "US-NH Senate": {
@@ -11952,9 +11952,9 @@
    },
    "US-GA Governor": {
     "D": 0.0,
-    "R": 13976800.0,
+    "R": 13976700.0,
     "last4_D": 0.0,
-    "last4_R": 3125400.0
+    "last4_R": 3125300.0
    },
    "US-NV Governor": {
     "D": 58000.0,
@@ -11963,10 +11963,10 @@
     "last4_R": 161600.0
    },
    "US-WI Governor": {
-    "D": 1439900.0,
-    "R": 5001200.0,
-    "last4_D": 765300.0,
-    "last4_R": 1400900.0
+    "D": 1439800.0,
+    "R": 5001100.0,
+    "last4_D": 765200.0,
+    "last4_R": 1400800.0
    },
    "US-AZ Governor": {
     "D": 1674600.0,
@@ -12006,7 +12006,7 @@
  "fec": {
   "source": "OpenFEC API (committee totals, Schedule E independent expenditures incl. 24/48-hour reports)",
   "url": "https://api.open.fec.gov/developers/",
-  "collected": "2026-10-28",
+  "collected": "2026-10-29",
   "note": "Per-candidate independent-expenditure sums are approximate: itemized lines are de-duplicated on date, amount, candidate and payee because 24/48-hour notices are re-reported on periodic reports; the committee-level IE total is the FEC's own figure. Only the most recent 100 itemized lines per committee are fetched under the demo key. Totals are the committee's own reports for the 2025\u201326 cycle through the coverage-end date shown; independent expenditures are itemized Schedule E lines, which arrive within 24\u201348 hours of dissemination in the final 20 days before an election and quarterly or monthly otherwise. Receipts and cash are not available for a committee until its first periodic report is processed.",
   "committees": {
    "C00821439": {
