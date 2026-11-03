@@ -1,6 +1,6 @@
 {
- "date": "2026-11-02",
- "days_to_election": 1,
+ "date": "2026-11-03",
+ "days_to_election": 0,
  "items": [
   {
    "k": "X volume",
@@ -12,9 +12,9 @@
   },
   {
    "k": "News tone",
-   "v": "25%",
+   "v": "29%",
    "u": "of 76 headlines critical",
-   "d": "5% from inside",
+   "d": "9% from inside",
    "read": "Lead theme politics / midterms. Inside criticism below one in five critical headlines.",
    "href": "#news"
   },
@@ -28,7 +28,7 @@
   },
   {
    "k": "Bluesky",
-   "v": "279",
+   "v": "276",
    "u": "posts / week",
    "d": "-34%",
    "read": "Critical-outside channel; steady volume means sustained opposition attention, not growth.",
@@ -68,10 +68,6 @@
   }
  ],
  "deadlines": [
-  [
-   "2026-11-02",
-   "New Hampshire: mail-ballot request deadline"
-  ],
   [
    "2026-11-03",
    "Maine: registration closes"
