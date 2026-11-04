@@ -10,6 +10,23 @@
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=gambetta@400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+.opp-list{display:grid;gap:12px}
+.opp-item{background:#fff;border:1px solid var(--rule);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.opp-item h4{margin:0 0 4px;font-size:.98rem}
+.opp-item .meta{font-size:.78rem;color:var(--muted);margin-bottom:6px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.opp-item p{margin:4px 0;font-size:.9rem;line-height:1.45}
+.opp-item .watch{color:var(--ink-2)}
+.opp-item .srcs{font-size:.78rem}
+.opp-item .srcs a{margin-right:10px}
+.st{display:inline-block;padding:1px 8px;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+.st-stated-intent{background:var(--paper-2);color:var(--ink-2)}
+.st-on-file{background:var(--gold-soft);color:#6b5410}
+.st-in-court{background:var(--teal-soft);color:#1d5c5c}
+.st-reported{background:#eef0f3;color:var(--muted)}
+.st-scheduled,.st-done{background:var(--red-soft);color:#7d1f2b}
+.opp-item.new{border-left:4px solid var(--red)}
+</style>
 </head>
 <body>
 <header class="masthead">
@@ -24,6 +41,7 @@
     </a>
     <nav class="nav" aria-label="Sections">
       <a href="#brief">Brief</a>
+      <a href="#opposition">Opposition</a>
       <a href="#calendar">Calendar</a>
       <a href="#rl-table">Voters</a>
       <a href="#race-table">Races</a>
@@ -45,6 +63,13 @@
   </section>
   <section id="scorecard" class="wrap section" style="padding-top:0">
     <div class="card brief" id="brief"></div>
+  </section>
+  <section id="opposition" class="wrap section">
+    <div class="section-head"><h2>Opposition watch <span class="muted">— what Democrats plan for Kennedy and MAHA</span></h2><p id="opp-context"></p></div>
+    <div class="tiles listen-tiles" id="opp-tiles"></div>
+    <div class="chips" id="opp-chips" style="margin:14px 0"></div>
+    <div class="opp-list" id="opp-list"></div>
+    <p class="muted" id="opp-method" style="font-size:.78rem;margin:10px 0 0"></p>
   </section>
 <section id="midterms" class="wrap section">
     <div class="section-head"><h2>Midterms <span class="muted">— MAHA as a voting bloc, <span id="days-out"></span> days out</span></h2><p>Where MAHA actually shows up in the 2026 map: which competitive races have MAHA money, endorsements or candidate outreach, how MAHA search interest is distributed across the states, and what MAHA voters say they want compared with what each party is offering. Race ratings follow <a id="ratings-link" href="#" target="_blank" rel="noopener"></a>; state scores are relative search interest within each state, not supporter counts.</p></div>
@@ -123,5 +148,43 @@
 
 <script>window.DATA_BASE = "../data/"; window.PAGE = "warroom";</script>
 <script src="../app.js"></script>
+<script>
+(async () => {
+  const d = await fetch('../data/opposition.json').then(r => r.json()).catch(() => null);
+  if (!d) return;
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const fmt = s => new Date(s + 'T12:00:00').toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+  const cls = s => 'st st-' + s.replace(/\s+/g, '-');
+  document.getElementById('opp-context').innerHTML = esc(d.context) + ' ' + d.context_sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(' · ') + `. Swept ${fmt(d.updated)}.`;
+  document.getElementById('opp-method').textContent = d.method;
+  const counts = {}; d.items.forEach(i => counts[i.status] = (counts[i.status] || 0) + 1);
+  const newCount = d.items.filter(i => i.first_seen === d.updated).length;
+  const next = (d.calendar || []).filter(c => c.date >= d.updated).sort((a,b) => a.date.localeCompare(b.date))[0];
+  const tiles = [
+    ['Tracked moves', d.items.length, `${newCount} new in latest sweep`],
+    ['Filed, scheduled or in court', (counts['on file']||0) + (counts['scheduled']||0) + (counts['in court']||0), 'Primary record exists'],
+    ['Stated intent only', counts['stated intent'] || 0, 'Pledges and plans, not yet actions'],
+    ['Next date', next ? fmt(next.date) : '—', next ? next.what : '']
+  ];
+  document.getElementById('opp-tiles').innerHTML = tiles.map(t => `<div class="tile"><div class="label">${esc(t[0])}</div><div class="value">${esc(t[1])}</div><div class="desc">${esc(t[2])}</div></div>`).join('');
+  let lane = 'all';
+  const chips = document.getElementById('opp-chips');
+  const lanes = [{id:'all', name:'All'}].concat(d.lanes);
+  const draw = () => {
+    chips.innerHTML = lanes.map(l => `<button class="chip${l.id===lane?' active':''}" data-l="${l.id}">${esc(l.name)} (${l.id==='all'?d.items.length:d.items.filter(i=>i.lane===l.id).length})</button>`).join('');
+    chips.querySelectorAll('button').forEach(b => b.onclick = () => { lane = b.dataset.l; draw(); });
+    const order = d.status_order;
+    const items = d.items.filter(i => lane === 'all' || i.lane === lane)
+      .sort((a,b) => order.indexOf(a.status) - order.indexOf(b.status) || b.date.localeCompare(a.date));
+    const laneName = id => (d.lanes.find(l => l.id === id) || {}).name || id;
+    document.getElementById('opp-list').innerHTML = items.map(i => `<article class="opp-item${i.first_seen===d.updated?' new':''}">
+      <div class="meta"><span class="${cls(i.status)}">${esc(i.status)}</span><span>${esc(laneName(i.lane))}</span><span>${fmt(i.date)}</span>${i.first_seen===d.updated?'<span style="color:var(--red);font-weight:700">New</span>':''}</div>
+      <h4>${esc(i.actor)}</h4><p>${esc(i.summary)}</p><p class="watch"><strong>Watch:</strong> ${esc(i.watch)}</p>
+      <div class="srcs">${i.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join('')}</div></article>`).join('');
+  };
+  draw();
+})();
+</script>
+
 </body>
 </html>
