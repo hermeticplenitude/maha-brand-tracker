@@ -22,7 +22,7 @@ Google returns HTTP 429 to the sandbox. Open a cloud browser on trends.google.co
 
 ## War Room vault (password-protected)
 
-The War Room page (`war-room/page.enc.json`) and its opposition data (`data/opposition.enc.json`) are AES-256-GCM encrypted; `war-room/index.html` is only a password gate. Never commit plaintext. To edit:
+The War Room page (`war-room/page.enc.json`) and its opposition data (`data/opposition.enc.json`, `data/strategy.enc.json`) are AES-256-GCM encrypted; `war-room/index.html` is only a password gate. Never commit plaintext. To edit:
 
 ```
 export WR_PASSWORD=...            # the War Room password
