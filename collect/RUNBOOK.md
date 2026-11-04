@@ -19,3 +19,17 @@ Results live in `data/results.json`, one object per race under `races[]`. For ea
 ## Google Trends refresh (manual, weekly)
 
 Google returns HTTP 429 to the sandbox. Open a cloud browser on trends.google.com, then call `/trends/api/explore` and `/trends/api/widgetdata/multiline` from inside the page (same origin), one request every few seconds. Keep the term sets fixed: weekly US 2024→today [`Make America Healthy Again`, `/g/11x8sdrsf0`, `maha movement`, `what is maha`, `maha moms`]; `MAHA` vs `MAGA` terms from 2024-07-28; MAHA vs MAGA topics [`/g/11x8sdrsf0`, `/g/11bw1_6lwn`] from 2024-07-28; phrase monthly from 2016-01-01; 12-month [`/g/11x8sdrsf0`, `/m/02l5km`, `/g/11bw1_6lwn`, phrase]. Write into data/trends.json and set `retrieved` plus `retrieved_note` naming any series left on an older pull. Last full refresh: Oct 15, 2026 (12-month topic comparison, geography and related queries still Oct 2).
+
+## War Room vault (password-protected)
+
+The War Room page (`war-room/page.enc.json`) and its opposition data (`data/opposition.enc.json`) are AES-256-GCM encrypted; `war-room/index.html` is only a password gate. Never commit plaintext. To edit:
+
+```
+export WR_PASSWORD=...            # the War Room password
+python3 collect/vault.py decrypt data/opposition.enc.json .vault/opposition.json
+# edit .vault/opposition.json
+python3 collect/vault.py encrypt .vault/opposition.json data/opposition.enc.json
+# page source: decrypt war-room/page.enc.json -> .vault/warroom.plain.html, edit, re-encrypt
+```
+
+`.vault/` is git-ignored. Changing the password means re-encrypting both files with the new password.
