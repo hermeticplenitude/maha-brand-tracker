@@ -53,6 +53,38 @@
  ],
  "items": [
   {
+   "id": "hoversight-dec22-outside-groups",
+   "lane": "oversight",
+   "date": "2025-12-22",
+   "first_seen": "2026-11-04",
+   "actor": "House Oversight — Robert Garcia (then ranking member) to HHS",
+   "status": "on file",
+   "summary": "Request 3 seeks 'All communications between HHS or CDC employees and the Children’s Defense Fund, Aaron Siri, and any other individual or organization with whom HHS has consulted on vaccines.' Request 7 covers ACIP-member messages 'on official and personal devices'; Request 9 seeks conflict documentation for 'all external parties who presented or contributed to the ACIP meeting.' Sent from the minority; can be reissued as a majority subpoena after Jan 3.",
+   "watch": "A reissued or corrected request (e.g., 'Children’s Health Defense'), and the first letters sent directly to outside groups.",
+   "sources": [
+    {
+     "label": "Garcia letter (PDF)",
+     "url": "https://oversightdemocrats.house.gov/imo/media/doc/garcia_to_hhs_re_acip_hepatitis_b.pdf"
+    }
+   ]
+  },
+  {
+   "id": "hoversight-jun26-staff-report",
+   "lane": "oversight",
+   "date": "2026-06-23",
+   "first_seen": "2026-11-04",
+   "actor": "House Oversight Democratic staff report",
+   "status": "on file",
+   "summary": "Names Children’s Health Defense, Lyn Redwood, Aaron Siri, David Geier, Stefanie Spear, Calley Means/Truemed and Finn Kennedy’s investment fund as conflicts or influences; it is the likely roadmap for majority document requests.",
+   "watch": "Named parties receiving direct requests; GreenMedInfo and Stand for Health Freedom are not named in it.",
+   "sources": [
+    {
+     "label": "Staff report (PDF)",
+     "url": "https://oversightdemocrats.house.gov/imo/media/doc/2026-06-23cogrdemspublichealthreport.pdf"
+    }
+   ]
+  },
+  {
    "id": "hoversight-garcia",
    "lane": "oversight",
    "date": "2026-11-04",
@@ -311,9 +343,9 @@
  "log": [
   {
    "date": "2026-11-04",
-   "new": 12,
+   "new": 14,
    "changed": 0,
-   "note": "First sweep after the midterms."
+   "note": "First sweep after the midterms. Added primary records behind the outside-group subpoena threat."
   }
  ]
 }
